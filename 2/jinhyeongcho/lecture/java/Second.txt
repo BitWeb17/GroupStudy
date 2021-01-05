@@ -606,3 +606,4 @@ public class SwitchCaseStatement {
 // Q : switch 문에서 default의 용도는 무엇인가요?
 // A : case 각각의 케이스들을 적는다고 하였는데
 //     해당하는 케이스가 하나도 없을 경우 defualt가 존재한다.
+
