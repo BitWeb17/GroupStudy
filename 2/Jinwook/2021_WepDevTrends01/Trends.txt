@@ -10,7 +10,7 @@ Svelte is not operate Virtual DOM and increacing of using
 
 JS Runtime Environment
 
-NodeJS(BackEnd) ---> Deno is popular now
+NodeJS(BackEnd) ---> Deno is popularized now
 Deno is no code, less code
 import Ui what you wnat from anywhere, making without code
 -like Bubble,Airtable, etc...  exist these survices
@@ -25,8 +25,7 @@ ex) Cloud server
    ex)AWS GoogleCloud Netlify
  
 
-JAM Strack
-JavaScript APIs Markup
+JAM Stack(JavaScript APIs Markup)
  JS - serverside randering : NextJs Gastby are popular
  APIs - HeadlessCMS
 
