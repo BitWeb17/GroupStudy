@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="2일 차 강의">
-      <change afterPath="$PROJECT_DIR$/src/Second/BitOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Second/IfBasedRangeProblem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Second/IfTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Second/LogicalOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Second/PrefixSuffixOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Second/SecondProbTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Second/ShiftOperation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Second/SwitchCaseStatement.java" afterDir="false" />
-    </list>
+    <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="5일 차 강의" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +20,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.DiceHomework">
+  <component name="RunManager" selected="Application.Homework2">
     <configuration name="DiceHomework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fourth.DiceHomework" />
       <module name="java_work" />
@@ -56,6 +47,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Homework2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fifth.Homework2" />
+      <module name="java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Fifth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SecondProbTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Second.SecondProbTest" />
       <module name="java_work" />
@@ -71,6 +75,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Homework2" />
         <item itemvalue="Application.DiceHomework" />
         <item itemvalue="Application.SecondProbTest" />
         <item itemvalue="Application.HelloCorona19" />
@@ -93,7 +98,28 @@
       <option name="project" value="LOCAL" />
       <updated>1609930716532</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="3일 차 강의">
+      <created>1609930995951</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609930995951</updated>
+    </task>
+    <task id="LOCAL-00003" summary="4일 차 강의">
+      <created>1609931139741</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1609931139741</updated>
+    </task>
+    <task id="LOCAL-00004" summary="5일 차 강의">
+      <created>1609931202770</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1609931202770</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +135,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2일 차 강의" />
-    <option name="LAST_COMMIT_MESSAGE" value="2일 차 강의" />
+    <MESSAGE value="3일 차 강의" />
+    <MESSAGE value="4일 차 강의" />
+    <MESSAGE value="5일 차 강의" />
+    <option name="LAST_COMMIT_MESSAGE" value="5일 차 강의" />
   </component>
 </project>
