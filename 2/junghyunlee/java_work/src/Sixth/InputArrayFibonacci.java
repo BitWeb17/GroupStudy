@@ -13,10 +13,11 @@ public class InputArrayFibonacci {
         final int FIXVALUE = 1;
         Scanner scan = new Scanner(System.in);
         int num = scan.nextInt();
-        int[] arr = new int[num];
+//        int[] arr = new int[num];
+//        int i = 0;
 
         if(num <= 0) {
-            System.out.println("잘못된 입력이빈다!");
+            System.out.println("잘못된 입력입니다!");
             return;
         } else if(num < 3) {
             System.out.printf("%d 번째 피보나치 항은 = %d\n", num, FIXVALUE);
@@ -26,17 +27,18 @@ public class InputArrayFibonacci {
             // main 을 종료한다고만 알아두자!
             return;
         }
-
+        //int i = 0;
         // 초기에 배열의 개수를 할당할때는 대괄호 안에 개수를 적는다.
         // 사용할 때는 0 부터 시작한다는 것을 주의하도록 한다.
-        int[] arr1 = new int[num];
 
+        int[] arr = new int[num];
         arr[0] = 1;
         arr[1] = 1;
 
-        for(int i = 2; i < arr.length; i++) {
+        for(int i = 2; i < num; i++) {
             arr[i] = arr[i - 2] + arr[i - 1];
-            System.out.printf("arr[%d] = %d\n", i, arr[i]);
+            System.out.printf("%d 번째 피보나치 항은 = %d\n", i, arr[i]);
         }
+        //System.out.printf("%d 번째 피보나치 항은 = %d\n", num, FIXVALUE);
     }
 }
