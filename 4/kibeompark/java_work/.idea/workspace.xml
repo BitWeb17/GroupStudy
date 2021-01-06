@@ -29,7 +29,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.SecondProbTest">
+  <component name="RunManager" selected="Application.DiceHomework">
+    <configuration name="DiceHomework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fourth.DiceHomework" />
+      <module name="java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Fourth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HelloCorona19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="First.HelloCorona19" />
       <module name="java_work" />
@@ -58,6 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DiceHomework" />
         <item itemvalue="Application.SecondProbTest" />
         <item itemvalue="Application.HelloCorona19" />
       </list>
