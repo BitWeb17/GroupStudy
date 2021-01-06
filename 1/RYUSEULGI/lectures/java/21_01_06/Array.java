@@ -1,4 +1,4 @@
-import java.util.Scanner;
+// import java.util.Scanner;
 
 public class Array {
     public static void main(String[] args) {
@@ -39,30 +39,34 @@ public class Array {
 
         // 피보나치 수열의 n번째 항을 찾는 형태로 변경
 
-        Scanner scan = new Scanner(System.in);
+        // Scanner scan = new Scanner(System.in);
 
-        final int value =1;
+        // final int value =1;
 
-        System.out.println("찾으려고 하는 항을 입력하세요");
-        int num = scan.nextInt();
+        // System.out.println("찾으려고 하는 항을 입력하세요");
+        // int num = scan.nextInt();
 
 
-        if( num <= 0){
-            System.out.println("error");
-        }else if(num < 3){
-            System.out.println(value);
-            return;
-        }
+        // if( num <= 0){
+        //     System.out.println("error");
+        // }else if(num < 3){
+        //     System.out.println(value);
+        //     return;
+        // }
 
-        int[] ARR = new int[num];
+        // int[] ARR = new int[num];
 
-        ARR[0] = value;
-        ARR[1] = value;
+        // ARR[0] = value;
+        // ARR[1] = value;
 
-        for(int i =2; i< num; i++){
-            ARR[i] = ARR[i - 1] + ARR[i - 2];
-        }
-        System.out.println(ARR[num-1]);
+        // for(int i =2; i< num; i++){
+        //     ARR[i] = ARR[i - 1] + ARR[i - 2];
+        // }
+        // System.out.println(ARR[num-1]);
+
+        // scan.close();
+
+
 
     }
 }
