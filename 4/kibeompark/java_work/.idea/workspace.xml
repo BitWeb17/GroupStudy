@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="5일 차 강의" />
+    <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="7일 차 강의">
+      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework7.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -20,22 +36,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.GitTest">
-    <configuration name="DiceHomework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Fourth.DiceHomework" />
-      <module name="java_work" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Fourth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GitTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sixth.GitTest" />
+  <component name="RunManager" selected="Application.Homework7">
+    <configuration name="Homework3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sixth.Homework3" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
@@ -47,12 +50,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HelloCorona19" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="First.HelloCorona19" />
+    <configuration name="Homework4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sixth.Homework4" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="First.*" />
+          <option name="PATTERN" value="Sixth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -60,12 +63,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Fifth.Homework2" />
+    <configuration name="Homework5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sixth.Homework5" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Fifth.*" />
+          <option name="PATTERN" value="Sixth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -73,12 +76,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SecondProbTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Second.SecondProbTest" />
+    <configuration name="Homework6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sixth.Homework6" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Second.*" />
+          <option name="PATTERN" value="Sixth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Homework7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Sixth.Homework7" />
+      <module name="java_work" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Sixth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.GitTest" />
-        <item itemvalue="Application.Homework2" />
-        <item itemvalue="Application.DiceHomework" />
-        <item itemvalue="Application.SecondProbTest" />
-        <item itemvalue="Application.HelloCorona19" />
+        <item itemvalue="Application.Homework7" />
+        <item itemvalue="Application.Homework6" />
+        <item itemvalue="Application.Homework5" />
+        <item itemvalue="Application.Homework4" />
+        <item itemvalue="Application.Homework3" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +149,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609931202770</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="6일 차 강의">
+      <created>1609931268378</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1609931268378</updated>
+    </task>
+    <task id="LOCAL-00006" summary="7일 차 강의">
+      <created>1609931358657</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1609931358657</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -152,6 +182,8 @@
     <MESSAGE value="3일 차 강의" />
     <MESSAGE value="4일 차 강의" />
     <MESSAGE value="5일 차 강의" />
-    <option name="LAST_COMMIT_MESSAGE" value="5일 차 강의" />
+    <MESSAGE value="6일 차 강의" />
+    <MESSAGE value="7일 차 강의" />
+    <option name="LAST_COMMIT_MESSAGE" value="7일 차 강의" />
   </component>
 </project>
