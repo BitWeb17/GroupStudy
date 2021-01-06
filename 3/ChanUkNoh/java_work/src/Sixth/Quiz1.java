@@ -7,9 +7,18 @@ public class Quiz1 {
         // 위의 코드를 n 번째 항을 찾는 혀애로 변경해보자!
 
         Scanner scan = new Scanner(System.in);
+        final int FIXEDNUM = 1;
 
         System.out.println("피보나치 수열 몇 번째 항을 구할까요?");
         int num = scan.nextInt();
+
+        if (num <= 0) {
+            System.out.println("잘못된 값을 입력했습니다.");
+            return;
+        } else if (num < 3) {
+            System.out.printf("%d번째 항은 %d 입니다.", num, FIXEDNUM);
+            return;
+        }
 
         int[] arr = new int[num];
 
