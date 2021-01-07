@@ -1,3 +1,5 @@
+package Sixth_Quiz;
+
 import java.util.Random;
 
 public class SixthQuiz2 {

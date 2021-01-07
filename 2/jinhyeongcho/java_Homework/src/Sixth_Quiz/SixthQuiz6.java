@@ -1,3 +1,5 @@
+package Sixth_Quiz;
+
 public class SixthQuiz6 {
     public static void main(String[] args) {
         //6) 1 ~ 100 까지 숫자중 3 의 배수만 출력해보자!

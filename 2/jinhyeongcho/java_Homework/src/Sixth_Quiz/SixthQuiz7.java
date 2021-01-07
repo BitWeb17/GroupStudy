@@ -1,3 +1,5 @@
+package Sixth_Quiz;
+
 public class SixthQuiz7 {public static void main(String[] args) {
     // 총 17명의 사람이 있다.
     // 17명의 사람에게 5, 4, 4, 4 랜덤으로
