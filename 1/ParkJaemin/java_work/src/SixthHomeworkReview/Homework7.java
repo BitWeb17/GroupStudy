@@ -1,4 +1,4 @@
-package Sixth;
+package SixthHomeworkReview;
 
 public class Homework7 {
     public static void main(String[] args) {
@@ -35,24 +35,32 @@ public class Homework7 {
         final String FIFTEEN = "하진주";
         final String SIXTEEN = "이승윤";
         final String SEVENTEEN = "이범진";
-
+        // i의 용도는 for loop를 돌리기 위한 변수
+        // randNum은 랜덤 번호를 할당 받기 위한
+        // checkDup는 중복을 검사하기 위한 배열
+        // cnt 는 실제 중복없이 할당받은 숫자의
         int i, randNum, cnt = 0;
         int[] checkDup = new int[17];
 
+        // 초기엔 중복이 없으므로 전부 0으로 설정
         for (i = 0; i < 17; i++) {
             checkDup[i] = 0;
         }
 
         System.out.println("A조 입니다.");
-        // 5, 4
+        // 1번 - 누구,  2번 - 누구 형식으로 진행하므로 1부터 시작
         for (i = 1; ; ) {
+            // 랜덤 번호 할당 : 1팀 - 5명, 2팀 - 4명
             randNum = (int) (Math.random() * 9) + 1;
 
+            // 할당 받은 번호 -1의 자리가 0이 아니라면
+            // 중복이 된 것이므로 다시 재할당을 받으세요.
             if (checkDup[randNum - 1] != 0)
                 continue;
 
             cnt++;
 
+            // 같은 숫자가 나오면 중복이 되도록 만들어주는 코
             checkDup[randNum - 1] = 1;
             System.out.printf("%d 번 = %d\n", i++, randNum);
 
@@ -64,6 +72,9 @@ public class Homework7 {
         System.out.println("B조 입니다.");
         // 4, 4
         for (; ; ) {
+                // B조는 8명이고, 앞에서 이미 10명이 체크 되었음.
+                // A조가 1~9번까지 이미 할당을 받음
+                // B조는 시작을 10번부터 해야하므로 +10
             randNum = (int) (Math.random() * 8) + 10;
 
             if (checkDup[randNum - 1] != 0)
@@ -73,7 +84,7 @@ public class Homework7 {
 
             checkDup[randNum - 1] = 1;
             System.out.printf("%d 번 = %d\n", i++, randNum);
-
+            // 전체 17명이 체크가 되면 종료
             if (cnt == 17) {
                 break;
             }

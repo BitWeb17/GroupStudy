@@ -1,6 +1,4 @@
-package Sixth;
-
-import java.util.Random;
+package SixthHomeworkReview;
 
 public class Homework4 {
     public static void main(String[] args) {

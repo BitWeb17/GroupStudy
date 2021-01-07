@@ -1,6 +1,6 @@
-package Sixth;
+package SixthHomeworkReview;
 
-public class Homework {
+public class Homework  {
     public static void main(String[] args) {
 
         int[] arr = new int[7];
