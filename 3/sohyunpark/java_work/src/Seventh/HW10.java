@@ -1,11 +1,12 @@
 package Seventh;
 
 class RandomArray{
-    int arr1[] = new int[10];
+    int Num = (int)(Math.random()*100);
+    int arr1[] = new int[Num];
 
     public void setArr1(){
 
-        for (int i = 0; i < 10; i++){
+        for (int i = 0; i < Num; i++){
             arr1[i] = (int)(Math.random()*10)+1;
             System.out.printf("arr1[%d] = %d\n", i, arr1[i]);
         }
