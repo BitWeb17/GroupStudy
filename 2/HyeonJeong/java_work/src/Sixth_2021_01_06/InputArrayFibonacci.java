@@ -1,4 +1,4 @@
-package Sixth_2020_01_06;
+package Sixth_2021_01_06;
 
 import java.util.Scanner;
 

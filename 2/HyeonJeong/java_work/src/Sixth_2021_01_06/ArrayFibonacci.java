@@ -1,6 +1,4 @@
-package Sixth_2020_01_06;
-
-import java.util.Scanner;
+package Sixth_2021_01_06;
 
 public class ArrayFibonacci {
     public static void main(String[] args) {
