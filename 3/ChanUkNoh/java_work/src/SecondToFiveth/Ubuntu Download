@@ -6,7 +6,7 @@ Ubuntu linux 다운로드
    링크: https://ubuntu.com/download/desktop
 
 2. 하위 호환성을 고려해 18.04버전을 다운 받는편이 좋음
-   Alternative doenloads and torrents에 접속한다.
+   Alternative download and torrents에 접속한다.
    링크: https://ubuntu.com/download/alternative-downloads
 
 3. Past releases and other image에 접속해 64-bit PC (AMD64) desktop image를
@@ -38,14 +38,14 @@ Ubuntu linux 다운로드
 축소할 공간 입력: 별도로 사용하고자 하는 디스크 크기를 적는다.
 축소 후 전체 크기: 현재 할당된 크기가 얼마로 줄어드는지 보여줌.
 
-예를 들어 100GB를 할당하려면 축호할 공간 입력 상자 100 x 1024를 입력하면 된다.
+예를 들어 100GB를 할당하려면 축할 공간 입력 상자 100 x 1024를 입력하면 된다.
 
-* 현재 축소된 상태로 내 컴퓨터에서 디스크가 여러개 분활된게 보이거나 디스크 관리에서 할당
+* 현재 축소된 상태로 내 컴퓨터에서 디스크가 여러개 분활된소 게 보이거나 디스크 관리에서 할당
   되지 않은 디스크가 보이면 된다.
 
 7. 앞서 다운 받은 UUI를 클릭하고 Agree를 클릭한다.
 
-8. Step 1: Select a Distribution from the dropdown to pun on your USB 위의
+8. Step 1: Select a Distribution from the dropdown to put on your USB 위의
    부분에서 Ubuntu를 선택한다. (UUI 버전은 2.0.0.0)
 
 9. Step 2: Browse to your ubuntu*desktop*.iso - 앞서 다운로드한 우분투 이미지를 선택
