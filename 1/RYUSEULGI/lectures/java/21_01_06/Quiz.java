@@ -1,7 +1,6 @@
 public class Quiz {
     public static void main(String[] args){
 
-    
         // 문제 1번
 
         int[] array = new int[7];
@@ -22,22 +21,23 @@ public class Quiz {
 
         // 문제 3번 
 
-        int[]pivonachi = new int[20];
+        int[]similarPivonachi = new int[20];
 
-        pivonachi[0] =1;
-        pivonachi[1] =1;
+        similarPivonachi[0] =1;
+        similarPivonachi[1] =1;
+        similarPivonachi[2] =3;
 
-        for(int i =2; i< pivonachi.length; i++){
-            pivonachi[i] = pivonachi[i - 1] + pivonachi[i - 2];
+        for(int i =3; i< similarPivonachi.length; i++){
+            similarPivonachi[i] = similarPivonachi[i - 3] + similarPivonachi[i - 1];
         }
-        System.out.println(pivonachi[19]);
+        System.out.println(similarPivonachi[19]);
 
         // 문제 4번
 
         float[] Arr = new float[3];
 
         for(int i=0; i<Arr.length; i++){
-            Arr[i] = (int)(Math.random() * 7);
+            Arr[i] = (float)(Math.random() * 10);
             System.out.println(Arr[i]);
         }
 
@@ -56,6 +56,8 @@ public class Quiz {
 
         // 문제 6번 
 
+        //내풀이
+
         int[] save = new int[100];
 
         for(int i =0; i < save.length; i++){
@@ -66,59 +68,45 @@ public class Quiz {
                 System.out.println(save[i]);
             }
 
+        // 강사님 풀이
+        // int cnt = 0;
+        // int[] save = new int[100];
+
+        // for(int i =1; i < save.length; i++){
+
+        //     if( i % 3 == 0){
+        //         save[cnt] = i;
+        //         System.out.println(save[cnt++]);
+        //     }
+        // }
 
         // 문제 7번 
 
-        // int k, randNum, cnt = 0;
-        // int[] checkDup = new int[17];
+        int k, randNum, count = 0;    // randNum 랜덤번호를 할당받기 위함 count 중복검토
+        int[] checkDup = new int[9];
 
-        // for(k = 0; k < 17; k++) {
-        //     checkDup[k] = 0;
-        // }
-
-        // System.out.println("A조 입니다.");
-        // // 5, 4
-        // for(k = 1; ;) {
-        //     randNum = (int)(Math.random() * 9) + 1;
-
-        //     if(checkDup[randNum - 1] != 0)
-        //         continue;
-
-        //     cnt++;
-
-        //     checkDup[randNum - 1] = 1;
-        //     System.out.printf("%d 번 = %d\n", k++, randNum);
-
-        //     if(cnt == 9) {
-        //         break;
-        //     }
-        // }1; ;) {
-        //     randNum = (int)(Math.random() * 9) + 1;
-
-        //     if(checkDup[randNum - 1] != 0)
-        //         continue;
-
-        //     cnt++;
-
-        //     checkDup[randNum - 1] = 1;
-        //     System.out.printf("%d 번 = %d\n", k++, randNum);
-
-        //     if(cnt == 9) {
-        //         break;
-        //     }
-        // }
-
-        // 변수 i, randNum, cnt 선언
-        // checkDup 배열의 수는 17
-        // checkDup 배열을 반복으로 돌린다.
-        // A조 입니다. 출력
-        // 1~9를 무한루프로 돌리는데 
-        // checkDup 배열의 수가 0이 아니라면 계속 반복
-        // count는 1씩 증가,
-        // ??
-        // 배열의 수가 9가 된다면 반복문을 멈춰라
-
+        for(k = 0; k < 9; k++) {
+            checkDup[k] = 0;
         }
-    }
 
+        System.out.println("A조 입니다.");
+
+        for(k = 1; ;) {
+            randNum = (int)(Math.random() * 9) + 1; 
+            if(checkDup[randNum - 1] != 0)
+                continue;
+
+            count++;
+
+            checkDup[randNum - 1] = 1;  
+            // 중복이라면 randNum은 1이 되고 
+            // continue때문에 재할당을 받게됨
+            System.out.printf("%d 번 = %d\n", k++, randNum);
+
+            if(count == 9) {
+                break;
+            }
+        }
+
+    }
 }
