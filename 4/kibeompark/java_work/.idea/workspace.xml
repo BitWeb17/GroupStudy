@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="7일 차 강의">
-      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sixth/Homework7.java" afterDir="false" />
+    <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="7일 차 과제">
+      <change afterPath="$PROJECT_DIR$/src/Seventh/ClassBasic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Homework2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Homework3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Homework4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Homework5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Homework6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Homework7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Question1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Question2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Question3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Quiz1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Quiz2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Quiz3_1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Quiz3_2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Quiz3_3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Quiz4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/Quiz5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/ScoreAverage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seventh/SmartScoreAverage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,6 +39,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="ProjectId" id="1mh0aphEKxBdEEROc3Uf7odPDKO" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -36,13 +57,18 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="RunManager" selected="Application.Homework7">
-    <configuration name="Homework3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sixth.Homework3" />
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Seventh" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Quiz5">
+    <configuration name="Exercise4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Seventh.Exercise4" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sixth.*" />
+          <option name="PATTERN" value="Seventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -50,12 +76,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sixth.Homework4" />
+    <configuration name="Exercise5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Seventh.Exercise5" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sixth.*" />
+          <option name="PATTERN" value="Seventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -63,12 +89,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sixth.Homework5" />
+    <configuration name="Quiz3_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Seventh.Quiz3_3" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sixth.*" />
+          <option name="PATTERN" value="Seventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -76,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sixth.Homework6" />
+    <configuration name="Quiz4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Seventh.Quiz4" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sixth.*" />
+          <option name="PATTERN" value="Seventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -89,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework7" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Sixth.Homework7" />
+    <configuration name="Quiz5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Seventh.Quiz5" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Sixth.*" />
+          <option name="PATTERN" value="Seventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Homework7" />
-        <item itemvalue="Application.Homework6" />
-        <item itemvalue="Application.Homework5" />
-        <item itemvalue="Application.Homework4" />
-        <item itemvalue="Application.Homework3" />
+        <item itemvalue="Application.Quiz5" />
+        <item itemvalue="Application.Exercise4" />
+        <item itemvalue="Application.Quiz4" />
+        <item itemvalue="Application.Exercise5" />
+        <item itemvalue="Application.Quiz3_3" />
       </list>
     </recent_temporary>
   </component>
@@ -163,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609931358657</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="7일 차 과제">
+      <created>1609940619523</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1609940619523</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -176,6 +209,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="2일 차 강의" />
@@ -184,6 +218,7 @@
     <MESSAGE value="5일 차 강의" />
     <MESSAGE value="6일 차 강의" />
     <MESSAGE value="7일 차 강의" />
-    <option name="LAST_COMMIT_MESSAGE" value="7일 차 강의" />
+    <MESSAGE value="7일 차 과제" />
+    <option name="LAST_COMMIT_MESSAGE" value="7일 차 과제" />
   </component>
 </project>
