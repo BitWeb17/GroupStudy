@@ -20,23 +20,23 @@ public class HomeWork6 {
         // 2팀: 최현정, 오진욱, 조진형, 이정현
         // 3팀: 이범진, 박소현, 탁성진, 노찬욱
         // 4팀: 박기범, 하진주, 이승윤, 최임식
-        final String ONE = "최현정";
-        final String TWO = "장해솔";
-        final String THREE = "박재민";
-        final String FOUR = "고동영";
-        final String FIVE = "이정현";
-        final String SIX = "류슬기";
-        final String SEVEN = "조진형";
-        final String EIGHT = "한다은";                // 배열을 사용했기 때문에 쓸모 없어진 변수들
-        final String NINE = "오진욱";
-        final String TEN = "노찬욱";
-        final String ELEVEN = "박소현";
-        final String TWELVE = "박기범";
-        final String THIRTEEN = "최임식";
-        final String FOURTEEN = "탁성진";
-        final String FIFTEEN = "하진주";
-        final String SIXTEEN = "이승윤";
-        final String SEVENTEEN = "이범진";
+//        final String ONE = "최현정";
+//        final String TWO = "장해솔";
+//        final String THREE = "박재민";
+//        final String FOUR = "고동영";
+//        final String FIVE = "이정현";
+//        final String SIX = "류슬기";
+//        final String SEVEN = "조진형";
+//        final String EIGHT = "한다은";              배열을 사용했기 때문에 쓸모 없어진 변수들
+//        final String NINE = "오진욱";
+//        final String TEN = "노찬욱";
+//        final String ELEVEN = "박소현";
+//        final String TWELVE = "박기범";
+//        final String THIRTEEN = "최임식";
+//        final String FOURTEEN = "탁성진";
+//        final String FIFTEEN = "하진주";
+//        final String SIXTEEN = "이승윤";
+//        final String SEVENTEEN = "이범진";
 
         int i, randNum, cnt = 0;
         int[] checkDup = new int[17];               // 인원수 크기의 배열 생성
@@ -51,7 +51,6 @@ public class HomeWork6 {
 
             if(checkDup[randNum - 1] != 0)          // 이미 뽑힌사람은 패스!
                 continue;
-
             cnt++;                                  // 뽑은 사람의 숫자를 센다
 
             checkDup[randNum - 1] = 1;              // 뽑힌 사람은 값으로 1을 할당해 다음번 뽑힐 시 패스 하도록 만듬.
