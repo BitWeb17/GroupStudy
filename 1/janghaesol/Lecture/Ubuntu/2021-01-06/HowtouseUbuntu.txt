@@ -11,6 +11,8 @@
       작업한 내용 및 변경 사항을 업데이트함
     - git push origin main
       커밋이 완료되었으므로 실제 깃헙 웹사이트에 내용을 저장함
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
     sudo apt-get update
     sudo apt-get install vim : 터미널 내용 insert시 마우스 이동해도 글자입력이 안되게 하는 것
     sudo apt-get install git
