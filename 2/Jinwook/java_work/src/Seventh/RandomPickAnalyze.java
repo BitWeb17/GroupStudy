@@ -1,4 +1,4 @@
-package Sixth;
+package Seventh;
 
 public class RandomPickAnalyze {
     public static void main(String[] args) {
