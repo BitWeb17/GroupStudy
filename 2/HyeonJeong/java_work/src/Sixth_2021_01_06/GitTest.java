@@ -1,4 +1,4 @@
-package Sixth;
+package Sixth_2021_01_06;
 
 public class GitTest {
     public static void main(String[] args) {
