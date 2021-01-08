@@ -25,5 +25,9 @@ public class Quiz4 {
         
         multiple2.setArr();
         multiple2.getArr();
+
+        // // Loop method 사용
+        // Loop loop = new Loop();
+        // loop.printTwiceOrder(1, 20, 2, 3, loop.AND);
     }
 }

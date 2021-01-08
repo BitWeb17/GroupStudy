@@ -24,5 +24,9 @@ public class Quiz5 {
         
         multiple3.setArr();
         multiple3.getArr();
+
+        // Loop method 사용
+        Loop loop = new Loop();
+        loop.printTwiceOrder(3, 33, 2, 3, loop.OR);
     }
 }

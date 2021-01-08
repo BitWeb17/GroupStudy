@@ -27,5 +27,11 @@ public class Quiz7 {
         Sawon sawon = new Sawon();
         sawon.random(20);
         System.out.println(sawon);
+
+        // Random method 활용
+        Random random = new Random();
+
+        random.setMember(20);
+        random.setRandom(random.DUPLICATE);
     }
 }

@@ -25,5 +25,9 @@ public class Quiz3 {
         
         multiple.setArr();
         multiple.getArr();
+
+        // Loop method 사용
+        Loop loop = new Loop();
+        loop.printValue(1, 20, 2);
     }
 }

@@ -20,5 +20,9 @@ public class Quiz2 {
         Add add = new Add();
 
         add.getplus();
+        
+        // Loop method 사용
+        Loop loop = new Loop();
+        loop.valueSum(1,10);
     }
 }

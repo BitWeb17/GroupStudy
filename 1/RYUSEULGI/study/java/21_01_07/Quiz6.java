@@ -3,5 +3,8 @@
 public class Quiz6 {
     public static void main(String[] args) {
         
+        // Loop method 사용
+        Loop loop = new Loop();
+        loop.Fibonacci(10);
     }
 }
