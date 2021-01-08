@@ -32,7 +32,6 @@ public class HomeWork3 {
             arr[i] = arr[i - 1] + arr[i - 3];
             //System.out.printf("arr[%d] = %d\n", i , arr[i]);
             System.out.printf("[%d]번째 배열 = %d\n", i, arr[i]);
-
         }
     }
 }

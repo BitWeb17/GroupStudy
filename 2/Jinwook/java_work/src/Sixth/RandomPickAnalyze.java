@@ -39,6 +39,7 @@ public class RandomPickAnalyze {
         final String SIXTEEN = "이승윤";
         final String SEVENTEEN = "이범진";
 
+
         int i, randNum, cnt = 0;
         int[] checkDup = new int[17];
 
