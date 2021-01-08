@@ -1,3 +1,5 @@
+package Sixth_Quiz;
+
 public class SixthQuiz3 {
     public static void main(String[] args) {
         // 1, 1, 3, 4, 5, 8, 12, 17, 25, 37, 54, 79, ...

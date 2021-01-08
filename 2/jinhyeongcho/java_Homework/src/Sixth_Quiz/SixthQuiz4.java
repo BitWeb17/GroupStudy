@@ -1,4 +1,4 @@
-
+package Sixth_Quiz;
 
 public class SixthQuiz4 {
     public static void main(String[] args) {
