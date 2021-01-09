@@ -1,7 +1,5 @@
 package Seventh.Homework;
 
-import java.util.Random;
-
 
 //        }
 public class Homework10 {
