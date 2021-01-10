@@ -37,7 +37,7 @@ class Num {
 
         int cnt = 1;
         for (int i = fistNum; i <= lastNum; i++) {
-            if (i % 7 == 0) {
+            if (i % divNum == 0) {
                 System.out.printf("%3d", i);
             }
             if (cnt % 5 == 0) {
@@ -47,4 +47,5 @@ class Num {
         cnt++;
 
     }
+
 }

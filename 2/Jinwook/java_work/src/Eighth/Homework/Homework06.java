@@ -1,4 +1,7 @@
 package Eighth.Homework;
+
+import java.util.Random;
+
 //특수한 주사위 게임이다.
 //   플레이어의 수는 3명이라고 가정한다.
 //   주사위는 1개 있으며 이 주사위는 정팔면체이다.
@@ -21,8 +24,31 @@ package Eighth.Homework;
 //ex) A: 7(5 + 2), B: 7(5 + 2), C: 9(1 + 8)
 //       7 - 3 = 4    7 + 3 = 10
 //       4 + 3 = 7
+class DiceGame{
+    int [] player;
+    int dice;
+    public DiceGame(int num){
+        this.player = new int[num];
+
+    }
+    public void dice(){
+        int cnt = 1;
+        for(int i = 0; i < player.length; i++){
+            player[i] = (int)(Math.random()*8)+1;
+            System.out.println("dice " + player[i]);
+
+        }
+        cnt++;
+    }
+//    public int getDice( ){
+//
+//    }
+
+}
 public class Homework06 {
     public static void main(String[] args) {
+        DiceGame dg = new DiceGame(3);
+        dg.dice();
 
     }
 }

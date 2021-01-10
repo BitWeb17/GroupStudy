@@ -23,7 +23,7 @@ public class MySeriesClass {
     }
 
     public void printValue(int start, int end) {
-        int cnt = 1;
+        int cnt = 1;//이걸 왜넣지???
 
         for(int i = start; i <= end; i++) {
             System.out.printf("%3d", i);

@@ -33,6 +33,7 @@ public class RandomAlloc {
     }
 
     public void prepareEmployee(int num) {
+
         employee = new int[num];
     }
 
