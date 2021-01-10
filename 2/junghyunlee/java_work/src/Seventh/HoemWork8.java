@@ -1,51 +1,40 @@
-package Seventh;
+/*package Seventh;
 
 import java.util.Arrays;
 
-class staffPerson2{
-    int[] staffMember;
-    int i, randNum, cnt;
+class staffPerson2 {
 
-    public void randomNumber(int num){
-        int[] staffMember = new int[num];
+    int [] staffMember;
+    int i = 0, randNum, cnt = 0;
 
-        for(i = 1; i <= num; i++) {
+    public void randomNumber2(int num) {
+        int[] staffMember2 = new int[num];
+        int[] checkDup = new int[num];
 
-            randNum = (int)(Math.random() * 21) + 1;
-            System.out.println("A조 입니다.");
-            if(staffMember[randNum] != 0)
+        for (i = 0; i < num; i++) {
+            staffMember[i] = 0;
+        }
+
+        for (i = 1; ; ) {
+
+            randNum = (int) (Math.random() * 21) + 1;
+
+            if (staffMember[randNum - 1] != 0)
                 continue;
 
             cnt++;
 
-            staffMember[randNum] = 1;
-            System.out.printf("%d 번 = %d\n", i++, randNum);
+            staffMember[randNum - 1] = 1;
 
-            if(cnt == 20) {
+            if (cnt == 20) {
                 break;
             }
+
         }
-        }
-    //}
-
-    @Override
-    public String toString() {
-        return "staffPerson{" +
-                "staffMember=" + Arrays.toString(staffMember) +
-                '}';
-    }
-
-}
-
-
 
 
 
 public class HoemWork8 {
-    public static void main(String[] args) {
-        // 7번 문제를 중복이 허용되지 않도록 만든다.
-        staffPerson sta = new staffPerson();
-        sta.randomNumber(20);
-        System.out.println(sta);
+        public static void main(String[] args) {
     }
-}
+}*/
