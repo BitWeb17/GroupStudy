@@ -46,7 +46,6 @@ class DicePlayer {
 
             scores[i]  = randomDice + randomDice2 + randomDice3;
             System.out.printf("%d 번째 사람의 주사위 총 값 = %d\n\n", i, scores[i]);
-
 //            System.out.println("scores[1] = " + scores[1]);
 //            System.out.println("scores[2] = " + scores[2]);
 //            System.out.println("scores[3] = " + scores[3]);
@@ -66,7 +65,6 @@ class DicePlayer {
             }
         }
     }
-
 }
 
 
