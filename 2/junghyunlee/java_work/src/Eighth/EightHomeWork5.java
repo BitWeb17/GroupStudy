@@ -121,5 +121,6 @@ public class EightHomeWork5 {
         // 컴퓨터와 가위 바위 보 게임을 할 수 있도록 프로그램을 만들어보자!
         GameStart gs = new GameStart();
         gs.GamePlayerFirst();
+
     }
 }

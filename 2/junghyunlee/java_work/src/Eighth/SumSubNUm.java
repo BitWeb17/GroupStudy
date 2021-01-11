@@ -19,7 +19,6 @@ public class SumSubNUm {
                 fifthSum += i;
             }
         }
-
         System.out.printf("%d의 배수의 합 = %d\n", oderThirdNum, thirdSum);
         System.out.printf("%d의 배수의 합 = %d\n", orderFifthNum, fifthSum);
         System.out.printf("%d 의 배수와 %d 의 배수의 합 = %d\n",

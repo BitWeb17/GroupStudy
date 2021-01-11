@@ -24,5 +24,6 @@ public class EightHomeWork6 {
         //   ex) A: 7(5 + 2), B: 7(5 + 2), C: 9(1 + 8)
         //       7 - 3 = 4    7 + 3 = 10
         //       4 + 3 = 7
+
     }
 }

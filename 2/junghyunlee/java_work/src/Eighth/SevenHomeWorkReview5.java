@@ -9,3 +9,4 @@ public class SevenHomeWorkReview5 {
                 2, 3, ms.OR);
     }
 }
+

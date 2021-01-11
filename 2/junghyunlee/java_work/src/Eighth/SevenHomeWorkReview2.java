@@ -9,3 +9,4 @@ public class SevenHomeWorkReview2 {
             "1 ~ 10 까지의 합 = " + ms.valueSum(1, 10));
 }
 }
+

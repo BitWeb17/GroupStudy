@@ -54,6 +54,5 @@ public class EightHomeWork12 {
         ft.aFactoryOneday(10);
         ft.bFactoryOneday(2.5f);
         ft.factoryDivision(3);
-
     }
 }

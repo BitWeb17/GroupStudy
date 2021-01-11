@@ -78,5 +78,6 @@ public class  EightHomeWork4 {
         DicePlayer dp = new DicePlayer();
         dp.DiceGamePlayer(5);
         dp.DiceStart();
+
     }
 }

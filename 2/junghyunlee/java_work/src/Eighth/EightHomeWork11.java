@@ -36,6 +36,5 @@ public class EightHomeWork11 {
         }
 
         // 배열 n 개 - 랜덤수 = 배열 n 개
-
     }
 }

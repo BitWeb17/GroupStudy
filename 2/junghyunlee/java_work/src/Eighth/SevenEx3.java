@@ -80,6 +80,7 @@ class ScoreCalculator {
     }
 }
 
+
 public class SevenEx3 {
     public static void main(String[] args) {
         // 3) 학급에 학생이 20 명 있다.

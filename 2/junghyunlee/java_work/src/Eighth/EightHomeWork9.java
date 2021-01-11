@@ -335,5 +335,6 @@ public class EightHomeWork9 {
         } else if(scc3.getStdDeviation() > scc1.getStdDeviation() && scc3.getStdDeviation() > scc2.getStdDeviation()) {
             System.out.println("3반이 전체 학급의 표준편차가 가장 높습니다.");
         }
+
     }
 }

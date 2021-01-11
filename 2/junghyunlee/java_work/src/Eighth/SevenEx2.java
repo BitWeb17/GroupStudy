@@ -38,6 +38,7 @@ class ContainerManager {
     }
 }
 
+
 public class SevenEx2 {
     public static void main(String[] args) {
         // 2) 화물을 적재하는 기준이 64 개 단위다.

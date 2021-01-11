@@ -43,10 +43,6 @@ public class EightTotalNum {
             System.out.printf("%d x %d = %2d 입니다.\n", orderNum, i, orderNum * i);
         }
     }
-
-
-
-
 }
 
 
