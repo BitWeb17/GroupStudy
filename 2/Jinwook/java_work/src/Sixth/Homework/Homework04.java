@@ -1,4 +1,4 @@
-package Sixth;
+package Sixth.Homework;
 
 public class Homework04 {
     public static void main(String[] args) {
