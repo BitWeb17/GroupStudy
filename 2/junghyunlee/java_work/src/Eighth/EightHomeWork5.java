@@ -1,7 +1,6 @@
 package Eighth;
 
 class GameStart{
-
     public void GamePlayerFirst(){
         System.out.printf("컴퓨터와 가위 바위 보 게임을 시작합니다.\n");
         System.out.printf("1.가위 2.바위 3.보\n");
@@ -120,7 +119,6 @@ class GameStart{
 public class EightHomeWork5 {
     public static void main(String[] args) {
         // 컴퓨터와 가위 바위 보 게임을 할 수 있도록 프로그램을 만들어보자!
-        // (무승부로 끝날 수도 있다)
         GameStart gs = new GameStart();
         gs.GamePlayerFirst();
     }

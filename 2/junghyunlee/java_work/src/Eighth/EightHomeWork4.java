@@ -13,7 +13,6 @@ class DicePlayer {
         System.out.printf("플레이어는 %d명 입니다.\n\n", num);
     }
 
-
     public void DiceStart() {
         for (int i = 1; i <= 5; i++) { //
 
@@ -25,7 +24,6 @@ class DicePlayer {
                 System.out.printf("%d 번째 사람의 1 번째 주사위 결과값 = %d\n", i, randomDice);
             }
 
-
             int randomDice2 = (int) (Math.random() * 6) + 1;
             if (randomDice2 == 6) {
                 randomDice2 = 0;
@@ -34,7 +32,6 @@ class DicePlayer {
                 System.out.printf("%d 번째 사람의 2 번째 주사위 결과값 = %d\n", i, randomDice2);
             }
 
-
             int randomDice3 = (int) (Math.random() * 6) + 1;
             if (randomDice3 == 6) {
                 randomDice3 = 0;
@@ -42,7 +39,6 @@ class DicePlayer {
             } else {
                 System.out.printf("%d 번째 사람의 3 번째 주사위 결과값 = %d\n", i, randomDice3);
             }
-
 
             scores[i]  = randomDice + randomDice2 + randomDice3;
             System.out.printf("%d 번째 사람의 주사위 총 값 = %d\n\n", i, scores[i]);
@@ -82,6 +78,5 @@ public class  EightHomeWork4 {
         DicePlayer dp = new DicePlayer();
         dp.DiceGamePlayer(5);
         dp.DiceStart();
-        //dp.sumTotalDice();
     }
 }

@@ -262,8 +262,6 @@ class ScoreCalculator3{
             cnt++;
         }
     }
-
-
 }
 
 public class EightHomeWork9 {
@@ -274,7 +272,6 @@ public class EightHomeWork9 {
         //   평균이 가장 높은 학급,
         //   표준편차가 가장 낮은 학급,
         //   표준편차가 가장 큰 학급을 선별하도록 프로그래밍 해보자!
-
         ScoreCalculator1 scc1 = new ScoreCalculator1(20);
         ScoreCalculator2 scc2 = new ScoreCalculator2(21);
         ScoreCalculator3 scc3 = new ScoreCalculator3(18);
