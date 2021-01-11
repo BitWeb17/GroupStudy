@@ -3,5 +3,8 @@
 public class Q8 {
     public static void main(String[] args) {
         
+        RockSissosPaper rsp = new RockSissosPaper(true);
+
+        rsp.playGame();
     }
 }
