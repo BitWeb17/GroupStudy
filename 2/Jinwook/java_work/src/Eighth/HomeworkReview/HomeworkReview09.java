@@ -1,8 +1,12 @@
 package Eighth.HomeworkReview;
 
 public class HomeworkReview09 {
-    public static void insertSort(float[] arr, int[] cn) {
-        int i, j, classKey, len = arr.length;
+
+    //정렬을 위한 메소드
+   public static void insertSort(float[] arr, int[] cn) {
+
+       //
+       int i, j, classKey, len = arr.length;
         float arrKey;
 
         for(i = 1; i < len; i++) {

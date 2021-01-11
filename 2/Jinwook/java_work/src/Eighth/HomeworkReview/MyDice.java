@@ -30,6 +30,7 @@ public class MyDice {
             playerArr[i] = i + 1;
         }
     }
+    ///6번을 위한 생성자 및 메소드 시작~~~~~~~~~~하겠습니다.
     public MyDice(int playerNum){ // 6번 위한 생성자입니다.
         this.playerNum = playerNum;
         octahedronGame = true;
@@ -45,6 +46,7 @@ public class MyDice {
     }
 
     public void playGame() {
+        // 4번을 위한 메소드
         // 사용자 숫자만큼 반복
         for(int i = 0; i < playerNum; i++) {
             // 사용자가 가지고 있는 주사위 숫자만큼 반복
