@@ -3,8 +3,9 @@ package Seventh;
 import java.util.Arrays;
 
 class staffPerson{
-    int[] staffMember;
     int i;
+    int[] staffMember;
+
 
     public void randomNumber(int num){
         staffMember = new int[num];
@@ -13,6 +14,8 @@ class staffPerson{
             staffMember[i - 1] = (int)(Math.random() * 20) + 1;
         }
     }
+
+
 
     @Override
     public String toString() {
