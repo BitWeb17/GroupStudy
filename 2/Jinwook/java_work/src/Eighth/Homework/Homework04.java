@@ -40,9 +40,9 @@ class DicePlayer {
     }
 
     public void setDiceSum() {
-
+        diceSum = 0;
         for (int i = 1; i <= player.length; i++) {
-            diceSum = 0;
+
             if (diceONE == 6) {
                 diceSum -= 6;
             }
@@ -52,8 +52,8 @@ class DicePlayer {
             if (diceThree == 6) {
                 diceSum -= 6;
             }
-            diceSum = diceONE + diceTwo + diceThree;
-            System.out.println("sum = " + diceSum);
+//            diceSum[i] = diceONE + diceTwo + diceThree;
+//            System.out.println("sum = " + diceSum);
         }
 
     }
