@@ -1,5 +1,10 @@
 package Eighth;
 
+class diceGameStart{
+
+
+        }
+
 public class EightHomeWork6 {
     public static void main(String[] args) {
         //6) 특수한 주사위 게임이다.
@@ -24,6 +29,9 @@ public class EightHomeWork6 {
         //   ex) A: 7(5 + 2), B: 7(5 + 2), C: 9(1 + 8)
         //       7 - 3 = 4    7 + 3 = 10
         //       4 + 3 = 7
+
+        DicePlayer dp = new DicePlayer();
+        dp.DiceGamePlayer(3);
 
     }
 }
