@@ -27,7 +27,7 @@ class ClassA {
         }
     }
 
-    public void getScoreAverage() {
+    public void setAverage() {
         int sum = 0;
 
         for(int i = 0; i < studentNum; i++) {
@@ -90,7 +90,7 @@ public class Quiz03 {
 
         System.out.println("학생들의 점수를 출력합니다.");
         ca.printScores();
-        ca.getScoreAverage();
+        ca.setAverage();
         System.out.println("이 반의 평균은 = " + ca.getAverage());
 
         ca.calcVariance();
