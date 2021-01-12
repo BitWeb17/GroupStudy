@@ -26,7 +26,7 @@ public class Rock_Paper_Scissors {
         scanner = new Scanner(System.in);     // 무승부일 경우 게임이 끝나지 않음
         if(is_Duel_Mode != true) {
             System.out.println("If you want to play [duel mode] please set up [true]");
-        } else if(this.is_Duel_Mode = true){
+        } else if(is_Duel_Mode = true){
             System.out.println("[duel mode]");
         }
     }
