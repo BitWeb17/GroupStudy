@@ -6,6 +6,7 @@ public class EightHomework1 {
     public static void main(String[] args) {
         MySeries ms = new MySeries();
 
-        ms.printValue(1, 10);
+        ms.testPrintValue(1, 10);
+
     }
 }
