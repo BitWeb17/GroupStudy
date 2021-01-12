@@ -124,15 +124,17 @@ package Ninth;
         그런데 이 부분이 이해가 안되고 그렇게 실행만 된다는걸 알아서 질문드립니다.
 
         ex)
-        int []arr = new int[100]
-        for(int i = 0; i < 100; i++){
+        final FIXNUM = 100;
+        int []arr = new int[FIXNUM]
+        for(int i = 0; i < FIXNUM; i++){
 
         }
         이런식으로 코드를 형태를 보였던거 같은 위의 질문 에러가 발생합니다.
 
         그래서
-        int []arr = new int[100 + 1]
-        for(int i = 0; i < 100; i++){
+        final FIXNUM = 100;
+        int []arr = new int[FIXNUM + 1]
+        for(int i = 0; i < FIXNUM; i++){
 
         }
         이런식으로 고치면 해결되는데 그 이유는 전혀 이해가 안됩니다.
