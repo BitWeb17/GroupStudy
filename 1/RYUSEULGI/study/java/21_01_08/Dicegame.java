@@ -158,3 +158,6 @@ public class Dicegame {
 }
 
 
+// My dice 75번째 줄 switch (octahedronDice) case 2에서 for( int j = i - 1; j >= 0; j--) 반복문이 왜 이전의 합을 얻은 사람들인가?
+// RockSissosPaper final int을 하면 오류가 생기는데 public static final int으로 하면 오류가 사라진
+
