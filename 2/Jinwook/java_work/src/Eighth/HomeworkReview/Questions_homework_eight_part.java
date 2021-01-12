@@ -19,7 +19,7 @@ public class Questions_homework_eight_part {
 //        }
 //    }
 
-        // WorkRate class에서 requiredMinute 구하는 식 (56번째 줄) 구조 한번더 설명 부탁드리겠습니다!요
+        // WorkRate class에서 requiredMinute 구하는 식 (56번째 줄) 구조 한번더 설명 부탁드리겠습니다!
 
         // WorkRate class에서 64번째 줄 public void printInfo() {
         // (getter라고 불리는 메소드인가????)
