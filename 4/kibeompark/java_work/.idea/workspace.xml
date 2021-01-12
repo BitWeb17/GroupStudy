@@ -2,24 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="9일 차 강의">
-      <change afterPath="$PROJECT_DIR$/src/Ninth/AllocRandom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework10.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework11.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework12.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework4.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework6.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework7.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework8.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/Homework9.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/MyDice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/RockPaperScissors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ninth/ScoreCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tenth/DoubleArrayTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tenth/Exercise1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tenth/FirstPrivate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tenth/Matrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tenth/MySeries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tenth/PrintSimpleNumberTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Eighth/MySeries.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Eighth/MySeries.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ninth/Homework12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ninth/Homework12.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ninth/MyDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ninth/MyDice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,16 +57,17 @@
       <recent name="Eighth" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Tenth" />
       <recent name="Seventh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Homework12">
-    <configuration name="Homework11" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ninth.Homework11" />
+  <component name="RunManager" selected="Application.Exercise1">
+    <configuration name="DoubleArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tenth.DoubleArrayTest" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ninth.*" />
+          <option name="PATTERN" value="Tenth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -83,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework12" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ninth.Homework12" />
+    <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tenth.Exercise1" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ninth.*" />
+          <option name="PATTERN" value="Tenth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -96,11 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework6 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ninth.Homework6" />
+    <configuration name="FirstPrivate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tenth.FirstPrivate" />
+      <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ninth.*" />
+          <option name="PATTERN" value="Tenth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +101,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework6" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ninth.Homework6" />
-      <module name="java_work" />
+    <configuration name="PrintSimpleNumberTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tenth.PrintSimpleNumberTest" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ninth.*" />
+          <option name="PATTERN" value="Tenth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Homework8" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Ninth.Homework8" />
+    <configuration name="PrintSimpleNumberTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tenth.PrintSimpleNumberTest" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Ninth.*" />
+          <option name="PATTERN" value="Tenth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -136,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Homework12" />
-        <item itemvalue="Application.Homework6" />
-        <item itemvalue="Application.Homework8" />
-        <item itemvalue="Application.Homework6 (1)" />
-        <item itemvalue="Application.Homework11" />
+        <item itemvalue="Application.Exercise1" />
+        <item itemvalue="Application.DoubleArrayTest" />
+        <item itemvalue="Application.PrintSimpleNumberTest" />
+        <item itemvalue="Application.PrintSimpleNumberTest (1)" />
+        <item itemvalue="Application.FirstPrivate" />
       </list>
     </recent_temporary>
   </component>
