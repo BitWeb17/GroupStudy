@@ -40,7 +40,7 @@ class Game{
                 diceNum = (int)(Math.random() * 8 ) + 1;
 
                 if ( diceNum % 2 != 0){
-                    continue;
+                    // continue;
                 }
                 // 주사위 [단 최초 한 번만 허용된다] 
 
@@ -56,5 +56,8 @@ class Game{
 public class Q6 {
     public static void main(String[] args) {
         
+        Dicegame dicegame = new Dicegame(3);
+        dicegame.playOctahedron();
+        dicegame.printSumOfOctahedronDice();
     }
 }

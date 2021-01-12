@@ -50,18 +50,22 @@ class VsComputer{
         return rockSissorsPeper;
     }
 
-    public String printWinner(){
-        // 승자 찾기
-    }
+    // public String printWinner(){
+    //     // 승자 찾기
+    // }
 }
 public class Q5 {
     public static void main(String[] args) {
-        VsComputer vsComputer = new VsComputer();
+        // VsComputer vsComputer = new VsComputer();
 
-        System.out.println("가위바위보!");
+        // System.out.println("가위바위보!");
 
-        vsComputer.setUser();
-        vsComputer.setComputer();
-        vsComputer.printWinner();
+        // vsComputer.setUser();
+        // vsComputer.setComputer();
+        // vsComputer.printWinner();
+
+        RockSissosPaper rsp = new RockSissosPaper();
+
+        rsp.playGame();
     }
 }
