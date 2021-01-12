@@ -14,7 +14,7 @@
 
         질문  : sumOfDice = new int[playerNum]; 부분에서 왜 sumOfDice를 playnum 배열로 했는가?
 
-  Q2) Homework8
+  Q2) Homework8요
                RockPaperScissors(boolean duel) {
                scan = new Scanner(System.in);
                if(duel != true) {
