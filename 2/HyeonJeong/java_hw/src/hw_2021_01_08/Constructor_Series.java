@@ -1,14 +1,11 @@
 package hw_2021_01_08;
 
-public class ConstructorSeries {
-    public final int EVEN = 1;
-    public final int SUB = 2;
+public class Constructor_Series {
     int sum;
     int start;
     int end;
 
-
-    public ConstructorSeries(int start, int end) {
+    public Constructor_Series(int start, int end) {
         this.start = start;
         this.end = end;
     }
@@ -42,7 +39,7 @@ public class ConstructorSeries {
         }
     }
 
-    public int sumSubNum() {
+    public int sumOddNum() {
         for(int i = start; i <= end; i++) {
             if(i % 2 != 0) {
                 sum += i;
