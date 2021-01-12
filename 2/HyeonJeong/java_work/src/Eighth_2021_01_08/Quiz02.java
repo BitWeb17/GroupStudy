@@ -51,7 +51,7 @@ public class Quiz02 {
         System.out.println("AND NOT 결과 = "+ res);
 
         if(cm.isBaseOf64()) {
-            System.out.printf("결과는 %d의 배수가 맞니다\n",cm.getBase());
+            System.out.printf("결과는 %d의 배수가 맞습니다\n",cm.getBase());
         } else {
             System.out.printf("결과는 %d의 배수가 아닙니다\n",cm.getBase());
         }

@@ -114,7 +114,7 @@ class RSPGame {
                 case NONDRAW:
                     if((com > player || com < player)){
                         finish = true;
-                        System.out.println("----------경 기 --------");
+                        System.out.println("----------경 기 끝--------");
 
                         break;
                     }
