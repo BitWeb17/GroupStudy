@@ -1,24 +1,25 @@
 package jan0113;
-class common{
-    private String size;
-    private String name;
-    private String species;
-    private String enginePA;
 
-    public common(String size,String name,String species,String enginePA) {
-        this.size = size;
-        this.name = name;
+class Transport{
+    private final String size;
+    private final String nic;
+    private final String species;
+    private final String enginePA;
+
+    public Transport(String Size,String nic,String species,String enginePA) {
+        this.size = Size;
+        this.nic = nic;
         this.species = species;
         this.enginePA = enginePA;
     }
         public String getSize() {
             return size;
         }
-        public String getName() {
-            return name;
+        public String getnic() {
+            return nic;
         }
 
-        public String getSpecies() {
+        public String getspecies() {
             return species;
         }
         public String getenginePA(){
@@ -27,32 +28,48 @@ class common{
 
     @Override
     public String toString() {
-        return "common{" +
+        return "Transport{" +
                 "size='" + size + '\'' +
-                ", name='" + name + '\'' +
+                ", nic='" + nic + '\'' +
                 ", species='" + species + '\'' +
                 ", enginePA='" + enginePA + '\'' +
                 '}';
     }
 }
 
-class overseas extends common {
-    private String canFishingOrNot ;
 
-    public overseas(String size,String name,String species,String enginePA, String canFishingOrNot) {
-        super(size, name, species, enginePA);
+class overseas extends Transport {
+    private String canFishingOrNot;
+
+    public overseas(String size, String nic, String species, String enginePA, String canFishingOrNot) {
+        super(size, nic, species, enginePA);
         this.canFishingOrNot = canFishingOrNot;
     }
 
-    public void test(){
-        System.out.println(super.getName());
+    public void setCanFishingOrNot(String canFishingOrNot) {
+        this.canFishingOrNot = canFishingOrNot;
     }
 
+}
 
+class land extends Transport{
+    private String wheel;
+
+    public land(String size, String nic, String species, String enginePA,String wheel){
+        super(size, nic, species, enginePA);
+        this.wheel = wheel;
     }
 
+}
 public class Homework2 {
     public static void main(String[] args) {
+        overseas T = new overseas("대형","타이타","배","유","불가능하니ek ");
+            System.out.println(T);
 
+        land L = new land("소형","스케이트보드","취미용","무","4개");
+        System.out.println(L);
+        }
     }
-}
+
+
+
