@@ -1,3 +1,4 @@
+/*
 package jan0112;
 
 public class homework1_1 {
@@ -8,3 +9,4 @@ public class homework1_1 {
     }
 
 }
+ */

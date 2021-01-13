@@ -1,8 +1,10 @@
+/*
 package jan0112;
 class pricelessMatrix {
     private final int maxRow, Max, space;
     private final int[][] zip;
     private final int[] array;
+
 
     public pricelessMatrix(int space, int maxRow, int Max) {
         this.space = space;
@@ -11,7 +13,7 @@ class pricelessMatrix {
         array = new int[space];
         zip = new int[maxRow][Max];
     }
-    /*
+
     public void GiveNum{
     int[][] zip = new int[3][3];
 
@@ -23,7 +25,7 @@ class pricelessMatrix {
             System.out.println("");
         }
 
-     */
+
 
     public void printpricelessMatrix(){
         int[][] zip = new int[maxRow][Max];
@@ -45,7 +47,8 @@ class pricelessMatrix {
 
 
 
-/*
+
+
 class pricelessMatrix {
     private final int maxRow, Max;
     private int fisrt, second, third;
@@ -76,6 +79,8 @@ class pricelessMatrix {
 
 
             }
+
+ */
     /*
     public void pricelessMatrixA(){
 
@@ -85,8 +90,8 @@ class pricelessMatrix {
             }
         }
     }
+*/
 
-     */
 
     /*
     오늘 만든 Matrix 클래스를 개조하여
