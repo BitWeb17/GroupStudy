@@ -7,6 +7,7 @@ class WorkRate {
     //     그렇다면 이들은 몇 일 후에 제품을 납품할 수 있을까 ?
     final int DAYHOUR = 24;
 
+    float rate;
     float rateA;
     float rateB;
     float completeHour;
@@ -21,38 +22,38 @@ class WorkRate {
     public WorkRate(float hourA, float productionA,
                     float hourB, float productionB, int day) {
 
-        rateA = productionA / hourA; // A 작업률
-        rateB = productionB / hourB; // b 작업률
-        completeHour = day * DAYHOUR; // 완료시간
-        amountOfWork = (rateA + rateB) * completeHour; // 두 공장의 작업량
+        rateA = productionA / hourA;
+        rateB = productionB / hourB;
+        rate = rateA + rateB;
+        completeHour = day * DAYHOUR;
+        //amountOfWork = (rateA + rateB) * completeHour;
+        amountOfWork = rate * completeHour;
     }
 
     public void calcRemainHour(int accidentDay) {
-        //아래의 fireStop 클래스 끌어온
+        // A 공장이 가동을 몇 일 정지했는가에 따라
+        // 채워야 하는 작업을 채우지 못하게 되니
         fireStop(rateA, accidentDay);
 
-        //두공장의 작업량(Amount) 를 두공장의 작업률(Rate)로 나누기 + 사고날짜 *24시간 = 총 3일이 추가된 요구되는 총 시간 알 수 있음.
-        totalHour = (amountOfWork / (rateA + rateB)) +
+        //totalHour = (amountOfWork / (rateA + rateB)) +
+        //        accidentDay * DAYHOUR;
+        totalHour = (amountOfWork / this.rate) +
                 accidentDay * DAYHOUR;
     }
 
-    //
-    public void fireStop(float rate, int day) {
-
-        amountOfWork -= rateB * day * DAYHOUR;
-        //amountOfWork = amountOfWork -  rateB * day * DAYHOUR
-        //불난 시간을 적용한 총 작업량 = 총작업량에서 3일의 B공장의 작업량을 빼면 알 수 있다.
+    // amountOfWork: 필요한 전체 작업량
+    // A가 멈추면서 B가 3일동안 혼자 돌아야하므로
+    // fireStop에서는 놀지 않는 녀석의 작업량을 차감시킴
+    private void fireStop(float rate, int day) {
+        // 계산이 완료되면 B가 혼자 3 일 까고 남은 수치가 amountOfWork에 배치됨
+        amountOfWork -= (this.rate - rate) * day * DAYHOUR;
     }
 
-    //보기 좋게 프린트 하기 위해 생성한 메소드
     public void printConversionHour2ComfortFormat() {
         System.out.printf("전체 걸리는 시간 = %f\n", totalHour);
 
-        // 날짜를 알아보는 식 /는 나누는
         requiredDay = (int)totalHour / 24;
-        // 시간을 알아보는 식 %는 나눈 나머지를 구하는 식
         requiredHour = (int)totalHour % 24;
-        // 분을 알아보는 식
         requiredMinute = ((int)(totalHour * 10) % 10) * 6;
         // 60 * 0.6 = 60 * 6 / 10
 
@@ -62,12 +63,12 @@ class WorkRate {
     }
 
     public void printInfo() {
-        // 총 작업량 프린트 위한 메소드(getter라고 불리는 메소드????)
         //System.out.println("A의 작업률 = " + rateA);
         //System.out.println("B의 작업률 = " + rateB);
         System.out.println("총 작업량 = " + amountOfWork);
     }
 }
+
 public class HomeworkReview12 {
     public static void main(String[] args) {
         // 12) A 공장의 생산량은 10 시간에 100개
@@ -85,5 +86,8 @@ public class HomeworkReview12 {
         wr.printInfo();
 
         wr.printConversionHour2ComfortFormat();
+
+        //wr.fireStop(10, 3);
+        //wr.printInfo();
     }
 }
