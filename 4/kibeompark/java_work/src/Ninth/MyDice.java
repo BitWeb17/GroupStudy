@@ -156,6 +156,11 @@ public class MyDice {
         //  8     4     6       - 주사위 눈금
         // [0]   [1]   [2]      - 배열의 인덱스
 
+        // 요약 :
+        // i 가 기준점
+        // j 는 i 보다 앞에 있는 모든 대상들
+        // 기준점 앞에 있는 값들이 기준점보다 큰가 ?
+        // 크다면 위치를 조정한다.
         for (i = 1; i < len; i++) {
             numKey = sumOfDice[i];
             playerNoKey = playerArr[i];
