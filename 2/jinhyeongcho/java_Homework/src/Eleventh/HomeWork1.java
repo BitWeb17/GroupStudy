@@ -29,13 +29,13 @@ class Human extends Animal {
 
     @Override
     public String toString() {
-        return "Human{'" +Human+
-                "'사람은 동물입니다.'" + '\'' +
+        return "Human{'" +  super.getAnimal() +"'은 사람이 아닙니다'" +Human+
+                "'은 동물입니다.'" + '\'' +
                 '}';
     }
 }
 
-    public class HumanAnimal {
+    public class HomeWork1 {
     public static void main(String[] args) {
         Animal a = new Animal("고양이");
         System.out.println(a);
