@@ -24,6 +24,7 @@ public class Allocate_Random_Array {
         for(int i = 0; i < random_array.length; i++) {
             random_array[i] = (int)(Math.random() * RANGE_VALUE) + BIAS_VALUE;
             index_array[i] = i; // index_array[i]가 왜 i가 되는가??
+            //
         }
     }
 
