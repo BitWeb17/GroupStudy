@@ -34,14 +34,14 @@ public class Matrix {
             int totalLen = row * col;
             int[] tmp = new int[totalLen];
 
-            System.out.println("arr.length = " + arr.length);
-            System.out.println("arr[0].length = " + arr[0].length);
+//            System.out.println("arr.length = " + arr.length);
+//            System.out.println("arr[0].length = " + arr[0].length);
             for(int i = 0; i < arr.length; i++) {
                 for(int j = 0; j < arr[0].length; j++) {
                     tmp[i * arr[0].length + j] = arr[i][j];
-                    System.out.printf("tmp[%d] = %d\n",
-                            i * arr[0].length + j,
-                            tmp[i * arr[0].length + j]);
+//                    System.out.printf("tmp[%d] = %d\n",
+//                            i * arr[0].length + j,
+//                            tmp[i * arr[0].length + j]);
                 }
             }
 
