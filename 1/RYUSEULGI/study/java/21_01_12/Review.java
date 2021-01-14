@@ -3,7 +3,7 @@ public class Review {
     private int row;
     private int col;
     private int[][] mat;
-    
+
     public int getRow() {
         return this.row;
     }
@@ -77,7 +77,7 @@ public class Review {
 
             for (int i = 0; i < row; i++) {
                 for (int j = 0; j < col; j++) {
-                    mat[i][j] = matA[i][j] - matB[i][j];
+                    mat[i][j] = matA[i][j]  matB[i][j];
                 }
             }
         }
@@ -120,12 +120,12 @@ public class Review {
         }
         return true;
     }
-    
+
     private boolean checkAvailable(int[] arr, int row) {
         int len = arr.length;
         return checkDivideEmt(len, row);
     }
-    
+
     private void sortMatrix(int[] arr, int row) {
         mat = new int[row][col];
         for (int i = 0; i < row; i++) {
@@ -135,7 +135,7 @@ public class Review {
             }
         }
     }
-    
+
     public Review(int[] arr, int row) {
         if (checkAvailable(arr, row)) {
             sortMatrix(arr, row);
@@ -143,8 +143,8 @@ public class Review {
     }
 
     // -----------------------------------------------------------------
-    
-    private boolean checkAvailable(int[]arr, int row, int col) {
+
+    private boolean checkAvailable(int[] arr, int row, int col) {
         int len = arr.length;
 
         // boolean result = (len == row * col ? true : false);
@@ -156,7 +156,7 @@ public class Review {
         }
         return result;
     }
-    
+
     private void sortMatrix(int[] arr, int row, int col) {
         mat = new int[row][col];
         for (int i = 0; i < row; i++) {
@@ -165,8 +165,8 @@ public class Review {
             }
         }
     }
-    
-    public Review(int[]arr, int row, int col) {
+
+    public Review(int[] arr, int row, int col) {
         if (checkAvailable(arr, row, col)) {
             sortMatrix(arr, row, col);
         }
@@ -182,18 +182,18 @@ public class Review {
         return checkDivideEmt(len, num);
     }
 
-    private void sortMatrix(int[][]arr, int row) {
+    private void sortMatrix(int[][] arr, int row) {
         mat = new int[row][col];
-        
+
         int totalLen = row * col;
         int[] tmp = new int[totalLen];
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[0].length; j++) {
                 tmp[i * arr[0].length + j] = arr[i][j];
-                    // System.out.printf("tmp[%d] = %d\n",
-                    //     i * arr[0].length + j, 
-                    //     tmp[i * arr[0].length + j]);
+                // System.out.printf("tmp[%d] = %d\n",
+                // i * arr[0].length + j,
+                // tmp[i * arr[0].length + j]);
             }
         }
 
@@ -204,7 +204,7 @@ public class Review {
         }
     }
 
-    public Review(int[][]arr, int row) {
+    public Review(int[][] arr, int row) {
         if (checkAvailable(arr, row)) {
             sortMatrix(arr, row);
         }

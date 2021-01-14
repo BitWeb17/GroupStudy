@@ -26,7 +26,7 @@ class Animal {
 
 }
 
-class Person extends Animal{
+class Person extends Animal {
 
     public Person(String type, String name) {
         super(type, name);
@@ -34,18 +34,16 @@ class Person extends Animal{
 
     @Override
     public String toString() {
-        return "{" +
-                "동물 type ='" + super.getType() + "'" +
-                ", name='" + super.getName() + "'" +
-            "}";
+        return "{" + "동물 type ='" + super.getType() + "'" + ", name='" + super.getName() + "'" + "}";
     }
 }
+
 public class Q1 {
     public static void main(String[] args) {
-        
+
         System.out.println("동물은 사람인가? 사람은 동물인가?");
 
-        Animal animal = new Animal("동물","야옹이");
+        Animal animal = new Animal("동물", "야옹이");
         System.out.println(animal);
 
         Person person = new Person("사람", "Jay");
