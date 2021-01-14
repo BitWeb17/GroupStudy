@@ -1,8 +1,8 @@
 package Eighth;
 
 public class MySeries {
-    public final int AND = 3;
-    public final int OR = 4;
+    private final int AND = 3;
+    private final int OR = 4;
 
     // 이름이 같은 매서드의 입력 인자가 달라지면
     // 매서드 오버로딩이 일어나면서 양쪽을 모두 사용할 수 있게 된다.
@@ -34,6 +34,8 @@ public class MySeries {
             cnt++;
         }
     }
+
+
 
     public void printTwiceOrder(int start, int end,
                                 int orderNum1, int orderNum2,
