@@ -49,6 +49,10 @@ class overseas extends Transport {
     @Override
     public String toString() {
         return "overseas{" +
+                "size="+super.getSize()+'\''+
+                "nic="+super.getnic()+'\''+
+                "species"+super.getspecies()+'\''+
+                "enginePA"+super.getenginePA()+'\''+
                 "canFishingOrNot='" + canFishingOrNot + '\'' +
                 '}';
     }
@@ -67,10 +71,20 @@ class land extends Transport{
         this.wheel = wheel;
     }
 
+    @Override
+    public String toString() {
+        return "land{" +
+                "size="+super.getSize()+'\''+
+                "nic="+super.getnic()+'\''+
+                "species"+super.getspecies()+'\''+
+                "enginePA"+super.getenginePA()+'\''+
+                "wheel='" + wheel + '\'' +
+                '}';
+    }
 }
 public class Homework2 {
     public static void main(String[] args) {
-        overseas T = new overseas("대형","타이타","배","유","불가능하니ek ");
+        overseas T = new overseas("대형","타이타닉","배","유","불가능하니다 ");
             System.out.println(T);
 
         land L = new land("소형","스케이트보드","취미용","무","4개");
