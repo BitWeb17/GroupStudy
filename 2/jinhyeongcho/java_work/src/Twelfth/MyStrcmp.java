@@ -5,9 +5,12 @@ import static Twelfth.Utility.STRCMPTEST;
 
 // 실질적으로 interface 에 작성한 프로토타이핑한 매서드는
 // 이것을 implements 하는 클래스에서 작성해줘야 한다.
-public class MyStrcmp implements  Comparable {
-    private double area;
 
+//클래스 MyStrcmp에 만든 인터페이스 Comparable를 implement
+public class MyStrcmp implements  Comparable {
+   // 변수 할당
+    private double area;
+     //생성자를 만든다.
     public MyStrcmp(double a){
         area = a;
     }
