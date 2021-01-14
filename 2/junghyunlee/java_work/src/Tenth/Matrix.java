@@ -5,7 +5,6 @@ public class Matrix {
     private int[][] mat1 , mat2;
     private int[][] sumArr;
 
-
     public Matrix(int row, int col) {
         this.row = row;
         this.col = col;
