@@ -46,6 +46,13 @@ class overseas extends Transport {
         this.canFishingOrNot = canFishingOrNot;
     }
 
+    @Override
+    public String toString() {
+        return "overseas{" +
+                "canFishingOrNot='" + canFishingOrNot + '\'' +
+                '}';
+    }
+
     public void setCanFishingOrNot(String canFishingOrNot) {
         this.canFishingOrNot = canFishingOrNot;
     }
