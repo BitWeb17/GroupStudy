@@ -1,6 +1,6 @@
 package Eighth;
 
-class MySeries {
+public class MySeries {
     public final int AND = 1;
     public final int OR = 2;
 

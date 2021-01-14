@@ -54,6 +54,17 @@ public class Q4 {
             
         Dice dc = new Dice(5, 3);
         dc.setWinner();
-        
+
+        // Dicegame method 사용
+        Dicegame dicegame = new Dicegame(5, 3, 6);
+
+        dicegame.playGame();
+        dicegame.printSumOfDice();
+
+        System.out.println("\nFILTER\n");
+
+        dicegame.insetSort();
+        dicegame.printSumOfDice();
+        dicegame.printWinner();
     }
 }
