@@ -24,14 +24,14 @@ import static Twelveth.Utility.STRCMPTEST;
 // 5) 모험가, 1차, 2차 전직 스킬 / 데미지 출력
 // interface 로 모든 직업들의 1번 스킬 , 1번 데미지 값 , 2번 스킬 , 2번 데미지
 // 값을 입력 받을 수 있게 된다.
-
+/*
 // 인터페이스는 해당 표준 규격과
 interface SkillOption{
     String skill( String v1, int v2, String x1, int x2);
 }
 
 // adventurer 에 다가 SkillOption 의 값을 전부 상속한다.
-class adventurer implements SkillOption{
+class adventurer implements SkillOption {
 
     // 각 직업들을 String 으로 만든다.
     private String 모험가;
@@ -47,18 +47,18 @@ class adventurer implements SkillOption{
 
     // adventurer 생성자에 다가 job 입력을 직업을 선택한다.
     // 선택하고 싶은 직업을 입력합니다.
-    public adventurer (Object jobChoice) {
+    public adventurer(Object jobChoice) {
         // 직업을 선택하고 싶으면 String값을 입력하면된다.
         // 만약에 전사라면 프린트에서 "전사"라고 입력하면 될듯 하다.
         // 입력하면 받을 수 있는 변수가 있어야겠다.
 
         // 입력받은 값을 받기 위해 private String FirstOrder;
         // 을 선언하고 할당 받는다.
-        FirstOrder = jobChoice;
+        //FirstOrder = jobChoice;
     }
 
     // 1차 전직을 선택했으니 해당하는 2차전직을 선택한다.
-    public String SecondaryJob(String SdJobChoide){
+    public String SecondaryJob(String SdJobChoide) {
         // 2차 직업을 선택하고 싶으면 String값을 입력하면된다.
         // 만약에 선택하고 싶은게 워로드라면 프린트에서
         // "워로드"라고 입력하면 될듯 하다.
@@ -72,10 +72,13 @@ class adventurer implements SkillOption{
         // 다른직업이 선택했을 때 다시 선택하게 할려면?
         // 또한 전사가 워로드가 아닌 다른직업을 선택했을 경우
         // 다시선택하게 해야한다고 해야한다.
-        if(){
+        //if(){
 
+        return SecondaryOrder;
         }
     }
+
+
 
 
     public int FirstOrderJob(String n) {
@@ -100,3 +103,6 @@ public class TwelvethHomework {
 
     }
 }
+
+
+ */
