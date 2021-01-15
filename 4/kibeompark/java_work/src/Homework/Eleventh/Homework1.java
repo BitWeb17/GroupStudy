@@ -64,6 +64,7 @@ public class Homework1 {
         // 동물은 사람인가 ? 사람은 동물인가 ?
         // 사람은 동물입니다.
         // 이를 표현하는 클래스를 작성해보세요.
+
         Animal a = new Animal("개", "복숭아", 7, "암컷");
         System.out.println(a);
 

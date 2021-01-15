@@ -87,6 +87,7 @@ public class Homework2 {
         // 자동차는 탈 것입니다.
         // 비행기는 탈 것입니다.
         // 이를 반영한 클래스를 작성해 봅시다.
+
         Vehicle v = new Vehicle("자전거", "삼천리자전거", "전기 자전거", "검정색");
         System.out.println(v);
 
