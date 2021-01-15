@@ -19,9 +19,13 @@ import static Twelveth.Utility.STRCMPTEST;
 // 2) 1차 전직을 직업을 선택할 수 있도록 케이스문 작성
 // 3) 모험가,1차 전직 스킬 / 데미지 출력
 // 4) 2차 전직 직업을 선택할 수 있도록 케이스문 작성
-// 5) 모험가, 1차, 2차 전직 스킬 / 데미지 출력력
+//    다른직업이 다른직업을 선택 시 "다시 선택하세요"라는
+//    출력도 필요함.
+// 5) 모험가, 1차, 2차 전직 스킬 / 데미지 출력
 // interface 로 모든 직업들의 1번 스킬 , 1번 데미지 값 , 2번 스킬 , 2번 데미지
 // 값을 입력 받을 수 있게 된다.
+
+// 인터페이스는 해당 표준 규격과
 interface SkillOption{
     String skill( String v1, int v2, String x1, int x2);
 }
@@ -43,7 +47,7 @@ class adventurer implements SkillOption{
 
     // adventurer 생성자에 다가 job 입력을 직업을 선택한다.
     // 선택하고 싶은 직업을 입력합니다.
-    public adventurer (String jobChoice) {
+    public adventurer (Object jobChoice) {
         // 직업을 선택하고 싶으면 String값을 입력하면된다.
         // 만약에 전사라면 프린트에서 "전사"라고 입력하면 될듯 하다.
         // 입력하면 받을 수 있는 변수가 있어야겠다.
@@ -64,10 +68,13 @@ class adventurer implements SkillOption{
 
         SecondaryOrder = SdJobChoide;
 
-        // 워로드를 선택한 직업이 전사가 아닌
-        // 다른직업이 선택했을 때 오류가 나게할려면?
-        //
-        if()
+        // 만약에 워로드를 선택한 직업이 전사가 아닌
+        // 다른직업이 선택했을 때 다시 선택하게 할려면?
+        // 또한 전사가 워로드가 아닌 다른직업을 선택했을 경우
+        // 다시선택하게 해야한다고 해야한다.
+        if(){
+
+        }
     }
 
 

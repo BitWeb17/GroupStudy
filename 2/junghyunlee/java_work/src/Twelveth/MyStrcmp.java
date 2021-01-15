@@ -23,16 +23,12 @@ public class MyStrcmp implements Comparable {
     // 에서 입력받은 값이 입력 될 듯하다.
     public int processCompare(MyStrcmp other) {
 
-
         // if문은 this.area (현재 가지고 있는 area) 값보다
         // 새로 입력된 other.area 가 클때 작동한다.
 
-        // 의문점 : 현재 area는 어디에서 입력받은건가 ??
-        // 아마 public class StrcmpInterfaceTest 의 m1 또는 m2
-        // 값이 this.area 값 이거나
-        // other.area는 위 15번째 줄 public MyStrcmp(double a)
-        // 에서 입력된 값을 할당 받은듯 한데...
-        // 혼돈중.......
+        // 의문점 : this.area는 어디에서 입력받은건가 ??
+        // 아마 private double area; 값일 듯 하다.
+        // other.area는 public class StrcmpInterfaceTest  값일 듯 하다.
         if(this.area < other.area) {
             // other.area가 크면 -1 리턴
             return -1;
@@ -43,10 +39,13 @@ public class MyStrcmp implements Comparable {
             // other.area가 작으면 1 리턴
             return 1;
         } else {
-            // 그 외 리턴은 0
 
-            // -1, 1, 0 의 리턴 차이는 무엇인가요????
+            // 그 외는 0을 리턴
             return 0;
+
+            // -1, 1, 0 을 리턴하는 이유는
+            // public class StrcmpInterfaceTest 에서
+            // 0과 비교 후 출력을 위해서이다.
         }
     }
 
@@ -54,6 +53,11 @@ public class MyStrcmp implements Comparable {
     public int processCompare(StrcmpTest other) {
         // if 문은 현재가지고 있는 this.area 보다 StrcmpTest 에 있는
         //  public double getArea() 의 area 값이 클때 작동한다.
+
+        // this.area 는 private double area; 값일 듯 하다.
+        // 여기 other.getArea는 StrcmpTest에서 get값을 받아오고
+        // 그걸 타고 들어가면 public class StrcmpInterfaceTest 에서
+        // 값을 받는다.
         if(this.area < other.getArea()) {
             return -1;
             // else if 문은 현재가지고 있는 this.area 보다 StrcmpTest 에 있는
@@ -90,6 +94,7 @@ public class MyStrcmp implements Comparable {
         // double a 로 입력받은 값이 StrcmpTest other 로 대입 된다.
         // 왜 대입해주는지 모르겠다 . ??????????????????????
         StrcmpTest other = (StrcmpTest) otherObj;
+
 
         // StrcmpTest other 값을 반환해주는데
         // 결국 double a 로 입력받은 실수형 값을 반환할 것이다.
