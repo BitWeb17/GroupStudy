@@ -8,8 +8,5 @@ public class Exercise1 {
         pblcMethod pm = new pblcMethod();
 
         System.out.println(pm.sumResult(1, 20));
-
-        System.out.println(63 & ~31);
     }
-
 }

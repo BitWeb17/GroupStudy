@@ -9,7 +9,7 @@ class MultiplicationTable {
             for (int j = 1; j < 10; j++) {
                 int res = i * j;
 
-                System.out.printf("%d X %d =  %d\n", i, j, res);
+                System.out.printf("%d X %d = %d\n", i, j, res);
             }
         }
     }

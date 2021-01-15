@@ -1,11 +1,11 @@
 package Eighth;
 
 public class ScoreCalculator {
-    int studentNum;
-    int[] score;
-    float mean;
-    float variance;
-    float stdDeviation;
+    private int studentNum;
+    private int[] score;
+    private float mean;
+    private float variance;
+    private float stdDeviation;
 
     // 생성자(Constructor)
     // 사실은 new를 할 때 이 코드가 눈에 보이지 않게 내부적으로 동작한다.
@@ -38,7 +38,7 @@ public class ScoreCalculator {
         }
     }
 
-    public void calcMean() {
+    private void calcMean() {
         int sum = 0;
 
         for (int i = 0; i < studentNum; i++) {
@@ -49,18 +49,21 @@ public class ScoreCalculator {
     }
 
     public float getMean() {
+        calcMean();
         return mean;
     }
 
     public float getVariance() {
+        calcVariance();
         return variance;
     }
 
     public float getStdDeviation() {
+        calcStdDeviation();
         return stdDeviation;
     }
 
-    public void calcVariance() {
+    private void calcVariance() {
         float sum = 0;
 
         // sigma (샘플 - 평균)^2 / 전체숫자 = 분산
@@ -72,7 +75,7 @@ public class ScoreCalculator {
         variance = sum / (float)studentNum;
     }
 
-    public void calcStdDeviation() {
+    private void calcStdDeviation() {
         // 분산에 루트를 씌우면 표준편차
         stdDeviation = (float)Math.sqrt(variance);
     }
