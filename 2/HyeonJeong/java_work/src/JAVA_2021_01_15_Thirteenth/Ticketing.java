@@ -87,6 +87,11 @@ public class Ticketing {
         boolean isDup = false;
         int randNum;
 
+        while(true) {
+
+            if(isDup == false) break;
+        }
+
         do {
             randNum = (int) (Math.random() * 50);
 

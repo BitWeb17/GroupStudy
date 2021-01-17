@@ -1,10 +1,10 @@
 package hw_2021_01_15;
 
-public class Tiger extends Animal implements Behavior{
+public class Tiger extends Mammal implements Behavior{
     private String color;
 
-    public Tiger(int age, String food, String crying, String color) {
-        super(age, food, crying);
+    public Tiger(int age, String food, String crying, int legs, String color) {
+        super(age, food, crying, legs);
         this.color = color;
     }
 
@@ -23,7 +23,7 @@ public class Tiger extends Animal implements Behavior{
     }
 
     @Override
-    public void crying() {
-        System.out.printf("호랑이는 %s하고 운다.\n",crying_sound);
+    public void speak() {
+        System.out.printf("호랑이는 %s하고 운다.\n", speak);
     }
 }

@@ -3,8 +3,8 @@ package hw_2021_01_15;
 public class Parrot extends Bird implements Behavior{
     private String feather;
 
-    public Parrot(int age, String food, String crying, int wing, String feather) {
-        super(age, food, crying, wing);
+    public Parrot(int age, String food, String speak, int wing, String feather) {
+        super(age, food, speak, wing);
         this.feather = feather;
     }
 
@@ -23,8 +23,12 @@ public class Parrot extends Bird implements Behavior{
     }
 
     @Override
-    public void crying() {
-        System.out.printf("새는 %s하고 운다.\n",crying_sound);
+    public void speak() {
+        System.out.printf("새는 %s하고 운다.\n", speak);
+    }
+
+    public void feather() {
+        System.out.printf("앵무새 날개는 %s이다.\n",feather);
     }
 }
 
