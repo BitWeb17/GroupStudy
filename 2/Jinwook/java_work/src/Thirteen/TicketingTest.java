@@ -12,7 +12,7 @@ public class TicketingTest {
         // 랜덤한 숫자로 0 ~ 49까지중 선별되어 예매를 할 수 있게 되어있는 시스템이다.
         Ticketing t = new Ticketing(50, 20);
 
-        //t.printPersonNumber();
+//        t.printPersonNumber();
         t.ticketingTicket();
         System.out.println("*********************");
         t.printArr(t.getTicketNumberArr());

@@ -39,11 +39,13 @@ public class HashSetTest {
 
         HashSet<String> hs = new HashSet<String>();
         String[] sample = {
-                "hi", "haha", "hoho", "kk", "kiki", "hhhhh"
+                "최현정", "장해솔", "박재민", "고동영", "이정현", "류슬기",
+                "조진형", "한다은", "오진욱", "노찬욱", "박소현", "박기범",
+                "최임식", "탁성진", "하진주", "이승윤", "이범진"
         };
         // sample에 있는 값을 순서대로 하나 하나 가져와서 s에 배치함
         for(String s : sample){
-            // Set은 갑싱 ㅈㅇ복되면 add가 되지 않고 false를 리턴한다.
+            // Set은 값이 중복되면 add가 되지 않고 false를 리턴한다.
             if(!hs.add(s)){
                 System.out.println("Dop");
             }
