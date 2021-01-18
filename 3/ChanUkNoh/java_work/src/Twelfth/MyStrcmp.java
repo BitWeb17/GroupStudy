@@ -9,7 +9,7 @@ public class MyStrcmp implements Comparable {
     // 대, 소 비교를 위한 변수
     private int area;
 
-    // 객체 생성시 area 에 다른 다른 값이 담김
+    // 객체 생성시 area 에 입력 받은 값이 담김
     public MyStrcmp(int a) {
         area = a;
     }
@@ -77,8 +77,3 @@ public class MyStrcmp implements Comparable {
         return res;
     }
 }
-
-// Object 로 받으면 반드시 형 변환이 필요한가?
-
-// 이 케이스에서 비교하고 싶은 객체가 계속 늘어난다면
-// 계속 switch case 를 추가하고 메서드도 추가해야 하는 것인가?

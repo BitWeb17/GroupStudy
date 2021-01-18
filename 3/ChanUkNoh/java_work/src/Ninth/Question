@@ -5,7 +5,7 @@
 
 
 2.그렇다면 반복문이 3번 돌아가는 동안  scArr[0].getMean() -> scArr[1].getMean() ->
-                             scArr[2].getMean()
+                                scArr[2].getMean()
 scArr.getMean()은 3번의 호출이 일어나는 것인가요?
 
 

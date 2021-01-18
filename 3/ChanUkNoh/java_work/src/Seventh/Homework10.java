@@ -1,7 +1,7 @@
 package Seventh;
 
 class Random {
-    int randNum = (int)(Math.random() * 10) + 1;
+    int randNum = (int)(Math.random() * 300) + 1;
     int[] arr = new int[randNum];
 
     public void makeRandomArr() {
@@ -9,7 +9,7 @@ class Random {
         System.out.println(randNum + "개 짜리 배열을 만들었습니다.");
 
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int)(Math.random() * 10) + 1;
+            arr[i] = (int)(Math.random() * 300) + 1;
             System.out.println("arr[" + i + "] = " + arr[i]);
         }
     }
@@ -20,7 +20,7 @@ class Random {
         System.out.println(randNum + "개 짜리 배열을 만들었습니다.");
 
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int)(Math.random() * 10) + 1;
+            arr[i] = (int)(Math.random() * 300) + 1;
             System.out.println("arr[" + i + "] = " + arr[i]);
             if (arr[i] % 2 == 0) {
                 cnt++;

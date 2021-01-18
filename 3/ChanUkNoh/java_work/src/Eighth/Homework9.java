@@ -145,7 +145,6 @@ class ScoreManageSystem {
                 break;
         }
     }
-
 }
 
 public class Homework9 {
@@ -158,8 +157,6 @@ public class Homework9 {
         sms.calcAverage();
         sms.calcVariance();
         sms.calcDeviation();
-        sms.pickTopClass(sms.LOWERDEVIATION);
-
-
+        sms.pickTopClass(sms.AVERAGE);
     }
 }

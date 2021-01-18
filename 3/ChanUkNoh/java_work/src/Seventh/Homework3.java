@@ -6,7 +6,7 @@ class Multiple {
 
         for (int i = 1; i <= 20; i++) {
             if (i % 2 == 0) {
-                System.out.println("1 ~ 20 까지의 숫자 중 2의 배 = " + i);
+                System.out.println("1 ~ 20 까지의 숫자 중 2의 배수 = " + i);
             }
         }
     }

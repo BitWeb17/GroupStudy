@@ -28,7 +28,7 @@ public class AllocRandom {
         idxArr = new int[numOfRandom];
     }
 
-    // Random Number (랜덤번호) -> Array(배열) to
+    // RandomA Number (랜덤번호) -> Array(배열) to
     public void allocRandomNumber2Arr() {
         for (int i = 0; i < randArr.length; i++) {
             randArr[i] = (int) (Math.random() * RANGEVALUE) + BIASVALUE;

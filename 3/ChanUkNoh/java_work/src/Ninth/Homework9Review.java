@@ -70,9 +70,6 @@ public class Homework9Review {
             scArr[i] = new ScoreCalculator();
             System.out.printf("%d반\n", i + 1);
             scArr[i].printScores();
-            scArr[i].calcMean();
-            scArr[i].calcVariance();
-            scArr[i].calcStdDeviation();
             System.out.printf("\n평균 = %f, 분산 = %f, 표준편차 = %f\n",
                     scArr[i].getMean(),
                     scArr[i].getVariance(),

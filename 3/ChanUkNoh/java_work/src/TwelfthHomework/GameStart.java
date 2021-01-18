@@ -26,8 +26,8 @@ public class GameStart {
 
         upgrade.upgradeClass();
 
-        player1.getGrade();
-
+        skill.skill1();
+        skill.skill2(obj, CLASS);
         skill.skill3(obj, CLASS);
     }
 }

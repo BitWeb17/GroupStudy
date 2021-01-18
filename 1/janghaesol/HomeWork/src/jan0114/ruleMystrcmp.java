@@ -1,10 +1,10 @@
 package jan0114;
-
+/*
 import static jan0114.skillUtility.masTer;
 import static jan0114.skillUtility.firSt;
 
 
-public class ruleMystrcmp implements Grade {
+public class ruleMystrcmp implements Uniqueskill {
     private int lv;
 
     public ruleMystrcmp(int l) {
@@ -66,5 +66,7 @@ public class ruleMystrcmp implements Grade {
         return 0;
     }
 }
+
+ */
 
 
