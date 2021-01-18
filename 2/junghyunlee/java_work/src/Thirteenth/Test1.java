@@ -19,5 +19,15 @@ public class Test1 {
         s2.add("C");
 
         Set<String> union = new HashSet<String>(s2);
+        Set<Integer> union2 = new HashSet<Integer>(s1);
+
+        union.addAll(s2);
+        //union.addAll(s1);
+
+        Set<String> intersection = new HashSet<String>(s2);
+        Set<Integer> intersection2 = new HashSet<Integer>(s1);
+
+        System.out.println("합집합 = " + union + union2);
+        System.out.println("교집합 = " + intersection);
     }
 }
