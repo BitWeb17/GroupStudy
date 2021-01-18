@@ -1,5 +1,6 @@
 package Twelveth;
 
+/*
 interface SkillOption2{
     String skill( String v1, int v2, String x1, int x2);
 }
@@ -20,4 +21,4 @@ public class TwelvethHomeworkTest {
         System.out.println("돌던지기 = " + "2"+" 창던지기 = " + "3");
 
     }
-}
+}*/
