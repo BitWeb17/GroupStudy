@@ -1,10 +1,10 @@
 package Eighth;
 
 class ContainerManager {
-    int base;
-    int start;
-    int range;
-    int container;
+    private int base;
+    private int start;
+    private int range;
+    private int container;
 
     public void manage(int base, int start, int range) {
         this.base = base;
@@ -53,9 +53,10 @@ public class Exercise2 {
         //    물류 창고로 들어오는 화물의 개수는
         //    1000 ~ 50000 개 사이로 들어온다 가정한다.
         ContainerManager cm = new ContainerManager();
+        int res = cm.processContainer();
 
         cm.manage(32, 1000, 49001);
-        int res = cm.processContainer();
+
         System.out.println(
                 "AND NOT 결과 = " + res);
 

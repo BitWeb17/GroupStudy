@@ -47,6 +47,33 @@ public class Skill implements SkillProcessor {
         }
     }
 
+    public void skill3(Object obj, int CLASS) {
+        if (isAvailable(2)) {
+            if (isSameClass(CLASS)) {
+                switch (CLASS) {
+                    case WORRIOR:
+                        exeWorriorSkill(obj);
+                        break;
+
+                    case THIEF:
+                        exeThiefSkill(obj);
+                        break;
+
+                    case MAGICIAN:
+                        exeMagicianSkill(obj);
+                        break;
+
+                    default:
+                        break;
+                }
+            } else {
+                System.out.println("알맞은 클래스가 아닙니다.");
+            }
+        } else {
+            System.out.println("2차 전직 후에 사용 가능합니다.");
+        }
+    }
+
     private boolean isSameClass(int CLASS) {
         return player.getTypeOfClass() == CLASS;
     }
@@ -116,6 +143,7 @@ public class Skill implements SkillProcessor {
             if (num == 1) thief.assassination();
             else if (num == 2) thief.poison();
             else System.out.println("잘못된 입력입니다.");
+
             return;
         }
 
@@ -125,34 +153,8 @@ public class Skill implements SkillProcessor {
             if (num == 1) thief.backAttack();
             else if (num == 2) thief.doubleAttack();
             else System.out.println("잘못된 입력입니다.");
+
             return;
-        }
-    }
-
-    public void skill3(Object obj, int CLASS) {
-        if (isAvailable(2)) {
-            if (isSameClass(CLASS)) {
-                switch (CLASS) {
-                    case WORRIOR:
-                        exeWorriorSkill(obj);
-                        break;
-
-                    case THIEF:
-                        exeThiefSkill(obj);
-                        break;
-
-                    case MAGICIAN:
-                        exeMagicianSkill(obj);
-                        break;
-
-                    default:
-                        break;
-                }
-            } else {
-                System.out.println("알맞은 클래스가 아닙니다.");
-            }
-        } else {
-            System.out.println("2차 전직 후에 사용 가능합니다.");
         }
     }
 }

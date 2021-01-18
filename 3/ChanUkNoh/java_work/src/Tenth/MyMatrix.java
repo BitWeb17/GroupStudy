@@ -1,6 +1,6 @@
 package Tenth;
 
-public class Matrix {
+public class MyMatrix {
     final int array2Matrix = 0;
     final int calcMatrix = 1;
     final int add = 2;
@@ -12,14 +12,14 @@ public class Matrix {
     private int column, row;
     private int[] userArr;
 
-    public Matrix(int row, int column) {
+    public MyMatrix(int row, int column) {
         this.row    = row;
         this.column = column;
 
         mat = new int[row][column];
     }
 
-    public Matrix(int[] userArr, int row, int column) {
+    public MyMatrix(int[] userArr, int row, int column) {
         this.row    = row;
         this.column = column;
 
@@ -27,7 +27,7 @@ public class Matrix {
         mat = new int[row][column];
     }
 
-    public Matrix(int[] userArr, int square) {
+    public MyMatrix(int[] userArr, int square) {
         this.row     = square;
         this.column  = square;
 
@@ -35,18 +35,22 @@ public class Matrix {
         mat = new int[row][column];
     }
 
+    public int[][] getMat() {
+        return mat;
+    }
+
     public void array2Matrix() {
 
         if (row * column != userArr.length) {
-            printError(array2Matrix);
+            printError(array2Matrix); // 예외 처리는 초기화 단계에서 해주는게 좋다.
+                                      // 조건을 만족하지 못하면 값을 할당하지도
+                                      // 못하도록
             return;
         }
 
-        int userArrIndex = 0;
         for (i = 0; i < row; i++) {
             for (j = 0; j < column; j++) {
-                mat[i][j] = userArr[userArrIndex];
-                userArrIndex++;
+                mat[i][j] = userArr[i * row + j];
             }
         }
     }
@@ -80,11 +84,11 @@ public class Matrix {
                 break;
 
             case multiple:
-                int leftRow = matLeft.length; // 행 가로
+                int leftRow = matLeft.length;
                 int leftColumn = matLeft[0].length;
 
                 int rightRow = matRight.length;
-                int rightColumn = matRight[0].length;// 열 세로
+                int rightColumn = matRight[0].length;
 
                 mat = new int[leftRow][rightColumn];
                 int key = 0;
@@ -94,8 +98,8 @@ public class Matrix {
 
                     for (a = 0; a < rightColumn; a++) {
 
-                        for (j = 0; j < leftRow; j++) {
-                            key += matLeft[i][j] * matRight[j][a];
+                        for (j = 0; j < rightRow; j++) {
+                            key += (matLeft[i][j] * matRight[j][a]);
                         }
                         mat[i][a] = key;
                         key = 0;
@@ -134,12 +138,6 @@ public class Matrix {
                 break;
         }
 
-    }
-
-    public int[][] getAllocRandomMatrix() {
-        allocRandomMatrix();
-
-        return mat;
     }
 
     public void allocRandomMatrix() {

@@ -1,10 +1,8 @@
 package Tenth;
 
-public class Homework2 {
+public class Homework4 {
     public static void main(String[] args) {
-//        2) 행렬 두 개를 만들고 이 두 개의 행렬 덧셈을 수행하게 만들어보자!
-//           행렬의 차원은 편한대로 설정해도 무방하다.
-//           (오늘 만든 코드는 n by n 행렬도 가능하다)
+//        4) 그렇다면 곱셈이 빠질 수 없으므로 곱셈도 만든다.
 
         MyMatrix matA = new MyMatrix(3,3);
         MyMatrix matB = new MyMatrix(3,3);
@@ -20,8 +18,8 @@ public class Homework2 {
         int[][] B = matB.getMat();
         matB.printMatrix();
 
-        System.out.println("A + B: ");
-        matR.calcMatrix(A, B, matR.add);
+        System.out.println("A X B: ");
+        matR.calcMatrix(A, B, matR.multiple);
         matR.printMatrix();
     }
 }

@@ -10,8 +10,8 @@ class BulletinBoard {
 //    이때 랜덤수로 생성한 숫자의 게시물을 지우고
 //    각각의 게시물 번호를 1, 2, 3, 4, 5 형태로 만들어준다.
 //            (배열을 활용해서 문제를 풀어보자!)
-    final int MAX = 30;
-    int writesNum = (int)(Math.random() * MAX) + 1;
+    final int MAX = 21;
+    int writesNum = (int)(Math.random() * MAX) + 20;
     int deleteNum;
 
     int[] bulletinBoard;

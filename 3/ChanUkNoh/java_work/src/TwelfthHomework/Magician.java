@@ -17,4 +17,5 @@ public class Magician {
     public void meteor() {
         System.out.println("메테오 - 데미지 100");
     }
+
 }

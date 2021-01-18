@@ -3,10 +3,10 @@ package Eighth;
 import java.util.Arrays;
 
 public class pblcMethod {
+    private int plusSum     = 0;
+    private int minusSum    = 0;
 
     public int sumResult(int start, int end) {
-        int plusSum     = 0;
-        int minusSum    = 0;
 
         for (int i = start; i < end; i++) {
 
