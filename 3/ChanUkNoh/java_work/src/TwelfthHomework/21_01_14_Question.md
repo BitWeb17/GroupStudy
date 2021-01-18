@@ -1,7 +1,7 @@
 # 2021 / 01 / 14 12일차 Question Note
 
 
-## 참조 코
+## 참조 코드
 ```java
 
 public class Test {
