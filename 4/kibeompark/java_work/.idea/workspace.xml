@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="9일 차 강의">
-      <change afterPath="$PROJECT_DIR$/src/Tenth/DoubleArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tenth/Exercise1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tenth/FirstPrivate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tenth/Matrix.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tenth/MySeries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tenth/PrintSimpleNumberTest.java" afterDir="false" />
+    <list default="true" id="fc716db2-60ee-4845-86ac-454f8e52fe8d" name="Default Changelist" comment="11일 차 강의">
+      <change afterPath="$PROJECT_DIR$/src/Eleventh/Homework1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Eleventh/InheritanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Eleventh/NonInheritanceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ninth/Homework12.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ninth/Homework12.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Ninth/MyDice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ninth/MyDice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tenth/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tenth/Matrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +45,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Homework/Eighth" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -61,13 +61,13 @@
       <recent name="Seventh" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Exercise1">
-    <configuration name="DoubleArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tenth.DoubleArrayTest" />
+  <component name="RunManager" selected="Application.InheritanceTest">
+    <configuration name="Homework1 (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Homework.Tenth.Homework1" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tenth.*" />
+          <option name="PATTERN" value="Homework.Tenth.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +75,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Exercise1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tenth.Exercise1" />
+    <configuration name="Homework1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Eleventh.Homework1" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tenth.*" />
+          <option name="PATTERN" value="Eleventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +88,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstPrivate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tenth.FirstPrivate" />
-      <module name="java_work" />
+    <configuration name="Homework1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Eleventh.Homework1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tenth.*" />
+          <option name="PATTERN" value="Eleventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,11 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintSimpleNumberTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tenth.PrintSimpleNumberTest" />
+    <configuration name="InheritanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Eleventh.InheritanceTest" />
+      <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tenth.*" />
+          <option name="PATTERN" value="Eleventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PrintSimpleNumberTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tenth.PrintSimpleNumberTest" />
+    <configuration name="NonInheritanceTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Eleventh.NonInheritanceTest" />
       <module name="java_work" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tenth.*" />
+          <option name="PATTERN" value="Eleventh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Exercise1" />
-        <item itemvalue="Application.DoubleArrayTest" />
-        <item itemvalue="Application.PrintSimpleNumberTest" />
-        <item itemvalue="Application.PrintSimpleNumberTest (1)" />
-        <item itemvalue="Application.FirstPrivate" />
+        <item itemvalue="Application.InheritanceTest" />
+        <item itemvalue="Application.NonInheritanceTest" />
+        <item itemvalue="Application.Homework1" />
+        <item itemvalue="Application.Homework1 (2)" />
+        <item itemvalue="Application.Homework1 (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610280802746</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="11일 차 강의">
+      <created>1610503087270</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610503087270</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -257,6 +264,7 @@
     <MESSAGE value="8일 차 과제" />
     <MESSAGE value="9일 차 과제" />
     <MESSAGE value="9일 차 강의" />
-    <option name="LAST_COMMIT_MESSAGE" value="9일 차 강의" />
+    <MESSAGE value="11일 차 강의" />
+    <option name="LAST_COMMIT_MESSAGE" value="11일 차 강의" />
   </component>
 </project>
