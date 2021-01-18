@@ -28,12 +28,31 @@ public class ProjectTeam {
         memberList2.add("이승윤");
         memberList2.add("이범진");
 
-
-        int randomA = (int) (Math.random() * memberList1.size());
-        int randomB = (int) (Math.random() * memberList2.size());
+        /*
         ArrayList<String> randomComplete = new ArrayList<String>();
 
+        int randomA = (int) (Math.random() * memberList1.size());
+        while ( memberList1.size() != 0 ) {
+            int random = (int)(Math.random()*memberList1.size());
+            randomComplete.add( memberList1.get(random) );
+            memberList1.remove(random); //remove 로 인해서 카운터가 변화
 
+        }
+
+
+        for(String s : randomComplete){
+            System.out.println(s);
+        }
+        */
+        int randomB = (int) (Math.random() * memberList2.size());
+        ArrayList<String> randomComplete = new ArrayList<String>();
+        for(int i = 0; i < memberList1.size(); i++){
+            System.out.printf("%d",i+1);
+            if(i%5 == 4)
+            System.out.println();
+        }
+
+/*
         while ( memberList1.size() != 0 ) {
             int random = (int)(Math.random()*memberList1.size());
             randomComplete.add( memberList1.get(random) );
@@ -56,6 +75,8 @@ public class ProjectTeam {
             }
             System.out.println("");
         }
+
+ */
 
 //        String [][] arr1 = {
 //                {"r", "r", "rr", "r", "r"},
