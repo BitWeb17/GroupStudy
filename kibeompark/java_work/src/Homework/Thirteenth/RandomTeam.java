@@ -20,50 +20,28 @@ public class RandomTeam {
         this.count = count;
     }
 
-    public boolean isDup(int num) {
-        // 랜덤 수가 중복되는지 확인 후 참, 거짓 값 반환
-        return randomNumber.contains(num);
-    }
-
-    public int randomExtraction() {
+    public void setTeam() {
         int randNum;
-        boolean checkDup = false;
+        int cnt = 1;
 
-        // 랜덤 수가 중복되지 않을 때까지 반복
-        do {
-            // 조 인원 수 범위 내 랜덤 수 추출
+        while (true) {
             randNum = (int) (Math.random() * count);
 
-            // 기존 랜덤 수와 중복되지 않는다면
-            if (isDup(randNum)) {
-                checkDup = true;
+            if (randomNumber.contains(randNum)) {
+                continue;
             } else {
-                checkDup = false;
-
-                // ArrayList randomNumber 에 랜덤 수 저장
                 randomNumber.add(randNum);
+
+                if (cnt <= 4) {
+                    s2.add(name.get(randNum));
+                } else {
+                    s1.add(name.get(randNum));
+                }
+                cnt++;
             }
-        } while (checkDup);
 
-        // 랜덤 수 반환
-        return randNum;
-    }
-
-    public void setTeam() {
-        // 조원 수만큼 반복
-        for (int i = 0; i < count; i++) {
-            // A조 : 5명, 4명
-            // B조 : 4명, 4명
-            // 팀을 나누기 위하여 if 문 실행
-            if (i < 4) {
-                // name ArrayList 에서
-                // randomExrtraction 을 통해 추출된
-                // 랜덤 수 위치에 있는 인원을
-                // Set s2 에 저장
-                s2.add(name.get(randomExtraction()));
-            } else {
-                // Set s1 에 저장
-                s1.add(name.get(randomExtraction()));
+            if ((s1.size() + s2.size()) == count) {
+                break;
             }
         }
     }
