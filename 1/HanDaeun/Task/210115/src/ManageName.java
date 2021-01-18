@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-
 // 그룹 멤버들의 이름을 저장하고 원하는 이름을 알려줌
 public class ManageName {
     private final String ONE = "최현정";

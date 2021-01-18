@@ -7,11 +7,11 @@ public class OrganizeGroup extends ManageName {
     private int randNum;
     HashSet<Integer> personNumSet;
 
-    public OrganizeGroup(int aGroupPersonNum, int bGroupPersonNum, int aDivideGroupNum, int bDivideGroupNum) {
+    public OrganizeGroup(int aGroupPersonNum, int bGroupPersonNum, int aDivideTeamNum, int bDivideTeamNum) {
         this.aGroupPersonNum = aGroupPersonNum;
         this.bGroupPersonNum = bGroupPersonNum;
-        this.aDivideTeamNum = aDivideGroupNum;
-        this.bDivideTeamNum = bDivideGroupNum;
+        this.aDivideTeamNum = aDivideTeamNum;
+        this.bDivideTeamNum = bDivideTeamNum;
         personNumSet = new HashSet<Integer>();
 
         setDividePersonNum();
@@ -29,7 +29,6 @@ public class OrganizeGroup extends ManageName {
                 continue;
             } else {
                 personNumSet.add(randNum);
-                cnt++;
 
                 setName(randNum);
                 System.out.printf("%s ", getName());
@@ -37,6 +36,8 @@ public class OrganizeGroup extends ManageName {
                 if(cnt % dividePersonNum == 0) {
                     System.out.println("");
                 }
+
+                cnt++;
             }
         }
     }
@@ -45,7 +46,7 @@ public class OrganizeGroup extends ManageName {
     public void divideTeams() {
         // A 그룹 내 팀 배정
         randomNumbering(1, aGroupPersonNum, aDividePersonNum);
-        System.out.println("******************************");
+        System.out.println("\n******************************\n");
         // B 그룹 내 팀 배정
         randomNumbering(aGroupPersonNum + 1, bGroupPersonNum, bDividePersonNum);
     }
@@ -61,9 +62,9 @@ public class OrganizeGroup extends ManageName {
 
         // B 그룹이 팀별로 인원이 딱 맞게 떨어지지 않으면 한명 더 추가 배정함
         if(bGroupPersonNum % bDivideTeamNum != 0) {
-            bDividePersonNum = bGroupPersonNum / bDivideTeamNum + 2;
-        } else {
             bDividePersonNum = bGroupPersonNum / bDivideTeamNum + 1;
+        } else {
+            bDividePersonNum = bGroupPersonNum / bDivideTeamNum;
         }
     }
 }
