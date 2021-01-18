@@ -46,7 +46,7 @@ public class OrganizeGroup extends ManageName {
     public void divideTeams() {
         // A 그룹 내 팀 배정
         randomNumbering(1, aGroupPersonNum, aDividePersonNum);
-        System.out.println("\n******************************\n");
+        System.out.println("\n******************************");
         // B 그룹 내 팀 배정
         randomNumbering(aGroupPersonNum + 1, bGroupPersonNum, bDividePersonNum);
     }
