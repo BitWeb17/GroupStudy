@@ -1,17 +1,23 @@
 package Thirteenth;
 
+import java.util.HashSet;
+import java.util.Set;
+
 public class Test1 {
     public static void main(String[] args) {
 
-        int i = 0;
-        int []checkDup = new int[17];
+        Set<Integer> s1 = new HashSet<>();
+        Set<String> s2 = new HashSet<>();
 
+        s1.add(1);
+        s1.add(2);
+        s1.add(3);
+        s1.add(4);
 
-            while(i < 17){
-                checkDup[i] = 0;
-                System.out.println(checkDup[i]);
-            }
+        s2.add("A");
+        s2.add("B");
+        s2.add("C");
 
-
+        Set<String> union = new HashSet<String>(s2);
     }
 }
