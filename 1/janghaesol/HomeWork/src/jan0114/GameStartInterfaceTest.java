@@ -1,10 +1,6 @@
 package jan0114;
 
-import java.util.Scanner;
-
-import static jan0114.skillUtility.masTer;
-import static jan0114.skillUtility.firSt;
-
+/*
 public class GameStartInterfaceTest {
     public static void main(String[] args) {
 //        int result;
