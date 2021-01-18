@@ -2,16 +2,61 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66568774-254d-4f2c-bb83-cc41a1279a52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1/janghaesol/java_work/src/Tenth/DoubleArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/janghaesol/java_work/src/Tenth/FirstPrivate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/janghaesol/java_work/src/Tenth/MySeries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/janghaesol/java_work/src/Tenth/PrintSimpleNumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2020-12-28/TodayQuiz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2020-12-28/yesterdayQuiz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2020-12-30/TodayQuiz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2020-12-30/yesterdayQuiz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2021-01-04/TodayQuiz.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/GroupStudy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/GroupStudy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/BitOperation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/Homework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/Homework2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/Homework3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/IfBasedRangeProblem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/IfTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/LogicalOpearation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/PrefixSuffixOpeartion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/SecondProbTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/ShiftOpeartion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201230/SwitchCaseStatement.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/BreakTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/ContinueTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/ForTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/InfinityLoopTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/InfinityLoopTest2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/MathRandom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/QUIZ13.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz14.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz5.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Quiz9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/Randominst.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/WhileTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/quiz11.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/quiz12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/201231/quiz16.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210104/DiceHomework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210104/StartHomework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210104/ThirdDiceHomework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210104/homework.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210105/210105" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210106/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210106/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210106/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210106/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210106/210106" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210106/210106.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210106/src/a.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210107/210107" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/210108/210108" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/Lecture.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/Lecture1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Lecture/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Test/Test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ParkJaemin/Test/test.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,14 +84,32 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/1/ParkJaemin/java_work/src/Sixth" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ParkJaemin" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ParkJaemin/java_work" />
       <recent name="$PROJECT_DIR$/1/ParkJaemin/java_work/src/Sixth" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Homework6">
+  <component name="RunManager" selected="Application.AllocTeamHomework">
+    <configuration name="AllocTeamHomework" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Fourteenth.AllocTeamHomework" />
+      <module name="GroupStudy" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Fourteenth.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Homework3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Sixth.Homework3" />
       <module name="java_work1" />
@@ -101,6 +164,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AllocTeamHomework" />
         <item itemvalue="Application.Homework6" />
         <item itemvalue="Application.Homework5" />
         <item itemvalue="Application.Homework4" />
