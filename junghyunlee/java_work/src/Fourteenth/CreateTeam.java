@@ -100,14 +100,14 @@ public class CreateTeam {
     public void allocArrayList(ArrayList<String> al, String[] arr, int loopNum) {
 
         // is Dup을 false로 셋팅한다.
-        boolean isDup = false;
+        boolean isNotDup = true;
 
         for(int i = 0; i < loopNum; i++) {
             // 우리는 A 배열, B 배열이 나눠진 케이스를 받으므로
             // 하나의 배열에서 모든 값을 처리하지 않는다.
             // 그러므로 start를 별도로 만들 필요가 없었다.
             // int randNum = (int)(Math.random() * loopNum) + start;
-            do {
+            while(isNotDup){
                 // randNum 에는 각 팀의 숫자의 랜덤값을 할당해줄 수 있다.
                 // ex) A팀의 경우 loopNum이 AnumOfPerson이 할당되기 때문에
                 // 0 ~ 8까지 9가지의 값을 할당해줄 수 있다.
@@ -117,7 +117,7 @@ public class CreateTeam {
                 // 되어 있는지 확인하는 함수이다. 그러므로 랜덤으로 뽑힌 배열안에
                 // al이 포함되어 있으면 if문 실행 아니면 else 실행하게 된다.
                 if(al.contains(arr[randNum])) {
-                    isDup = true;
+                    isNotDup = true;
 
                     // do ~ while 문은 기본적으로 한번 실행하고 while로 true이면
                     // 실행하고 false이면 실행하지 않는다. 그러면 continue가
@@ -126,7 +126,7 @@ public class CreateTeam {
                     // 실행되지 않도록 하기위해서 제대로된 값을 출력해주기 위한 보정이 목적인듯 하다.
                     continue;
                 } else {
-                    isDup = false;
+                    isNotDup = false;
                 }
 
                 al.add(arr[randNum]);
@@ -134,7 +134,7 @@ public class CreateTeam {
                 // 다르게 나오게 된다. do는 1회를 무조건 반복하고 while에서 결과에 따라
                 // 반복을 시작하는 것인데... continue가 있으니 반복을 하게 되니 사실상
                 // do ~ while문은 필요가 없는것이 아닐까???
-            } while(isDup);
+            }
         }
     }
 
