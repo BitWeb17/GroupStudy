@@ -139,10 +139,9 @@ public class CreateTeam {
                 needException = false;
             }
 
-            /*
-            System.out.printf("cnt = %d, quot + randValue = %d\n",
-                    cnt, quot + randValue);
-             */
+            System.out.printf("cnt = %d, quot + randValue = %d , quot = %d, randvalue = %d\n",
+                    cnt, quot + randValue, quot, randValue);
+
 
             if((cnt % (quot + randValue)) == 0) {
                 System.out.println("");

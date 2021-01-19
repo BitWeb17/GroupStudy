@@ -81,8 +81,7 @@ public class CreateTeam {
 
     public void allocArrayList(
             ArrayList<String> al,
-            String[] arr,
-            int loopNum) {
+            String[] arr, int loopNum) {
 
         boolean isDup = false;
 
