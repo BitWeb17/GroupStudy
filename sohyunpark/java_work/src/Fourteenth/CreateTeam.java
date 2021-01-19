@@ -164,6 +164,7 @@ public class CreateTeam {
                         randValue = 0;
                     }
 
+                    // 엔터 치고 나서 다시 cnt 값 0으로 초기화
                     cnt = 0;
                 }
 
