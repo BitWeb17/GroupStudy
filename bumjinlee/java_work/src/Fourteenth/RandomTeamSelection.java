@@ -1,9 +1,6 @@
 package Fourteenth;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
-class RandomTeamSelection {
+public class RandomTeamSelection {
     private int teamMember;
     private int randomTeam;
     private int teamFixnum, memberFixnum;
@@ -13,15 +10,12 @@ class RandomTeamSelection {
     private int randNum;
     private int choiceMember;
 
-
     private int[] teamNuberArr;
     private int[] teamMemberArr;
     private int[] checkDup;
 
-
     //private ArrayList<Integer> teamAllayList;
     //private ArrayList<Integer> memberAllayList;
-
 
     public RandomTeamSelection(int numOfTeamMember) {
 
