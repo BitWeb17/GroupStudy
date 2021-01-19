@@ -1,4 +1,4 @@
-package TwelfthHomeworkReview;
+package Twelfth.TwelfthHomework.TwelfthHomeworkReview;
 
 public class Mage extends Adventurer implements SkillTree {
     int mana;

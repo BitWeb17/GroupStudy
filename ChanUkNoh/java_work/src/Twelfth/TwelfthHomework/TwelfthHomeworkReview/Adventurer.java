@@ -1,6 +1,4 @@
-package TwelfthHomeworkReview;
-
-import TwelfthHomework.Skill;
+package Twelfth.TwelfthHomework.TwelfthHomeworkReview;
 
 public class Adventurer implements SkillTree {
     int atk, def, dex, intellect, con, mental;
