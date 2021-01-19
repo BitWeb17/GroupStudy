@@ -5,8 +5,6 @@ import java.util.Iterator;
 
 
 public class CreateTeam {
-    final int RESTZERO = 1;
-    final int RESTNONZERO = 2;
     private ArrayList<String> teamArrayList;
 
     private String[] teamArr;
@@ -47,6 +45,7 @@ public class CreateTeam {
             ArrayList<String> al,
             String[] arr,
             int loopNum) {
+        //여기다 랜덤으로 나눌것을 추가? int divNum
         boolean isDup = false;
 
         for (int i = 0; i < loopNum; i++) {
@@ -69,41 +68,34 @@ public class CreateTeam {
 
 
     public void printArrayList(ArrayList<String> al) {
+        //똑같이 랜덤으로 나눌것을 추가?
         String name;
 
         Iterator e = al.iterator();
         int cnt = 1;
+        int addNum = 0;
         int quot = al.size() / numOfTeam;
         int remain = al.size() % numOfTeam;
         boolean needException =
                 (remain > 0) ? true : false;
 
-        int randValue = 0;
 
         while(e.hasNext()) {
             name = (String) e.next();
             System.out.printf("%s ", name);
 
             if(needException) {
-                randValue = (int)(Math.random()*2);
+
+               /// 여기다 추가할것;
                 needException = false;
             }
 
 
-            System.out.printf("cnt = %d, quot + randValue = %d , quot = %d, randvalue = %d\n",
-                    cnt, quot + randValue, quot, randValue);
 
 
             if((cnt % quot) == 0) {
                 System.out.println("");
 
-//                if(cnt == quot) {
-//                    randValue = 1;
-//                } else {
-//                    randValue = 0;
-//                }
-//
-//                cnt = 0;
             }
 
             cnt++;
