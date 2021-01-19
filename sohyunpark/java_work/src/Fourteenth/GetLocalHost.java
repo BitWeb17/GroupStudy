@@ -11,5 +11,6 @@ public class GetLocalHost {
         System.out.println("Host Name : " + inetAddress.getHostName());
 
         return  inetAddress;
+
     }
 }
