@@ -99,7 +99,7 @@ public class CreateTeam {
                 if (needException) {
                     randValue = (int) (Math.random() * 2);
                     if (randValue == 1) remain--;
-                    if (zeroCnt >= numOfTeam - remain) randValue = 1;
+                    if ((zeroCnt) >= (numOfTeam - remain)) randValue = 1;
                     if (randValue == 0) zeroCnt++;
 
                     needException = false;
