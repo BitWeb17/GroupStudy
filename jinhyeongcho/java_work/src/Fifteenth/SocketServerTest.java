@@ -76,6 +76,6 @@ public class SocketServerTest {
             // 콜 스택(매서드 호출)이 어떤식으로 이뤄졌는지 상태를 보여줌
             // 디버깅을 위해서 많이 사용하는 편
             e.printStackTrace();
-        }
+        } 
     }
 }
