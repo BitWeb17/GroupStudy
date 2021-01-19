@@ -38,14 +38,15 @@ public class SocketServerTest {
                 // 출력을 위한 객체를 만듭니다.
                 // 클라이언트에게 출력할 객체를 만든다.
                 OutputStream out = sock.getOutputStream();
+
                 // println의 결과를 out으로 전송한다는 뜻
                 // 내가 서버에 요청하는 것: 출력이 아닌 입력이다.
                 // 서버가 처리해서 돌려주는 것: 이것이 출력이다.
                 PrintWriter writer = new PrintWriter(out, true);
+
                 // 즉 여기서 println의 출력은 클라이이언트에게 간다.
                 // Date()는 시간을 가져온다.
                 // toString()은 문자열로 만듬
-
                 // 접속 상대에게 보내고 싶은 데이터를 이곳에 기록한다.
                 writer.println(new Date().toString());
 

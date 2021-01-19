@@ -26,11 +26,11 @@ public class SocketClientTest {
                 // 즉 서버가 수신하게 만들도록 설정을 해주는 것
                 OutputStream out = sock.getOutputStream();
 
-                String str = "Hello Network Programming";
+                String str = "Hello Network Programming?";
                 // 위의 문자열을 바이트 단위로 쪼개서 서버로 전송한다.
                 out.write(str.getBytes());
 
-                // 서버의 입력을 생성때(수신 준비)
+                //   (수신 준비)
                 InputStream in = sock.getInputStream();
                 BufferedReader reader =
                         new BufferedReader(new InputStreamReader(in));
@@ -39,7 +39,7 @@ public class SocketClientTest {
                 String time = reader.readLine();
                 System.out.println(time);
 
-                    // UnknownHostException : 내가 접속하려는 IP를 찾지 못할
+                    // UnknownHostException : 내가 접속하려는 IP를 찾지 못할때
             } catch (UnknownHostException e) {
                 System.out.println("Server Not Found: " + e.getMessage());
 
