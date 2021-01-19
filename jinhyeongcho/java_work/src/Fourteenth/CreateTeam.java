@@ -161,10 +161,12 @@ public class CreateTeam {
     }
 
     public ArrayList<String> getAteamArrayList() {
+
         return AteamArrayList;
     }
 
     public ArrayList<String> getBteamArrayList() {
+
         return BteamArrayList;
     }
 }
