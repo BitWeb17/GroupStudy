@@ -66,7 +66,6 @@ public class HW1_ {
         int randValue = 0;
 
         while (e.hasNext()) {
-            // 이름은 루프 한 번에 하나씩 읽어들임
             name = (String) e.next();
             System.out.printf("%s ", name);
 
