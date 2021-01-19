@@ -62,7 +62,6 @@ public class HW1_ {
         int cnt = 1;
         int quot = al.size() / numOfTeam; // 17/3=5 quot = 5 (3팀일 경우)
         int remain = al.size() % numOfTeam; // remain = 2
-        boolean needException = (remain > 0) ? true : false;
 
         int randValue = 0;
 
@@ -70,19 +69,6 @@ public class HW1_ {
             // 이름은 루프 한 번에 하나씩 읽어들임
             name = (String) e.next();
             System.out.printf("%s ", name);
-
-            // 현재 케이스에서는 무조건 앞에 5명이 나온다.
-            // 그러므로 이것도 랜덤하게 4, 5 혹은 5, 4가 나오게 해줘야 한다.
-            if (needException) {
-                // true일 때만 실행되므로 한 번 실행 끝.
-                randValue = (int) (Math.random() * 2);
-                needException = false;
-            }
-
-                /*
-                System.out.println("cnt = " + cnt);
-                System.out.println("quot + randValue = " + (quot + randValue));
-                 */
 
             // 17명일 때 3팀이면 5 5 7(quot=5, quot+remain=7)->이 remain을 활용한다면..
             //          4팀일 때 4445(quot=4, quot+remain=5)
