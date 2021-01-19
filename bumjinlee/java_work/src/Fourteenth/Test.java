@@ -1,5 +1,7 @@
 package Fourteenth;
 
+import Fourteenth.RandomTeamSelection;
+
 public class Test {
     public static void main(String[] args) {
         RandomTeamSelection rt = new RandomTeamSelection(17);

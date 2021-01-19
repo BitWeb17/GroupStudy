@@ -1,4 +1,5 @@
 package Fourteenth;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 // 문제 풀 때 어떤식으로 접근을 해야할까요 ?
@@ -68,39 +69,38 @@ public class CreateTeam {
         }
          */
 
-        allocArrayList(AteamArrayList, AteamArr, AnumOfPerson);
-        allocArrayList(BteamArrayList, BteamArr, BnumOfPerson);
+        allocArrayList(
+                AteamArrayList, AteamArr, AnumOfPerson
+        );
+        allocArrayList(
+                BteamArrayList, BteamArr, BnumOfPerson
+        );
     }
 
     public void allocArrayList(
-            ArrayList<String> al,   // AteamArrayList, BteamArrayList
+            ArrayList<String> al,
             String[] arr,
             int loopNum) {
-        // loopNum = TEAMNUMBER 2?
-        // 결국 loopNum 은 추후 AnumOfPerson 과 BnumOfPerson 에 몇 명이 들어오든 크기를
-        // 미리 지정하지 않고 사용 하려는 것인가요?
 
         boolean isDup = false;
 
-        for(int i = 0; i < loopNum; i++) {  //loopNum 을 도는 동안
+        for(int i = 0; i < loopNum; i++) {
             // 우리는 A 배열, B 배열이 나눠진 케이스를 받으므로
             // 하나의 배열에서 모든 값을 처리하지 않는다.
             // 그러므로 start를 별도로 만들 필요가 없었다.
             // int randNum = (int)(Math.random() * loopNum) + start;
             do {
-                // do-while 문: 무조건 한번은 실행
                 int randNum = (int)(Math.random() * loopNum);
-                // randNum 에 loopNum 만큼 랜덤한 숫자를 대입한다.
 
-                if(al.contains(arr[randNum])) { // 할당된 인덱스에 문자열의 중복여부 체크
-                    isDup = true;   // 중복이라면 위 루프를 다시 돔
+                if(al.contains(arr[randNum])) {
+                    isDup = true;
                     continue;
                 } else {
-                    isDup = false;  // 중복이 아니라면 arr[randNum] 에 추가해줌
+                    isDup = false;
                 }
 
                 al.add(arr[randNum]);
-            } while(isDup); // isDup 이 false 일 동안
+            } while(isDup);
         }
     }
 
@@ -123,7 +123,7 @@ public class CreateTeam {
         // 순회할 수 있는가 ?
         // 데이터가 없으면 루프 진행 x
         // 데이터가 하나라도 있으면 루프 진행 o
-        while(e.hasNext()) {
+        while(((Iterator<?>) e).hasNext()) {
             // 존재하는 값을 가져와서 Integer 형식으로 저장합니다.
             name = (String) e.next();
             System.out.printf("%s ", name);
