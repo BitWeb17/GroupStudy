@@ -1,4 +1,4 @@
-package TwelfthHomework;
+package Twelfth.TwelfthHomework;
 
 public class Magician {
 
