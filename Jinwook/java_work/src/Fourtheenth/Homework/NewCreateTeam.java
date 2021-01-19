@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 
 
-public class CreateTeam {
+public class NewCreateTeam {
     private ArrayList<String> teamArrayList;
 
     private String[] teamArr;
@@ -22,7 +22,7 @@ public class CreateTeam {
 //    }
 
 
-    public CreateTeam(String[] arr, int divNum) {
+    public NewCreateTeam(String[] arr, int divNum) {
         teamArr = arr;
 
 
