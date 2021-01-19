@@ -14,3 +14,16 @@ public class HW5_0106 {
         }
     }
 }
+
+        // int cnt = 1;
+
+        // for (int i = 0; i < 100; i++) {
+            // if(i % 3 == 0) {
+                // System.out.printf("%3d", i);
+
+                // if (cnt % 11 == 0) {
+                    // SYstem.out.println("");
+                // }
+
+            // cnt++;
+        // }
