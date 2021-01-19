@@ -16,15 +16,15 @@ public class CreateTeam {
     private int BnumOfPerson;
 
     public CreateTeam(String[] arrA, String[] arrB, final int TEAMNUMBER) {
-        AteamArr = arrA;
+        AteamArr = arrA;  //----nameA 의 {}값
         BteamArr = arrB;
 
-        AnumOfPerson = arrA.length;
+        AnumOfPerson = arrA.length;  //--9
         BnumOfPerson = arrB.length;
 
         numOfTeam = TEAMNUMBER;
 
-        AteamArrayList = new ArrayList<String>();
+        AteamArrayList = new ArrayList<String>(); // ** 이건 왜 굳이 public 안에 넣어야되나?
         BteamArrayList = new ArrayList<String>();
     }
 
@@ -72,17 +72,15 @@ public class CreateTeam {
          */
 
         allocArrayList(
-                AteamArrayList, AteamArr, AnumOfPerson
+                        //  {}의값 상자?   , 배열[0~8]의방들, 방들의 갯수 9
+                        AteamArrayList, AteamArr, AnumOfPerson
         );
         allocArrayList(
                 BteamArrayList, BteamArr, BnumOfPerson
         );
     }
 
-    public void allocArrayList(
-            ArrayList<String> al,
-            String[] arr,
-            int loopNum) {
+    public void allocArrayList(ArrayList<String> al, String[] arr, int loopNum) {
 
         boolean isDup = false;
 
@@ -92,7 +90,7 @@ public class CreateTeam {
             // 그러므로 start를 별도로 만들 필요가 없었다.
             // int randNum = (int)(Math.random() * loopNum) + start;
             do {
-                int randNum = (int)(Math.random() * loopNum);
+                int randNum = (int)(Math.random() * loopNum);//--0~8
 
                 if(al.contains(arr[randNum])) {
                     isDup = true;
@@ -108,14 +106,19 @@ public class CreateTeam {
 
     public void printArrayList(ArrayList<String> al) {
         String name;
-        // ticketArrayList를 순회할 수 있는 정보를 얻음
+        // geta값를 순회할 수 있는 정보를 얻음
         Iterator e = al.iterator();
 
         int cnt = 1;
         int divNum;
+                        //  9/2=4.5
         int quot = al.size() / numOfTeam;
+            //4
+
+        // %-- 나머지값 so -1
         int remain = al.size() % numOfTeam;
         boolean needException =
+                // a면 1이고 b면 0임  a면 트
                 (remain > 0) ? true : false;
 
         int randValue = 0;
@@ -124,16 +127,17 @@ public class CreateTeam {
 
         // 순회할 수 있는가 ?
         // 데이터가 없으면 루프 진행 x
-        // 데이터가 하나라도 있으면 루프 진행 o
+        // 데이터가 하나라도 있으면 루프 진행 o루
+
+        // ** hasnext????
         while(e.hasNext()) {
-            // 존재하는 값을 가져와서 Integer 형식으로 저장합니다.
             name = (String) e.next();
             System.out.printf("%s ", name);
 
             // 현재 케이스에서는 무조건 앞에 5명이 나온다.
             // 그러므로 이것도 랜덤하게 4, 5 혹은 5, 4가 나오게 해줘야 한다.
             if(needException) {
-                randValue = (int)(Math.random() * 2);
+                randValue = (int)(Math.random() * 2);  //---0,1
                 needException = false;
             }
 
