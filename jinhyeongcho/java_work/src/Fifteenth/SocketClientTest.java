@@ -10,7 +10,7 @@ public class SocketClientTest {
         String hostname = "180.66.147.212";
         // 서버에 여러 서비스가 있을 수 있는데
         // 그 중에서 내가 사용하고자 하는 서비스의 포트 번호를 적습니다.
-        int port = 33333;
+        int port = 33333; 
 
         for(int i = 0; i < 10; i++) {
             try {
