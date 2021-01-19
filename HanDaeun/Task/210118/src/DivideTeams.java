@@ -18,7 +18,7 @@ public class DivideTeams extends NameList {
         this.startNumOfNameList = startNumOfNameList;
         this.totalPersonNum = totalPersonNum;
         this.totalTeamNum = totalTeamNum;
-        selectedNameNum = new HashSet<Integer>();
+        selectedNameNum = new HashSet<>();
 
         setName();
 
@@ -28,28 +28,23 @@ public class DivideTeams extends NameList {
 
     // 중복되지 않는 랜덤한 사람의 번호를 뽑아 팀을 나눈 뒤 출력함
     public void makeTeams() {
-        // 팀 배정이 완료된 인원수
-        int selectedPersonNum = 0;
+        // 각 팀의 배정이 완료된 인원수, 모든 팀의 배정이 완료된 인원수
+        int selectedPersonNum = 0, selectedSumPersonNum = 0;
         // 랜덤하게 뽑은 사람의 번호
         int randNameNum;
         // 배정중인 팀의 번호
         int selectedTeamNum = 1;
 
-        System.out.printf("         < %d팀 >\n", selectedTeamNum);
+        System.out.printf("             < %d팀 >\n", selectedTeamNum);
 
 
-        // 팀 배정이 완료된 인원수가 총 인원수와 같아질 때까지 실행
-        while(selectedPersonNum < totalPersonNum) {
+        // 모든 팀의 배정이 완료된 인원수가 총 인원수와 같아질 때까지 실행
+        while(selectedSumPersonNum < totalPersonNum) {
             // 랜덤한 사람의 번호를 뽑음
             randNameNum = (int)(Math.random() * totalPersonNum) + startNumOfNameList;
 
-            // 이미 팀 배정이 완료된 사람인 경우 다시 돌아가 다른 사람을 뽑음
-            if(selectedNameNum.contains(randNameNum)) {
-                continue;
-            }
-
             // 팀 배정이 되지 않은 사람인 경우
-            else {
+            if(!selectedNameNum.contains(randNameNum)) {
                 // NameList 에서 해당 사람의 이름을 출력
                 System.out.printf("%s ", getName(randNameNum));
 
@@ -58,11 +53,15 @@ public class DivideTeams extends NameList {
                 selectedPersonNum++;
 
                 // 팀당 인원수를 채우게 되면 다음 팀 배정
-                /* 오류 발생 */
                 if(selectedPersonNum % personNumOfTeam[selectedTeamNum - 1] == 0) {
-                    System.out.printf("< %d, %d >\t", selectedTeamNum, personNumOfTeam[selectedTeamNum - 1]);
-                    System.out.println("\n");
-                    selectedTeamNum++;
+                    if(selectedTeamNum < totalTeamNum) {
+                        System.out.printf("\n\n             < %d팀 >\n", ++selectedTeamNum);
+                    }
+
+                    // 현재 팀 배정이 완료된 인원수를 총 인원수에 더하고
+                    // 다음 팀 배정을 위해 0으로 초기화
+                    selectedSumPersonNum += selectedPersonNum;
+                    selectedPersonNum = 0;
                 }
             }
         }
