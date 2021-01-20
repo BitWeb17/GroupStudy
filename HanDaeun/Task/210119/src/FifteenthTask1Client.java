@@ -10,9 +10,9 @@ public class FifteenthTask1Client {
         String sendMsg, receivedMsg;
         Scanner scan = new Scanner(System.in);
 
+        // 서버의 정보를 입력받아 접속함
         System.out.print("접속하려는 서버의 IP 주소 : ");
         hostname = scan.nextLine();
-
         System.out.print("사용하려는 서비스의 포트 번호 : ");
         port = Integer.parseInt(scan.nextLine());
 
@@ -27,13 +27,15 @@ public class FifteenthTask1Client {
             BufferedReader reader = new BufferedReader(new InputStreamReader(in));
 
             RockPaperScissors rps = new RockPaperScissors();
+            System.out.println("\n당신은 Player2 입니다.");
 
 
             while(true) {
                 receivedMsg = reader.readLine();
                 System.out.println(receivedMsg);
 
-                if(receivedMsg.equals(rps.getSTART())) {
+                // 클라이언트의 입력이 필요할 때만 입력값을 서버에 넘겨줌
+                if(receivedMsg.equals(rps.getINPUT())) {
                     sendMsg = scan.nextLine();
                     writer.println(sendMsg);
                 }
