@@ -14,7 +14,7 @@ public class SocketClient {
 
     public SocketClient(String ip, int port) {
         try {
-            mSocket = new Socket(ip, port);
+            mSocket = new Socket(ip, port); // 소켓 만들기
             System.out.println(ip + " 연결됨");
 
             mIn = new BufferedReader(
