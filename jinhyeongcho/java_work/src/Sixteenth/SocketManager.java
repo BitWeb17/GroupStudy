@@ -29,7 +29,7 @@ public class SocketManager {
         out = new OutputStream[ONE];
     }
 
-    // recv용 [현재 개발 관점은 서버 입자]
+    // recv용 [현재 개발 관점은 서버 입장]
     public SocketManager(int num) {
         //scan = new Scanner(System.in);
 
