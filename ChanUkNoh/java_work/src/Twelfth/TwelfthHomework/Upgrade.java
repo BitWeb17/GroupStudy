@@ -1,4 +1,4 @@
-package TwelfthHomework;
+package Twelfth.TwelfthHomework;
 
 import java.util.Scanner;
 

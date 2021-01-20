@@ -1,4 +1,4 @@
-package TwelfthHomeworkReview;
+package Twelfth.TwelfthHomework.TwelfthHomeworkReview;
 
 public class Assassin extends Thief implements SkillTree {
     int incantation;

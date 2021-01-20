@@ -1,4 +1,4 @@
-package TwelfthHomeworkReview;
+package Twelfth.TwelfthHomework.TwelfthHomeworkReview;
 
 public class Thief extends Adventurer implements SkillTree {
     float successRate;

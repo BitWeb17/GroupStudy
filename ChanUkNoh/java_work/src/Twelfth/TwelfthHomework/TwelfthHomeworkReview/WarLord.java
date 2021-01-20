@@ -1,4 +1,4 @@
-package TwelfthHomeworkReview;
+package Twelfth.TwelfthHomework.TwelfthHomeworkReview;
 
 public class WarLord extends Worrior implements SkillTree {
     int intention;
