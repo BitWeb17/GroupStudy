@@ -1,6 +1,11 @@
 // 전략짜기
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
@@ -8,6 +13,7 @@ public class DiceServer {
     public static void main(String[] args) {
 
         int port = 5555;
+        Dice dice = new Dice();
 
         try {
             ServerSocket server = new ServerSocket(port);
@@ -19,7 +25,6 @@ public class DiceServer {
                 OutputStream out = client.getOutputStream();
                 PrintWriter printWriter = new PrintWriter(out, true);
 
-                Dice dice = new Dice();
                 int serverNum = dice.randomDice();
 
                 printWriter.println("주사위 던지기");
@@ -32,6 +37,7 @@ public class DiceServer {
                 System.out.println(clientNum);
 
                 dice.printWinner(serverNum, clientNum);
+                // ??
             }
         } catch (IOException e) {
             e.printStackTrace();

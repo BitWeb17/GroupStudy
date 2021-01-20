@@ -5,8 +5,9 @@ import java.net.UnknownHostException;
 public class DiceClient {
     public static void main(String[] args) {
 
-        String hostname = "110.70.58.14";
+        String hostname = "192.168.0.217";
         int port = 5555;
+        Dice dice = new Dice();
 
         for (int i = 0; i < 10; i++) {
             try {
@@ -15,7 +16,6 @@ public class DiceClient {
                 OutputStream out = socket.getOutputStream();
                 PrintWriter printWriter = new PrintWriter(out, true);
 
-                Dice dice = new Dice();
                 printWriter.println(dice.randomDice());
 
                 InputStream input = socket.getInputStream();
