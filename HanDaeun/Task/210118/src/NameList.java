@@ -27,7 +27,7 @@ public class NameList {
 
     // 사람들의 이름을 ArrayList 에 저장해둠
     public void setName() {
-        name = new ArrayList<String>();
+        name = new ArrayList<>();
 
         name.add(ONE);
         name.add(TWO);
