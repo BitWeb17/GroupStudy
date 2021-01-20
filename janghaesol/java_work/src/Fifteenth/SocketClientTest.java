@@ -7,7 +7,7 @@ import java.net.UnknownHostException;
 public class SocketClientTest {
     public static void main(String[] args) {
         // 내가 접속할 서버의 IP 주소를 적습니다.
-        String hostname = "192.168.0.9";
+        String hostname = "127.0.0.1";
         // 서버에 여러 서비스가 있을 수 있는데
         // 그 중에서 내가 사용하고자 하는 서비스의 포트 번호를 적습니다.
         int port = 33333;
