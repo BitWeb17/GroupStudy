@@ -87,10 +87,17 @@ public class SocketManager {
     public void recv(Socket[] sock, int num) throws IOException {
         int tmp;
 
+        // for 문이 3번 반복되기 때문에 배열은 0 ~ 2번 배열을 뜻한다.
+        // 하지만 여기서 0번 배열은 1번째로 입력을 하면서 들어온 클라이언트를
+        // 뜻하며 1번째로 했던 입력이 getInputStream 에서 in[i] 로
+        // 할당된다.
         for(int i = ZERO; i < num; i++) {
             in[i] = sock[i].getInputStream();
 
             reader = new BufferedReader(new InputStreamReader(in[i]));
+
+            // 값이 들어왔을 때 문자열 1, 2, 3 을 그대로 비교하라.
+            //
 
             // 미리 변환하지 않고 문자열인 상태에서 "3"과 같은지 비교하고
             // 같으면 바꾸고 같지 않으면 그대로 두는 형식이 더 효율적이다.
