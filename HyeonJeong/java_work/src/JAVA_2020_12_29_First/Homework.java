@@ -1,3 +1,5 @@
+package JAVA_2020_12_29_First;
+
 import  java.util.Scanner;
 
 class Homework{

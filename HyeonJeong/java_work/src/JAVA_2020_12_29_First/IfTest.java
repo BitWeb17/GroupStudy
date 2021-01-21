@@ -1,3 +1,5 @@
+package JAVA_2020_12_29_First;
+
 public class IfTest {
     public static void main(String[] args) {
         int korean = 70;

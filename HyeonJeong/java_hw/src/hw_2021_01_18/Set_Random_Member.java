@@ -5,15 +5,12 @@ import java.util.ArrayList;
 public class Set_Random_Member {
     private ArrayList<String> jo_A_arraylist;
     private ArrayList<String> jo_B_arraylist;
-    private ArrayList<String> jo_C_arraylist;
 
     private String[] jo_A_array;
     private String[] jo_B_array;
-    private String[] jo_C_array;
 
     private int jo_A_person_number;
     private int jo_B_person_number;
-    private int jo_C_person_number;
 
     private int number_of_teams;
 
@@ -32,18 +29,6 @@ public class Set_Random_Member {
     public void set_Random_jo() {
         set_arraylist(jo_A_arraylist, jo_A_array, jo_A_person_number);
         set_arraylist(jo_B_arraylist, jo_B_array, jo_B_person_number);
-    }
-
-    public Set_Random_Member(String[] jo_C, final int NUMBER_OF_TEAMS) {
-        jo_C_array = jo_C;
-        jo_C_person_number = jo_C.length;
-        jo_C_arraylist = new ArrayList<String>();
-
-        number_of_teams = NUMBER_OF_TEAMS;
-    }
-
-    public void set_Random_jo_C() {
-        set_arraylist(jo_C_arraylist, jo_C_array, jo_C_person_number);
     }
 
     public void set_arraylist(
@@ -117,23 +102,20 @@ public class Set_Random_Member {
         int remained = people_of_jo - id;
         // 전체 사람 수에서 팀을 결성한 사람을 뺀 남은 사람
         while (remained-- > 0) {
-            System.out.printf("[%s] %d팀 \n",name_of_jo[id], team_No);
+            System.out.printf("[%s] %d팀 \n",name_of_jo[id], team_No+1);
             // 남은 사람들을 팀에 한명씩 넣어준다.
             id++;
             team_No++;
         }
         System.out.println("--------------------------\n");
     }
-    public ArrayList<String> getJo_A_arraylist () {
+
+    public ArrayList<String> getJo_A_arraylist() {
         return jo_A_arraylist;
     }
 
-    public ArrayList<String> getJo_B_arraylist () {
+    public ArrayList<String> getJo_B_arraylist() {
         return jo_B_arraylist;
-    }
-
-    public ArrayList<String> getJo_C_arraylist() {
-        return jo_C_arraylist;
     }
 }
 

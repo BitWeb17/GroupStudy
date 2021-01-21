@@ -1,3 +1,5 @@
+package JAVA_2020_12_29_First;
+
 public class DataTypeTest {
     public static void main(String[] args) {
         char ch = 'a';
