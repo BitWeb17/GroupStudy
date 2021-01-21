@@ -38,6 +38,7 @@ public class MainServer {
         }
 
         ssm.send(ssm.getClntSockArr(), ssm.getMaxClnt());
+        //ssm.recvString(ssm.getClntSockArr(), ssm.getMaxClnt());
 
         System.out.println("모든 사용자에게 입력 결과 전달 완료!");
     }

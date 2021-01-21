@@ -1,6 +1,7 @@
 package jan0120;
 
 import java.io.*;
+import java.lang.invoke.SwitchPoint;
 import java.net.Socket;
 import java.util.Date;
 import java.util.Scanner;
@@ -83,7 +84,60 @@ public class SocketManager {
             writer.println(str);
         }
     }
+/*
+    public  void recvString(Socket[] sock, int num) throws  IOException{
+        String playerRCP;
+        for(int i = ZERO; i < MAGICNUM; i++){
+            in[i] = sock[i].getInputStream();
 
+            reader = new BufferedReader(new InputStreamReader(in[i]));
+            if(arrRockScissorPaper[i].equals("가위")){
+                System.out.println("가위를 내쟈!");
+            }else if (arrRockScissorPaper[i].equals("바위")){
+                System.out.println("바위를 내쟈!.");
+            }else if(arrRockScissorPaper[i].equals("보")){
+                System.out.println("보를 내쟈!.");
+            }
+        }
+    }
+
+    public boolean letsBeWinner(Socket[] sock, int num) throws IOException{
+        InputStream game;
+        for(int i = ZERO; i < MAGICNUM; i++){
+           in[i] =sock[i].getInputStream(); ;
+           game = sock[i].getInputStream();
+            reader = new BufferedReader(new InputStreamReader(in[i]));
+        switch (game){
+            case("가위") :
+                    {==1 && b==1){
+                    System.out.println("비겼습니다.");}
+                else if(a==2 &&  b==3){
+                    System.out.println("비겼습니다.");}
+                else if(a==3 &&  b==2){
+                    System.out.println("비겼습니다.");}
+                else if(a==3 &&  b==3){
+                    System.out.println("이겼습니다");}
+                else{
+                    System.out.println("졌습니다");}
+                break;
+            }
+            if(arrRockScissorPaper[ZERO].equals("가위") &&
+                    arrRockScissorPaper[1].equals("보") &&
+                         arrRockScissorPaper[2].equals("보")){
+                System.out.println("첫번쨰 플레이어 win");
+            }else if(arrRockScissorPaper[ZERO].equals("바위") &&
+                    arrRockScissorPaper[1].equals("가위") &&
+                    arrRockScissorPaper[2].equals("가위")){
+                System.out.println("첫번쨰 플레이어 win");
+            }else if((arrRockScissorPaper[ZERO].equals("보") &&
+                    arrRockScissorPaper[1].equals("바위") &&
+                    arrRockScissorPaper[2].equals("바위")){
+                System.out.println("첫번쨰 플레이어 win");
+            }
+        }
+    }
+
+ */
     public void recv(Socket[] sock, int num) throws IOException {
         int tmp;
 

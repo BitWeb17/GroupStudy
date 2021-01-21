@@ -47,7 +47,6 @@ public class ServerSocketManager extends SocketManager {
     public Socket[] getClntSockArr() {
         return clntSockArr;
     }
-
     public int getMaxClnt() {
         return maxClnt;
     }
