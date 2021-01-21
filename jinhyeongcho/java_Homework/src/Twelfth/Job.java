@@ -1,4 +1,5 @@
 package Twelfth;
+/*
 
 import static Twelfth.ManyJob.*;
 
@@ -37,3 +38,4 @@ public class Job implements JobProto {
 
     public int warriorskill(otherObj)
 }
+*/
