@@ -10,15 +10,12 @@ public class RandomTeamSelection {
     private int randNum;
     private int choiceMember;
 
-
     private int[] teamNuberArr;
     private int[] teamMemberArr;
     private int[] checkDup;
 
-
     //private ArrayList<Integer> teamAllayList;
     //private ArrayList<Integer> memberAllayList;
-
 
     public RandomTeamSelection(int numOfTeamMember) {
 
