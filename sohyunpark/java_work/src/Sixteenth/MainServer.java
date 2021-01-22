@@ -14,7 +14,7 @@ import java.io.IOException;
 // 서버의 역할 : 클라이언트들에게 데이터를 중계
 public class MainServer {
     private static final int MAX = 3;
-
+    // 메소드가 기능 자체에 집중할 수 있도록 throws 사용
     public static void main(String[] args) throws IOException, InterruptedException {
 
         ServerSocketManager ssm = new ServerSocketManager(7777, MAX);
@@ -28,6 +28,10 @@ public class MainServer {
             ssm.checkEachIpAddressInfo();
 
             // 클라이언트 3명이 전송한 내용 가위바위보 배열에 대입
+            // receive가 될 때까지 블로킹 연산임(send()와 다름)
+            // receive 다 받을 때까지 무한정 기다림  -> 이에 따라 데드락 발생
+            // send()는 내 할일 하면 다음 할 일 하러 감(밑의 코드 동작하러 감)
+            // send()와 recv()는 병렬로 진행
             ssm.recv(ssm.getClntSockArr(), ssm.getMaxClnt());
 
             // 이제 서버가 할 일은
