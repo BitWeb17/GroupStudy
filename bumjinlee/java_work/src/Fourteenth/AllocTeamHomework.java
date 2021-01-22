@@ -23,4 +23,3 @@ public class AllocTeamHomework {
         ct.printArrayList(ct.getBteamArrayList());
     }
 }
-
