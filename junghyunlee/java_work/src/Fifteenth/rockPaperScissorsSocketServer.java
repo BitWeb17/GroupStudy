@@ -5,6 +5,10 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.Date;
 
+// 가위바위보를 통신하기위한 절차
+// 1. 서로 입력값을 넣어야한다.
+// 2.
+
 public class rockPaperScissorsSocketServer {
     public static void main(String[] args) {
         int port = Integer.parseInt("33333");
@@ -22,9 +26,6 @@ public class rockPaperScissorsSocketServer {
                         "[" + sock.getInetAddress() +
                                 "] client connected"
                 );
-
-
-
 
                 OutputStream out = sock.getOutputStream();
 
