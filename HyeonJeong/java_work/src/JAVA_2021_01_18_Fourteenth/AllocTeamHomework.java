@@ -2,7 +2,7 @@ package JAVA_2021_01_18_Fourteenth;
 
 public class AllocTeamHomework {
     public static void main(String[] args) {
-        final int TEAMNUMBER = 2;
+        final int TEAMNUMBER = 8;
         System.out.println("지금부터 랜덤 팀 구성을 시작합니다.");
 
         String[] nameA = {
