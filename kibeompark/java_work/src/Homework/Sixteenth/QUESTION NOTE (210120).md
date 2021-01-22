@@ -3,7 +3,7 @@
 **ServerSocketManager.java**
 
 Q : 소켓에는 접속한 클라이언트에 대한 모든 정보가 저장되는 건가요 ? 아니면 이후 지속적인 실시간 연결 개념이라고 봐야 하나요 ?  
-Q : for 문을 사용하고 있는데 배열 인덱스에 clntCnt 대신 i를 쓰면 안 되나요 ?
+Q : for 문 내부에서 배열 인덱스에 clntCnt 대신 i를 쓰면 안 되나요 ?
 ```java
 public void waitForClientRequest() throws IOException {
     System.out.println("사용자 접속을 대기합니다.");
