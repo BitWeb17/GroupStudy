@@ -22,7 +22,7 @@ public class DiceServer {
                 );
 
                 OutputStream out = clntSock.getOutputStream();
-                // PrintWriter writer = new PrintWriter(out, true);
+                PrintWriter writer = new PrintWriter(out, true);
                 InputStream in = clntSock.getInputStream();
                 BufferedReader reader =
                         new BufferedReader(new InputStreamReader(in));
@@ -38,8 +38,8 @@ public class DiceServer {
                 // 클라이언트 쪽에서 아예 결과가 뜨지 않아
                 // sout으로 출력을 해 보았지만 출력 값도 나오지 않습니다.
                 // 어떤 오류인지 왜 안 되는 것인지 궁금합니다.
-                // writer.print(diceNum);
-                out.write(diceNum);
+                writer.println(Integer.toString(dg.playGame()));
+                // out.write(diceNum);
 
                 dg.printGame(diceNum, reader.read());
             }
