@@ -4,18 +4,20 @@ import java.util.Random;
 
 // new Thread를 하여 Runnable을 implement한 객체를 생성하면
 // 무조건 Thread가 CPU를 획득하기위해 경쟁하며 run()이 구동하게 된다.
-class Worker implements Runnable { // 워커 클래스에서 러너블 인터페이스(실행가느안 상태)를 구현
+class Worker implements Runnable {
+    // Runnable - 구현할 메소드가 run() 하나 뿐인 함수형 인터페이스
+    // 워커 클래스에서 러너블 인터페이스(실행가능한 상태)를 구현
     String name;
     private int sleepTime; // 슬립타임 (일정시간을 기다리게하는 메서드)
     private final static Random generator = new Random(); //새로운 랜덤 값을 발생
 
-    public Worker(String name) {
+    public Worker(String name) { // 생성자 호출
         this.name = name;
-        sleepTime = generator.nextInt(3000) + 500; // 3.5초후 발
+        sleepTime = generator.nextInt(3000) + 500; // 3.5초후 실행
     }
 
     @Override
-    public void run() {
+    public void run() { //Runnable 인터페이스를 구현할 메소드 run()의 오버라이딩
         System.out.println("시작");
         try {
             // sleep()에 들어가는 숫자는 ms단위다
@@ -31,7 +33,7 @@ class Worker implements Runnable { // 워커 클래스에서 러너블 인터페
             //    스케줄링할때는 이 Wait Queue에서 스케줄링을 하게 된다.
             //    스케줄링에서 현재 프로세스를 제외합니다란 뜻을
             //    내부적으로 내포하고 있다.
-            Thread.sleep(sleepTime);
+            Thread.sleep(sleepTime); // 위에서 딜레이 타임을 실행
         } catch (InterruptedException e) {
         }
         System.out.println(name + "SCV가 미네랄을 채취했습니다.");

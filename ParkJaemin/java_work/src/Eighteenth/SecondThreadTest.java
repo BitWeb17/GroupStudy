@@ -10,7 +10,7 @@ public class SecondThreadTest implements Runnable { //실행중 또는 실행 �
     }
 
     @Override
-    public void run() { //러너블 오버라이딩
+    public void run() { //러너블 유일한 메서드인 run() 오버라이딩
         Random random = new Random();//랜덤값 생성
 
         for(int i = 1; i < 3; i++) {
