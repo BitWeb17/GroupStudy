@@ -50,6 +50,9 @@ class Phon extends Electronicproducts {
 public class Quiz6 {
     public static void main(String[] args) {
 
+        Electronicproducts tv = new Electronicproducts("Lg tv", "비 충전식");
+        System.out.println(tv);
+
         Phon s = new Phon(
                 "Iphon SE2", "충전식 , 충전후 사용 가능", "가능");
         System.out.println(s);

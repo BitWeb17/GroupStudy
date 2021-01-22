@@ -1,22 +1,8 @@
 package Test;
-
-import java.util.Scanner;
-
-class Number {
-    Scanner scan = new Scanner(System.in);
-
-    public Number() {
-
-        System.out.print("아무 숫자를 입력하세요: ");
-        int num = scan.nextInt();
-        System.out.println("입력된 숫자 = " + num);
-
-    }
-}
-
+// 클래스를 사용하여 사용자 입력을 받는 프로그램을 작성
 public class Quiz1 {
     public static void main(String[] args) {
-
-        Number qz1 = new Number();
+        QuizOneTwo qz1 = new QuizOneTwo();
+        qz1.UserScannerNum();
     }
 }

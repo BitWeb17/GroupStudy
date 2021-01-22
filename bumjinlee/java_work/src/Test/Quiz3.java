@@ -1,20 +1,28 @@
 package Test;
 
+// 문제 3. 클래스를 사용하여 임의의 난수 배열을 생성하도록 프로그래밍
 class RandomArray {
-    int rd;
-    int[] arr = new int[rd];
+    private int randNum;
+    private int[] arr;
 
     public RandomArray() {
-        rd = (int) ((Math.random()*100)+1);
+        randNum = (int) (Math.random() * 10) + 1;
+        arr = new int[randNum];
+    }
 
-        System.out.printf("랜덤한 배열 번호: arr[%d]  ", rd);
+    public void PrintRandomArray() {
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = (int) (Math.random() * 10) + 1;
+
+            System.out.printf("arr[%d] %d \n", i, arr[i]);
+        }
     }
 }
 
 public class Quiz3 {
     public static void main(String args[]) {
-        RandomArray qz3 = new RandomArray();
-
+        RandomArray ra = new RandomArray();
+        ra.PrintRandomArray();
     }
 }
 
