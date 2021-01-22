@@ -1,6 +1,5 @@
-package Seventeenth;
+package FistTest;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class inputScanner {

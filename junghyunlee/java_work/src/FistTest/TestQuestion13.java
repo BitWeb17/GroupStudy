@@ -1,4 +1,4 @@
-package Seventeenth;
+package FistTest;
 
 // 정렬해서 출력
 // 배열의 value 값을 작은순서부터 크게

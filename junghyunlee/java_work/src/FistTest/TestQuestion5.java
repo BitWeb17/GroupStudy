@@ -1,4 +1,4 @@
-package Seventeenth;
+package FistTest;
 
 public class TestQuestion5 {
     // 1. mv -f 옵션 : 지정 위치에 동일 파일이 있을 경우 덮어 쓸 때 묻지 않는다.

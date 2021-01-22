@@ -1,4 +1,4 @@
-package Seventeenth;
+package FistTest;
 
 // 전자제품 특성
 // 1. 전원을 껐다 켰다 할수 있다.

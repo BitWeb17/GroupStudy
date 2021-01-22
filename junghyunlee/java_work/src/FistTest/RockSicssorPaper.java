@@ -1,4 +1,4 @@
-package Seventeenth;
+package FistTest;
 
 import java.util.Scanner;
 

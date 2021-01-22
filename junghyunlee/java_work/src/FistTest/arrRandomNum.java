@@ -1,6 +1,4 @@
-package Seventeenth;
-
-import java.util.Arrays;
+package FistTest;
 
 public class arrRandomNum {
     private int[] arr;

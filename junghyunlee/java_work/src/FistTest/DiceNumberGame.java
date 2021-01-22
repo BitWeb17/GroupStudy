@@ -1,4 +1,4 @@
-package Seventeenth;
+package FistTest;
 
 // 1. 내꺼 랜덤 다이스를 준비한다.
 // 2. 컴퓨터 랜덤 다이스를 준비한다.

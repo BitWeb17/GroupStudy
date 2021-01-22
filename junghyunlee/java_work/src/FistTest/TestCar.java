@@ -1,4 +1,4 @@
-package Seventeenth;
+package FistTest;
 
 // Car 라는 class
 public class TestCar {

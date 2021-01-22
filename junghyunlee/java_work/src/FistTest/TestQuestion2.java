@@ -1,6 +1,4 @@
-package Seventeenth;
-
-import java.util.Scanner;
+package FistTest;
 
 public class TestQuestion2 {
     public static void main(String[] args) {

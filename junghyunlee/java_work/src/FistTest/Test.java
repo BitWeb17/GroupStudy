@@ -1,4 +1,4 @@
-package Seventeenth;
+package FistTest;
 
 public class Test {
     public static void main(String[] args){ //void: 이 함수의 리턴값이 없다.

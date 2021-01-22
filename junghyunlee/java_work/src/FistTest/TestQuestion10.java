@@ -1,4 +1,4 @@
-package Seventeenth;
+package FistTest;
 
 public class TestQuestion10 {
 
