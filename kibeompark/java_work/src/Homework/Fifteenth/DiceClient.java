@@ -27,8 +27,7 @@ public class DiceClient {
             int diceNum = dg.playGame();
             out.write(diceNum);
 
-            // System.out.println(reader.read());
-            dg.printGame(diceNum, reader.read());
+            dg.printGame(diceNum, Integer.parseInt(reader.readLine()));
 
         } catch (UnknownHostException e) {
             System.out.println("Server Not Found : " + e.getMessage());
