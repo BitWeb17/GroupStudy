@@ -10,11 +10,14 @@ class diceGame{
     }
     public void playDiceGame(){
         if(comD > myD){
-            System.out.println("컴퓨터 :" +comD + "\n나 :" + myD + "\n컴퓨터 : 강해져서 돌아와라 (사용자 '패배')");
+            System.out.println("컴퓨터 :" +comD + "\n나 :" + myD
+                    + "\n컴퓨터 : 강해져서 돌아와라 (사용자 '패배')");
         }else if(comD < myD){
-            System.out.println("컴퓨터 :" +comD + "\n나 :" + myD + "\n나 : 이제 컴퓨터 정도는 껌이지 (사용자 '승리')");
+            System.out.println("컴퓨터 :" +comD + "\n나 :" + myD
+                    + "\n나 : 이제 컴퓨터 정도는 껌이지 (사용자 '승리')");
         }else{
-            System.out.println("컴퓨터 :" +comD + "\n나 :" + myD + "\n상대와 비겼습니다");
+            System.out.println("컴퓨터 :" +comD + "\n나 :" + myD
+                    + "\n상대와 비겼습니다");
         }
     }
 }
