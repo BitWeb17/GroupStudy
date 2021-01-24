@@ -1,8 +1,6 @@
 package Sixteenth;
 
-
 import java.io.IOException;
-
 // 혼자서 서버 클라이언트를 테스트하는 방법
 // 프로젝트 최상위를 보면 전체 경로가 보이는데
 // 터미널을 열어서 이 경로로 이동한다.
@@ -32,7 +30,7 @@ public class MainServer {
         // 이제 서버가 할 일은
         // 클라이언트들에게 승패 결과와
         // 각자가 무엇을 제출했는지 표시해주는 것
-        if(ssm.canWeGetWinner(ssm.getMaxClnt())) {
+        if (ssm.canWeGetWinner(ssm.getMaxClnt())) {
             System.out.println("승패가 결정되었습니다.");
         } else {
             System.out.println("무승부: 게임을 다시 시작합니다.");

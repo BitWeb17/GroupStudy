@@ -25,7 +25,7 @@ public class SocketManager {
     public SocketManager() {
         scan = new Scanner(System.in);
 
-        //in = new InputStream[ONE];
+        in = new InputStream[ONE];
         out = new OutputStream[ONE];
     }
 
@@ -51,7 +51,7 @@ public class SocketManager {
         String res = "";
         int len = arrRockScissorPaper.length;
 
-        for(int i = ZERO; i < len; i++) {
+        for (int i = ZERO; i < len; i++) {
             res += (i + 1) + "번 사용자: ";
 
             if (arrRockScissorPaper[i].equals("1")) {
@@ -62,7 +62,7 @@ public class SocketManager {
                 res += "보";
             }
 
-            if(i == len - ONE) {
+            if (i == len - ONE) {
                 res += "";
             } else {
                 res += ", ";
@@ -73,7 +73,7 @@ public class SocketManager {
     }
 
     public void send(Socket[] sock, int num) throws IOException {
-        for(int i = ZERO; i < num; i++) {
+        for (int i = ZERO; i < num; i++) {
             out[i] = sock[i].getOutputStream();
 
             writer = new PrintWriter(out[i], true);
@@ -87,7 +87,7 @@ public class SocketManager {
     public void recv(Socket[] sock, int num) throws IOException {
         int tmp;
 
-        for(int i = ZERO; i < num; i++) {
+        for (int i = ZERO; i < num; i++) {
             in[i] = sock[i].getInputStream();
 
             reader = new BufferedReader(new InputStreamReader(in[i]));
@@ -97,7 +97,7 @@ public class SocketManager {
             // 숙제로 한 번 만들어보세요 ~
             tmp = Integer.parseInt(reader.readLine());
 
-            if(tmp == MAGICNUM) {
+            if (tmp == MAGICNUM) {
                 arrRockScissorPaper[i] = Integer.toString(tmp + ONE);
             } else {
                 arrRockScissorPaper[i] = Integer.toString(tmp);
@@ -105,6 +105,18 @@ public class SocketManager {
 
             System.out.println("msg: " + arrRockScissorPaper[i]);
         }
+    }
+
+    public void recv(Socket sock) throws IOException {
+        in[ZERO] = sock.getInputStream();
+
+        reader = new BufferedReader(new InputStreamReader(in[ZERO]));
+
+        System.out.println(reader.readLine());
+    }
+
+    public void close(Socket sock) throws IOException {
+        sock.close();
     }
 
     public boolean canWeGetWinner(int num) {
@@ -115,18 +127,18 @@ public class SocketManager {
         // 이것이 보인지 무승부인지 판정이 불가!
         int bitOROfAllInputString = ZERO;
 
-        for(int i = ZERO; i < num; i++) {
+        for (int i = ZERO; i < num; i++) {
             bitOROfAllInputString |=
                     Integer.parseInt(arrRockScissorPaper[i]);
         }
 
-        if(bitOROfAllInputString == 7) {
+        if (bitOROfAllInputString == 7) {
             return false;
-        } else if(bitOROfAllInputString == 1) {
+        } else if (bitOROfAllInputString == 1) {
             return false;
-        } else if(bitOROfAllInputString == 2) {
+        } else if (bitOROfAllInputString == 2) {
             return false;
-        } else if(bitOROfAllInputString == 4) {
+        } else if (bitOROfAllInputString == 4) {
             return false;
         }
 

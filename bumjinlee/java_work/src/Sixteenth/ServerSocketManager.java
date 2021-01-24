@@ -1,4 +1,5 @@
 package Sixteenth;
+
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -28,13 +29,13 @@ public class ServerSocketManager extends SocketManager {
     public void waitForClientRequest() throws IOException {
         System.out.println("사용자 접속을 대기합니다.");
 
-        for(int i = 0; i < maxClnt; i++) {
+        for (int i = 0; i < maxClnt; i++) {
             clntSockArr[clntCnt++] = servSock.accept();
         }
     }
 
     public void checkEachIpAddressInfo() {
-        for(int i = 0; i < maxClnt; i++) {
+        for (int i = 0; i < maxClnt; i++) {
             System.out.println(
                     "[" + clntSockArr[i].getInetAddress() +
                             "] client connected"
