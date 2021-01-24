@@ -17,7 +17,7 @@ public class CreateTeam {
 
     /*
     // 현재 케이스에서 사용하지 않음
-    public CreateTeam(String[] arr) {
+    public CreateTeamOfTest20(String[] arr) {
         teamArr = arr;
 
         numOfPerson = arr.length;
