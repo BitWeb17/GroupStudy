@@ -2,60 +2,59 @@ package Test;
 
 // 휴대폰은 전자제품임을 표현하는 코드 작성
 
-class Electronicproducts {
+class Electronics {
+    private String companyName;
+    private String product;
 
-    private String name;
-    private String Rechargeable;
-
-    public Electronicproducts(String name, String Rechargeable) {
-        this.name = name;
-        this.Rechargeable = Rechargeable;
+    public Electronics(String companyName, String product) {
+        this.companyName = companyName;
+        this.product = product;
     }
 
-    public String getName() {
-        return name;
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public String Rechargeable() {
-        return Rechargeable;
+    public String getProduct() {
+        return product;
     }
 
     @Override
     public String toString() {
-        return "Electronicproducts{" +
-                "name='" + name + '\'' +
-                ", Rechargeable=" + Rechargeable +
+        return "Electronics\n" +
+                "{" + "companyName='" + companyName + '\'' +
+                ", product='" + product + '\'' +
                 '}';
     }
 }
 
-class Phon extends Electronicproducts {
-    private String Phonefunction;
+class cellPhone extends Electronics {
+    private String phoneFunction;
+    private String rechargeable;
 
-    public Phon(String name, String Rechargeable, String Phonefunction) {
-        super(name, Rechargeable);
-        this.Phonefunction = Phonefunction;
+    public cellPhone(String companyName, String product, String phoneFunction, String rechargeable) {
+        super(companyName, product);
+        this.phoneFunction = phoneFunction;
+        this.rechargeable = rechargeable;
     }
 
     @Override
     public String toString() {
-
-        return "Phon{" + "name='" + super.getName() +
-                "', Rechargeable=" + super.Rechargeable() +
-                ", Phonefunction='" + Phonefunction + '\'' +
+        return "cellPhone\n" +
+                "{" + "companyName = " + super.getCompanyName()
+                + ", product = " + super.getProduct()
+                + ", phoneFunction = " + phoneFunction
+                + ", rechargeable = " + rechargeable +
                 '}';
     }
+
 }
 
 public class Quiz6 {
+    // 문제 6. 휴대폰은 전자제품임을 표현하는 코드를 작성
     public static void main(String[] args) {
 
-        Electronicproducts tv = new Electronicproducts("Lg tv", "비 충전식");
-        System.out.println(tv);
-
-        Phon s = new Phon(
-                "Iphon SE2", "충전식 , 충전후 사용 가능", "가능");
-        System.out.println(s);
+        cellPhone cp = new cellPhone("apple", "iphone SE2", "가능", "충전식");
+        System.out.println(cp);
     }
 }
-

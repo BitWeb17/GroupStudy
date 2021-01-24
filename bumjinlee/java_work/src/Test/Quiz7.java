@@ -9,7 +9,7 @@ class DiceGame {
         computer = (int) (Math.random() * 6) + 1;
     }
 
-    public void play() {
+    public void GamePlay() {
         if (player > computer) {
             System.out.println("플레이어가 이겼습니다.");
         } else if (player < computer) {
@@ -23,8 +23,8 @@ class DiceGame {
 
 public class Quiz7 {
     public static void main(String[] args) {
-        DiceGame game = new DiceGame();
-        game.play();
+        DiceGame dg = new DiceGame();
+        dg.GamePlay();
     }
 }
 

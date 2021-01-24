@@ -1,8 +1,6 @@
 package Test;
-// 문제 11.
-// 이중 배열을 사용하여 2 by 2 행렬의 덧셈을 프로그래밍
-
-public class Quiz11 {
+// 2 by 2 행렬의 곱셈을 수행하도록 프로그래밍 해보기.
+public class Quiz15 {
     public static void main(String[] args) {
 
         int[][] a = {
@@ -14,9 +12,9 @@ public class Quiz11 {
                 {7, 8},
         };
 
-        Matrix mt = new Matrix(2, 2);
-        System.out.println("a[][] + b[][] = ");
-        mt.addMatrix(a, b);
+        Matrix mt = new Matrix(2,2);
+        System.out.println("a[][] * b[][] =");
+        mt.mulMatrix(a, b);
         mt.printMatrix();
     }
 }

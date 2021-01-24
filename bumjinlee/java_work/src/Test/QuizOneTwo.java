@@ -1,7 +1,7 @@
 package Test;
 
 import java.util.Scanner;
-
+// 문제1. 클래스를 사용하여 사용자 입력을 받는 프로그램을 작성
 // 문제2. 클래스를 사용하여 사용자 입력으로 점수를 받고 평균을 산출하는 프로그램 작성
 class QuizOneTwo {
     Scanner scan;
@@ -13,13 +13,18 @@ class QuizOneTwo {
 
     public QuizOneTwo() {
         scan = new Scanner(System.in);
-        sum = 0;
     }
 
     public void UserScannerNum() {
-        System.out.print("아무 숫자를 입력하세요: ");
-        int scanInteger = scan.nextInt();
-        System.out.println("입력된 숫자 = " + scanInteger);
+        System.out.print("아무 숫자를 입력하세요 : ");
+        int integer = scan.nextInt();
+        System.out.println("입력된 숫자 = " + integer);
+    }
+
+    public void UserScannerString() {
+        System.out.print("아무 글자를 입력하세요 : ");
+        String str = scan.nextLine();
+        System.out.println("입력된 글자 = " + str);
     }
 
     public void InsertScore() {
