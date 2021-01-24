@@ -52,6 +52,6 @@ public class SecondThreadTest implements  Runnable {
         //    ps -ef를 했을 때 나오는 여러 프로세스들과 경쟁을 하다가
         //    채택된 것이 t1일 뿐(이것은 상황에 따라 결과가 변할 수 있다)
 
-        //스레드에서 가장 중요한 것은 데이터 무성
+        //스레드에서 가장 중요한 것은 데이터 무결성
     }
 }
