@@ -35,13 +35,17 @@ public class ThirdThreadTest implements  Runnable{
 
         // main()을 sleep() 하고자 한다면
         // 반드시 Thread의 동작을 모두 완료한 이후에 sleep()시키도록 한다.
-        try {
+       try {
             Thread.sleep(800);
         }catch (InterruptedException e){}
 
 
         t2.start();
         System.out.println("main() 실행중");
+        try {
+            Thread.sleep(800);
+        }catch (InterruptedException e){}
+
     }
 
 }
