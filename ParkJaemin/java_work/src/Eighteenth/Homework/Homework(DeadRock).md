@@ -1,4 +1,4 @@
-#2021-01-22 Eighteenth.Homework 교착상태(DeadRock)란?
+# 2021-01-22 Eighteenth.Homework 교착상태(DeadRock)란?
 
 1.교착상태(DeadRock)란?
 
