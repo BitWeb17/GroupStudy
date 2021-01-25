@@ -14,7 +14,7 @@ public class Test_04 {
     private int gamerNum;
     private int computerNum;
 
-    public void setGame() {
+    public Test_04() {
         scan = new Scanner(System.in);
         isGameRunning = true;
     }
@@ -60,7 +60,6 @@ public class Test_04 {
                 "혼자서 컴퓨터와 즐기는 가위, 바위, 보 게임을 만들어보자!\n");
 
         Test_04 t4 = new Test_04();
-        t4.setGame();
         t4.playRockScissorsPaper();
     }
 }

@@ -1,8 +1,7 @@
-package JAVA_2021_01_20_Sixteenth;
+package JAVA_2021_01_21_Seventeenth;
 
 import java.io.*;
 import java.net.Socket;
-import java.util.Date;
 import java.util.Scanner;
 
 public class SocketManager {
@@ -19,34 +18,27 @@ public class SocketManager {
 
     private Scanner scan;
 
+    static int sendCount = 0;
+    static int recvCount = 0;
+
     String[] arrRockScissorPaper;
 
     // send용 [현재 개발 관점은 클라이언트 입장]
     public SocketManager() {
         scan = new Scanner(System.in);
-        //클라이언트는 정보하나만 입력해서 보낸다.
-        //in = new InputStream[ONE];
+
+        in = new InputStream[ONE];
         out = new OutputStream[ONE];
     }
 
     // recv용 [현재 개발 관점은 서버 입자]
     public SocketManager(int num) {
         //scan = new Scanner(System.in);
-        // 서버에서는 num명의 정보를 받아 배열에 저장한다.
+
         out = new OutputStream[num];
         in = new InputStream[num];
 
         arrRockScissorPaper = new String[num];
-    }
-
-    public void send(Socket sock) throws IOException {
-        System.out.print("숫자를 입력하세요: ");
-        String str = scan.nextLine();
-
-        out[ZERO] = sock.getOutputStream();
-        // ?
-        out[ZERO].write(str.getBytes());
-        // 입력받은 숫자(str.getBytes())를 출력소스에 쓴다
     }
 
     public String convertNumber2RSP() {
@@ -74,39 +66,57 @@ public class SocketManager {
         return res;
     }
 
+    public void send(Socket sock) throws IOException {
+        System.out.print("숫자를 입력하세요: ");
+        String str = scan.nextLine();
+
+        out[ZERO] = sock.getOutputStream();
+        out[ZERO].write(str.getBytes());
+    }
+
     public void send(Socket[] sock, int num) throws IOException {
-        for(int i = ZERO; i < num; i++) {
-            out[i] = sock[i].getOutputStream();
+        out[sendCount] = sock[sendCount].getOutputStream();
 
-            writer = new PrintWriter(out[i], true);
+        writer = new PrintWriter(out[sendCount++], true);
 
-            String str = convertNumber2RSP();
+        String str = convertNumber2RSP();
 
-            writer.println(str);
-        }
+        writer.println(str);
     }
 
     public void recv(Socket[] sock, int num) throws IOException {
+
         int tmp;
 
-        for(int i = ZERO; i < num; i++) {
-            in[i] = sock[i].getInputStream();
+        System.out.println("recvCnt = " + recvCount);
 
-            reader = new BufferedReader(new InputStreamReader(in[i]));
+        in[recvCount] = sock[recvCount].getInputStream();
+        reader = new BufferedReader(new InputStreamReader(in[recvCount]));
 
-            // 미리 변환하지 않고 문자열인 상태에서 "3"과 같은지 비교하고
-            // 같으면 바꾸고 같지 않으면 그대로 두는 형식이 더 효율적이다.
-            // 숙제로 한 번 만들어보세요 ~
-            tmp = Integer.parseInt(reader.readLine());
+        // 미리 변환하지 않고 문자열인 상태에서 "3"과 같은지 비교하고
+        // 같으면 바꾸고 같지 않으면 그대로 두는 형식이 더 효율적이다.
+        // 숙제로 한 번 만들어보세요 ~
+        tmp = Integer.parseInt(reader.readLine());
 
-            if(tmp == MAGICNUM) {
-                arrRockScissorPaper[i] = Integer.toString(tmp + ONE);
-            } else {
-                arrRockScissorPaper[i] = Integer.toString(tmp);
-            }
-
-            System.out.println("msg: " + arrRockScissorPaper[i]);
+        if(tmp == MAGICNUM) {
+            arrRockScissorPaper[recvCount] = Integer.toString(tmp + ONE);
+        } else {
+            arrRockScissorPaper[recvCount] = Integer.toString(tmp);
         }
+
+        System.out.println("msg: " + arrRockScissorPaper[recvCount++]);
+    }
+
+    public void recv(Socket sock) throws IOException {
+        in[ZERO] = sock.getInputStream();
+
+        reader = new BufferedReader(new InputStreamReader(in[ZERO]));
+
+        System.out.println(reader.readLine());
+    }
+
+    public void close(Socket sock) throws IOException {
+        sock.close();
     }
 
     public boolean canWeGetWinner(int num) {
@@ -116,7 +126,6 @@ public class SocketManager {
         // 만약 1, 2, 3이라면 OR 결과는 3이므로
         // 이것이 보인지 무승부인지 판정이 불가!
         int bitOROfAllInputString = ZERO;
-        // 왜 OR를 하지? 왜???
 
         for(int i = ZERO; i < num; i++) {
             bitOROfAllInputString |=

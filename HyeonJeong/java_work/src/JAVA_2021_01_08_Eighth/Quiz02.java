@@ -21,12 +21,12 @@ class ContainerManager {
         // 연산 순위는 ~(NOT)이 먼저 계산되고
         // 이후에 AND 연산이 진행된다.
 
-        return container & ~(base - 1);
+        return container & ~ (base - 1);
         // 공식: 어떤수 & ~(2^n - 1) = 2^n 의 배수
     }
 
     public boolean isBaseOf64() {
-        if((container & ~(base -1)) % 64 == 0) {
+        if((container & ~ (base -1)) % 64 == 0) {
             return true;
         } else {
             return false;

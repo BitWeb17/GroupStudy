@@ -23,6 +23,7 @@ public class Test_07 {
     public static void main(String[] args) {
         System.out.println(
                 "컴퓨터와 주사위를 굴려서 숫자가 크면 승리하도록 프로그래밍해보자!\n");
+
         Test_07 t7 = new Test_07();
 
         t7.setRandomNumber();
