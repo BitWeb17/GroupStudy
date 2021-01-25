@@ -7,7 +7,7 @@ import java.util.Date;
 
 public class SocketServerTest {
     public static void main(String[] args) {
-        // 문자열을 숫자로 바꾸는 기
+        // 문자열을 숫자로 바꾸는 기능
         int port = Integer.parseInt("33333");
 
         try {
@@ -20,7 +20,7 @@ public class SocketServerTest {
 
             System.out.println("Server: Listening - " + port);
 
-            while(true) {
+            while (true) {
                 // accept()의 경우 클라이언트가 접속을 요청했는지 체크해서
                 // 만약 요청 있었다면 요청을 승인한다.
                 // (accept()는 블로킹 연산이다)

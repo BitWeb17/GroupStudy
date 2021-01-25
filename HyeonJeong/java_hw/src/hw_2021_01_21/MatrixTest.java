@@ -1,6 +1,7 @@
 package hw_2021_01_21;
 
 public class MatrixTest {
+    private float[][] map;
     private int[][] matrix;
     private int row, col;
 
@@ -19,6 +20,17 @@ public class MatrixTest {
             }
             System.out.println("");
         }
+    }
+
+    public void setPoint() {
+        for(int i = 0; i < row; i++) {
+            for(int j = 0; j < col; j++) {
+                map[i][j] = (float)(Math.random() * 10);
+                System.out.printf("%4d",map[i][j]);
+            }
+            System.out.println("");
+        }
+
     }
 
     private boolean checkCalculateAvailable(int[][] A) {
@@ -62,13 +74,6 @@ public class MatrixTest {
         }
     }
 
-    public boolean checkMulAvailable(int[][] A) {
-        int Brow = matrix.length;
-        int Acol = A[0].length;
-
-        return (Brow == Acol);
-    }
-
     public boolean checkMulAvailable(int[][] A, int[][] B) {
         int Brow = B.length;
         int Acol = A[0].length;
@@ -77,13 +82,15 @@ public class MatrixTest {
     }
 
     public void mulMatirx(int[][] A, int[][] B) {
-        int[][] mulMatA = A;
-        int[][] mulMatB = B;
+        if(checkMulAvailable(A, B)) {
+            int[][] mulMatA = A;
+            int[][] mulMatB = B;
 
-        for(int i = 0 ; i < A.length ; ++i){
-            for(int j = 0 ; j < B[0].length ; ++j){
-                for(int k = 0 ; k < A[0].length ; ++k) {
-                    matrix[i][j] += A[i][k] * B[k][j];
+            for (int i = 0; i < A.length; ++i) {
+                for (int j = 0; j < B[0].length; ++j) {
+                    for (int k = 0; k < A[0].length; ++k) {
+                        matrix[i][j] += A[i][k] * B[k][j];
+                    }
                 }
             }
         }

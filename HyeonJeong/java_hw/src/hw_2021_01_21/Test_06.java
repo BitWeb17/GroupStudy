@@ -23,9 +23,11 @@ class Cellphone extends ElectronicDevice {
         }
     }
 }
+
 public class Test_06 {
     public static void main(String[] args) {
-        System.out.println("휴대폰은 전자제품임을 표현하는 코드를 작성해보자!\n");
+        System.out.println(
+                "휴대폰은 전자제품임을 표현하는 코드를 작성해보자!\n");
 
         Cellphone galaxyS21 = new Cellphone();
         galaxyS21.power = true;
