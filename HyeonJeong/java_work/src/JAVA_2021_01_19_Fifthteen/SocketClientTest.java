@@ -21,18 +21,17 @@ public class SocketClientTest {
                 // 예를 들자면 이 행위는 전화를 거는것과 같다.
                 // (서버쪽 주석을 살펴보면 감이 더 잘 올 것이다)
                 Socket sock = new Socket(hostname, port);
+                //소켓 객체 할당
 
-
-                // 서버의 출력을 획득
-                // 즉 서버가 수신하게 만들도록 설정을 해주는 것
                 OutputStream out = sock.getOutputStream();
-
+                // 즉 서버가 수신하게 만들도록 설정을 해주는 것
                 String str = "Hello Network Programming";
-                // 위의 문자열을 바이트 단위로 쪼개서 서버로 전송한다.
+                // 서버의 출력을 획득
                 out.write(str.getBytes());
+                // 위의 문자열을 바이트 단위로 쪼개서 서버로 전송한다.
 
-                // 서버의 입력을 생성(수신 준비)
                 InputStream in = sock.getInputStream();
+                // 서버의 입력을 생성(수신 준비)
                 BufferedReader reader =
                         new BufferedReader(new InputStreamReader(in));
 
@@ -40,8 +39,8 @@ public class SocketClientTest {
                 String time = reader.readLine();
                 System.out.println(time);
 
-                // UnknownHostException: 내가 접속하려는 IP를 찾지 못할 때
             } catch (UnknownHostException e) {
+            // UnknownHostException: 내가 접속하려는 IP를 찾지 못할 때
                 System.out.println("Server Not Found: " + e.getMessage());
 
             } catch (IOException e) {

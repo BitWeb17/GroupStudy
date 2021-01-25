@@ -24,7 +24,7 @@ public class SocketManager {
     // send용 [현재 개발 관점은 클라이언트 입장]
     public SocketManager() {
         scan = new Scanner(System.in);
-
+        //클라이언트는 정보하나만 입력해서 보낸다.
         //in = new InputStream[ONE];
         out = new OutputStream[ONE];
     }
@@ -32,7 +32,7 @@ public class SocketManager {
     // recv용 [현재 개발 관점은 서버 입자]
     public SocketManager(int num) {
         //scan = new Scanner(System.in);
-
+        // 서버에서는 num명의 정보를 받아 배열에 저장한다.
         out = new OutputStream[num];
         in = new InputStream[num];
 
@@ -44,7 +44,9 @@ public class SocketManager {
         String str = scan.nextLine();
 
         out[ZERO] = sock.getOutputStream();
+        // ?
         out[ZERO].write(str.getBytes());
+        // 입력받은 숫자(str.getBytes())를 출력소스에 쓴다
     }
 
     public String convertNumber2RSP() {
@@ -114,6 +116,7 @@ public class SocketManager {
         // 만약 1, 2, 3이라면 OR 결과는 3이므로
         // 이것이 보인지 무승부인지 판정이 불가!
         int bitOROfAllInputString = ZERO;
+        // 왜 OR를 하지? 왜???
 
         for(int i = ZERO; i < num; i++) {
             bitOROfAllInputString |=

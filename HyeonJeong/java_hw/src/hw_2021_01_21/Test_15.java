@@ -2,7 +2,8 @@ package hw_2021_01_21;
 
 public class Test_15 {
     public static void main(String[] args) {
-        System.out.println("2 by 2 행렬의 곱셈을 수행하도록 프로그래밍 해보자!\n");
+        System.out.println(
+                "2 by 2 행렬의 곱셈을 수행하도록 프로그래밍 해보자!\n");
 
         int[][] matrixONE = {
                                 {1, 2},
