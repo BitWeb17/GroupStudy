@@ -1,4 +1,4 @@
-# 2021-01-25 Nineteenth.Review & Questions Note
+#2021-01-25 Nineteenth.Review & Questions Note
 
 ##쓰레드의 동기화(Sychronization)
 - 멀티쓰레드 프로세스에서는 다른 쓰레드의 작업에 영향을 미칠 수 있다.
