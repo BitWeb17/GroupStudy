@@ -47,6 +47,7 @@ class doubArr{
 }
 
 public class Eleventh {
+    //이중 배열을 사용하여 2 by 2 행렬의 덧셈을 프로그래밍 해보자!
     public static void main(String[] args) {
         doubArr dA = new doubArr();
         dA.firstArr();
