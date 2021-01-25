@@ -1,5 +1,5 @@
 package Twelfth;
-
+/*
 public class ManyJob {
     public static final int WARRIOR =1;
     public static final int THIEF =2;
@@ -33,4 +33,4 @@ class WarriorSkill extends WarlordSkill{
     public WarriorSkill2(String skill2){
 
     }
-}
+}*/

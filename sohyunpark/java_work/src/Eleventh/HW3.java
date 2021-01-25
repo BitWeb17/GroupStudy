@@ -74,5 +74,6 @@ public class HW3 {
 
         Plane p = new Plane("plane", 200, "KOREANAIR");
         System.out.println(p);
+
     }
 }

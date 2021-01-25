@@ -17,3 +17,16 @@ public class HW4_0106 {
 
     }
 }
+
+        // final int ARRSIZE = 3;
+
+        // float[] arr = new float[ARRSIZE];
+
+        // Random rand = new Random();
+
+        // for(int i = 0; i < ARRSIZE; i++) {
+            // nextFloat은 실수를 뽑으며 범위는 0.0 ~ 1.0
+            // arr[i] = rand.nextFloat() * 10;
+            // %d는 정수형, %f는 실수
+            // System.out.printf("arr[%d] = %f\n", i, arr[i]);
+        // }

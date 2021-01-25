@@ -15,7 +15,7 @@ public class AllocTeamHomework {
         };
 
         // 단순히 고정된 사람들을 받는 직업
-        // CreateTeam ct = new CreateTeam(name);
+        // CreateTeamOfTest20 ct = new CreateTeamOfTest20(name);
         CreateTeam ct = new CreateTeam(nameA, nameB, TEAMNUMBER);
 
         ct.allocRandomTeam();

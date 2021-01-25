@@ -27,6 +27,8 @@ public class SocketServerTest {
             System.out.println("Server: Listening - " + port);
 
             // while이 없어도 돌아가는데 존재의 이유가 무엇이지??
+            // while은 clinet가 1명이 아닌 다수일 수 있기때문에 항상
+            // 정보를 받을 수 있도록 존재한다.
             while(true) {
                 // accept()의 경우 클라이언트가 접속을 요청했는지 체크
                 // (accept()는 블로킹 연산이다)
