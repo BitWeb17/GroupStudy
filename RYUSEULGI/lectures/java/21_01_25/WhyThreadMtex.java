@@ -12,7 +12,7 @@ class B extends Thread {
         for (int i = 0; i < 100; i++) {
             WhyThreadMtex.fb.minusMoney(1000);
         }
-        System.out.println("plusMOney(3000): " + WhyThreadMtex.fb.getMoney());
+        System.out.println("plusMOney(1000): " + WhyThreadMtex.fb.getMoney());
     }
 }
 

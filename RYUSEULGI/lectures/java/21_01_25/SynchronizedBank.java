@@ -5,7 +5,7 @@ public class SynchronizedBank {
     private int money = 100000;
 
     public int getMoney() {
-        return money;
+        return this.money;
     }
 
     public void setMoney(int money) {

@@ -12,10 +12,8 @@ class X extends Thread {
 
 class Y extends Thread {
     public void run() {
-        for (int i = 0; i < 100; i++) {
-            synchronized (PerfSyncTest.psb) {
-                PerfSyncTest.psb.minusMoney(3000);
-            }
+        synchronized (PerfSyncTest.psb) {
+            PerfSyncTest.psb.minusMoney(3000);
         }
         System.out.println(PerfSyncTest.psb.getMinusMsg());
         System.out.println("minusMOney(3000): " + PerfSyncTest.psb.getMoney());
@@ -35,6 +33,5 @@ public class PerfSyncTest {
         x.start();
         y.start();
 
-        // 이 문제를 해결하기 위해 Mutex, Spinlock이 필요함
     }
 }
