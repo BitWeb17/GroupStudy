@@ -15,6 +15,7 @@ public class arrRandomNum {
     private int k;
     private int randomArrdice;
     private int tmp;
+    private int choiceNumber;
 
     public arrRandomNum(){
         this.i = i;
@@ -23,6 +24,7 @@ public class arrRandomNum {
         this.tmp = tmp;
         this.numberOne = numberOne;
         this.numberTwo = numberTwo;
+        this.choiceNumber = choiceNumber;
 
     }
 
@@ -54,12 +56,17 @@ public class arrRandomNum {
     }
 
     public void printArrRandomNum(int numberOne, int numberTwo,
-                                  int evenNum, int oddNum) {
-
-        this.numberOne = numberOne;
-        this.numberTwo = numberTwo;
+                                         int choiceNumber) {
 
         System.out.println("시작 값 = " + numberOne + " 끝 값 = " + numberTwo);
+        System.out.println("");
+
+        if(choiceNumber == 0) {
+            System.out.printf("현재 선택한 출력값은 짝수입니다.\n");
+        } else {
+            System.out.printf("현재 선택한 출력값은 홀수입니다.\n");
+        }
+        System.out.println("");
 
         randNum = (int) (Math.random() * numberTwo) + numOne;
         arr = new int[randNum];
@@ -68,9 +75,13 @@ public class arrRandomNum {
 
         for (int i = numZreo; i < randNum; i++) {
             arr[i] = (int) (Math.random() * numberTwo) + numOne;
-            System.out.printf("arr[%d] = %d\n", i, arr[i]);
-            System.out.printf("짝수 arr[%d] = %d\n", i, arr[i]);
-            System.out.printf("홀수 arr[%d] = %d\n", i, arr[i]);
+            //System.out.printf("arr[%d] = %d\n", i, arr[i]);
+
+            int totalNum = arr[i];
+            if(totalNum % 2 == choiceNumber) {
+                System.out.printf("arr[%d] = %d\n", i, arr[i]);
+            }
+
         }
     }
 

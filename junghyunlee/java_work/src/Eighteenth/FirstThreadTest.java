@@ -7,6 +7,12 @@ import java.util.Random;
 class Worker implements Runnable {
     String name;
     private int sleepTime;
+    // static을 사용하면 static 키워드를 통해 생성된 정적멤버들은 Heap영역이
+    // 아닌 Static영역에 할당된다. Static 영역에 할당된 메모리는 모든 객체가
+    // 공유하여 하나의 멤버를 어디서든지 참조할 수 있는 장점을 가지게 된다.
+    // 그렇기 때문에 밑에 static 으로 선언을 한 이유는 밑에서 나오는 랜덤값을
+    // 빠르게 전달하기 위해서라고 생각된다. 하지만 static을 사용하면서 빠르게
+    // 전달해야하는 이유는 무엇인가요??
     private final static Random generator = new Random();
 
     public Worker(String name) {
