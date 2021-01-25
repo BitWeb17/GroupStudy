@@ -1,4 +1,4 @@
-# 2021-01-25 Review & Questions Note
+# 2021-01-25 Nineteenth.Review & Questions Note
 
 ## 쓰레드의 동기화(Sychronization)
 - 멀티쓰레드 프로세스에서는 다른 쓰레드의 작업에 영향을 미칠 수 있다.
@@ -78,7 +78,7 @@ SD 카드, CD-ROM과 같은 I/O(Input/Output)장치들도 메모리에 해당한
 - 가장 큰 차이점은 CPU를 기준으로 얼마나 멀리떨어져 있느냐이다. CPU와 가까이에 있을수록 빠르고 멀리 있을수록 속도가 느리다.
 - 레지스터(CPU내부) ㅡ> 캐쉬메모리(근처) ㅡ> 메인메모리 ㅡ> 하드디스크 순으로 CPU와 점점 멀어진다.
 
-![img_1.png](img_1.png)
+![img.png](img.png)
 
 * 레지스터 : 차지하고 있는 크기가 가장 작지만 가장 빠르다.
 
@@ -110,7 +110,7 @@ L1 캐시와 L2 캐시에, 연산에 필요한 데이터가 존재할 확률이 
 
 2. I/O 장치의 분류
   
-![img.png](img.png)
+![img_1.png](img_1.png)
 
 3.요소 간 연결
 
