@@ -14,15 +14,15 @@ public class SynchronizedBank {
     public synchronized void plusMoney(int plus) {
         int m = getMoney();
 
-        /*
+
         try {
             Thread.sleep(80);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-         */
 
-        System.out.println("m = " + m);
+
+        //System.out.println("m = " + m);
 
         setMoney(m + plus);
     }
@@ -34,15 +34,15 @@ public class SynchronizedBank {
     public synchronized void minusMoney(int minus) {
         int m = getMoney();
 
-        /*
+
         try {
             Thread.sleep(50);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-         */
 
-        System.out.println("m = " + m);
+
+        //System.out.println("m = " + m);
 
         setMoney(m - minus);
     }

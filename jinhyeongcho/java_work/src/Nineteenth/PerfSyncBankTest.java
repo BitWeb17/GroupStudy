@@ -2,7 +2,7 @@ package Nineteenth;
 
 class X extends Thread {
     public void run() {
-        for(int i = 0; i < 1000000; i++) {
+        for(int i = 0; i < 1000; i++) {
             // 현재 케이스는 실제 Critical Section에만 강제 동기화를 걸었다.
             // 그러므로 여러 태스크들이 동시에 접근할 수 있는 영역을
             // 부분적으로 안전하게 보호한 반면
@@ -22,7 +22,7 @@ class X extends Thread {
 
 class Y extends Thread {
     public void run() {
-        for(int i = 0; i < 1000000; i++) {
+        for(int i = 0; i < 1000; i++) {
             synchronized (PerfSyncBankTest.psb) {
                 PerfSyncBankTest.psb.minusMoney(1000);
             }
