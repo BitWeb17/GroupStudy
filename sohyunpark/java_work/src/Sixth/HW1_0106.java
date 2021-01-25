@@ -11,3 +11,7 @@ public class HW1_0106 {
         }
     }
 }
+
+        //final int ARRSIZE = 7;
+        // int[] arr = new int[ARRSIZE];
+        // int[] arr = new int[7];

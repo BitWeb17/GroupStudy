@@ -50,5 +50,6 @@ public class HW2 {
 
         PersonHW p = new PersonHW("Male", 20, "Steve");
         System.out.println(p);
+
     }
 }

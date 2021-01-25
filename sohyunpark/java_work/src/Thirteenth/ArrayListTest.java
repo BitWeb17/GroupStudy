@@ -17,6 +17,7 @@ public class ArrayListTest {
             System.out.println(list.get(i));
         }
 
+
         System.out.println("*******");
         list.remove(3);
 

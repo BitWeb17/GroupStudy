@@ -3,7 +3,7 @@ package Eleventh;
 import Tenth.Matrix;
 import org.w3c.dom.ls.LSOutput;
 
-public class HW1_0113 {
+public class HW1_0112 {
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int[][] arr2 = {
