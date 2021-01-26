@@ -1,4 +1,5 @@
-# 2021-01-25 Nineteenth.Review & Questions Note
+# 2021-01-25 Review & Questions Note
+
 
 ## 쓰레드의 동기화(Sychronization)
 - 멀티쓰레드 프로세스에서는 다른 쓰레드의 작업에 영향을 미칠 수 있다.
@@ -155,3 +156,4 @@ Bus의 성능을 저하하는 물리적 요인 : 회선 길이, 연결 노드 �
 - CPU는 Bus Interface를 통해 Register에 저장된 Data를 I/O버스에 보내거나 받는다.
 - 모든 장치에는 Bus Interface가 있다. (Controller, Adapter 라고도 불림)
 - 하드웨어끼리의 Data 전송은 버스 시스템을 이용한다.
+
