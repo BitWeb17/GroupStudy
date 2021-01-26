@@ -7,6 +7,8 @@ public class Quiz2 {
     public static void main(String[] args) {
         DupInspection Dup = new DupInspection();
         Dup.numberSet(200);
+        Dup.hashNum();
+        //Dup.hashDup();
 
     }
 }
