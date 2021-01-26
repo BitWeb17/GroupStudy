@@ -14,7 +14,6 @@ public class DupInspection {
 
 
     public void numberSet(int setNum){
-        int cnt = 0;
         randNum =new int[setNum];
         for (i =0 ;i< randNum.length;i++){
             randNum[i]=(int)(Math.random()*41)+20;
