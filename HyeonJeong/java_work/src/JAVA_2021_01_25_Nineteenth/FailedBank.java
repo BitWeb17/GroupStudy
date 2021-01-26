@@ -10,7 +10,7 @@ public class FailedBank {
     public void setMoney(int money) {
         this.money = money;
     }
-    public void pulsMoney(int plus) {
+    public void plusMoney(int plus) {
         int m = this.getMoney();
 
         try {
