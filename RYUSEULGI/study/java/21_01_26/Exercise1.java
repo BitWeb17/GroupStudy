@@ -14,8 +14,12 @@ class Dicegame {
         diceA = (int) (Math.random() * 6) + 1;
         diceB = (int) (Math.random() * 6) + 1;
 
-        user += diceA;
-        com += diceB;
+        user = diceA + diceB;
+
+        int diceC = (int) (Math.random() * 6) + 1;
+        int diceD = (int) (Math.random() * 6) + 1;
+
+        com = diceC + diceD;
     }
 
     public void throwDice() {
