@@ -14,11 +14,12 @@ public class ThirdThreadTest implements Runnable {
         Random random = new Random();
 
         for(int i = 0; i < 15; i++) {
-            System.out.println(name + ":" + random.nextInt(100));
+            System.out.println(i + ": (" + name + ") " + random.nextInt(100));
 
             try {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
+                System.out.println(e.getLocalizedMessage());
             }
         }
     }
@@ -45,10 +46,10 @@ public class ThirdThreadTest implements Runnable {
         System.out.println("main() 실행중");
 
 //        << sleep의 올바른 위치 >>
-//        try {
-//            Thread.sleep(800);
-//        } catch (InterruptedException e) {
-//        }
+        try {
+            Thread.sleep(800);
+        } catch (InterruptedException e) {
+        }
     }
 }
 

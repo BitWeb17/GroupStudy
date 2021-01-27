@@ -2,7 +2,7 @@ package JAVA_2021_01_25_Nineteenth;
 
 class A extends Thread {
     public void run() {
-        WhyThreadMutex.fb.pulsMoney(3000);
+        WhyThreadMutex.fb.plusMoney(3000);
         System.out.println("plusMoney(3000): " +
                 FailedBank.getMoney());
     }

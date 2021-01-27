@@ -8,16 +8,16 @@ public class ItemEnhanceThreadTest {
 
     public void enter(Item item) {
         try {
-            sem.acquire();
+            sem.acquire(); // 세마포어를 획득한다.
         } catch (InterruptedException e) {
             return;
         }
-
         try {
-            item.enhance(this);
+            item.enhance(this); // 세마포어를 얻은 애들은 강화를 시작함.
         } finally {
-            sem.release();
+            sem.release(); // 강화를 종료하면 자리를 비운다?
         }
+
     }
 
     public static class Item {
@@ -69,10 +69,18 @@ public class ItemEnhanceThreadTest {
     // Mutex와 Semaphore의 차이점이 무엇인가 ?
     // 대기열이 있다 없다.
     public static void main(String[] args) {
+        // 현재 자기 자신에 해당하는 객체 iet를 생성한다.
         final ItemEnhanceThreadTest iet = new ItemEnhanceThreadTest();
 
+        // 루프를 6번 돌기 때문에 6개의 스레드가 생성된다.
         for(int i = 0; i < 6; i++) {
-            Thread t = new Thread(new Runnable() {
+            // 아래 보이는 형식의 패턴이 바로 익명 객체에 해당한다.
+            // 익명 객체를 사용하는 이유는 무엇일까?
+            // 기본적으로 new를 한다는 것은 이 정보를 저장할 변수가 필요하다.
+            // 문제는 이런 변수를 저장하게 되면
+            // 자바의 GC(Garbage Collector)가 이것을 함께 관리해야한다.
+            // 즉 일회성의 목적을 가지고 익명 객체를 생성하게 된다.
+            Thread t = new Thread(new Runnable() { // 쓰레드가 실행할 코드들을 구
                 @Override
                 public void run() {
                     Item item = new Item();
