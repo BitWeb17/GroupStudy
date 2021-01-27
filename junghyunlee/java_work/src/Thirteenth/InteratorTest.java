@@ -12,7 +12,6 @@ public class InteratorTest {
         ArrayList<String> list = new ArrayList<String>();
         ArrayList<Integer> list2 = new ArrayList<Integer>();
 
-        //
 
         list.add("one");
         list.add("tow");
