@@ -1,7 +1,7 @@
 package JAVA_2021_01_25_Nineteenth;
 class C extends Thread {
     public void run() {
-        for(int i = 0; i < 1000000; i++) {
+        for(int i = 0; i < 10; i++) {
             SynchronizedBankTest.sb.plusMoney(3000);
         }
 
@@ -14,7 +14,7 @@ class C extends Thread {
 
 class D extends Thread {
     public void run() {
-        for(int i = 0; i < 1000000; i++) {
+        for(int i = 0; i < 10; i++) {
             SynchronizedBankTest.sb.minusMoney(1000);
         }
 
