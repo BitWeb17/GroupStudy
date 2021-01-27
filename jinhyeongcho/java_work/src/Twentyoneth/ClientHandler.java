@@ -14,13 +14,10 @@ public class ClientHandler implements Runnable {
     private String name;
 
     Socket sock;
-    boolean isOk;
-    Scanner scan = new Scanner(System.in);
     boolean isOK;
+    Scanner scan = new Scanner(System.in);
 
-    public String getName() {
-        return name;
-    }
+
 
     public ClientHandler(DataInputStream in, DataOutputStream out, String name, Socket sock) {
         this.in = in;
@@ -28,7 +25,7 @@ public class ClientHandler implements Runnable {
         this.name = name;
         this.sock = sock;
 
-        this.isOk= true;
+        this.isOK= true;
     }
 
     @Override
@@ -50,6 +47,8 @@ public class ClientHandler implements Runnable {
                 StringTokenizer st = new StringTokenizer(received, "#");
                 String recipient = st.nextToken();
                 String msg2Send = st.nextToken();
+                System.out.println("msg2Send = " + msg2Send);
+                System.out.println("recipient = " + recipient);
 
                 for(ClientHandler ch : ThreadChatServer.chv) {
                     if(ch.name.equals(recipient) && ch.isOK == true) {

@@ -25,10 +25,10 @@ public class FinalPerformanceTest {
             // sum += (i * (COEFFICIENT * i)) * Math.sin(i * Math.PI / DEG2RAD);
         }
 
-        for(int i = 0; i < MAXTHREAD; i++) {
+      /*  for(int i = 0; i < MAXTHREAD; i++) {
             thr[i].join();
         }
-
+*/
         PerformanceUtil.performanceCheckEnd();
         PerformanceUtil.printPerformance();
     }
