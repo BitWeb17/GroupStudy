@@ -17,7 +17,10 @@ import LetVar from "./data_type/LetVar";
 import LetVar2 from "./data_type/LetVar2";
 import LetVar3 from "./data_type/LetVar3";
 import SymbolTest from "./data_type/SymbolTest";
-
+import NumPrint0to10 from "./Js_Home/NumPrint0to10";
+import EvenNum1to20 from "./Js_Home/EvenNum1to20";
+import NumTest from "./Js_Home/NumTest";
+import NoDupNum from "./Js_Home/NoDupNum";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -36,6 +39,10 @@ ReactDOM.render(
     <LetVar2/>
     <LetVar3/>
     <SymbolTest/>
+    <NumPrint0to10/>
+    <EvenNum1to20/>
+    <NumTest/>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
