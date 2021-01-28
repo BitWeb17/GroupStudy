@@ -18,7 +18,6 @@ import LetVar2 from "./data_type/LetVar2";
 import LetVar3 from "./data_type/LetVar3";
 import ConstTest from "./data_type/ConstTest";
 import SymbolTest from "./data_type/SymbolTest";
-import AnnouncementValue from "./selfStudy/AnnouncementValue";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -38,7 +37,6 @@ ReactDOM.render(
       <LetVar3/>
       <ConstTest/>
       <SymbolTest/>
-      <AnnouncementValue/>
   </React.StrictMode>,
   document.getElementById('root')
 );

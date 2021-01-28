@@ -26,6 +26,7 @@ function SymbolTest() {
     return(
         <div className = "SymbolTest">
             <p>
+                
                 Symbol() {LINE}<br/>
                 Symbol() {SQUARE}<br/>
                 VECTOR() {VECTOR}<br/>
