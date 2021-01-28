@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="66568774-254d-4f2c-bb83-cc41a1279a52" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1/janghaesol/java_work/src/Tenth/DoubleArrayTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/janghaesol/java_work/src/Tenth/FirstPrivate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/janghaesol/java_work/src/Tenth/MySeries.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/janghaesol/java_work/src/Tenth/PrintSimpleNumberTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2020-12-28/TodayQuiz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2020-12-28/yesterdayQuiz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2020-12-30/TodayQuiz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2020-12-30/yesterdayQuiz.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/janghaesol/Test/2021-01-04/TodayQuiz.txt" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentyoneth/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentyoneth/ThreadChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentyoneth/ThreadChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentieth/RandomNumberArrlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentieth/RandomNumberArrlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentieth/diceGeme.java" beforeDir="false" afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentieth/diceGeme.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +34,9 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/1/ParkJaemin/java_work/src/Sixth" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/junghyunlee" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -116,8 +113,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609944356312</updated>
+      <workItem from="1611741840992" duration="24000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
