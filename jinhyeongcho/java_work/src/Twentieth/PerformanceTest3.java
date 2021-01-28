@@ -20,7 +20,8 @@ public class PerformanceTest3 {
 
         for(int i = 0; i < 5; i++) {
             thr[i].start();
-             //sum += (i * (COEFFICIENT * i)) * Math.sin(i * Math.PI / DEG2RAD);
+
+            // sum += (i * (COEFFICIENT * i)) * Math.sin(i * Math.PI / DEG2RAD);
         }
 
         PerformanceUtil.performanceCheckEnd();
