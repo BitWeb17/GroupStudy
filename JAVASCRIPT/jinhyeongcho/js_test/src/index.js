@@ -21,7 +21,7 @@ import NumPrint0to10 from "./Js_Home/NumPrint0to10";
 import EvenNum1to20 from "./Js_Home/EvenNum1to20";
 import NumTest from "./Js_Home/NumTest";
 import NoDupNum from "./Js_Home/NoDupNum";
-
+import TestPp from "./Js_Home/TestPp";
 ReactDOM.render(
   <React.StrictMode>
     <DataTypeBasic/>
@@ -42,7 +42,7 @@ ReactDOM.render(
     <NumPrint0to10/>
     <EvenNum1to20/>
     <NumTest/>
-
+    <TestPp/>
   </React.StrictMode>,
   document.getElementById('root')
 );
