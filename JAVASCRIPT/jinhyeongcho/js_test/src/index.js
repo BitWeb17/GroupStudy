@@ -17,9 +17,11 @@ import FunctionObjectTest2 from "./function/FunctionObjectTest2";
 import RandomTeam from "./Js_Home2/RandomTeam"
 import Hint from "./Js_Home2/Hint";
 import TestPp from "./Js_Home/TestPp";
+import LiteralTest from "./literal/LiteralTest";
 
 ReactDOM.render(
   <React.StrictMode>
+    <LiteralTest/>
     <FinalEqCicdTest/>
     <SpreadTest/>
     <SpreadTest2/>
@@ -32,7 +34,7 @@ ReactDOM.render(
     <FunctionObjectTest/>
     <FunctionObjectTest2/>
     <RandomTeam/>
-    <TestPp/>
+    <LiteralTest/>
   </React.StrictMode>,
   document.getElementById('root')
 );

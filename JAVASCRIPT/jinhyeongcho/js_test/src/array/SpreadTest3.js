@@ -2,13 +2,15 @@ const SpreadTest3 = () =>{
     let arr= [1,2,3]
     console.log("SpreadTest3: "+arr)
 
-    // ??? 현재 굉장히 거슬이릴것
-    function spreadArrPrint(a,b,c){
+    // ??? 현재 굉장히 거슬릴것임
+    // 1) 함수 내에 함수가 들어있음
+    // 2) 입력 인자에 데이터타입이 없음
+    function spreadArrPrint(a, b, c) {
         console.log("spreadArrPrint: " + a)
         console.log("spreadArrPrint: " + b)
         console.log("spreadArrPrint: " + c)
     }
-
+    alert("졸려죽겠네...")
     spreadArrPrint(...arr)
 
     return(
