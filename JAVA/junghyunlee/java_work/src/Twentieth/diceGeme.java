@@ -13,18 +13,16 @@ public class diceGeme {
     int numSix = 6;
     int numOne = 1;
 
-    public diceGeme() {
-        this.dicePlayer = dicePlayer;
-        this.diceComPlayer = diceComPlayer;
-    }
 
     public void printDicegame() {
 
         for (; ; ) {
 
-            dicePlayer = (int) (Math.random() * numSix) + numOne;
+            for(int i = 0; i < 2; i++) {
+                dicePlayer += (int) (Math.random() * numSix) + numOne;
+                diceComPlayer += (int) (Math.random() * numSix) + numOne;
+            }
             System.out.println("게임 플레이어의 주사위 값 = " + dicePlayer);
-            diceComPlayer = (int) (Math.random() * numSix) + numOne;
             System.out.println("컴퓨터 플레이어의 주사위 값 = " + diceComPlayer);
 
             if (dicePlayer == diceComPlayer) {
