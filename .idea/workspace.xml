@@ -4,6 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
+    <list default="true" id="66568774-254d-4f2c-bb83-cc41a1279a52" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentyoneth/ClientHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentyoneth/ThreadChatClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentyoneth/ThreadChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentieth/RandomNumberArrlist.java" beforeDir="false" afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentieth/RandomNumberArrlist.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentieth/diceGeme.java" beforeDir="false" afterPath="$PROJECT_DIR$/junghyunlee/java_work/src/Twentieth/diceGeme.java" afterDir="false" />
+=======
     <list default="true" id="66568774-254d-4f2c-bb83-cc41a1279a52" name="Default Changelist" comment="Sixteenth Class - Lecture">
       <change afterPath="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth/Review &amp; Questions Note/Review &amp; Questions Note.md" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth/Review &amp; Questions Note/Stream&amp;BufferedStudy.md" afterDir="false" />
@@ -15,6 +23,7 @@
       <change beforePath="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth/ClientSocketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth/ClientSocketManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth/MainClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth/SocketManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth/SocketManager.java" afterDir="false" />
+>>>>>>> upstream/main
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +65,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/junghyunlee" />
+=======
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Markdown" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/ParkJaemin/java_work/src/Sixteenth" />
@@ -64,6 +78,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="runEclipseCodeFormatter" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
+>>>>>>> upstream/main
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -162,6 +177,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609944356312</updated>
+      <workItem from="1611741840992" duration="24000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1610985739804</created>
@@ -207,6 +223,9 @@
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
