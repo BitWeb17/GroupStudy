@@ -1,12 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Task1Print from './210128/Task1Print';
+import Task2PrintEven from './210128/Task2PrintEven';
+import Task3RandNum from './210128/Task3RandNum';
+import Task4RandNoDup from './210128/Task4RandNoDup';
+import Study1RandNumSort from './210128/Study1RandNumSort';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Task1Print/>
+    <Task2PrintEven/>
+    <Task3RandNum/>
+    <Task4RandNoDup/>
+    <Study1RandNumSort/>
   </React.StrictMode>,
   document.getElementById('root')
 );
