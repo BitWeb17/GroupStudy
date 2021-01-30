@@ -12,7 +12,11 @@ function Quiz() {
     const lenA = teamA.length;
     const lenB = teamB.length;
     
+    let teamLen;
+
     function allocRandomNum(length, team){
+        teamLen = length;
+
         for(let i = 0; i < length; i++){
             const randomNum = Math.floor((Math.random() * length));
             
@@ -38,20 +42,20 @@ function Quiz() {
         return array;
     }
     
-    function printTeam(length, teamName){
+    function printTeam(teamName){
         one = numberArr.slice(0,4);
-        two = numberArr.slice(4,length);
+        two = numberArr.slice(4,teamLen);
         console.log(`${teamName}-1조 ${one}`);
         console.log(`${teamName}-2조 ${two}`);
     }
     
     allocRandomNum(lenA, teamA);
     shuffleNum(numberArr);
-    printTeam(lenA, 'A');
+    printTeam('A');
     
     // allocRandomNum(lenB, teamB);
     // shuffleNum(numberArr);
-    // printTeam(lenB, 'B');
+    // printTeam('B');
 
     return (
         <div></div>
