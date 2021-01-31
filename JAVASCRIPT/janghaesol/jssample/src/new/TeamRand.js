@@ -1,3 +1,5 @@
+const newAGroup = (momAGroup) => console.log("AGOUP : " + momAGroup)
+const newBGroup = (momBGroup) => console.log("BGROUP : " + momBGroup)
 
 function TeamRand(){
     
@@ -9,16 +11,15 @@ function TeamRand(){
     
     const firstA = []
     const secondA = []
-    let MAX = 5
-    let MIN = 4
-    let INAMAX = 9
-    let INBMAX = 8
-    let INMIN = 1
+    const MAX = 5
+    const MIN = 4
+    const INAMAX = 9
+    const INBMAX = 8
+    const INMIN = 1
+    const NUM = 4
+    let i
     let teamARandNum =Math.floor(Math.random()*(MAX-MIN+1))+MIN;
     
-    const NUM = 4
-    
-    let i
     console.log(teamARandNum)
     
     for(i = 0; i < teamARandNum;i++){
@@ -30,10 +31,8 @@ function TeamRand(){
         allMemberA.splice(aJoRandom,1);
         
     }
-
-        console.log("A-firstGroup: " + firstA)
-
-        console.log("A-secondGroup: " + allMemberA)
+        newAGroup(firstA)
+        newBGroup(allMemberA)
 
 
     for(i = 0; i < NUM;i++){
@@ -44,10 +43,8 @@ function TeamRand(){
         //console.log(first)
         allMemberB.splice(bJoRandom,1);       
     }
-
-        console.log("B-firstGroup: " + secondA)
-    
-        console.log("B-secondGroup: " + allMemberB)
+        newAGroup(secondA)
+        newBGroup(allMemberB)
 
     return (
         <div className="TeamRand">
