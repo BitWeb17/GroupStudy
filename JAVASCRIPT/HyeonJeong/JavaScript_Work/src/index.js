@@ -2,21 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import DataTypeBasic from "./JS_2021_01_28_Data_Type/DataTypeBasic";
-import DataType from "./JS_2021_01_28_Data_Type/DataType";
-import StringDataType from "./JS_2021_01_28_Data_Type/StringDataType";
-import RealDataType from "./JS_2021_01_28_Data_Type/RealDataType";
-import ExpDataType from "./JS_2021_01_28_Data_Type/ExpDataType"
-import BoolDataType from "./JS_2021_01_28_Data_Type/BoolDataType"
+
+import RandomMember from "./21_01_29/RandomMember";
+import HW04 from './21_01_29/homework/HW04';
 
 ReactDOM.render(
   <React.StrictMode>
-    <DataTypeBasic/>
-    <DataType/>
-    <StringDataType/>
-    <RealDataType/>
-    <ExpDataType/>
-    <BoolDataType/>
+      <RandomMember/>
+      {/* <HW04/> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
