@@ -18,7 +18,7 @@ import LetVar2 from "./data_type/LetVar2";
 import LetVar3 from "./data_type/LetVar3";
 import ConstTest from "./data_type/ConstTest";
 import SymbolTest from "./data_type/SymbolTest";
-
+import TeamRand from "./selfStudy/TeamRand"
 ReactDOM.render(
   <React.StrictMode>
       <DataTypeBasic/>
@@ -37,6 +37,7 @@ ReactDOM.render(
       <LetVar3/>
       <ConstTest/>
       <SymbolTest/>
+      <TeamRand/>
   </React.StrictMode>,
   document.getElementById('root')
 );
