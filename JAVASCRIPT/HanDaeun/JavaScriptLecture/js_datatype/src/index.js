@@ -16,8 +16,8 @@ import TypeOf from "./data_type/TypeOf";
 import LetVar from "./data_type/LetVar";
 import LetVar2 from "./data_type/LetVar2";
 import LetVar3 from "./data_type/LetVar3";
-import ConstTest from './data_type/ConstTest';
-import SymbolTest from './data_type/SymbolTest';
+import ConstTest from "./data_type/ConstTest";
+import SymbolTest from "./data_type/SymbolTest";
 
 ReactDOM.render(
   <React.StrictMode>

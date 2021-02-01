@@ -7,7 +7,7 @@ function SymbolTest() {
     } else {
         console.log("LINE !== SQUARE")
     }
- 
+
     // 자바로 생각하면 package 개념
     // C++에서는 namespace 개념
     // C에서는 __attribute__() - GCC 확장 개념
@@ -36,6 +36,6 @@ function SymbolTest() {
             </p>
         </div>
     )
- }
+}
 
- export default SymbolTest
+export default SymbolTest
