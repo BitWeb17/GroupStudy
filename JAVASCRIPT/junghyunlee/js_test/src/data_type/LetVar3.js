@@ -1,6 +1,7 @@
 function LetVar3() {
     var varNum = 33
 
+<<<<<<< HEAD
     console.log("varNum test : " + varNum)
 
     var varNum = "뭐야?"
@@ -14,6 +15,13 @@ function LetVar3() {
     var varNum = "뭐야? 그럼 이거는 ? " + 7 + 7
 
     console.log("let test : varNum =  " + varNum)
+=======
+    console.log("var test : " + varNum)
+
+    var varNum = "뭐야?"
+
+    console.log("var test :" + varNum ) // let과 var의 차이점 정리
+>>>>>>> origin/main
 
     return (
         <div className="LetVar3">

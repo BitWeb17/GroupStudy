@@ -7,9 +7,15 @@ var strTest1 = "It's OK"
 var strTest2 = "I can 'use' this"
 var strTest3 = 'I can do "this" too'
 
+<<<<<<< HEAD
 console.log("StringDataType strTest1 : " + strTest1)
 console.log("StringDataType strTest2 : " + strTest2)
 console.log("StringDataType strTest3 : " + strTest3)
+=======
+console.log("StringDataType" + strTest1)
+console.log("StringDataType" + strTest2)
+console.log("StringDataType" + strTest3)
+>>>>>>> origin/main
 
 
 // <br/> 태그는 엔터와 유사한 역할 수행한다

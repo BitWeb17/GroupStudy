@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import FirstEX_1 from "./data_type/FirstEX_1";
 import FirstEX_3 from "./data_type/FirstEX_3";
 import FirstEX_2 from "./data_type/FirstEX_2";
+<<<<<<< HEAD
 import Homework1 from "./homework/Homework1";
 import Homework2 from "./homework/Homework2";
 import Homework3 from "./homework/Homework3";
@@ -77,6 +78,14 @@ ReactDOM.render(
      <LiteralTest/>
      <FunctionObjectTest3/>
      <RandomTeam/>
+=======
+
+ReactDOM.render(
+  <React.StrictMode>
+    <FirstEX_1/>
+    <FirstEX_2/>
+    <FirstEX_3/>
+>>>>>>> origin/main
   </React.StrictMode>,
   document.getElementById('root')
 );
