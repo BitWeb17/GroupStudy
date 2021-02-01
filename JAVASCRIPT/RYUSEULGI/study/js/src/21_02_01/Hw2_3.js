@@ -30,11 +30,11 @@ function Hw2_3() {
                 res.push(array[i]);
             }
         }
-        console.log(`${number}의 배수 ${res.sort((a, b) => b - a)}`);
+        console.log(`${number}의 배수 ${res}`);
     }
 
     function noReapet(){
-        for(i = 0; i < length; i++) {   
+        for(let i = 0; i < length; i++) {   
             if(newNumberArr.indexOf(numberArr[i]) === -1){
                 newNumberArr.push(numberArr[i]);
             }
@@ -44,7 +44,7 @@ function Hw2_3() {
 
     function sortArr(){
         const array = res.sort((a, b) => b - a);
-        console.log(array);
+        console.log('내림차순 정렬' + array);
     }
 
     randomNum(50);
@@ -53,20 +53,38 @@ function Hw2_3() {
     printMul(newNumberArr, 5);
     sortArr();
 
+    // class 사용해서 풀어보기
+
+    class randomNum2 {
+        constructor(length) {
+            this.length = length;
+        }
+        // 이렇게 되면 constructor의 의미가 없음
+        
+        static allocRandom(length){
+            for (let i = 0; i < length; i++) {
+            const randNum = Math.floor(Math.random() * length);
+            numberArr.push(randNum);
+            }
+            console.log('랜덤숫자배열' + numberArr);
+        }
+    }
+    randomNum2.allocRandom(50);
+    
     // reduce 사용해서 풀어보기
 
     function print3Multiple(){
-        const res = numberArr.reduce((acc, current) => {
+        const result = numberArr.reduce((acc, current) => {
             if( current % 3 === 0){
                 acc.push(current);
             }
             return acc;
         }, []);
-        console.log('중복되는 3의 배수' + res);
+        console.log('중복되는 3의 배수' + result);
     }
 
     function noDup(){
-        const res = numberArr.sort().reduce((acc, current) => {
+        const result = numberArr.sort().reduce((acc, current) => {
             // 내림차순은 어떻게 할까?
             if( acc.length === 0 || acc[acc.length - 1] !== current){
                 if( current % 5 === 0){
@@ -75,7 +93,7 @@ function Hw2_3() {
             }
             return acc;
         }, []);
-        console.log('중복없는 5의 배수' + res);
+        console.log('중복없는 5의 배수' + result);
     }
 
     randomNum(50);
