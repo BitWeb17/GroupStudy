@@ -1,7 +1,14 @@
 function ExpDataType() {
     // 123 x 10^5
+<<<<<<< HEAD
+    // 예상 결과 : 12300000
     var expNum1 = 123e5
     // 123 x 10^-5
+    // 예상결과 0.00123
+=======
+    var expNum1 = 123e5
+    // 123 x 10^-5
+>>>>>>> origin/main
     var expNum2 = 123e-5
 
 
