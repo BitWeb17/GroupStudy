@@ -1,21 +1,26 @@
 function NoDupNum(){
+    const INIT = 1
 
-    for (var i = 0; i < 15; i++) {
-        let noduplicate;
-        noduplicate[i] = 0;
+    const START = 0
+    const END = 15
 
-        var cnt
-        for (i = 1; ; ) {
-            let randNum = (Math.random() * 15) + 1;
-            if (noduplicate[randNum - 1] != 0)
-                continue;
-            cnt++;
-            noduplicate[randNum - 1] = 1;
-            console.log(i+"번 직원 ="+randNum);
-            if (cnt == 15) {
-                break;
-            }
+    const CRITERIA = 15
 
+    const ERROR = -1
+
+    var emp = []
+    var empNum
+
+    // 뭐가 됫건 15개를 채운다는 의미
+    for(var i = START; i < END; ) {
+        empNum = Math.floor(Math.random() * CRITERIA) + INIT;
+
+        // indexOf()를 통해 특정 값을 찾아줌
+        // 만약 찾지 못한다면 에러의 의미로 -1 을 리턴한다.
+        // 실제 리턴하는 타입이 Number에 해당하므로 == 도 무방
+        if(emp.indexOf(empNum) == ERROR) {
+            emp.push(empNum)
+            console.log("Homework4: %d - %d", i, emp[i++])
         }
     }
 
@@ -23,7 +28,7 @@ function NoDupNum(){
         <div className="NumPrint0to10">
             <p>
                 4번 문제<br/>
-                자바같이 [i]를 넣고싶은데 맘처럼 안되는구나...<br/>
+
 
             </p>
         </div>
