@@ -33,6 +33,7 @@ function Work01(){
 
     let fibo = new fibonacci
     fibo.fiboWork(9)
+    fibo.fiboWork(20)
     return(
         <div className="HomeWork01">
             <p>
