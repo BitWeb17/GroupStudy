@@ -3,28 +3,49 @@ package Fourtheenth;
 import java.util.ArrayList;
 
 class RandomTeamSelection {
-    private int memberFixnum;
+    private int teamMember;
+    private int randomTeam;
+    private int teamFixnum, memberFixnum;
+    private int numOfTeam;
     private int numOfTeamMember;
     private int i = 0;
     private int randNum;
     private int choiceMember;
 
 
+    private int[] teamNuberArr;
     private int[] teamMemberArr;
     private int[] checkDup;
 
 
+    //private ArrayList<Integer> teamAllayList;
+    //private ArrayList<Integer> memberAllayList;
+
+
     public RandomTeamSelection(int numOfTeamMember) {
+
+        // 전체팀원의 숫자와 팀 갯수의 값을 조절하기 퍈하게 하기 위해
+        //teamFixnum = numOfTeam;
         memberFixnum = numOfTeamMember;
 
+        //this.numOfTeam = numOfTeam;
         this.numOfTeamMember = numOfTeamMember;
 
         // 1차열 배열 17개 배열을 생성
         teamMemberArr = new int[memberFixnum];
 
+        // 4개 팀을 정보를 받기 위해 만든다? 선언한다?
+        //teamAllayList = new ArrayList<Integer>();
+        // 17 명의 정수를 받기 위해 만든다? 선언한다?
+        //memberAllayList = new ArrayList<Integer>();
     }
 
 
+    // checkDup 배열에 0 ~ 16 까지의 정수를 0으로 셋팅
+    // checkDup[0] = 0
+    // checkDup[1] = 0
+    // ...
+    // checkDup[16] = 0
     public void allocArrTeamMemberZeroValue() {
         checkDup = new int[memberFixnum];
 
