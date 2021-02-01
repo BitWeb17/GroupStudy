@@ -2,39 +2,44 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import ObjectTest from "./objest-test/ObjectTest";
+import ObjectTest2 from "./objest-test/ObjectTest2";
+import ClassObject from "./class-test/ClassObject";
+import ClassObject2 from "./class-test/ClassObject2";
+import ClassObject3 from "./class-test/ClassObject3";
+import ClassObject4 from "./class-test/ClassObject4";
+import ClassExtends from "./class-extends-test/ClassExtends";
+import ClassExtends2 from "./class-extends-test/ClassExtends2";
+import ArrayJoinTest from "./array-test/ArrayJoinTest";
+import ArrayPopTest from "./array-test/ArrayPopTest";
+import ArrayPushTest from "./array-test/ArrayPushTest";
+import ArrayShiftTest from "./array-test/ArrayShiftTest";
+import ArrayUnshiftTest from "./array-test/ArrayUnshiftTest";
+import ArraySpliceTest from "./array-test/ArraySpliceTest";
+import ArrayConcatTest from "./array-test/ArrayConcatTest";
+import ArraySliceTest from "./array-test/ArraySliceTest";
+import SortTest from "./sort/SortTest";
 
-import FinalEqCicdTest from "./coincidence/FinalEqCicdTest";
-import SpreadTest from "./array/SpreadTest";
-import SpreadTest2 from "./array/SpreadTest2";
-import SpreadTest3 from "./array/SpreadTest3";
-import SpreadTest4 from "./array/SpreadTest4";
-import SpreadTest5 from "./array/SpreadTest5";
-import SpreadTest6 from "./array/SpreadTest6";
-import SpreadTest7 from "./array/SpreadTest7";
-import EmptyObjectTest from "./function/EmptyObjectTest";
-import FunctionObjectTest from "./function/FunctionObjectTest";
-import FunctionObjectTest2 from "./function/FunctionObjectTest2";
-import RandomTeam from "./Js_Home2/RandomTeam"
-import Hint from "./Js_Home2/Hint";
-import TestPp from "./Js_Home/TestPp";
-import LiteralTest from "./literal/LiteralTest";
 
 ReactDOM.render(
   <React.StrictMode>
-    <LiteralTest/>
-    <FinalEqCicdTest/>
-    <SpreadTest/>
-    <SpreadTest2/>
-    <SpreadTest3/>
-    <SpreadTest4/>
-    <SpreadTest5/>
-    <SpreadTest6/>
-    <SpreadTest7/>
-    <EmptyObjectTest/>
-    <FunctionObjectTest/>
-    <FunctionObjectTest2/>
-    <RandomTeam/>
-    <LiteralTest/>
+    <ObjectTest/>
+    <ObjectTest2/>
+    <ClassObject/>
+    <ClassObject2/>
+    <ClassObject3/>
+    <ClassObject4/>
+    <ClassExtends/>
+    <ClassExtends2/>
+    <ArrayJoinTest/>
+    <ArrayPopTest/>
+    <ArrayPushTest/>
+    <ArrayShiftTest/>
+    <ArrayUnshiftTest/>
+    <ArraySpliceTest/>
+    <ArrayConcatTest/>
+    <ArraySliceTest/>
+    <SortTest/>
   </React.StrictMode>,
   document.getElementById('root')
 );
