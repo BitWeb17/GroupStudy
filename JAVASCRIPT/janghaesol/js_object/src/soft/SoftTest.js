@@ -34,6 +34,12 @@ const SoftTest = () => {
     //  배열에서 값을 끄집어내서 비교해보는 것
     //  값을 빼보면 그 차이가 가장 큰넘이 바지막이란 것을 알 수 있음.
     console.log("(Solved)Before Sort = " + arr)
+    
+    sortedArr = arr.sort(function(a,b){
+        return b - a;
+    })
+
+
     sortedArr = arr.sort((a,b) => a - b)
     console.log("(Solved)After sort = " + sortedArr)
 

@@ -5,6 +5,7 @@ function ObjectTest() {
         getName:function(){
             return this.name
         },
+
         setName : function(name){
             this.name =name
         },

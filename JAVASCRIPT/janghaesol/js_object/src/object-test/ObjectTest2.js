@@ -13,8 +13,8 @@ function ObjectTest2() {
     }
     //test
     //test
-console.log("ObjectTest2"+obj.name)
-console.log("ObjectTest2"+obj._name)
+console.log("ObjectTest2 : "+obj.name)
+console.log("ObjectTest2 : "+obj._name)
 
 obj.name = "gogosing"
 console.log(obj.name)
