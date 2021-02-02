@@ -1,20 +1,13 @@
 function LetVar4() {
     let letNum = 33
 
-<<<<<<< HEAD
     console.log("letNum test: " + letNum)
-=======
     console.log("let test: " + letNum)
->>>>>>> origin/main
 
     // LetVar3과 LetVar4의 차이점은 뭘까 ?
     // let 과 var의 차이점은 뭐지 ?
     // 호이스팅(Hoisting)
-<<<<<<< HEAD
     letNum = "뭐야 ?"
-=======
-    var letNum = "뭐야 ?"
->>>>>>> origin/main
 
     // 호이스팅은 모든 변수가 프로그램 시작시
     // 최선두에 선언하는 형식과 같이 동작하는 것을 의미한다.
@@ -32,11 +25,8 @@ function LetVar4() {
     // 반면 중요 정보를 let 으로 만들어둠으로써
     // 신입 개발자들의 이와 같은 실수를 원천 차단할 수 있게 되었다.
 
-<<<<<<< HEAD
     console.log("letNum test: " + letNum)
-=======
     console.log("let test: " + letNum)
->>>>>>> origin/main
 
     return (
         <div className="LetVar4">
