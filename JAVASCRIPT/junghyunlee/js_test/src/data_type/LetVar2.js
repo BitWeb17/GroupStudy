@@ -1,6 +1,5 @@
 function LetVar2() {
 
-<<<<<<< HEAD
     // let 으로 할당해놓은것은 중복으로 할당이 불가능하다.
     let num = 77
 
@@ -18,14 +17,11 @@ function LetVar2() {
 
     console.log("let test : num =  " + num)
 
-=======
-    let num = 77
+    num = 77
 
     console.log("let test : " + num)
 
     num = "뭐야?"
-
->>>>>>> origin/main
 
     return (
         <div className="LetVar2">
