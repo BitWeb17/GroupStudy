@@ -1,3 +1,4 @@
+/*
 const HomeWork01v2 = () => {
     //  1, 1, 1, 3, 5, 9, 17, 31, 57, 105, 193, ......
     // 첫째, 둘째, 셋째 더해서 넷째 출력.
@@ -48,3 +49,5 @@ const HomeWork01v2 = () => {
 }
 
 export default HomeWork01v2
+
+ */
