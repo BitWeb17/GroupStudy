@@ -2,39 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import Work1 from "./homeWorks/02-01/Work1";
+import Work2 from "./homeWorks/02-01/Work2";
+import Work3 from "./homeWorks/02-01/Work3";
 
-import FinalEqCicdTest from "./coincidence/FinalEqCicdTest";
-import SpreadTest from "./array/SpreadTest";
-import SpreadTest2 from "./array/SpreadTest2";
-import SpreadTest3 from "./array/SpreadTest3";
-import SpreadTest4 from "./array/SpreadTest4";
-import SpreadTest5 from "./array/SpreadTest5";
-import SpreadTest6 from "./array/SpreadTest6";
-import SpreadTest7 from "./array/SpreadTest7";
-import EmptyObjectTest from "./function/EmptyObjectTest";
-import FunctionObjectTest from "./function/FunctionObjectTest";
-import FunctionObjectTest2 from "./function/FunctionObjectTest2";
-import RandomTeam from "./Js_Home2/RandomTeam"
-import Hint from "./Js_Home2/Hint";
-import TestPp from "./Js_Home/TestPp";
-import LiteralTest from "./literal/LiteralTest";
 
 ReactDOM.render(
   <React.StrictMode>
-    <LiteralTest/>
-    <FinalEqCicdTest/>
-    <SpreadTest/>
-    <SpreadTest2/>
-    <SpreadTest3/>
-    <SpreadTest4/>
-    <SpreadTest5/>
-    <SpreadTest6/>
-    <SpreadTest7/>
-    <EmptyObjectTest/>
-    <FunctionObjectTest/>
-    <FunctionObjectTest2/>
-    <RandomTeam/>
-    <LiteralTest/>
+    <Work1/>
+    <Work2/>
+    <Work3/>
   </React.StrictMode>,
   document.getElementById('root')
 );

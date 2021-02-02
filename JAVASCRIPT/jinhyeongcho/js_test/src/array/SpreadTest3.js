@@ -10,7 +10,7 @@ const SpreadTest3 = () =>{
         console.log("spreadArrPrint: " + b)
         console.log("spreadArrPrint: " + c)
     }
-    alert("졸려죽겠네...")
+
     spreadArrPrint(...arr)
 
     return(
