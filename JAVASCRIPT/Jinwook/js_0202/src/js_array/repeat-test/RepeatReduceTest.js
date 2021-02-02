@@ -1,7 +1,6 @@
 const RepeatReduceTest = () => {
     let seq = [1,2,3,4,5]
     let sum = seq.reduce(reduceFunc)
-    // map은 보통 연산시 사용하는 녀석
 
     
     function reduceFunc(total,value,value2) {

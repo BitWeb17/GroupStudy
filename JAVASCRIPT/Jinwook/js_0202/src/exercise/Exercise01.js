@@ -17,14 +17,20 @@ const Exercise01 = () => {
     let START = 1;
     let ZERO = 0;
     let PAYMENT = 10000000;
-    let TEAMMATE = 4;
+    
     let DIVIDEND = 0.7;
 
+    let TEAMMATE = 4;
+    
 
-    let randArrIdx
+    
+    
+   
 
     let playerNum = []
-    let randTeamIdx = []
+    let randTeamIdx =[]
+   
+    
 
     class TeamLotto{
         constructor(partinPlayer){
@@ -40,31 +46,37 @@ const Exercise01 = () => {
             console.log("참가인원은: %d명 입니다", this._player)
         }
 
-        allocPlyerArr(){
+        allocPlyerNumArr(){
             let num = this._player
             
-            console.log(teamNum)
-
-            for(let i = START; i < num; i++){
-               playerNum[i] = Math.floor(Math.random() * num) + START
+            for(let i = ZERO; i < num; i++){
+               playerNum[i] = Math.floor(Math.random() * num) + START;
             }
             console.log(playerNum)
+            
+            
         }
         createRandomTeam(){
-            let teamNum = this._player / TEAMMATE
-            for(let i = ZERO; i < teamNum; i++){
-                randTeamIdx[i]
-                for(let j = ZERO; j < TEAMMATE; j++){
-                    
-                }
-
+            let teamNum = playerNum.length / TEAMMATE
+            let randPlayerIdx = playerNum.sort(function(a, b){return 0.5 - Math.random()})
+            console.log(randPlayerIdx)
+            for(var i = ZERO; i < teamNum; i++){
+                randTeamIdx.push(randPlayerIdx.splice(0,TEAMMATE))
+                
             }
-        }
-
+            console.log(randTeamIdx)
     }
+        filterLottoNum(){
+                let filterArr = randTeamIdx.find( value => value % 1013 == 0)
+                   console.log("filterRandTeamIdx",filterArr)
+               
+        }
+}
     let tl = new TeamLotto(10000)
     tl.display()
-    tl.allocPlyerArr()
+    tl.allocPlyerNumArr()
+    tl.createRandomTeam()
+    tl.filterLottoNum()
 
 
     return(
