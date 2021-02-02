@@ -3,7 +3,7 @@ const ArrayRepeatTest = () => {
     let txt = ""
 
     function testFunc(value){
-        txt = txt + value + "<br>"
+        txt = txt+ value + "<br>"
     }
 
     console.log("Before testFunc : " + txt)
