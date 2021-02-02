@@ -6,7 +6,6 @@ import reportWebVitals from './reportWebVitals';
 import FirstEX_1 from "./data_type/FirstEX_1";
 import FirstEX_3 from "./data_type/FirstEX_3";
 import FirstEX_2 from "./data_type/FirstEX_2";
-<<<<<<< HEAD
 import Homework1 from "./homework/Homework1";
 import Homework2 from "./homework/Homework2";
 import Homework3 from "./homework/Homework3";
@@ -52,40 +51,30 @@ import StringDataType from "./data_type/StringDataType";
 import SymbolTest from "./data_type/SymbolTest";
 import TypeOf from "./data_type/TypeOf";
 import RandomTeam from "./RandomTeam/RadomTeam";
+import ObjctTest from "./objct-test/ObjctTest";
+import ObjectTest2 from "./objct-test/ObjectTest2";
+import ClassObject from "./class-test/ClassObject";
+import ClassObject2 from "./class-test/ClassObject2";
+import ClassObject3 from "./class-test/ClassObject3";
+import ClassObject4 from "./class-test/ClassObject4";
+import ClassExtends from "./class-extende-test/ClassExtends";
+import ClassExtends2 from "./class-extende-test/ClassExtends2";
+import ArrayJoinTest from "./array-test/ArrayJoinTest";
+import ArrayPopTest from "./array-test/ArrayPopTest";
+import ArrayPushTest from "./array-test/ArrayPushTest";
+import ArrayShiftTest from "./array-test/ArrayShiftTest";
+import ArrayUnShiftTest from "./array-test/ArrayUnshiftTest";
+import ArrayConcatTest from "./array-test/ArrayConcatTest";
+import ArraySliceTest from "./array-test/ArraySliceTest";
+import SortTest from "./sort/SortTest";
+import HomeWork01 from "./homeWork-210201/HomeWork01";
+import HomeWork02 from "./homeWork-210201/HomeWork02";
+import HomeWork03 from "./homeWork-210201/HomeWork03";
+import TestWork from "./homeWork-210201/TestWork";
 
 ReactDOM.render(
   <React.StrictMode>
-    <LiteralTest/>
-    <SpreadTest/>
-    <SpreadTest2/>
-    <SpreadTest3/>
-    <SpreadTest4/>
-    <SpreadTest5/>
-    <SpreadTest6/>
-    <SpreadTest7/>
-    <FunctionObjectTest/>
-    <FunctionObjectTest2/>
-    <Homework4/>
-    <IndexOfTest/>
-    <JsonDataType/>
-    <LetVar2/>
-    <LetVar3/>
-    <LetVar4/>
-    <RealDataType/>
-    <StringDataType/>
-     <SymbolTest/>
-     <TypeOf/>
-     <LiteralTest/>
-     <FunctionObjectTest3/>
-     <RandomTeam/>
-=======
-
-ReactDOM.render(
-  <React.StrictMode>
-    <FirstEX_1/>
-    <FirstEX_2/>
-    <FirstEX_3/>
->>>>>>> origin/main
+     <ClassObject4/>
   </React.StrictMode>,
   document.getElementById('root')
 );

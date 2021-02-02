@@ -8,31 +8,31 @@ const HomeWork01 = () => {
 
     function inputNumber(num) {
 
+        let firstNum = oneNum;
+        let SecondNum = oneNum;
+        let ThirdNum = oneNum;
+        let totalNum
 
+        if(num == 1 || num == 2 || num ==3){
+            console.log("%d 항의 출력 값은 = %d", num, 1)
+        } else {
+        for (var i = oneNum; i <= num - 3 ; i++) {
 
-        for (var i = oneNum; i <= num ; i++) {
-
-            let firstNum = oneNum;
-            let SecondNum = oneNum;
-            let ThirdNum = oneNum;
-
-            let totalNum = firstNum + SecondNum + ThirdNum
-            console.log("totalNum", totalNum)
+            totalNum = firstNum + SecondNum + ThirdNum
 
             firstNum = SecondNum
             SecondNum = ThirdNum
             ThirdNum = totalNum
-
+            }
+            console.log("%d 항의 출력 값은 = %d", num, totalNum)
         }
 
         return num
     }
 
     let a = inputNumber(10)
-
-   // function printInputNumber(){
-    //    console.log("입력하신 항의 출력 값 = %d",  a)
-   // }
+    let b = inputNumber(1)
+    let c = inputNumber(5)
 
     return (
         <div className="HomeWork01">
