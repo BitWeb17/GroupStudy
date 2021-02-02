@@ -8,6 +8,10 @@ import Task3RandNum from './210128/Task3RandNum';
 import Task4RandNoDup from './210128/Task4RandNoDup';
 import Study1RandNumSort from './210128/Study1RandNumSort';
 
+import Task1Sequence from './210201/Task1Sequence';
+import Task2PrintMultiple from './210201/Task2PrintMultiple';
+import Task3SortedMultiple from './210201/Task3SortedMultiple';
+
 ReactDOM.render(
   <React.StrictMode>
     <Task1Print/>
@@ -15,6 +19,10 @@ ReactDOM.render(
     <Task3RandNum/>
     <Task4RandNoDup/>
     <Study1RandNumSort/>
+
+    <Task1Sequence/>
+    <Task2PrintMultiple/>
+    <Task3SortedMultiple/>
   </React.StrictMode>,
   document.getElementById('root')
 );
