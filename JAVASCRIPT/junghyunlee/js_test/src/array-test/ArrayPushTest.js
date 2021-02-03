@@ -5,12 +5,16 @@ const ArrayPushTest = () => {
 
     let len = arr.push("seven")
 
+    // one, two, three, seven
     console.log("After Push = " + arr)
+    // 4
     console.log("Arr Length = " + len)
 
     let len2 = arr.push("팔")
 
+    // one, two, three, seven, 팔
     console.log("After Push = " + arr)
+    // 5
     console.log("Arr Length = " + len2)
 
 

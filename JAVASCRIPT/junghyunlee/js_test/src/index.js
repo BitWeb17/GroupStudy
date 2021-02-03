@@ -71,10 +71,32 @@ import HomeWork01 from "./homeWork-210201/HomeWork01";
 import HomeWork02 from "./homeWork-210201/HomeWork02";
 import HomeWork03 from "./homeWork-210201/HomeWork03";
 import TestWork from "./homeWork-210201/TestWork";
+import ArraySortTest from "./array-test/ArraySortTest";
+import ArraySortTest2 from "./array-test/ArraySortTest2";
+import ApplyMathTest from "./apply-math/ApplyMathTest";
+import CustomMathTest from "./custom-lib/CustomMathTest";
+import SubOrderTest from "./custom-lib/SubOrderTest";
+import SubOrderTest2 from "./custom-lib/SubOrderTest2";
+import ArrayRepeatTest from "./repeat-test/ArrayRepeatTest";
+import RepeatMapTest from "./repeat-test/RepeatMapTest";
+import RepeatFilterTest from "./repeat-test/RepeatFilterTest";
+import RepeatReduceTest from "./repeat-test/RepeatReduceTest";
+import RepeatEveryTest from "./repeat-test/RepatEveryTest";
+import RepeatSomeTest from "./repeat-test/RepeatSomeTest";
+import ArrowFunctionTest from "./arrow-test/ArrowFunctionTest";
+import ArrowFunctionTest2 from "./arrow-test/ArrowFunctionTest2";
+import ArrowFunctionTest3 from "./arrow-test/ArrowFunctionTest3";
+import ArrowFunctionTest4 from "./arrow-test/ArrowFunctionTest4";
+import FuncTest from "./func-test/FuncTest";
+import DefaultParam from "./func-test/DefaultParam";
+import DarkWeb from "./TestQeustion/DarkWeb";
+import Prob from "./TestQeustion/Prob";
+import Test from "./TestQeustion/Test";
+import Test2 from "./TestQeustion/Test2";
 
 ReactDOM.render(
   <React.StrictMode>
-     <ClassObject4/>
+      <Prob/>
   </React.StrictMode>,
   document.getElementById('root')
 );
