@@ -9,6 +9,9 @@ const ForEachWithSet = () => {
 
     setData.forEach(function(val1, val2) {
         console.log(val1 + " : " + val2)
+        // [Log] Cherry : Cherry (
+        // [Log] strawberry : strawberry 
+        // [Log] apple : apple 
     })
 
     setData.forEach((val1, val2) =>

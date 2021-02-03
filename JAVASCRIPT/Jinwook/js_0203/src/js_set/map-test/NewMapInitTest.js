@@ -1,8 +1,8 @@
 const NewMapInitTest= () => {
     let mapData = new Map([["apple","red"],["grape", "purple"]])
 
-    console.log(mapData)
-    console.log("Size: " + mapData.size)
+    console.log(mapData) // {"apple" => "red", "grape" => "purple"}
+    console.log("Size: " + mapData.size) // Size: 2
     
     return(
         <div className = "NewMapInitTest">

@@ -5,7 +5,7 @@ const AddSetTest= () => {
     setData.add("strawberry")
     setData.add("apple")
 
-    console.log(setData)
+    console.log(setData) //{"cherry", "strawberry", "apple"}
     console.log("AddSetTest: " + setData.has("apple"))
     console.log("AddSetTest: " + setData.has("grape"))
    

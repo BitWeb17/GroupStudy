@@ -12,7 +12,9 @@ const SetkeyIteratorTest= () => {
     var setIter = setData.keys()
 
     for(var key of setIter){
-        console.log(key)
+        console.log(key) // cherry
+                         // strawberry
+                         // apple
     }
    
 
