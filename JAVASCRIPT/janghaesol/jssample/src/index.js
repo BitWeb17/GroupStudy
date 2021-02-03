@@ -5,6 +5,7 @@ import Homework1 from './jan0201/Homework1';
 import Homework2 from './jan0201/Homework2';
 import Homework3 from './jan0201/Homework3';
 import TwoHomework1 from './jan0202/TwoHomework1';
+import Prob from './jan0202/prob';
 import reportWebVitals from './reportWebVitals';
 
 
@@ -14,6 +15,7 @@ ReactDOM.render(
     <Homework2/>
     <Homework3/>
     <TwoHomework1/>
+    <Prob/>
   </React.StrictMode>,
   document.getElementById('root')
 );
