@@ -3,7 +3,6 @@ function ArrayPushTest(){
 
     
     console.log("Before Push = " + arr)
-    // 제일 마지막 배열의 인덱스만 빼고 리턴하는 것
     let len = arr.push("seven")
 
 
