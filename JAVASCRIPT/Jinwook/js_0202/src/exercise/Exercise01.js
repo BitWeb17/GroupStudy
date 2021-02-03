@@ -21,6 +21,9 @@ const Exercise01 = () => {
     let DIVIDEND = 0.7;
 
     let TEAMMATE = 4;
+
+
+    let randPlayerIdx
     
 
     
@@ -58,7 +61,7 @@ const Exercise01 = () => {
         }
         createRandomTeam(){
             let teamNum = playerNum.length / TEAMMATE
-            let randPlayerIdx = playerNum.sort(function(a, b){return 0.5 - Math.random()})
+            randPlayerIdx = playerNum.sort(function(a, b){return 0.5 - Math.random()})
             console.log(randPlayerIdx)
             for(var i = ZERO; i < teamNum; i++){
                 randTeamIdx.push(randPlayerIdx.splice(0,TEAMMATE))
@@ -67,7 +70,8 @@ const Exercise01 = () => {
             console.log(randTeamIdx)
     }
         filterLottoNum(){
-                let filterArr = randTeamIdx.find( value => value % 1013 == 0)
+            // 여기서 실패
+                let filterArr = randTeamIdx.filter( value => value % 1013 === 0)
                    console.log("filterRandTeamIdx",filterArr)
                
         }
