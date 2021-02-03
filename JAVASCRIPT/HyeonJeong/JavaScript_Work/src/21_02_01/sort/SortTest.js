@@ -21,7 +21,7 @@ const SortTest = () => {
     arr = [1, 9, 3, 12, 5, 8, 7]
     let arr2 = [1, 9, 3, 2, 5, 8, 7]
 
-    console.log("Before Sort = " + arr)
+    console.log( arr)
     let sortedArr = arr.sort()
     console.log("After Sort = " + sortedArr)
 
@@ -29,11 +29,11 @@ const SortTest = () => {
     let sortedArr2 = arr2.sort()
     console.log("After Sort = " + sortedArr2)
 
-    // 배열에서 값을 끄집어내서 비교해보는 것
-    // 값을 빼보면 그 차이가 가장 큰넘이 마지막이란 것을 알 수 있음
-    console.log("(Solved)Before Sort = " + arr)
+    // // 배열에서 값을 끄집어내서 비교해보는 것
+    // // 값을 빼보면 그 차이가 가장 큰넘이 마지막이란 것을 알 수 있음
+    // console.log("(Solved)Before Sort = " + arr)
     sortedArr = arr.sort((a, b) => a - b)
-    console.log("(Solved)After Sort = " + sortedArr)
+    console.log(sortedArr)
 
     len = sortedArr.length
 

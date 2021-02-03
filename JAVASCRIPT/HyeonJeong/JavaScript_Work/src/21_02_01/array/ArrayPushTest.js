@@ -1,12 +1,12 @@
 const ArrayPushTest = () => {
     var arr = ["one", "two", "three"]
 
-    console.log("Before Push = " + arr)
+    console.log(arr)
 
-    let len = arr.push("seven")
+    let resultPush = arr.push("seven")
 
-    console.log("After Push = ", arr)
-    console.log("Arr Length = ", len)
+    console.log(arr)
+    console.log(resultPush)
 
     return (
         <div className = "ArrayPushTest">
