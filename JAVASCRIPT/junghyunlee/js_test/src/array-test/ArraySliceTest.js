@@ -4,6 +4,7 @@ const ArraySliceTest = () => {
     // Slice 는 작동해도 원본은 바뀌지 않는다.
     let arr = [1, 2, 3, 4, 5, 6, 7]
 
+    // 슬라이스 보
     console.log("Before Slice = " + arr)
 
     let slicedArr = arr.slice(3)
