@@ -15,6 +15,7 @@ const ForEachWithSet = () =>{
         console.log("arrow-" +val1+" : " + val2)
     })
     console.log("ForEachWithSet Fin")
+
     return(
         <div className="ForEachWithSet">
             <p>

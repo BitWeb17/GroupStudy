@@ -7,6 +7,7 @@ const SetEntryIterationTest = () =>{
     setData.add("apple")
 
     console.log(setData)
+    console.log(setData.has("Cherry"))
 
     var setIter = setData.entries()
 

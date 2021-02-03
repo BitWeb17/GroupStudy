@@ -17,6 +17,7 @@ import ForWithSetMap from "./for-test/ForWithSetMap";
 import IteratorTest from "./iterator-test/IteratorTest";
 import IteratorTest2 from "./iterator-test/IteratorTest2";
 import IteratorTest3 from "./iterator-test/IteratorTest3";
+import SymbolTest from "./data_type/SymbolTest";
 
 
 ReactDOM.render(
@@ -36,6 +37,7 @@ ReactDOM.render(
       <IteratorTest/>
       <IteratorTest2/>
       <IteratorTest3/>
+      <SymbolTest/>
   </React.StrictMode>,
   document.getElementById('root')
 );

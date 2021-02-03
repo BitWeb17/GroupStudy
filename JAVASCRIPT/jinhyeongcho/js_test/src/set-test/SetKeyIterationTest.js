@@ -9,7 +9,6 @@ const SetKeyIterationTest = () =>{
     console.log(setData)
 
     var setIter = setData.keys()
-
     for (var key of setIter){
         console.log(key)
     }

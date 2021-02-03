@@ -5,6 +5,11 @@ const MapSetTest = () =>{
             ["apple","red"],["grape","purple"]
         ]
     )
+    let test = { name : "ted"}
+    let mapmap ={}
+    mapmap[test]=30
+    console.log(mapmap)
+    console.log(mapmap["[object Object]"])
     console.log(mapData)
 
     mapData.set("test1","blue")
