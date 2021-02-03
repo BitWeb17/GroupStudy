@@ -1,12 +1,12 @@
 const ArraySliceTest = () => {
     let arr = [1, 2, 3, 4, 5, 6, 7]
 
-    console.log("Before Slice = ",arr)
+    console.log(arr)
 
-    let slicedArr = arr.slice(3)
+    let slicedArr = arr.slice(3,5)
+    console.log(slicedArr)
 
-    console.log("slicedArr = ",slicedArr)
-    console.log("After Slice = ",arr)
+    console.log(arr)
 
     arr = [1, 2, 3, 4, 5, 6, 7]
 

@@ -6,7 +6,7 @@ function ArrayDataType() {
     return (
         <div className = "ArrayDataType">
             <p>
-                {car[0]},{car[1]},{car[2]},{car[3]}
+                {cars[0]},{cars[1]},{cars[2]},{cars[3]}
             </p>
         </div>
     )

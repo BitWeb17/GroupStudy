@@ -1,12 +1,12 @@
 const ArrayPopTest = () => {
     var arr = ["one", "two", "three"]
 
-    console.log("Before Pop = " + arr)
+    console.log(arr)
 
     let elem = arr.pop();
 
-    console.log("After Pop = " + arr)
-    console.log("Pop Element = " + elem)
+    console.log(arr)
+    console.log(elem)
 
     return (
         <div className="ArrayPopTest">

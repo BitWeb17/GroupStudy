@@ -33,4 +33,4 @@ const ConstTest = () => {
     )
 }
 
-export default ConstTest
+export default ConstTests
