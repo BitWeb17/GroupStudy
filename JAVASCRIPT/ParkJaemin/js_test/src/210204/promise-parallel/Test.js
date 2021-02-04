@@ -63,10 +63,8 @@ async function asyncTest() {
         ]
     )
     console.log(sum)
-    sum.reduce(function (arr, cur){
-        return arr+cur
-        console.log(sum)
-    })
+  
+    
 
 }
 
