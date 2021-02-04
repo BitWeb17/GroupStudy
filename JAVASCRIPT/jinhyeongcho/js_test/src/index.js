@@ -2,13 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import PromiseParallelTest2 from "./promise-parallel/PromiseParallelTest2";
+import AnotherProb from "./homeWorks/02-03/AnotherProb";
 
 
 
 ReactDOM.render(
     <React.StrictMode>
-        <PromiseParallelTest2/>
+        <AnotherProb/>
     </React.StrictMode>,
     document.getElementById('root')
 );
