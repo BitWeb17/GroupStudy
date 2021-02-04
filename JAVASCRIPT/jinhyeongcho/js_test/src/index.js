@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import AnotherProb from "./homeWorks/02-03/AnotherProb";
+import PromiseParallelTest2 from "./promise-parallel/PromiseParallelTest2";
 
 
 
 ReactDOM.render(
-  <React.StrictMode>
-        <AnotherProb/>
-  </React.StrictMode>,
-  document.getElementById('root')
+    <React.StrictMode>
+        <PromiseParallelTest2/>
+    </React.StrictMode>,
+    document.getElementById('root')
 );
 
 // If you want to start measuring performance in your app, pass a function
