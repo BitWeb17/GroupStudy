@@ -43,16 +43,16 @@ function divide(num1, num2) {
 }
 
 plus(100, 200).then(function (response) {
-    console.log("plus" + response)
+    console.log("plus : " + response)
     return minus(100, 200)
 }).then(function (response) {
-    console.log("minus" + response)
+    console.log("minus : " + response)
     return mult(100, 200)
 }).then(function (response) {
-    console.log("mult" + response)
+    console.log("mult : " + response)
     return divide(100, 200)
 }).then(function (response) {
-    console.log("divide" + response)
+    console.log("divide : " + response)
 })
 
 

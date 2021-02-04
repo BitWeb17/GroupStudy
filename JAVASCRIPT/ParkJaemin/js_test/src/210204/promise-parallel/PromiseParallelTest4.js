@@ -58,7 +58,7 @@ async function asyncProcess() {
 
 asyncProcess()
 
-const PromiseParallelTest4 = () => { //순차적 진행
+const PromiseParallelTest4 = () => {
 
     console.log("PromiseParallelTest4 start")
 

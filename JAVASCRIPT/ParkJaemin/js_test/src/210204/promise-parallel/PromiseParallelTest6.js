@@ -43,7 +43,7 @@ function divide(num1, num2) {
 }
 
 async function asyncProcess() {
-    const [res1, res2, res3, res4] = await Promise.all( // 변수를 배열화로 지정했을 땐 time out 순으로 하나씩 출력된다.
+    const [res1, res2, res3, res4] = await Promise.all(
         [
             plus(100, 200),
             minus(100, 200),
@@ -60,7 +60,7 @@ async function asyncProcess() {
 
 asyncProcess()
 
-const PromiseParallelTest6 = () => { //순차적 진행
+const PromiseParallelTest6 = () => {
 
     console.log("PromiseParallelTest6 start")
 

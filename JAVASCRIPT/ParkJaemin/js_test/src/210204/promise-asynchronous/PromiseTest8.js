@@ -11,7 +11,7 @@ const promise = new Promise
 promise.then(function (response) {
     console.log(response)
 
-    throw new Error("Error!!!")
+    throw new Error("Error!!!")  // 직접 에러를 일으켜서 예외처리 작업 시
 
 }).then(response =>
     console.log("Success")

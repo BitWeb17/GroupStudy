@@ -46,7 +46,7 @@ Promise.race([
     plus(100, 200),
     minus(100, 200),
     mult(100, 200),
-    divide(100, 200) // 원하는 형태로 배열 완성
+    divide(100, 200)  //타임 아웃이 가장빠른 divide 값 출력
 ]).then(response => console.log(response))
 
 const PromiseParallelTest3 = () => { //순차적 진행
