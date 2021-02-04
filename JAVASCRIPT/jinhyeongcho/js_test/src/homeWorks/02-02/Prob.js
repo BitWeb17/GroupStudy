@@ -11,12 +11,26 @@ for(let i =0; i<NUMOFPERSON;i++){
     let lottoNum  = Math.floor((Math.random() * 10000) + 1)
     arr[i] =lottoNum
 }
-function CreateRandomTeam(arr,size){
+function CreateRandomTeam(arr,num){
+    console.log("CreateRandomTeam Called")
+    let randNum
+    // 같은 팀원들에게 같은 숫자를 부여하겠다는 의미(250개가 나오니깐)
+    for(var i = 0; i< arr.lenbits;i++){
+        //1번팀, 2번팀 ,3번팀....
+        randNum = Math.floor((Math.random() * 250) + 1)
 
-    for(let i =0;i<arr.length; i +=size){
+        for(var j =0; j<num;j++){
+            //0~999 ---> i,j 로 표현하는 방법에 대한 고민이 필요
+            //j = 0~3
+            //i = 0~250
+
+        }
+    }
+
+   /* for(let i =0;i<arr.length; i +=size){
         arr2.push((arr.slice(i,i+size)))
 
-    }console.log(arr2)
+    }console.log(arr2)*/
 }
 let test = CreateRandomTeam(arr,4)
 
@@ -46,6 +60,10 @@ const CalcDividend = () => {
 
     const Prob = () => {
 
+        const NUMOFPERSON =1000
+        const FEE = 10000000
+        const PARTICIPANSTAKE =0.67
+        const PRICE = NUMOFPERSON * FEE *PARTICIPANSTAKE
 
     // 연습 문제 : 팀 로또?!
     // 참가자는 총 1000명이다.
@@ -63,6 +81,11 @@ const CalcDividend = () => {
 
 
     console.log("상금   =" + PRICE)
+
+    let arr = new Array(NUMOFPERSON)
+    let teamArr = new Array(NUMOFPERSON)
+
+    //AllocRandomNumber(arr)
 
     return(
         <div className="Prob">
