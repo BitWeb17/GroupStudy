@@ -1,17 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import GeneratorTest from './generator-test/GeneratorTest';
 import './index.css';
-import Homework1 from './jan0201/Homework1';
-import Homework2 from './jan0201/Homework2';
-import Homework3 from './jan0201/Homework3';
-import TwoHomework1 from './jan0202/TwoHomework1';
-import Prob from './jan0202/prob';
+import NonPromiseTest from './promise-asynchronous/NonPromiseTest';
+import NonPromiseTest2 from './promise-asynchronous/NonPromiseTest2';
 import reportWebVitals from './reportWebVitals';
-
 
 ReactDOM.render(
   <React.StrictMode>
-    <TwoHomework1/>
+    <GeneratorTest/>
+    <NonPromiseTest/>
+    <NonPromiseTest2/>
   </React.StrictMode>,
   document.getElementById('root')
 );
