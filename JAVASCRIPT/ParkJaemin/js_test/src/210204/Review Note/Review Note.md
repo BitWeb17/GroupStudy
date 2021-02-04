@@ -1,11 +1,11 @@
-# 2021-02-03 Review Note
+# 2021-02-04 Review Note
 
 ## Generator
 
 - 반복가능한 Iterator를 값{value, done}으로 반환
 - 작업의 일시정지와 재 시작이 가능
 
-[ function* ]
+function* 
 
 - function 끝에 *가 있는 것은 generator function을 정의 이 함수는 Generator 객체를 반환
 - Generator는 생성자로서 사용될 수 없다 -> 타입에러 발생
@@ -33,7 +33,7 @@ console.log(iter.next())// {value: undefined, done: true}
 //    일시 정지
 ```
 
-[ yield ]
+yield 
 
 - 제너레이터 함수의 yield는 일시적으로 정지하는 위치
 - 제너레이터로 생성한 이터레이터의 next()는 함수의 상태를 일시 정지 상태에서 실행상태로 바꾸는 역할
@@ -77,7 +77,7 @@ console.log('Hello Again');
 
 ![이미지](https://mdn.mozillademos.org/files/8633/promises.png)
 
-[대기(pending)]
+대기(pending)
 
 ```js
 new Promise() // 메서드 호출하면 대기상태
@@ -89,7 +89,7 @@ new Promise(function (resolve, reject) {
 
 ```
 
-[이행(fulfilled)]
+이행(fulfilled)
 
 ```js
 
@@ -113,7 +113,7 @@ getData().then(function (resolvedData) {
 
 ```
 
-[실패(rejected)]
+실패(rejected)
 
 ```js
 // 아래와 같이 reject을 호출하면 거부 상태
@@ -137,7 +137,7 @@ getData().then().catch(function (err) {
 
 ```
 
-[Promise.then()]
+Promise.then()
 
 - then() 메소드는 promise 객체를 리턴하고 두 개의 인자를 받는다.
 - resolve는 프로미스가 성공 했을 때 콜백 함수, reject는 실패 했을 때 콜백 함수
@@ -158,10 +158,44 @@ promise.then(function (num) {
 });
 ```
 
-[Promise.catch()]
+Promise.catch()
 
 - catch()메서드는 reject된 Promise를 반환받게 되었을 때 실행
 
-[Promise.finally()]
+Promise.finally()
 
-- finally()메서드는 이행 및 실패와 상관없이 Promise가 처리 된 후에 무조건 한 번은 실행 -무언가 프로세싱 또는 정리를 수행하려는 경우에 유용
+- finally()메서드는 이행 및 실패와 상관없이 Promise가 처리 된 후에 무조건 한 번은 실행
+- 무언가 프로세싱 또는 정리를 수행하려는 경우에 유용
+
+throw new Error
+- 자바스크립트가 직접 에러를 일으켜서 예외 처리 작업을 시작 할 수 있음
+- throw를 호출하면 함수는 실행을 멈추고 catch() 메서드 실행 
+
+Promise.all()
+- 여러가지 작업을 동시에 병렬로 처리하고 싶을 때 사용 
+- 배열 형태로 값을 받는다.
+
+Promise.race()
+-  iterable 안에 있는 프로미스 중에 가장 빠르게 먼저(타임아웃 시간이 가장빠른) 
+   완료된 것의 결과값으로 그대로 fulfilled 또는 rejected
+   
+## async
+- async는 function앞에 위치
+- await를 사용하기 위해 사용
+- AsyncFunction 객체를 반환
+- async function 표현식으로만 생성
+
+```js
+
+async function 함수명() {
+  await 비동기_처리_메서드_명();
+}
+
+```
+
+## await
+- async function 내부에서만 사용 가능(외부에선 SyntaxError 발생)
+- 반환된 Promise 의 resolve 의 상태 까지 대기
+- await 의 값은 Promise 의 resolve 값이 반환
+- 중간에 reject 을 만나면 해당 async function 스코프의 작업을 중단되며, 
+  이후 스코프 작업이 이어짐
