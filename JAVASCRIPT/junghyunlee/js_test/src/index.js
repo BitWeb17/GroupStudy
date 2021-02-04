@@ -93,10 +93,25 @@ import DarkWeb from "./TestQeustion/DarkWeb";
 import Prob from "./TestQeustion/Prob";
 import Test from "./TestQeustion/Test";
 import Test2 from "./TestQeustion/Test2";
+import NewSetTest from "./set-test/NewSetTest";
+import NewSetInitTest from "./set-test/NewSetInitTest";
+import AddSetTest from "./set-test/AddSetTest";
+import SetEntryIterationTest from "./set-test/setEntryiterationTest";
+import SetKeyIterationTest from "./set-test/SetKeyIterationTest";
+import ForEachWithSet from "./set-test/ForEachWithSet";
+import NewMapTest from "./Map-test/NewMapTest";
+import MapSetTest from "./Map-test/MapSetTest";
+import MapDeleteTest from "./Map-test/MapDeleteTest";
+import MapIterationTest from "./Map-test/MapIterationTest";
+import ForWithSetMap from "./for-test/ForWithSetMap";
+import IteratorTest from "./iterator-test/IteratorTest";
+import IteratorTest2 from "./iterator-test/IteratorTest2";
+import IteratorTest3 from "./iterator-test/IteratorTest3";
+import NewMapInitTest from "./Map-test/NewMapInitTest";
 
 ReactDOM.render(
   <React.StrictMode>
-      <Prob/>
+      <IteratorTest/>
   </React.StrictMode>,
   document.getElementById('root')
 );
