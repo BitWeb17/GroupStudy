@@ -18,10 +18,12 @@ import IteratorTest from './js_set/iterator-test/IteratorTest';
 import IteratorTest2 from './js_set/iterator-test/IteratorTest2';
 import IteratorTest3 from './js_set/iterator-test/IteratorTest3';
 import ForEachWithSet from './js_set/set-test/ForEachWithSet';
+import ProbRefactoring from './exercise/ProbRefactoring';
 
 ReactDOM.render(
   <React.StrictMode>
     <Prob/>
+    <ProbRefactoring/>
     <NewSetTest/>
     <NewSetintitTest/>
     <AddSetTest/>
