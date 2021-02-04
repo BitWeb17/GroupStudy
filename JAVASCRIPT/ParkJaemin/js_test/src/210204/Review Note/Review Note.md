@@ -113,7 +113,7 @@ getData().then(function (resolvedData) {
 
 ```
 
-[실(rejected)]
+[실패(rejected)]
 
 ```js
 // 아래와 같이 reject을 호출하면 거부 상태
