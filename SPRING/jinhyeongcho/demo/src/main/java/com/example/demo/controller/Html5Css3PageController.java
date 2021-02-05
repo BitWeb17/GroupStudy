@@ -121,14 +121,4 @@ public class Html5Css3PageController {
         return "html_css/success.html";
     }
 
-    @GetMapping("/divideteam")
-    public String getDivideTeam(){
-
-        TeamDivide dt =new TeamDivide();
-        dt.printTeam(dt.getAteamArrayList());
-        dt.printTeam(dt.getBteamArrayList());
-        log.info("Enter getDivideTeam");
-        return "html_css/divideteam.html";
-    }
-
 }
