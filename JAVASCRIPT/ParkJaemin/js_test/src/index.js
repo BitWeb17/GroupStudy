@@ -2,42 +2,50 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import DataTypeBasic from "./data_type/DataTypeBasic"
-import DataType from "./data_type/DataType"
-import StringDataType from "./data_type/StringDataType"
-import ExpDataType from "./data_type/ExpDataType";
-import BoolDataType from "./data_type/BoolDataType";
-import ArrayDataType from "./data_type/ArrayDataType";
-import JsonDataType from "./data_type/JsonDataType";
-import IfTest from "./data_type/IfTest";
-import ForTest from "./data_type/ForTest";
-import TypeOf from "./data_type/TypeOf";
-import LetVar from "./data_type/LetVar";
-import LetVar2 from "./data_type/LetVar2";
-import LetVar3 from "./data_type/LetVar3";
-import ConstTest from "./data_type/ConstTest";
-import SymbolTest from "./data_type/SymbolTest";
-import RealDataType from "./data_type/RealDataType";
+import SpreadTest from "./210129/array/SpreadTest";
+import FunctionObjectTest2 from "./210129/function/FunctionObjectTest2";
+import Homework from "./210201/Homework/Homework";
+import Homework2 from "./210201/Homework/Homework2";
+
+import Prob from "./210202/exercise/Prob";
+import NewSetTest from "./210203/Set-Test/NewSetTest";
+import NewSetInitTest from "./210203/Set-Test/NewSetInitTest";
+import AddSetTest from "./210203/Set-Test/AddSetTest";
+import SetKeyIterationTest from "./210203/Set-Test/SetKeyIterationTest";
+import SetEntryIterationTest from "./210203/Set-Test/SetEntryIterationTest";
+import ForEachWithSet from "./210203/Set-Test/ForEachWithSet";
+import NewMapTest from "./210203/map-test/NewMapTest";
+import NewMapInitTest from "./210203/map-test/NewMapInitTest";
+import MapSetTest from "./210203/map-test/MapSetTest";
+import MapDeleteTest from "./210203/map-test/MapDeleteTest";
+import MapIterationTest from "./210203/map-test/MapIterationTest";
+import ForWithSetMap from "./210203/for-test/ForWithSetMap";
+import IteratorTest from "./210203/iterator-test/IteratorTest";
+import IteratorTest2 from "./210203/iterator-test/IteratorTest2";
+import IteratorTest3 from "./210203/iterator-test/IteratorTest3";
+import Review from "./210203/Set-Test/Review";
 
 
 ReactDOM.render(
     <React.StrictMode>
-        <DataTypeBasic/>
-        <DataType/>
-        <StringDataType/>
-        <RealDataType/>
-        <ExpDataType/>
-        <BoolDataType/>
-        <ArrayDataType/>
-        <JsonDataType/>
-        <IfTest/>
-        <ForTest/>
-        <TypeOf/>
-        <LetVar/>
-        <LetVar2/>
-        <LetVar3/>
-        <ConstTest/>
-        <SymbolTest/>
+
+        {/*<NewSetTest/>*/}
+        {/*<NewSetInitTest/>*/}
+        {/*<AddSetTest/>*/}
+        {/*<SetKeyIterationTest/>*/}
+        {/*<SetEntryIterationTest/>*/}
+        {/*<ForEachWithSet/>*/}
+        {/*<NewMapTest/>*/}
+        {/*<NewMapInitTest/>*/}
+        {/*<MapSetTest/>*/}
+        {/*<MapDeleteTest/>*/}
+        {/*<MapIterationTest/>*/}
+        {/*<ForWithSetMap/>*/}
+        {/*<IteratorTest/>*/}
+        <IteratorTest2/>
+        {/*<IteratorTest3/>*/}
+        <Review/>
+
     </React.StrictMode>,
     document.getElementById('root')
 );
