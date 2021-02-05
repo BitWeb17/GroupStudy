@@ -22,7 +22,7 @@ const RandomMember = () => {
             arrAjo.push(randomNum)
             console.log("A조 %d번: %s" , arrAjo[randomNum], Ajo[arrAjo[randomNum]])
 
-            if(arrAjo.length == numOfAjo) {
+            if(arrAjo.length === numOfAjo) {
                 break
             }
         }  
@@ -36,7 +36,7 @@ const RandomMember = () => {
             arrBjo.push(randomNum)
             console.log("B조 %d번: %s" , arrBjo[randomNum], Bjo[arrBjo[randomNum]])
 
-            if(arrBjo.length == numOfBjo) {
+            if(arrBjo.length === numOfBjo) {
                 break
             }
         }     
