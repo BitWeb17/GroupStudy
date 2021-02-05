@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.TeamDivide.TeamDivide;
 import com.example.demo.game.DiceGame;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -120,5 +121,14 @@ public class Html5Css3PageController {
         return "html_css/success.html";
     }
 
+    @GetMapping("/divideteam")
+    public String getDivideTeam(){
+
+        TeamDivide dt =new TeamDivide();
+        dt.printTeam(dt.getAteamArrayList());
+        dt.printTeam(dt.getBteamArrayList());
+        log.info("Enter getDivideTeam");
+        return "html_css/divideteam.html";
+    }
 
 }
