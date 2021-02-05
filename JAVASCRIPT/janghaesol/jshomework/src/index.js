@@ -30,9 +30,11 @@ import Homework1 from './jan0128/homework/Homework1';
 import Homework2 from './jan0128/homework/Homework2';
 import Homework3 from './jan0128/homework/Homework3';
 import Homework4 from './jan0128/homework/Homework4';
+import Test from './jan0128/literal/Test';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Test/>
     <Homework1/>
     <Homework2/>
     <Homework3/>
