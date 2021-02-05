@@ -21,6 +21,9 @@ function SymbolTest(){
     // Symbol을 사용하고 toString()을 사용하면 Symbol 정보가 출력된다.
     const TEST = Symbol("TEST")
 
+    console.log("TEST.toString : " + TEST.toString())
+    console.log("MATRIX.toString : " + MATRIX.toString())
+    console.log("VECTOR.toString : " + VECTOR.toString())
     console.log("SymbolTest : " + TEST.toString())
     console.log("SymbolTest : " + MATRIX.toString())
 
