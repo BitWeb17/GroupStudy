@@ -175,7 +175,7 @@ const CalcDividend = (teamArr, winArr, price) => {
 }
 
 
-const AnotherProb = () => {
+const ProbSolved = () => {
     const MAXTEAMNUM = 4
     const NUMOFPERSON = 1000
     const FEE = 10000000
@@ -202,9 +202,9 @@ const AnotherProb = () => {
     console.log("다음에도 잘 부탁드립니다 호갱님 ^^")
 
     return (
-        <div className="Prob">
+        <div className="ProbSolved">
             <p>Prob</p>
         </div>
     )
 }
-export default AnotherProb
+export default ProbSolved
