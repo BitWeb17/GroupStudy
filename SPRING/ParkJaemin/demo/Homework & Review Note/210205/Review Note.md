@@ -23,7 +23,7 @@ public class Html5Css3PageController {
           LoggerFactory.getLogger(Html5Css3PageController.class);
   // LoggerFactory 클래스의 getLogger로 log객체 생성
 ```
-- 
+
 
 ## MVC
 Model-View-Controller의 약자
