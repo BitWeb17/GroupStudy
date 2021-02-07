@@ -7,11 +7,11 @@
 - 자바 로깅 관련 라이브러리들을 추상화 시킨 interface
 
 ## log level
-trace : debug보다 아래단계, 덜 중요하지만 변수를 쫓는 정도의 로그를 찍는데 사용함
-debug : debug를 위해서 사용하는 logging level
-info : 진행정보, 상태 정보를 찍는데 사용함(로그인, 상태변경)
-warn : 잠재적 오류, 경고성 정보를 로깅하는데 사용함
-error : 오류가 발생했을 경우 사용함
+- trace : debug보다 아래단계, 덜 중요하지만 변수를 쫓는 정도의 로그를 찍는데 사용함
+- debug : debug를 위해서 사용하는 logging level
+- info : 진행정보, 상태 정보를 찍는데 사용함(로그인, 상태변경)
+- warn : 잠재적 오류, 경고성 정보를 로깅하는데 사용함
+- error : 오류가 발생했을 경우 사용함
 
 ## Logger 객체 선언
 ```java
