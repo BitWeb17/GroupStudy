@@ -44,7 +44,7 @@ Model-View-Controller의 약자
 
 
 ## @GetMapping
-- @RequestMapping(method = RequestMethod.GET) 의 축약형(
+- @RequestMapping(method = RequestMethod.GET) 의 축약형
 - GET 요청 방식의 API를 만들때, @RequestMapping(method = RequestMethod.GET ...) 방식도 있지만,
   @GetMapping을 이용하는 방법도 있다. (개인적으로 @GetMapping을 더 많이 사용한다)
 
