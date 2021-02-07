@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-// import Prob from './exercise/Prob';
+import Prob from './exercise/Prob';
 // import NewSetTest from './js_set/set-test/NewSetTest';
 // import NewSetintitTest from './js_set/set-test/NewSetintitTest';
 // import AddSetTest from './js_set/set-test/AddSetTest';
@@ -22,7 +22,7 @@ import ProbRefactoring from './exercise/ProbRefactoring';
 
 ReactDOM.render(
   <React.StrictMode>
-    {/* <Prob/> */}
+    <Prob/>
     <ProbRefactoring/>
     {/* <NewSetTest/>
     <NewSetintitTest/>
