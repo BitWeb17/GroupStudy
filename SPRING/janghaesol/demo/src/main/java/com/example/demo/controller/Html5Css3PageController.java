@@ -239,4 +239,31 @@ public class Html5Css3PageController {
 
         return "html_css/visitedTest.html";
     }
+    @GetMapping("/roiATagTest")
+    public String getRoiATagTest() {
+        log.info("Enter getRoiATagTest()");
+
+        return "html_css/roiATagTest.html";
+    }
+
+    @GetMapping("/formTest")
+    public String getFormTest() {
+        log.info("Enter getFormTest()");
+
+        return "html_css/form/formTest.html";
+    }
+
+    @GetMapping("/loginFormTest")
+    public String getLoginFormTest() {
+        log.info("Enter getLoginFormTest()");
+
+        return "html_css/form/loginFormTest.html";
+    }
+
+    @GetMapping("/resumeHomework")
+    public String getresumeHomework() {
+        log.info("Enter getresumeHomework()");
+
+        return "html_css/resume/resumeHomework.html";
+    }
 }
