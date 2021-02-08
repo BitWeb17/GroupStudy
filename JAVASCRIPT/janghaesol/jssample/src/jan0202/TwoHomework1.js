@@ -27,36 +27,136 @@ const distributeNum =(player) =>{
     
     for(var i = 0; i < player.length; i++){
         player[i] = Math.floor(Math.random() * 10000)+1
-        
+        // console.log(i + "번째 고객님 : " + player[i] + "번")
     }
-    
+    // console.log("player의 배열 = "  + player)
 
 }
 
 // //3. 팀원을 랜덤하게 4명식 짝을 짓는다(총 250개 팀) --> 추가배열 250개 만들어야한다.
-const makeTeam = (playGroup,player) =>{
-    let sampleArr = []
-    for(let i = 0; i < 250;i++){
-             for(let j = 0 ; j < 4 ; j++){
+const makeTeam = (teamMap,player,teamArr) =>{
+    for(let j = 0; j < 250; j++){  
+        teamArr[j] = []
+        //map이 전혀 안쓰이고 있다  -- 문제.
+        teamMap.set(j,teamArr[j])
+        if(teamArr[j].indexOf(player) == -1){
+            for(let i = 0; i < 4;i++){
                 let playerRand =  Math.floor((Math.random() * 1000)+1)
-                sampleArr.push(player[playerRand])
-             }
-             playGroup.push(sampleArr)
+                teamArr[j].push(player[playerRand])
+            }
+        //----재대로 2차원 배열이 만들어져서 값이 들어가있는지 확인----ok
+        // console.log("team["+j+"]" + "[" + 3 + "] = " + teamArr[j][3] )
         }
-        console.log(playGroup)
     }
-
+    //-----player들이 1~1000사이의 숫자를 가지고 어느 팀에 들어갔는지 확인----ok
+    // for(var value of teamMap){
+    //     console.log("entry = " + value)
+    // }
     
+}
+    
+const checkWinner = (teamArr,winnerNum) =>{
+    console.log("정보공개 요청에 따라 정보를 공개합니다. " )
+    for(let j = 0; j < 250; j++){
+        
+        console.log("[" + (j+1) +"]팀의 맵버 [" + teamArr[j] + "]")
+    }
+    for(let j = 0; j < 250 ; j++){
+        for(let i = 0 ; i < 4 ; i++){
+           
+            if(teamArr[j][i] % 1013 == 0){
+                teamArr[j][i] = 7777
+                console.log("이번 로또의 당첨자가 나왔습니다!!!\n당첨자는 = " + (j+1) + ": 번 팀의" + (i+1) + ": 번 고객님 축하드립니다.")
+                winnerNum++
+                }else{
+                teamArr[j][i] =0
+                }
+        }
+    }
+    if(winnerNum === 0){
+        console.log("이번 게임 우승자는 없습니다...다음 게임도 이용해 주세요")
+    }else{
+    console.log("winnerNum = " + winnerNum)
+    }
+}
+
+//팀에서 당첨자가 1명인지 2명인지 3명인지 4명인지를 판단하는 식을 먼저 만들고
+//팀원에게 돈을 분배하는 식을 만들어야 할 것같다.
+const giveMoney = (teamArr) =>{
+    let j
+    let cnt = 0
+    let winnerCnt = 0
+    for(j = 0; j < 250 ; j++){
+        for(let i = 0 ; i < 4 ; i++){
+            if(teamArr[j][i] === 7777){
+                winnerCnt++
+            }
+        }
+    }
+    let dividendMoney = Math.floor(6700000000/winnerCnt*4)
+    for(j = 0; j < 250 ; j++){
+        cnt = teamArr[j].filter(n => n === 7777).length
+        if(cnt === 1){
+            console.log((j+1) + "팀에 당첨자가 1명 있으므로 팀원 전체에게 담첨금" + (dividendMoney) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+            cnt = 0
+        }else if(cnt === 2){
+            console.log((j+1) + "팀에 당첨자가 2명 있으므로 팀원 전체에게 4배인" + (dividendMoney * 4) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+            cnt = 0
+        }else if(cnt === 3){
+                console.log((j+1) + "팀에 당첨자가 3명 있으므로 팀원 전체에게 8배인" + (dividendMoney * 8) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+                cnt = 0
+        }else if(cnt === 4 ){
+                console.log((j+1) + "팀원 모두가 당첨되는 잭팟이 터졌으므로 전체에게 16배인" + (dividendMoney * 16) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+                cnt = 0
+            }
+            
+            
+            // if(teamArr[j].indexOf(7777) == 1){
+            //     console.log((j+1) + "팀에 당첨자가 1명 있으므로 팀원 전체에게 담첨금" + dividendMoney + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+            //     }else if(teamArr[j].indexOf(7777) == 2){
+            //         console.log((j+1) + "팀에 당첨자가 2명 있으므로 팀원 전체에게 4배인" + (dividendMoney * 4) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+            //     }else if(teamArr[j].indexOf(7777) == 3){
+            //         console.log((j+1) + "팀에 당첨자가 3명 있으므로 팀원 전체에게 8배인" + (dividendMoney * 8) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+            //     }else if(teamArr[j].indexOf(7777) == 4 ){
+            //         console.log((j+1) + "팀원 모두가 당첨되는 잭팟이 터졌으므로 전체에게 16배인" + (dividendMoney * 16) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+            //     }
+            // if(teamArr[j][i] === 7777){
+            //     cnt++
+                //i 가 3일떄 cnt를 보기위해서 했지만 위에서이미 for의 i가 3일때 7777이 아니라면 못들어옴
+                // if(i === 3)
+                // if(cnt === 1 ){
+                //     console.log((j+1) + "팀에 당첨자가 1명 있으므로 팀원 전체에게 담첨금" + dividendMoney + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+                //     cnt = 0
+                // }else if(cnt === 2 ){
+                //     console.log((j+1) + "팀에 당첨자가 2명 있으므로 팀원 전체에게 4배인" + (dividendMoney * 4) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+                //     cnt = 0
+                // }else if(cnt === 3 ){
+                //     console.log((j+1) + "팀에 당첨자가 3명 있으므로 팀원 전체에게 8배인" + (dividendMoney * 8) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+                //     cnt = 0
+                // }else if(cnt === 4 ){
+                //     console.log((j+1) + "팀원 모두가 당첨되는 잭팟이 터졌으므로 전체에게 16배인" + (dividendMoney * 16) + "만원 씩 담첨금을 지급합니다.\n축하합니다!!")
+                //     cnt = 0
+                // }
+
+            }
+        }    
+        
+    
+    
+
+
+
 const TwoHomework1=() => {
     const NUMOFPERSON = 1000
     let player = new Array(NUMOFPERSON)
-    let playGroup = new Array(250)
-
+    let teamArr = []
+    let teamMap = new Map()
+    let winnerNum  = 0
     distributeNum(player)
-    console.log(player)
-    makeTeam(playGroup,player)
-    // 
-
+    makeTeam(teamMap,player,teamArr)
+    checkWinner(teamArr,winnerNum)
+    giveMoney(teamArr)
+    
     return (
         <div className="TwoHomework1">
             <p>TwoHomework1</p>
