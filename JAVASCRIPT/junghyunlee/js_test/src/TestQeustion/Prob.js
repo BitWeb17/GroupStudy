@@ -28,25 +28,6 @@ const AllocRandomNumber = (arr) => {
     }
 }
 
-/*
-// 4명씩 팀을 나눈다.
-const CreateRandomTeam = (arr, size) => {
-    let arr2 = [arr]
-    console.log("arr = " + arr)
-    console.log("arr2 = " + arr2)
-
-        for(let i =0;i<arr.length; i +=size){
-            console.log("arr.length = " + arr.length)
-            console.log("size = " + size)
-            arr2.push((arr.slice(i,i+size)))
-        }
-    console.log(JSON.stringify(arr2))
-    return arr2
-}
-
-CreateRandomTeam(20,4)
-*/
-
 const CheckTeamArrCount = (arr) => {
     const TEAMMEMNUM = 4
 }

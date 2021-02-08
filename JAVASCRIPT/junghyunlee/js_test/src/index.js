@@ -108,10 +108,32 @@ import IteratorTest from "./iterator-test/IteratorTest";
 import IteratorTest2 from "./iterator-test/IteratorTest2";
 import IteratorTest3 from "./iterator-test/IteratorTest3";
 import NewMapInitTest from "./Map-test/NewMapInitTest";
+import NonPromiseTest from "./promise-asynchhronous/NonPromiseTest";
+import NonPromiseTest2 from "./promise-asynchhronous/NonPromiseTest2";
+import PromiseTest from "./promise-asynchhronous/PromiseTest";
+import PromiseTest2 from "./promise-asynchhronous/PromiseTest2";
+import GetDataCallback from "./promise-asynchhronous/GetDataCallback";
+import CallBack from "./promise-asynchhronous/CallBack";
+import CallBack2 from "./promise-asynchhronous/CallBack2";
+import CallBackHell from "./promise-asynchhronous/CallBackHell";
+import PromiseTest3 from "./promise-asynchhronous/PromiseTest3";
+import PromiseTest4 from "./promise-asynchhronous/PromiseTest4";
+import PromiseTest5 from "./promise-asynchhronous/PromiseTest5";
+import PromiseTest6 from "./promise-asynchhronous/PromiseTest6";
+import PromiseTest7 from "./promise-asynchhronous/PromiseTest7";
+import PromiseTest8 from "./promise-asynchhronous/PromiseTest8";
+import PromiseParallelTest from "./promise-parallel/PromiseParallelTest";
+import PromiseParallelTest2 from "./promise-parallel/PromiseParallelTest2";
+import PromiseParallelTest3 from "./promise-parallel/PromiseParallelTest3";
+import PromiseParallelTest4 from "./promise-parallel/PromiseParallelTest4";
+import PromiseParallelTest5 from "./promise-parallel/PromiseParallelTest5";
+import PromiseParallelTest6 from "./promise-parallel/PromiseParallelTest6";
+import PromiseParallelTest7 from "./promise-parallel/PromiseParallelTest7";
+import TestPromise from "./promise-parallel/TestPromise";
 
 ReactDOM.render(
   <React.StrictMode>
-      <IteratorTest/>
+      <PromiseTest/>
   </React.StrictMode>,
   document.getElementById('root')
 );
