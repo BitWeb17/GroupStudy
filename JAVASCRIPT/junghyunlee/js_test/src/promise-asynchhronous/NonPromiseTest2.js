@@ -11,6 +11,12 @@ const NonPromiseTest2 = () => {
 
     helloWorld()
 
+    // 출력 :
+    // Hello
+    // World ~~!!~!
+    // Hello 의 경우 코드 실행 후 출력 time out : 2초
+    // World 의 경우 코드 실행 후 출력 time out : 2초 + 1초 = 3
+
     return (
         <div className="NonPromiseTest2">
             <p>NonPromiseTest2</p>

@@ -60,6 +60,15 @@ async function asyncProcess() {
 
 asyncProcess()
 
+// 출력 :
+// PromiseParallelTest6 Start
+// PromiseParallelTest6 Fin
+// 100 / 200 =
+// 100 * 200 =
+// 100 - 200 =
+// 100 + 200 =
+// [300, -100, 20000, 0.5]
+
 const PromiseParallelTest6 = () => {
     console.log("PromiseParallelTest6 Start")
 

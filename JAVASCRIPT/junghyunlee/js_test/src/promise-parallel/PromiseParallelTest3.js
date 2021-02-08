@@ -42,12 +42,22 @@ function divide(num1, num2) {
     })
 }
 
+// race 는 1개만 출
 Promise.race([
     plus(100, 200),
     minus(100, 200),
     mult(100, 200),
     divide(100, 200)
 ]).then(response => console.log(response))
+
+// 출력 :
+// PromiseParallelTest3 Start
+// PromiseParallelTest3 Fin
+// 100 / 200 =
+// 0.5
+// 100 * 200 =
+// 100 - 200 =
+// 100 + 200 =
 
 const PromiseParallelTest3 = () => {
     console.log("PromiseParallelTest3 Start")

@@ -18,6 +18,13 @@ promise.then(response =>
     console.log("PromiseTest5: 나는 무조건 실행된다!!!")
 })
 
+// 출력 :
+// PromiseTest5 Satrt
+// PromiseTest5 Fin
+// Hello
+// Sucdess
+// PromiseTest5: 나는 무조건 실행된다!!!
+
 const PromiseTest5 = () => {
     console.log("PromiseTest5 Start")
 

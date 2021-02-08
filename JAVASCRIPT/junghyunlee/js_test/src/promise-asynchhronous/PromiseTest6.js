@@ -20,6 +20,14 @@ promise.then(response =>
     console.log("PromiseTest6: 나는 무조건 실행된다!!!")
 })
 
+// 출력 :
+// PromiseTest6 Satrt
+// PromiseTest6 Fin
+// Hello
+// World!
+// Success
+// PromiseTest6: 나는 무조건 실행된다!!!
+
 const PromiseTest6 = () => {
     console.log("PromiseTest6 Start")
 

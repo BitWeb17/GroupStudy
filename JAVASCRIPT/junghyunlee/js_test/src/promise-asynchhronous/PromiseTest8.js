@@ -19,6 +19,14 @@ promise.then(function (response) {
     console.log("PromiseTest8: 나는 무조건 실행된다!!!")
 })
 
+// 출력 :
+// PromiseTest8 Satrt
+// PromiseTest8 Fin
+// Hello
+// World!
+// Error : Error!!! at PromiseTest8.js:13
+// PromiseTest8: 나는 무조건 실행된다!!!
+
 const PromiseTest8 = () => {
     console.log("PromiseTest8 Start")
 

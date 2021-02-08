@@ -42,12 +42,22 @@ function divide(num1, num2) {
     })
 }
 
+// all 은 전부 출력
 Promise.all([
     plus(100, 200),
     minus(100, 200),
     mult(100, 200),
     divide(100, 200)
 ]).then(response => console.log(response))
+
+// 출력 :
+// PromiseParallelTest2 Start
+// PromiseParallelTest2 Fin
+// 100 / 200 =
+// 100 * 200 =
+// 100 - 200 =
+// 100 + 200 =
+// [300, -100, 20000, 0.5]
 
 const PromiseParallelTest2 = () => {
     console.log("PromiseParallelTest2 Start")

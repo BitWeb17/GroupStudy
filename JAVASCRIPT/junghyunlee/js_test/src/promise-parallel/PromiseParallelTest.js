@@ -55,6 +55,18 @@ plus(100, 200).then(function (response) {
     console.log("divide: " + response)
 })
 
+// 출력 :
+// PromiseParallelTest Start
+// PromiseParallelTest Fin
+// 100 + 200 =
+// plus: 300
+// 100 - 200 =
+// minus: -100
+// 100 * 200 =
+// mult: 20000
+// 100 / 200 =
+// dicid: 0.5
+
 const PromiseParallelTest = () => {
     console.log("PromiseParallelTest Start")
 
