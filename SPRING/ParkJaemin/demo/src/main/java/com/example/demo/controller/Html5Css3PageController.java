@@ -156,5 +156,167 @@ public class Html5Css3PageController {
 
 
         return "html_css/success.html";
+
+    }
+
+    @GetMapping("/tableTest")
+    public String getTableTest() {
+        log.info("Enter getTableTest()");
+
+
+        return "html_css/210208/tableTest.html";
+    }
+
+    @GetMapping("/mat3by3Test")
+    public String getMat3by3Test() {
+        log.info("Enter getMat3by3Test()");
+
+
+        return "html_css/210208/mat3by3Test.html";
+    }
+
+    @GetMapping("/tableTest2")
+    public String getTableTest2() {
+        log.info("Enter getTableTest2()");
+
+
+        return "html_css/210208/tableTest2.html";
+    }
+
+    @GetMapping("/captionTest")
+    public String getCaptionTest() {
+        log.info("Enter getCaptionTest()");
+
+
+        return "html_css/210208/captionTest.html";
+    }
+
+    @GetMapping("/tableTest3")
+    public String getTableTest3() {
+        log.info("Enter getTableTest3()");
+
+
+        return "html_css/210208/tableTest3.html";
+    }
+
+    @GetMapping("/tableTest4")
+    public String getTableTest4() {
+        log.info("Enter getTableTest4()");
+
+
+        return "html_css/210208/tableTest4.html";
+    }
+
+    @GetMapping("/tableTest5")
+    public String getTableTest5() {
+        log.info("Enter getTableTest5()");
+
+
+        return "html_css/210208/tableTest5.html";
+    }
+
+    @GetMapping("/imgAltTest")
+    public String getImgAltTest() {
+        log.info("Enter getImgAltTest()");
+
+
+        return "html_css/210208/imgAltTest.html";
+    }
+
+    @GetMapping("/imgSizeTest")
+    public String getImgSizeTest() {
+        log.info("Enter getImgSizeTest()");
+
+
+        return "html_css/210208/imgSizeTest.html";
+    }
+
+    @GetMapping("/imgFigcaptionTest")
+    public String getImgFigcaptionTest() {
+        log.info("Enter getImgFigcaptionTest()");
+
+
+        return "html_css/210208/imgFigcaptionTest.html";
+    }
+
+    @GetMapping("/imgCompanyProfileTest")
+    public String getImgCompanyProfileTest() {
+        log.info("Enter getImgCompanyProfileTest()");
+
+
+        return "html_css/210208/imgCompanyProfileTest.html";
+    }
+
+
+    @GetMapping("/aTagTest")
+    public String getATagTest() {
+        log.info("Enter getATagTest()");
+
+
+        return "html_css/210208/aTagTest.html";
+    }
+
+
+    @GetMapping("/aTagStyleTest")
+    public String getATagStyleTest() {
+        log.info("Enter getATagStyleTest()");
+
+
+        return "html_css/210208/aTagStyleTest.html";
+    }
+
+    @GetMapping("/iFrameTest")
+    public String getIFrameTest() {
+        log.info("Enter getIFrameTest()");
+
+
+        return "html_css/210208/iFrameTest.html";
+    }
+
+    @GetMapping("/idCheckTest")
+    public String getIdCheckTest() {
+        log.info("Enter getIdCheckTest()");
+
+
+        return "html_css/210208/idCheckTest.html";
+    }
+
+    @GetMapping("/visitedTest")
+    public String getVisitedTest() {
+        log.info("Enter getVisitedTest()");
+
+
+        return "html_css/210208/visitedTest.html";
+    }
+
+    @GetMapping("/roiATagTest")
+    public String getRoiATagTest() {
+        log.info("Enter getRoiATagTest()");
+
+
+        return "html_css/210208/tag/roiATagTest.html";
+    }
+
+    @GetMapping("/formTest")
+    public String getFormTest() {
+        log.info("Enter getFormTest()");
+
+
+        return "html_css/210208/form/formTest.html";
+    }
+
+    @GetMapping("/loginformTest")
+    public String getLoginFormTest() {
+        log.info("Enter getLoginFormTest()");
+
+
+        return "html_css/210208/form/loginformTest.html";
+    }
+    @GetMapping("/resume")
+    public String getResume() {
+        log.info("Enter getResume()");
+
+
+        return "html_css/210208/Homework/resume.html";
     }
 }
