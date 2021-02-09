@@ -15,6 +15,12 @@ public class CVcontroller{
 
             return "html_css/cv_resume.html";
     }
+    @GetMapping("/portpolio")
+    public String getPortpolioJW() {
+            log.info("Enter getPortpolioJW()");
+
+            return "html_css/portpolio.html";
+    }
 }
 
 
