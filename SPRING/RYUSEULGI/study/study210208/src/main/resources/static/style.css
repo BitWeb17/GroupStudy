@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Noto+Sans+KR:wght@300;400;700;900&display=swap");
+
+/* COMMON */
+body {
+    background-color: #222;
+    font-family: "Noto Sans KR", sans-serif;
+}
+.body__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* TITLE */
+
+.bold-title {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 100px;
+    letter-spacing: 5px;
+    color: #eaa173;
+    line-height: 0;
+}
+.bold-subtitle {
+    font-family: "Black Han Sans", sans-serif;
+    font-size: 100px;
+    letter-spacing: 5px;
+    line-height: 0;
+    color: #222;
+    text-shadow: -2px 0 #eaa173, 0 2px #eaa173, 2px 0 #eaa173, 0 -2px #eaa173;
+}
+
+/* HEADER */
+header {
+    height: 70px;
+    padding-top: 20px;
+}
+
+header .main-menu {
+    display: flex;
+    justify-content: center;
+}
+
+header .main-menu li {
+    margin: 0 40px;
+}
+/* VISUAL */
+.section__visual {
+    height: 1000px;
+    padding-top: 50px;
+}
+
+.section__visual .main-txt {
+    font-size: 16px;
+}
+.section__visual .main-title {
+    font-size: 120px;
+}
+
+.section__visual .main-title p:last-child {
+    color: #222;
+    text-shadow: -2px 0 #eaa173, 0 2px #eaa173, 2px 0 #eaa173, 0 -2px #eaa173;
+    margin-bottom: 90px;
+}
+
+.section__visual .main-explain {
+    width: 700px;
+    color: #fff;
+    text-shadow: -1px 0 #222, 0 1px #222, 1px 0 #222, 0 -1px #222;
+}
+
+.section__visual .main-img {
+    float: right;
+    width: 500px;
+    height: 550px;
+    background-color: #eaa173;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    position: absolute;
+    top: 400px;
+    right: 369px;
+    z-index: -9;
+}
+
+.section__visual .sns-icon ul {
+    display: flex;
+    color: #fff;
+    padding: 0;
+}
+
+.section__visual .sns-icon ul li i {
+    font-size: 20px;
+    margin: 0 5px;
+}
+
+#section__skills {
+    height: 500px;
+    color: #fff;
+}
+
+#section__skills h2 {
+    justify-content: center;
+    text-align: center;
+}
+
+#section__skills table {
+    margin: auto;
+    border-collapse: separate;
+    border-spacing: 1px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#section__skills table caption {
+    margin-bottom: 10px;
+}
+
+#section__skills table th {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+#section__skills .back-end {
+    padding-bottom: 30px;
+}
+
+/* png 파일로 다 바꾸기 */
+#section__skills .back-end .backLogo1 {
+    background-image: url("./img/Logo-java.png");
+    background-position: center;
+    background-size: 180px 120px;
+}
+
+#section__skills .front-end .frontLogo1 {
+    background-image: url("./img/Logo-html.png");
+    background-position: center;
+    background-size: 110px 110px;
+}
+
+#section__skills .front-end .frontLogo2 {
+    background-image: url("./img/Logo-css.jpg");
+    background-position: center;
+    background-size: 180px 120px;
+}
+
+#section__skills .front-end .frontLogo3 {
+    background-image: url("./img/Logo-js.png");
+    background-position: center;
+    background-size: 110px 110px;
+}
+
+#section__skills .front-end .frontLogo4 {
+    background-image: url("./img/Logo-react.png");
+    background-position: center;
+    background-size: 110px 110px;
+}
+
+#section__skills .front-end .frontLogo5 {
+    background-image: url("./img/Logo-sass.png");
+    background-position: center;
+    background-size: 150px 110px;
+}
