@@ -266,4 +266,132 @@ public class Html5Css3PageController {
 
         return "html_css/resume/resumeHomework.html";
     }
+
+    @GetMapping("webFormTest")
+    public String getwebFormTest(){
+        log.info("Enter webFormTest()");
+
+        return "html_css/form/webFormTest.html";
+    }
+    @GetMapping("webFormTest2")
+    public String getwebFormTest2(){
+        log.info("Enter webFormTest2()");
+
+        return "html_css/form/webFormTest2.html";
+    }
+    @GetMapping("webFormTest3")
+    public String getwebFormTest3(){
+        log.info("Enter webFormTest3()");
+
+        return "html_css/form/webFormTest3.html";
+    }
+    @GetMapping("webFormTest4")
+    public String getwebFormTest4(){
+        log.info("Enter webFormTest4()");
+
+        return "html_css/form/webFormTest4.html";
+    }
+    @GetMapping("webFormTest5")
+    public String getwebFormTest5(){
+        log.info("Enter webFormTest5()");
+
+        return "html_css/form/webFormTest5.html";
+    }
+    @GetMapping("webFormTest6")
+    public String getwebFormTest6(){
+        log.info("Enter webFormTest6()");
+
+        return "html_css/form/webFormTest6.html";
+    }
+    @GetMapping("webFormTest7")
+    public String getwebFormTest7(){
+        log.info("Enter webFormTest7()");
+
+        return "html_css/form/webFormTest7.html";
+    }
+    @GetMapping("webFormWithSelect")
+    public String getwebFormWithSelect(){
+        log.info("Enter webFormWithSelect()");
+
+        return "html_css/form/webFormWithSelect.html";
+    }
+    @GetMapping("webFormOptGroup")
+    public String getwebFormOptGroup(){
+        log.info("Enter webFormOptGroup()");
+
+        return "html_css/form/webFormOptGroup.html";
+    }
+
+    @GetMapping("webFormLegacy")
+    public String getwebFormLegacy(){
+        log.info("Enter webFormLegacy()");
+
+        return "html_css/form/webFormLegacy.html";
+    }
+    @GetMapping("webProgressBarTest")
+    public String getwebProgressBarTest(){
+        log.info("Enter webProgressBarTest()");
+
+        return "html_css/progbar/webProgressBarTest.html";
+    }
+    @GetMapping("webProgressBarTest2")
+    public String getwebProgressBarTest2(){
+        log.info("Enter webProgressBarTest2()");
+
+        return "html_css/progbar/webProgressBarTest2.html";
+    }
+    @GetMapping("spamSampleTest")
+    public String getspamSampleTest(){
+        log.info("Enter spamSampleTest()");
+
+        return "html_css/css3basic/spamSampleTest.html";
+    }
+
+    @GetMapping("/webCSS3Test")
+    public String getWebCSS3Test() {
+        log.info("Enter getWebCSS3Test()");
+
+        return "html_css/css3basic/webCSS3Test.html";
+    }
+
+    @GetMapping("/webCSS3SectionTest")
+    public String getWebCSS3SectionTest() {
+        log.info("Enter getWebCSS3SectionTest()");
+
+        return "html_css/css3basic/webCSS3SectionTest.html";
+    }
+
+    @GetMapping("/webCSS3StyleSheetTest")
+    public String getWebCSS3StyleSheetTest() {
+        log.info("Enter getWebCSS3StyleSheetTest()");
+
+        return "html_css/css3basic/webCSS3StyleSheetTest.html";
+    }
+
+    @GetMapping("/webBorderStyleTest")
+    public String getWebBorderStyleTest() {
+        log.info("Enter getWebBorderStyleTest()");
+
+        return "html_css/css3basic/webBorderStyleTest.html";
+    }
+
+    @GetMapping("/webHow2AvoidTest")
+    public String getWebHow2AvoidTest() {
+        log.info("Enter getWebHow2AvoidTest()");
+
+        return "html_css/css3basic/webHow2AvoidTest.html";
+    }
+
+    @GetMapping("/webRotationTransformTest")
+    public String getWebRotationTransformTest() {
+        log.info("Enter getWebRotationTransformTest()");
+
+        return "html_css/css3basic/webRotationTransformTest.html";
+    }
+    @GetMapping("/webFontTest")
+    public String getWebFontTest() {
+        log.info("Enter getWebFontTest()");
+
+        return "html_css/css3basic/webFontTest.html";
+    }
 }
