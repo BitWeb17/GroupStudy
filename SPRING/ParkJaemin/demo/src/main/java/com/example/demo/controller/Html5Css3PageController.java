@@ -395,4 +395,11 @@ public class Html5Css3PageController {
 
         return "html_css/css3basic/webFontTest.html";
     }
+
+    @GetMapping("/resume")
+    public String getResume() {
+        log.info("Enter getResume()");
+
+        return "html_css/resume.html";
+    }
 }
