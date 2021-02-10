@@ -1,8 +1,6 @@
 package com.example.demo.controller;
 
 import com.example.demo.game.DiceGame;
-
-import com.example.demo.homework.CreateTeam;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -130,193 +128,278 @@ public class Html5Css3PageController {
         return "html_css/success.html";
     }
 
-    @GetMapping("/allocteam")
-    public String getAllocTeam() {
-        log.info("Enter getAllocTeam()");
-
-        final int TEAMNUMBER = 2;
-        System.out.println("지금부터 랜덤 팀 구성을 시작합니다.");
-
-        String[] nameA = {
-                "고동영", "장해솔", "류슬기", "박재민", "한다은",
-                "최현정", "오진욱", "조진형", "이정현"
-        };
-        String[] nameB = {
-                "이범진", "박소현", "탁성진", "노찬욱",
-                "박기범", "하진주", "이승윤", "최임식"
-        };
-
-        // 단순히 고정된 사람들을 받는 작업
-        // CreateTeam ct = new CreateTeam(name);
-        CreateTeam ct = new CreateTeam(nameA, nameB, TEAMNUMBER);
-
-        ct.allocRandomTeam();
-        ct.printArrayList(ct.getAteamArrayList());
-        ct.printArrayList(ct.getBteamArrayList());
-
-
-        return "html_css/success.html";
-
-    }
-
     @GetMapping("/tableTest")
     public String getTableTest() {
         log.info("Enter getTableTest()");
 
-
-        return "html_css/210208/tableTest.html";
+        return "html_css/tableTest.html";
     }
 
     @GetMapping("/mat3by3Test")
     public String getMat3by3Test() {
         log.info("Enter getMat3by3Test()");
 
-
-        return "html_css/210208/mat3by3Test.html";
+        return "html_css/mat3by3Test.html";
     }
 
     @GetMapping("/tableTest2")
     public String getTableTest2() {
         log.info("Enter getTableTest2()");
 
-
-        return "html_css/210208/tableTest2.html";
+        return "html_css/tableTest2.html";
     }
 
     @GetMapping("/captionTest")
     public String getCaptionTest() {
         log.info("Enter getCaptionTest()");
 
-
-        return "html_css/210208/captionTest.html";
+        return "html_css/captionTest.html";
     }
 
     @GetMapping("/tableTest3")
     public String getTableTest3() {
         log.info("Enter getTableTest3()");
 
-
-        return "html_css/210208/tableTest3.html";
+        return "html_css/tableTest3.html";
     }
 
     @GetMapping("/tableTest4")
     public String getTableTest4() {
         log.info("Enter getTableTest4()");
 
-
-        return "html_css/210208/tableTest4.html";
+        return "html_css/tableTest4.html";
     }
 
     @GetMapping("/tableTest5")
     public String getTableTest5() {
         log.info("Enter getTableTest5()");
 
-
-        return "html_css/210208/tableTest5.html";
+        return "html_css/tableTest5.html";
     }
 
     @GetMapping("/imgAltTest")
     public String getImgAltTest() {
         log.info("Enter getImgAltTest()");
 
-
-        return "html_css/210208/imgAltTest.html";
+        return "html_css/imgAltTest.html";
     }
 
     @GetMapping("/imgSizeTest")
-    public String getImgSizeTest() {
+    public String getImgTest() {
         log.info("Enter getImgSizeTest()");
 
-
-        return "html_css/210208/imgSizeTest.html";
+        return "html_css/imgSizeTest.html";
     }
 
     @GetMapping("/imgFigcaptionTest")
-    public String getImgFigcaptionTest() {
-        log.info("Enter getImgFigcaptionTest()");
+    public String getFigcaptionTest() {
+        log.info("Enter getFigcaptionTest()");
 
-
-        return "html_css/210208/imgFigcaptionTest.html";
+        return "html_css/imgFigcaptionTest.html";
     }
 
     @GetMapping("/imgCompanyProfileTest")
     public String getImgCompanyProfileTest() {
         log.info("Enter getImgCompanyProfileTest()");
 
-
-        return "html_css/210208/imgCompanyProfileTest.html";
+        return "html_css/imgCompanyProfileTest.html";
     }
-
 
     @GetMapping("/aTagTest")
     public String getATagTest() {
         log.info("Enter getATagTest()");
 
-
-        return "html_css/210208/aTagTest.html";
+        return "html_css/aTagTest.html";
     }
-
 
     @GetMapping("/aTagStyleTest")
     public String getATagStyleTest() {
         log.info("Enter getATagStyleTest()");
 
-
-        return "html_css/210208/aTagStyleTest.html";
+        return "html_css/aTagStyleTest.html";
     }
 
+    /* iframe 부분에 예상치 못한 오류가 발생중
+       스펙 사항이 바뀌었는지 체크할 필요가 있음 */
     @GetMapping("/iFrameTest")
     public String getIFrameTest() {
         log.info("Enter getIFrameTest()");
 
-
-        return "html_css/210208/iFrameTest.html";
+        return "html_css/iFrameTest.html";
     }
 
     @GetMapping("/idCheckTest")
     public String getIdCheckTest() {
         log.info("Enter getIdCheckTest()");
 
-
-        return "html_css/210208/idCheckTest.html";
+        return "html_css/idCheckTest.html";
     }
 
     @GetMapping("/visitedTest")
     public String getVisitedTest() {
         log.info("Enter getVisitedTest()");
 
-
-        return "html_css/210208/visitedTest.html";
+        return "html_css/visitedTest.html";
     }
 
     @GetMapping("/roiATagTest")
     public String getRoiATagTest() {
         log.info("Enter getRoiATagTest()");
 
-
-        return "html_css/210208/tag/roiATagTest.html";
+        return "html_css/roiATagTest.html";
     }
 
     @GetMapping("/formTest")
     public String getFormTest() {
         log.info("Enter getFormTest()");
 
-
-        return "html_css/210208/form/formTest.html";
+        return "html_css/form/formTest.html";
     }
 
-    @GetMapping("/loginformTest")
+    @GetMapping("/loginFormTest")
     public String getLoginFormTest() {
         log.info("Enter getLoginFormTest()");
 
-
-        return "html_css/210208/form/loginformTest.html";
+        return "html_css/form/loginFormTest.html";
     }
+
+    @GetMapping("/webFormTest")
+    public String getWebFormTest() {
+        log.info("Enter getLoginFormTest()");
+
+        return "html_css/form/webFormTest.html";
+    }
+
+    @GetMapping("/webFormTest2")
+    public String getWebFormTest2() {
+        log.info("Enter getLoginFormTest2()");
+
+        return "html_css/form/webFormTest2.html";
+    }
+
+    @GetMapping("/webFormTest3")
+    public String getWebFormTest3() {
+        log.info("Enter getLoginFormTest3()");
+
+        return "html_css/form/webFormTest3.html";
+    }
+
+    @GetMapping("/webFormTest4")
+    public String getWebFormTest4() {
+        log.info("Enter getLoginFormTest4()");
+
+        return "html_css/form/webFormTest4.html";
+    }
+
+    @GetMapping("/webFormTest5")
+    public String getWebFormTest5() {
+        log.info("Enter getLoginFormTest5()");
+
+        return "html_css/form/webFormTest5.html";
+    }
+
+    @GetMapping("/webFormTest6")
+    public String getWebFormTest6() {
+        log.info("Enter getLoginFormTest6()");
+
+        return "html_css/form/webFormTest6.html";
+    }
+
+    @GetMapping("/webFormTest7")
+    public String getWebFormTest7() {
+        log.info("Enter getLoginFormTest7()");
+
+        return "html_css/form/webFormTest7.html";
+    }
+
+    @GetMapping("/webFormWithSelect")
+    public String getWebFormWithSelect() {
+        log.info("Enter getLoginFormWithSelect()");
+
+        return "html_css/form/webFormWithSelect.html";
+    }
+
+    @GetMapping("/webFormOptGroup")
+    public String getWebFormOptGroup() {
+        log.info("Enter getWebFormOptGroup()");
+
+        return "html_css/form/webFormOptGroup.html";
+    }
+
+    @GetMapping("/webFormLegacy")
+    public String getWebFormLegacy() {
+        log.info("Enter getWebFormLegacy()");
+
+        return "html_css/form/webFormLegacy.html";
+    }
+
+    @GetMapping("/webProgressBarTest")
+    public String getWebProgressBarTest() {
+        log.info("Enter getWebProgressBarTest()");
+
+        return "html_css/progbar/webProgressBarTest.html";
+    }
+
+    @GetMapping("/webProgressBarTest2")
+    public String getWebProgressBarTest2() {
+        log.info("Enter getWebProgressBarTest2()");
+
+        return "html_css/progbar/webProgressBarTest2.html";
+    }
+
+    @GetMapping("/webCSS3Test")
+    public String getWebCSS3Test() {
+        log.info("Enter getWebCSS3Test()");
+
+        return "html_css/css3basic/webCSS3Test.html";
+    }
+
+    @GetMapping("/webCSS3SectionTest")
+    public String getWebCSS3SectionTest() {
+        log.info("Enter getWebCSS3SectionTest()");
+
+        return "html_css/css3basic/webCSS3SectionTest.html";
+    }
+
+    @GetMapping("/webCSS3StyleSheetTest")
+    public String getWebCSS3StyleSheetTest() {
+        log.info("Enter getWebCSS3StyleSheetTest()");
+
+        return "html_css/css3basic/webCSS3StyleSheetTest.html";
+    }
+
+    @GetMapping("/webBorderStyleTest")
+    public String getWebBorderStyleTest() {
+        log.info("Enter getWebBorderStyleTest()");
+
+        return "html_css/css3basic/webBorderStyleTest.html";
+    }
+
+    @GetMapping("/webHow2AvoidTest")
+    public String getWebHow2AvoidTest() {
+        log.info("Enter getWebHow2AvoidTest()");
+
+        return "html_css/css3basic/webHow2AvoidTest.html";
+    }
+
+    @GetMapping("/webRotationTransformTest")
+    public String getWebRotationTransformTest() {
+        log.info("Enter getWebRotationTransformTest()");
+
+        return "html_css/css3basic/webRotationTransformTest.html";
+    }
+
+    @GetMapping("/webFontTest")
+    public String getWebFontTest() {
+        log.info("Enter getWebFontTest()");
+
+        return "html_css/css3basic/webFontTest.html";
+    }
+
     @GetMapping("/resume")
     public String getResume() {
         log.info("Enter getResume()");
 
-
-        return "html_css/210208/Homework/resume.html";
+        return "html_css/resume.html";
     }
 }
