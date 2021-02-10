@@ -1,0 +1,66 @@
+#container {
+    background: linear-gradient(33deg, #d7d79f, #e5e5b9, #f8f8ea);
+    height: 100%;
+    width: 80%;
+}
+#item {
+    border: 10px solid #f1cdb6;
+    width: 95%;
+    height: 60%;
+}
+#item2 {
+    border: 10px solid red;
+    width: 100%;
+
+}
+table {
+    width: 70%;
+    border: 1px solid red;
+
+    border-collapse: collapse;
+}
+#menu{
+    list-style-type: none;
+    width: 100%;
+    height: 40px;
+}
+
+thead {
+    background: linear-gradient(to left, #ffffb4, #ffe2b5, #ffc6c6);
+    /*background: linear-gradient(to right, #ffffb4, #ffe2b5, #ffc6c6);
+    background: linear-gradient(to bottom, #ffffb4, #ffe2b5, #ffc6c6);
+    background: linear-gradient(to top, #ffffb4, #ffe2b5, #ffc6c6);
+    background: linear-gradient(33deg, #ffffb4, #ad8342 30%, #c72727 60%);
+    background: repeating-linear-gradient(#ffffb4, #4c0303);*/
+}
+td, th {
+    border: 1px solid #228B22;
+    padding: 10px;
+    font-size: 1em;
+}
+.box {
+    /* ᄋᆉ치 고정
+    position: absolute; */
+    /*
+    left: 50px;
+    top: 5px;
+    */
+    width: 350px;
+    height: 40px;
+    background: linear-gradient(33deg, #d7d79f, #e5e5b9);
+    border: 2px solid #f8f8ea;
+    text-align: center;
+    line-height: 10px;
+    margin-left: 30px;
+    float: left;
+}
+.box:hover {
+    /* webkit: 크롬, 사파리 */
+    -webkit-transform: rotate(15deg);
+    /* moz: 파이어폭스 */
+    -moz-transform: rotate(15deg);
+    /* 엣지 */
+    -ms-transform: rotate(15deg);
+    transform: rotate(15deg);
+}
+
