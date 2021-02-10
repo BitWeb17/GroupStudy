@@ -394,4 +394,10 @@ public class Html5Css3PageController {
 
         return "html_css/css3basic/webFontTest.html";
     }
+    @GetMapping("/myFirstPage")
+    public String getWmyFirstPage() {
+        log.info("Enter getmyFirstPage()");
+
+        return "html_css/css3basic/myFirstPage.html";
+    }
 }
