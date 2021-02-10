@@ -3,87 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
-    <style>
-        #container {
-            background: #FAFAD2;
-            height: 1600px;
-        }
-        #item {
-            border: 1px solid #FFDAB9;
-        }
-        table {
-            width: 70%;
-            border: 1px solid red;
-
-            border-collapse: collapse;
-        }
-
-        thead {
-            background: #6B8E23;
-        }
-        td, th {
-            border: 1px solid #228B22;
-            padding: 10px;
-            font-size: 1em;
-        }
-    </style>
-
+    <link rel="stylesheet" href="css/personalPortfolio.css">
 </head>
 <body>
 <div id="container">
     <center>
-    <h1><div id="item">LEE Jung Hyun</div></h1>
-        <h3>mail: akdl911215@gmail.com</h3>
-    <h3>number: +82 - 10 - 5093 - 9902</h3>
-    <h3>adress: 서울시 중랑구 상봉중앙로 1길 26, 4층</h3>
-    <h3><p><a href="https://github.com/akdl911215/" target="_blank">Gitbub: https://github.com/akdl911215/</a></p></h3>
-    <h3><p><a href="https://akdl911215.tistory.com/" target="_blank">tistory Blog: https://akdl911215.tistory.com/</a></p></h3>
+        <h1>LEE Jung Hyun <mark>(이정현)</mark></h1>
+        <h3><img src="img/gmail.png" width="30" height="30"> akdl911215@gmail.com</h3>
+    <h3><img src="img/phone.jpeg" width="30" height="30"> +82 - 10 - 5093 - 9902</h3>
+    <h3><img src="img/adree.png" width="30" height="30"> 서울시 중랑구 상봉동</h3>
+    <h3><p><a href="https://github.com/akdl911215/" target="_blank"><img src="img/github.png" width="30" height="30"> https://github.com/akdl911215/</a></p></h3>
+    <h3><p><a href="https://akdl911215.tistory.com/" target="_blank"><img src="img/tstory.jpg" width="30" height="30"> Blog: https://akdl911215.tistory.com/</a></p></h3>
     </center>
-    <hr>
+    <div id="item">
     <ul id="menu">
         <!-- a href를 통해 contents1 이라는 참조를 생성한다 -->
         <!-- 참조를 생성할때는 #을 붙이는 것을 주의하도록 한다 -->
-        <li><a href="#content1">Education</a> </li>
-        <li><a href="#contents2">Technical stack</a> </li>
-        <li><a href="#contents3">기타 정보</a> </li>
-        <li><a href="#contents3">소개 / About Me</a> </li>
+        <div class="box"><li><a href="#content1">Education</a> </li></div>
+        <div class="box"><li><a href="#contents2">Technical stack</a> </li></div>
+        <div class="box"><li><a href="#contents3">기타 정보</a> </li></div>
+        <div class="box"><li><a href="#contents3">소개 / About Me</a> </li></div>
     </ul>
-    <hr>
-
+    </div>
+    <section>
+        </br></br>
     <h2 id="content1">Eeducation</h2>
     <ul>
         <p><li>방송통신대학교 - 컴퓨터과학과</li></p>
         <p><li>비트캠프 - 디지털컨버전스기반 UXUI Front 전문 개발자양성과정</li></p>
     </ul>
     <h4><p><a href="#menu">위로</a></p></h4>
+    </section>
     </br></br>
 
     <section>
-        <h2 class="subtitle">Techincal Stack</h2>
+        <h2 id="contents2">Techincal Stack</h2>
         <table>
             <thead>
             <tr>
-                <th>Java</th>
-                <th>JavaScript</th>
-                <th>C</th>
-                <th>C++</th>
+                <th>Java <img src="img/java.png" width="25" height="25"></th>
+                <th>JavaScript <img src="img/JavaScript.png" width="25" height="25"></th>
+                <th>C <img src="img/C.png" width="25" height="25"></th>
+                <th>C++ <img src="img/C++.png" width="25" height="25"></th>
             </tr>
             </thead>
             <thead>
             <tr>
-                <th>Spring</th>
-                <th>Linux</th>
-                <th>Github</th>
-                <th>HTML</th>
+                <th>Spring <img src="img/spring.png" width="25" height="25"></th>
+                <th>Linux <img src="img/linux.png" width="25" height="25"></th>
+                <th>Github <img src="img/github.png" width="25" height="25"></th></th>
+                <th>HTML <img src="img/html.png" width="25" height="25"></th>
             </tr>
             </thead>
             <thead>
             <tr>
-                <th>Microsoft</th>
-                <th>Photoshop</th>
-                <th>Com Mix</th>
-                <th>Power Point</th>
+                <th>Microsoft Word <img src="img/word.png" width="25" height="25"></th>
+                <th>Photoshop <img src="img/photoshop.png" width="25" height="25"></th>
+                <th>Com Mix <img src="img/commix.jpeg" width="25" height="25"></th>
+                <th>Power Point <img src="img/Powerpoint.png" width="25" height="25"></th>
             </tr>
             </thead>
         </table>
@@ -113,6 +90,11 @@
         내용들을 정리하는 블로그를 통해서 꾸준한 성장을 노력하고 있습니다.</p>
     <p><a href="#menu">위로</a></p>
     </br></br>
+</div>
+<div class="grid">
+    <div class="grid_item first"></div>
+    <div class="grid_item two"></div>
+    <div class="grid_item third"></div>
 </div>
 </body>
 </html>

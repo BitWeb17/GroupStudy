@@ -15,4 +15,10 @@ public class ResumeController {
         return "html_css/resume/resume.html";
     }
 
+    @GetMapping("/resumeBonobono")
+    public String getResumeBonobono(){
+        log.info("Enter getResumeBonobono");
+        return "html_css/resume/resumeBonobono.html";
+    }
+
 }

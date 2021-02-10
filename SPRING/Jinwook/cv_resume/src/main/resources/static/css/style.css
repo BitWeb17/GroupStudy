@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'paybooc-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'paybooc-Bold';
+    color: #000000;
+}
+section{
+    background: linear-gradient(to right, #000000, #434343);
+    height: 130px;
+    padding-top: 15px;
+    color: rgb(255, 253, 253);
+    text-align: center;
+    
+    
+
+}
+.leftbox{
+float: left;
+width: 30%;
+
+}
+.rightbox{
+
+float: right;
+width: 70%;
+}
+.box{
+width: 150px;
+height: 160px;
+border-radius: 70%;
+overflow: hidden;
+margin: auto;
+}
+.profile{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-font{
+    margin-top: 10px;
+    text-align: center;
+    word-break:nowrap;
+    
+
+}
+
+svg{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+.progressbar{
+    display: inline-block;
+    width: 100%;
+    height: 15px;
+    background-color: #d6d3d3;
+    border-radius: 15px;
+}
+.progressbar > .gage1{
+    display: inline-block;
+    width: 75%;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 15px;
+}
+.progressbar > .gage2{
+    display: inline-block;
+    width: 80%;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 15px;
+}
+.progressbar > .gage3{
+    display: inline-block;
+    width: 90%;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 15px;
+}
+.progressbar > .gage4{
+    display: inline-block;
+    width: 80%;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 15px;
+}
+.progressbar > .gage5{
+    display: inline-block;
+    width: 60%;
+    height: 15px;
+    background-color: #000000;
+    border-radius: 15px;
+}
+.label-progress{
+    text-align: left;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.rightbox-title{
+    margin-top: 10px;
+    text-align: center;
+    font-size: bold;
+}
+.parent {
+    display: flex;
+}
+.child {
+    flex: 1;
+}
