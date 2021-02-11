@@ -540,4 +540,10 @@ public class Html5Css3PageController {
 
         return "html_css/box/webBoxPositionRelativeTest.html";
     }
+    @GetMapping("/inAboutme")
+    public String getinAboutme() {
+        log.info("Enter inAboutme()");
+
+        return "html_css/css3basic/inAboutme.html";
+    }
 }
