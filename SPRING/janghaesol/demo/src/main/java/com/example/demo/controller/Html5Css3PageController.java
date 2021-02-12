@@ -546,4 +546,10 @@ public class Html5Css3PageController {
 
         return "html_css/css3basic/inAboutme.html";
     }
+    @GetMapping("/inProblemSolving")
+    public String getinProblemSolving() {
+        log.info("Enter inProblemSolving()");
+
+        return "html_css/css3basic/inProblemSolving.html";
+    }
 }
