@@ -9,23 +9,23 @@ nav{
     height: 20px;
     padding: 1rem;
     color: white;
-    display: flex;
     position: fixed;
     top: 0;
-    left: 0;
     right: 0;
     text-align: center;
 }
 
 nav ul li{
     list-style: none;
-    float: left;
-    text-align: center;
+    display: inline-block;
     align-content: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 30px;
+    margin-top: 0px;
+    margin-right: 30px;
     position: relative;
     top: 2%;
+    
+    
 }
 nav .a{
         text-decoration:none;
@@ -52,23 +52,53 @@ nav .a:hover{
         padding: 5px;
 }
 .upBox{
-    background-color: beige;
+    background-color: beige ;
     position: fixed;
     top: 50px;
     left: 0;
     right: 0;
     height: 100px;
+    text-align: center;
 }
 
-.upImg{
+.upimg-container{
     position: relative;
-    float: left;
-    margin: 0px;
     border: 1px;
-    align-content: center;
-    top: 140px;
-    left: 0;
+    top: 142px;
     right: 0;
+    left: 0;
+    width: 100%;
     opacity:0.9;
-    display: block;
+    display: inline-block;
+}
+.contentsIcon{
+   position: relative;
+   display: block;
+   border-color: black;
+   text-align: center;
+   top: 250px;
+   border: 3px;
+   
+}
+.contentsIcon img{
+    margin-left: 130px;
+    margin-right: 130px;
+}
+
+.wrapper{
+    text-align: center;
+}
+.contentsExplainBox{
+    box-sizing: border-box;
+    position: relative;
+    display: inline-block;
+    font-family: 'Inconsolata', monospace;
+    top: 260px;
+    width: 200px;
+    height: auto;
+    margin-right: 55px;
+    margin-left: 55px;
+    padding: 30px;
+    border: 2px solid black;
+
 }
