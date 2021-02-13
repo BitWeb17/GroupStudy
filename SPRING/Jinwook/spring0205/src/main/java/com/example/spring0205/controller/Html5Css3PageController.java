@@ -238,7 +238,7 @@ public class Html5Css3PageController {
         log.info("Enter getroiATagTest()");
 
 
-        return "html_css/roiATagTest.html";
+        return "img/roiATagTest.html";
     }
     @GetMapping("/formTest")
     public String getformTest() {
@@ -388,7 +388,129 @@ public class Html5Css3PageController {
 
         return "css3basic/webFontTest.html";
     }
-    
+
+    @GetMapping("/webOverFlowTest")
+    public String getwebOverFlowTest() {
+        log.info("Enter getwebOverFlowTest()");
+
+        return "overflow/webOverFlowTest.html";
+    }
+    @GetMapping("/webTextBorderTest")
+    public String getwebTextBorderTest() {
+        log.info("Enter getwebTextBorderTest()");
+
+        return "border/webTextBorderTest.html";
+    }
+    @GetMapping("/webCustomUlTest")
+    public String getwebCustomULTest() {
+        log.info("Enter getwebCustomULTest()");
+
+        return "custom/webCustomUlTest.html";
+    }
+    @GetMapping("/webBoxTest")
+    public String getwebBoxTest() {
+        log.info("Enter getwebBoxTest()");
+
+        return "box/webBoxTest.html";
+    }
+    @GetMapping("/webBlockInlineTest")
+    public String getwebBoxTest2() {
+        log.info("Enter getwebBoxTest2()");
+
+        return "box/webBlockInlineTest.html";
+    }
+    @GetMapping("/webNavUlLiBoxTest")
+    public String getwebNavUlLiBoxTest() {
+        log.info("Enter getwebNavUlLiBoxTest()");
+
+        return "box/webNavUlLiBoxTest.html";
+    }
+
+    @GetMapping("/webNavUlLiBoxTest2")
+    public String getwebNavUlLiBoxTest2() {
+        log.info("Enter getwebNavUlLiBoxTest2()");
+
+        return "box/webNavUlLiBoxTest2.html";
+    }
+    @GetMapping("/webInlineBlockTest")
+    public String getwebInlineBlockTest() {
+        log.info("Enter getwebInlineBlockTest()");
+
+        return "box/webInlineBlockTest.html";
+    }
+    @GetMapping("/webBoxBorderStyleTest")
+    public String getwebBoxBorderStyleTest() {
+        log.info("Enter getwebBoxBorderStyleTest()");
+
+        return "box/webBoxBorderStyleTest.html";
+    }
+    @GetMapping("/webBoxBorderStyleTest2")
+    public String getwebBoxBorderStyleTest2() {
+        log.info("Enter getwebBoxBorderStyleTest2()");
+
+        return "box/webBoxBorderStyleTest2.html";
+    }
+    @GetMapping("/webBoxRoundTest")
+    public String getwebBoxRoundTest() {
+        log.info("Enter getwebBoxRoundTest()");
+
+        return "box/webBoxRoundTest.html";
+    }
+    @GetMapping("/webBoxEllipseTest")
+    public String getwebBoxEllipseTest() {
+        log.info("Enter getwebBoxEllipseTest()");
+
+        return "box/webBoxEllipseTest.html";
+    }
+    @GetMapping("/webBoxSubRoundTest2")
+    public String getwebBoxSubRoundTest2() {
+        log.info("Enter getwebBoxSubRoundTest2()");
+
+        return "box/webBoxSubRoundTest2.html";
+    }
+
+    @GetMapping("/webBoxMarginTest")
+    public String getwebBoxMarginTest() {
+        log.info("Enter getwebBoxMarginTest()");
+
+        return "box/webBoxMarginTest.html";
+    }
+    @GetMapping("/webBoxPaddingTest")
+    public String getwebBoxPaddingTest() {
+        log.info("Enter getwebBoxPaddingTest()");
+
+        return "box/webBoxPaddingTest.html";
+    }
+    @GetMapping("/webBoxSizingTest")
+    public String getwebBoxSizingTest() {
+        log.info("Enter getwebBoxSizingTest()");
+
+        return "box/webBoxSizingTest.html";
+    }
+    @GetMapping("/webBoxLayoutTest")
+    public String getwebBoxLayoutTest() {
+        log.info("Enter getwebBoxLayoutTest()");
+
+        return "box/webBoxLayoutTest.html";
+    }
+    @GetMapping("/webBoxLayoutTest2")
+    public String getwebBoxLayoutTest2() {
+        log.info("Enter getwebBoxLayoutTest2()");
+
+        return "box/webBoxLayoutTest2.html";
+    }
+    @GetMapping("/webBoxOutlineTest")
+    public String getwebBoxOutlineTest() {
+        log.info("Enter webBoxOutlineTest()");
+
+        return "box/webBoxOutlineTest.html";
+    }
+    @GetMapping("/webBoxPositionRelativeTest")
+    public String getwebBoxPositionRelativeTest() {
+        log.info("Enter webBoxPositionRelativeTest()");
+
+        return "box/webBoxPositionRelativeTest.html";
+    }
     
 }
 

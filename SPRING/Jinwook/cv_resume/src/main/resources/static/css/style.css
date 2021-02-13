@@ -7,6 +7,15 @@
 body{
     font-family: 'paybooc-Bold';
     color: #000000;
+    margin: 0px;
+    padding: 0px;
+    /* height: 3508px;
+    width: 2480px; */
+
+}
+div{
+    margin: 0px;
+    padding: 0px;
 }
 section{
     background: linear-gradient(to right, #000000, #434343);
@@ -14,13 +23,19 @@ section{
     padding-top: 15px;
     color: rgb(255, 253, 253);
     text-align: center;
-    
-    
-
+}
+h2{
+    font-size: bold;
+    margin: 0px;
+    text-align: center;
+    word-break:nowrap;
 }
 .leftbox{
 float: left;
 width: 30%;
+background-color: #f1f1f1;
+height: 100%;
+
 
 }
 .rightbox{
@@ -29,11 +44,11 @@ float: right;
 width: 70%;
 }
 .box{
-width: 150px;
-height: 160px;
+width: 190px;
+height: 200px;
 border-radius: 70%;
 overflow: hidden;
-margin: auto;
+margin: 10px auto;
 }
 .profile{
     width: 100%;
@@ -41,25 +56,27 @@ margin: auto;
     object-fit: cover;
 }
 .profile-font{
-    margin-top: 10px;
     text-align: center;
     word-break:nowrap;
-    
-
+    font-size: bold;
+    margin-top: 0px;
 }
 
 svg{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: block;
-    margin: auto;
+    margin:auto;
+    margin-bottom: 10px;
 }
 .progressbar{
     display: inline-block;
-    width: 100%;
+    width: 70%;
     height: 15px;
     background-color: #d6d3d3;
     border-radius: 15px;
+    margin-left: 75px;
+    margin-bottom: 10px;
 }
 .progressbar > .gage1{
     display: inline-block;
@@ -67,6 +84,7 @@ svg{
     height: 15px;
     background-color: #000000;
     border-radius: 15px;
+    margin-bottom: 10px;
 }
 .progressbar > .gage2{
     display: inline-block;
@@ -74,6 +92,7 @@ svg{
     height: 15px;
     background-color: #000000;
     border-radius: 15px;
+
 }
 .progressbar > .gage3{
     display: inline-block;
@@ -81,6 +100,7 @@ svg{
     height: 15px;
     background-color: #000000;
     border-radius: 15px;
+
 }
 .progressbar > .gage4{
     display: inline-block;
@@ -88,6 +108,7 @@ svg{
     height: 15px;
     background-color: #000000;
     border-radius: 15px;
+    
 }
 .progressbar > .gage5{
     display: inline-block;
@@ -95,11 +116,13 @@ svg{
     height: 15px;
     background-color: #000000;
     border-radius: 15px;
+    
 }
 .label-progress{
     text-align: left;
     font-size: 16px;
-    margin-left: 5px;
+    margin-left: 75px;
+    margin-bottom: 10px;
 }
 .rightbox-title{
     margin-top: 10px;
@@ -112,3 +135,13 @@ svg{
 .child {
     flex: 1;
 }
+.contents-font{
+    margin-left: 15px;
+    margin-right: 20px;
+    line-height: 20px;
+    font-size: 18px;
+    text-align: justify;
+}
+.boxprogressbar{
+   
+    }
