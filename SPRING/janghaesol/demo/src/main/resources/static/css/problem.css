@@ -1,8 +1,49 @@
-.header-img{
+#wrapper{
     width: 100%;
-    height: 600px;
-    border: 2px black;
-    display: block;
-    background-size: cover;
-    -webkit-background-size: cover;
+    min-width: 0px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.header-img{
+    text-align: center;
+    height: 460px;
+    width: 100%;
+    margin: 0px;
+    background: no-repeat;
+    background-size: cover;
+}
+
+.trelloIcon{
+    position: relative;
+    display: block;
+    border-color: black;
+    text-align: center;
+    border: 3px;
+    padding: 30px;
+    top: 40px;
+ }
+p{
+    position: relative;
+    display: block;
+    border-color: black;
+    text-align: center;
+    border: 3px;
+ }
+
+ .trellogrid{
+     margin: 0;
+     display: block;
+     text-align: center;
+     margin: 20px;
+}
+ .usingtrello p{
+    font-family: 'Inconsolata', monospace;
+    position: relative;
+    text-align: center;
+    border: 2px solid black;
+    border: 2px black;
+ }
+
+ 
