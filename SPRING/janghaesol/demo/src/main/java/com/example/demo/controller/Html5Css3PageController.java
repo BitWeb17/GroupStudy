@@ -552,4 +552,10 @@ public class Html5Css3PageController {
 
         return "html_css/css3basic/inProblemSolving.html";
     }
+    @GetMapping("/inCareer")
+    public String getinCareer() {
+        log.info("Enter inCareer()");
+
+        return "html_css/css3basic/inCareer.html";
+    }
 }
