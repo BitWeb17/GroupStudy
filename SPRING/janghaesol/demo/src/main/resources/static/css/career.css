@@ -8,7 +8,6 @@ a{
     color: white;
 }
 .menuvar{
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,6 +23,7 @@ a{
 .menuvar-logo{
     font-size: 24px;
     columns: white;
+
 }
 .menuvar-logo{
     color: white;
@@ -45,12 +45,11 @@ a{
 }
 
 .headimgcont{
-    height: 350px;
+    height: 400px;
 }
 
 .headimgcont img{
     width: 100%;
     height: 100%;
-    opacity: 80%;
 }
 
