@@ -558,4 +558,16 @@ public class Html5Css3PageController {
 
         return "html_css/css3basic/inCareer.html";
     }
+    @GetMapping("/inProject")
+    public String getinProject() {
+        log.info("Enter inProject()");
+
+        return "html_css/css3basic/inProject.html";
+    }
+    @GetMapping("/boxPractice")
+    public String getboxPractice() {
+        log.info("Enter boxPractice()");
+
+        return "html_css/css3basic/boxPractice.html";
+    }
 }
