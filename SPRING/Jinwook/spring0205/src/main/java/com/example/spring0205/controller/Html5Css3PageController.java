@@ -30,88 +30,96 @@ public class Html5Css3PageController {
     }
 
     @GetMapping("/ul_li")
-    public String getUlli(){
-        log.info("Enter getUlli()");
+    public String getUlLi() {
+        log.info("Enter getUlLi()");
 
-        return"html_css/ul_li.html";
+        return "html_css/ul_li.html";
     }
 
     @GetMapping("/ol_li")
-    public String getOlli(){
-        log.info("Enter getOlli()");
+    public String getOlLi() {
+        log.info("Enter getOlLi()");
 
-        return"html_css/ol_li.html";
+        return "html_css/ol_li.html";
     }
 
     @GetMapping("/img_test")
-    public String getImg(){
+    public String getImg() {
         log.info("Enter getImg()");
 
-        return"html_css/img_test.html";
+        return "html_css/img_test.html";
     }
 
     @GetMapping("/p_test")
-    public String getPTag(){
+    public String getPTag() {
         log.info("Enter getPTag()");
 
-        return"html_css/p_test.html";
+        return "html_css/p_test.html";
     }
 
     @GetMapping("/blockquote_test")
-    public String getBlockquote(){
+    public String getBlockquote() {
         log.info("Enter getBlockquote()");
 
-        return"html_css/blockquote_test.html";
+        return "html_css/blockquote_test.html";
     }
 
     @GetMapping("/pre_test")
-    public String getPre(){
+    public String getPre() {
         log.info("Enter getPre()");
 
-        return"html_css/pre_test.html";
+        return "html_css/pre_test.html";
     }
 
     @GetMapping("/style_page_test")
-    public String getStylingTestPage(){
+    public String getStylingTestPage() {
         log.info("Enter getStylingTestPage()");
 
-        return"html_css/style_page_test.html";
+        return "html_css/style_page_test.html";
     }
 
-
     @GetMapping("/p_options_test")
-    public String getPOptionsTest(){
+    public String getPOptionsTest() {
         log.info("Enter getPOptionsTest()");
 
-        return"html_css/p_options_test.html";
+        return "html_css/p_options_test.html";
     }
 
     @GetMapping("/mark_test")
-    public String getMarkTest(){
+    public String getMarkTest() {
         log.info("Enter getMarkTest()");
 
-        return"html_css/mark_test.html";
+        return "html_css/mark_test.html";
     }
 
     @GetMapping("/span_color_test")
-    public String getSpanColorTest(){
+    public String getSpanColorTest() {
         log.info("Enter getSpanColorTest()");
 
-        return"html_css/span_color_test.html";
+        return "html_css/span_color_test.html";
     }
+
     @GetMapping("/ul_ol_li_test")
-    public String getUlOlLiTest(){
+    public String getUlOlLiTest() {
         log.info("Enter getUlOlLiTest()");
 
-        return"html_css/ul_ol_li_test.html";
+        return "html_css/ul_ol_li_test.html";
     }
 
     @GetMapping("/ul_ul_li_test")
-    public String getUlUlLiTest(){
+    public String getUlUlLiTest() {
         log.info("Enter getUlUlLiTest()");
 
-        return"html_css/ul_ul_li_test.html";
+        return "html_css/ul_ul_li_test.html";
     }
+
+    // 컨트롤러에 새로운 맵핑을 만들어서
+    // 사용자가 URL 요청을 하면
+    // 주사위 게임이 동작하게 만들어보자!
+    // 웹 페이지 출력은 Success로
+    // 위에서 만들었던 "html_css/success.html" 를 활용한다.
+    // 아직 게임 결과를 출력할 수 없으니
+    // 콘솔창에 게임 결과를 출력하도록 한다.
     @GetMapping("/diceGame")
     public String getDiceGame() {
         log.info("Enter getDiceGame()");
@@ -121,396 +129,412 @@ public class Html5Css3PageController {
 
         return "html_css/success.html";
     }
+
     @GetMapping("/tableTest")
     public String getTableTest() {
         log.info("Enter getTableTest()");
 
-
         return "html_css/tableTest.html";
     }
+
     @GetMapping("/mat3by3Test")
     public String getMat3by3Test() {
         log.info("Enter getMat3by3Test()");
 
-
         return "html_css/mat3by3Test.html";
     }
+
     @GetMapping("/tableTest2")
     public String getTableTest2() {
         log.info("Enter getTableTest2()");
 
-
         return "html_css/tableTest2.html";
     }
+
     @GetMapping("/captionTest")
     public String getCaptionTest() {
         log.info("Enter getCaptionTest()");
 
-
         return "html_css/captionTest.html";
     }
+
     @GetMapping("/tableTest3")
     public String getTableTest3() {
         log.info("Enter getTableTest3()");
 
-
         return "html_css/tableTest3.html";
     }
+
     @GetMapping("/tableTest4")
     public String getTableTest4() {
         log.info("Enter getTableTest4()");
 
-
         return "html_css/tableTest4.html";
     }
+
     @GetMapping("/tableTest5")
     public String getTableTest5() {
         log.info("Enter getTableTest5()");
 
-
         return "html_css/tableTest5.html";
     }
+
     @GetMapping("/imgAltTest")
     public String getImgAltTest() {
         log.info("Enter getImgAltTest()");
 
-
         return "html_css/imgAltTest.html";
     }
-    @GetMapping("/imgSizeTest")
-    public String getImgSizeTest() {
-        log.info("Enter getImgSizeTest()");
 
+    @GetMapping("/imgSizeTest")
+    public String getImgTest() {
+        log.info("Enter getImgSizeTest()");
 
         return "html_css/imgSizeTest.html";
     }
-    @GetMapping("/imgFigcaptionTest")
-    public String getImgFigcaptionTest() {
-        log.info("Enter getImgFigcaptionTest()");
 
+    @GetMapping("/imgFigcaptionTest")
+    public String getFigcaptionTest() {
+        log.info("Enter getFigcaptionTest()");
 
         return "html_css/imgFigcaptionTest.html";
     }
+
     @GetMapping("/imgCompanyProfileTest")
     public String getImgCompanyProfileTest() {
         log.info("Enter getImgCompanyProfileTest()");
 
-
         return "html_css/imgCompanyProfileTest.html";
     }
+
     @GetMapping("/aTagTest")
     public String getATagTest() {
         log.info("Enter getATagTest()");
 
-
         return "html_css/aTagTest.html";
     }
+
     @GetMapping("/aTagStyleTest")
     public String getATagStyleTest() {
         log.info("Enter getATagStyleTest()");
 
-
         return "html_css/aTagStyleTest.html";
     }
+
+    /* iframe 부분에 예상치 못한 오류가 발생중
+       스펙 사항이 바뀌었는지 체크할 필요가 있음 */
     @GetMapping("/iFrameTest")
     public String getIFrameTest() {
         log.info("Enter getIFrameTest()");
 
-
         return "html_css/iFrameTest.html";
     }
+
     @GetMapping("/idCheckTest")
     public String getIdCheckTest() {
         log.info("Enter getIdCheckTest()");
 
-
         return "html_css/idCheckTest.html";
     }
+
     @GetMapping("/visitedTest")
     public String getVisitedTest() {
         log.info("Enter getVisitedTest()");
 
-
         return "html_css/visitedTest.html";
     }
+
     @GetMapping("/roiATagTest")
-    public String getroiATagTest() {
-        log.info("Enter getroiATagTest()");
+    public String getRoiATagTest() {
+        log.info("Enter getRoiATagTest()");
 
-
-        return "img/roiATagTest.html";
+        return "html_css/roiATagTest.html";
     }
+
     @GetMapping("/formTest")
-    public String getformTest() {
-        log.info("Enter getformTest()");
+    public String getFormTest() {
+        log.info("Enter getFormTest()");
 
-
-        return "html_css/formTest.html";
+        return "html_css/form/formTest.html";
     }
+
     @GetMapping("/loginFormTest")
-    public String getloginformTest() {
-        log.info("Enter getloginformTest()");
+    public String getLoginFormTest() {
+        log.info("Enter getLoginFormTest()");
 
-
-        return "html_css/loginFormTest.html";
+        return "html_css/form/loginFormTest.html";
     }
-    @GetMapping("/webformTest")
-    public String getwebformTest() {
-        log.info("Enter getwebformTest()");
 
+    @GetMapping("/webFormTest")
+    public String getWebFormTest() {
+        log.info("Enter getLoginFormTest()");
 
-        return "form/webformTest.html";
+        return "html_css/form/webFormTest.html";
     }
-    @GetMapping("/webformTest2")
-    public String getwebformTest2() {
-        log.info("Enter getwebformTest2())");
 
+    @GetMapping("/webFormTest2")
+    public String getWebFormTest2() {
+        log.info("Enter getLoginFormTest2()");
 
-        return "form/webformTest2.html";
+        return "html_css/form/webFormTest2.html";
     }
-    @GetMapping("/webformTest3")
-    public String getwebformTest3() {
-        log.info("Enter getwebformTest3())");
 
+    @GetMapping("/webFormTest3")
+    public String getWebFormTest3() {
+        log.info("Enter getLoginFormTest3()");
 
-        return "form/webformTest3.html";
+        return "html_css/form/webFormTest3.html";
     }
-    @GetMapping("/webformTest4")
-    public String getwebformTest4() {
-        log.info("Enter getwebformTest4())");
 
+    @GetMapping("/webFormTest4")
+    public String getWebFormTest4() {
+        log.info("Enter getLoginFormTest4()");
 
-        return "form/webformTest4.html";
+        return "html_css/form/webFormTest4.html";
     }
-    @GetMapping("/webformTest5")
-    public String getwebformTest5() {
-        log.info("Enter getwebformTest5())");
 
+    @GetMapping("/webFormTest5")
+    public String getWebFormTest5() {
+        log.info("Enter getLoginFormTest5()");
 
-        return "form/webformTest5.html";
+        return "html_css/form/webFormTest5.html";
     }
-    @GetMapping("/webformTest6")
-    public String getwebformTest6() {
-        log.info("Enter getwebformTest6())");
 
+    @GetMapping("/webFormTest6")
+    public String getWebFormTest6() {
+        log.info("Enter getLoginFormTest6()");
 
-        return "form/webformTest6.html";
+        return "html_css/form/webFormTest6.html";
     }
-    @GetMapping("/webformTest7")
-    public String getwebformTest7() {
-        log.info("Enter getwebformTest7())");
 
+    @GetMapping("/webFormTest7")
+    public String getWebFormTest7() {
+        log.info("Enter getLoginFormTest7()");
 
-        return "form/webformTest7.html";
+        return "html_css/form/webFormTest7.html";
     }
+
     @GetMapping("/webFormWithSelect")
-    public String getwebFormatWithSelect() {
-        log.info("Enter getwebFormatWithSelect())");
+    public String getWebFormWithSelect() {
+        log.info("Enter getLoginFormWithSelect()");
 
-
-        return "form/webFormWithSelect.html";
+        return "html_css/form/webFormWithSelect.html";
     }
-    @GetMapping("/webFromOptGroup")
-    public String getwebFromOptGroup() {
-        log.info("Enter getwebFromOptGroup())");
 
+    @GetMapping("/webFormOptGroup")
+    public String getWebFormOptGroup() {
+        log.info("Enter getWebFormOptGroup()");
 
-        return "form/webFromOptGroup.html";
+        return "html_css/form/webFormOptGroup.html";
     }
+
     @GetMapping("/webFormLegacy")
-    public String webFormLegacy() {
-        log.info("Enter webFormLegacy())");
+    public String getWebFormLegacy() {
+        log.info("Enter getWebFormLegacy()");
 
-
-        return "form/webFormLegacy.html";
+        return "html_css/form/webFormLegacy.html";
     }
+
     @GetMapping("/webProgressBarTest")
-    public String getwebProgressBarTest() {
-        log.info("Enter getwebProgressBarTest())");
+    public String getWebProgressBarTest() {
+        log.info("Enter getWebProgressBarTest()");
 
-
-        return "progbar/webProgressBarTest.html";
+        return "html_css/progbar/webProgressBarTest.html";
     }
+
     @GetMapping("/webProgressBarTest2")
-    public String getwebProgressBarTest2() {
-        log.info("Enter getwebProgressBarTest2()");
+    public String getWebProgressBarTest2() {
+        log.info("Enter getWebProgressBarTest2()");
 
-
-        return "progbar/webProgressBarTest2.html";
+        return "html_css/progbar/webProgressBarTest2.html";
     }
+
     @GetMapping("/webCSS3Test")
-    public String getwebCSS3Test() {
-        log.info("Enter getwebCSS3Test()");
+    public String getWebCSS3Test() {
+        log.info("Enter getWebCSS3Test()");
 
-
-        return "css3basic/webCSS3Test.html";
+        return "html_css/css3basic/webCSS3Test.html";
     }
+
     @GetMapping("/webCSS3SectionTest")
-    public String getwebCSS3SectionTest() {
-        log.info("Enter getwebCSS3SectionTest()");
+    public String getWebCSS3SectionTest() {
+        log.info("Enter getWebCSS3SectionTest()");
 
-
-        return "css3basic/webCSS3SectionTest.html";
+        return "html_css/css3basic/webCSS3SectionTest.html";
     }
+
     @GetMapping("/webCSS3StyleSheetTest")
-    public String getwebCSS3StyleSheetTest() {
-        log.info("Enter getwebCSS3StyleSheetTest()");
+    public String getWebCSS3StyleSheetTest() {
+        log.info("Enter getWebCSS3StyleSheetTest()");
 
-
-        return "css3basic/webCSS3StyleSheetTest.html";
+        return "html_css/css3basic/webCSS3StyleSheetTest.html";
     }
-    @GetMapping("/webBorderStyleSheet")
-    public String getwebBorderStyleSheet() {
-        log.info("Enter getwebBorderStyleSheet()");
 
+    @GetMapping("/webBorderStyleTest")
+    public String getWebBorderStyleTest() {
+        log.info("Enter getWebBorderStyleTest()");
 
-        return "css3basic/webBorderStyleSheet.html";
+        return "html_css/css3basic/webBorderStyleTest.html";
     }
 
     @GetMapping("/webHow2AvoidTest")
-    public String getwebHow2AvoidTest() {
-        log.info("Enter getwebHow2AvoidTest()");
+    public String getWebHow2AvoidTest() {
+        log.info("Enter getWebHow2AvoidTest()");
 
-
-        return "css3basic/webHow2AvoidTest.html";
+        return "html_css/css3basic/webHow2AvoidTest.html";
     }
+
     @GetMapping("/webRotationTransformTest")
-    public String getwebRotationTransformTest() {
-        log.info("Enter getwebRotationTransformTest()");
+    public String getWebRotationTransformTest() {
+        log.info("Enter getWebRotationTransformTest()");
 
-
-        return "css3basic/webRotationTransformTest.html";
+        return "html_css/css3basic/webRotationTransformTest.html";
     }
+
     @GetMapping("/webFontTest")
-    public String getwebFontTest() {
-        log.info("Enter getwebFontTest()");
+    public String getWebFontTest() {
+        log.info("Enter getWebFontTest()");
 
-
-        return "css3basic/webFontTest.html";
+        return "html_css/css3basic/webFontTest.html";
     }
 
-    @GetMapping("/webOverFlowTest")
-    public String getwebOverFlowTest() {
-        log.info("Enter getwebOverFlowTest()");
+    @GetMapping("/webOverflowTest")
+    public String getWebOverflowTest() {
+        log.info("Enter getWebOverflowTest()");
 
-        return "overflow/webOverFlowTest.html";
+        return "html_css/overflow/webOverflowTest.html";
     }
+
     @GetMapping("/webTextBorderTest")
-    public String getwebTextBorderTest() {
-        log.info("Enter getwebTextBorderTest()");
+    public String getWebTextBorderTest() {
+        log.info("Enter getWebTextBorderTest()");
 
-        return "border/webTextBorderTest.html";
+        return "html_css/border/webTextBorderTest.html";
     }
+
     @GetMapping("/webCustomUlTest")
-    public String getwebCustomULTest() {
-        log.info("Enter getwebCustomULTest()");
+    public String getWebCustomUlTest() {
+        log.info("Enter getWebCustomUlTest()");
 
-        return "custom/webCustomUlTest.html";
+        return "html_css/custom/webCustomUlTest.html";
     }
+
     @GetMapping("/webBoxTest")
-    public String getwebBoxTest() {
-        log.info("Enter getwebBoxTest()");
+    public String getWebBoxTest() {
+        log.info("Enter getWebBoxTest()");
 
-        return "box/webBoxTest.html";
+        return "html_css/box/webBoxTest.html";
     }
+
     @GetMapping("/webBlockInlineTest")
-    public String getwebBoxTest2() {
-        log.info("Enter getwebBoxTest2()");
+    public String getWebBlockInlineTest() {
+        log.info("Enter getWebBlockInlineTest()");
 
-        return "box/webBlockInlineTest.html";
+        return "html_css/box/webBlockInlineTest.html";
     }
-    @GetMapping("/webNavUlLiBoxTest")
-    public String getwebNavUlLiBoxTest() {
-        log.info("Enter getwebNavUlLiBoxTest()");
 
-        return "box/webNavUlLiBoxTest.html";
+    @GetMapping("/webNavUlLiBoxTest")
+    public String getWebNavUlLiBoxTest() {
+        log.info("Enter getWebNavUlLiBoxTest()");
+
+        return "html_css/box/webNavUlLiBoxTest.html";
     }
 
     @GetMapping("/webNavUlLiBoxTest2")
-    public String getwebNavUlLiBoxTest2() {
-        log.info("Enter getwebNavUlLiBoxTest2()");
+    public String getWebNavUlLiBoxTest2() {
+        log.info("Enter getWebNavUlLiBoxTest2()");
 
-        return "box/webNavUlLiBoxTest2.html";
+        return "html_css/box/webNavUlLiBoxTest2.html";
     }
+
     @GetMapping("/webInlineBlockTest")
-    public String getwebInlineBlockTest() {
-        log.info("Enter getwebInlineBlockTest()");
+    public String getWebInlineBlockTest() {
+        log.info("Enter getWebInlineBlockTest()");
 
-        return "box/webInlineBlockTest.html";
+        return "html_css/box/webInlineBlockTest.html";
     }
+
     @GetMapping("/webBoxBorderStyleTest")
-    public String getwebBoxBorderStyleTest() {
-        log.info("Enter getwebBoxBorderStyleTest()");
+    public String getWebBoxBorderStyleTest() {
+        log.info("Enter getWebBoxBorderStyleTest()");
 
-        return "box/webBoxBorderStyleTest.html";
+        return "html_css/box/webBoxBorderStyleTest.html";
     }
+
     @GetMapping("/webBoxBorderStyleTest2")
-    public String getwebBoxBorderStyleTest2() {
-        log.info("Enter getwebBoxBorderStyleTest2()");
+    public String getWebBoxBorderStyleTest2() {
+        log.info("Enter getWebBoxBorderStyleTest2()");
 
-        return "box/webBoxBorderStyleTest2.html";
+        return "html_css/box/webBoxBorderStyleTest2.html";
     }
+
     @GetMapping("/webBoxRoundTest")
-    public String getwebBoxRoundTest() {
-        log.info("Enter getwebBoxRoundTest()");
+    public String getWebBoxRoundTest() {
+        log.info("Enter getWebBoxRoundTest()");
 
-        return "box/webBoxRoundTest.html";
+        return "html_css/box/webBoxRoundTest.html";
     }
+
     @GetMapping("/webBoxEllipseTest")
-    public String getwebBoxEllipseTest() {
-        log.info("Enter getwebBoxEllipseTest()");
+    public String getWebBoxEllipseTest() {
+        log.info("Enter getWebBoxEllipseTest()");
 
-        return "box/webBoxEllipseTest.html";
+        return "html_css/box/webBoxEllipseTest.html";
     }
-    @GetMapping("/webBoxSubRoundTest2")
-    public String getwebBoxSubRoundTest2() {
-        log.info("Enter getwebBoxSubRoundTest2()");
 
-        return "box/webBoxSubRoundTest2.html";
+    @GetMapping("/webBoxSubRoundTest2")
+    public String getWebBoxSubRoundTest2() {
+        log.info("Enter getWebBoxSubRoundTest2()");
+
+        return "html_css/box/webBoxSubRoundTest2.html";
     }
 
     @GetMapping("/webBoxMarginTest")
-    public String getwebBoxMarginTest() {
-        log.info("Enter getwebBoxMarginTest()");
+    public String getWebBoxMarginTest() {
+        log.info("Enter getWebBoxMarginTest()");
 
-        return "box/webBoxMarginTest.html";
+        return "html_css/box/webBoxMarginTest.html";
     }
+
     @GetMapping("/webBoxPaddingTest")
-    public String getwebBoxPaddingTest() {
-        log.info("Enter getwebBoxPaddingTest()");
+    public String getWebBoxPaddingTest() {
+        log.info("Enter getWebBoxPaddingTest()");
 
-        return "box/webBoxPaddingTest.html";
+        return "html_css/box/webBoxPaddingTest.html";
     }
+
     @GetMapping("/webBoxSizingTest")
-    public String getwebBoxSizingTest() {
-        log.info("Enter getwebBoxSizingTest()");
+    public String getWebBoxSizingTest() {
+        log.info("Enter getWebBoxSizingTest()");
 
-        return "box/webBoxSizingTest.html";
+        return "html_css/box/webBoxSizingTest.html";
     }
+
     @GetMapping("/webBoxLayoutTest")
-    public String getwebBoxLayoutTest() {
-        log.info("Enter getwebBoxLayoutTest()");
+    public String getWebBoxLayoutTest() {
+        log.info("Enter getWebBoxLayoutTest()");
 
-        return "box/webBoxLayoutTest.html";
+        return "html_css/box/webBoxLayoutTest.html";
     }
+
     @GetMapping("/webBoxLayoutTest2")
-    public String getwebBoxLayoutTest2() {
-        log.info("Enter getwebBoxLayoutTest2()");
+    public String getWebBoxLayoutTest2() {
+        log.info("Enter getWebBoxLayoutTest2()");
 
-        return "box/webBoxLayoutTest2.html";
+        return "html_css/box/webBoxLayoutTest2.html";
     }
+
     @GetMapping("/webBoxOutlineTest")
-    public String getwebBoxOutlineTest() {
-        log.info("Enter webBoxOutlineTest()");
+    public String getWebBoxOutlineTest() {
+        log.info("Enter getWebBoxOutlineTest()");
 
-        return "box/webBoxOutlineTest.html";
+        return "html_css/box/webBoxOutlineTest.html";
     }
+
     @GetMapping("/webBoxPositionRelativeTest")
-    public String getwebBoxPositionRelativeTest() {
-        log.info("Enter webBoxPositionRelativeTest()");
+    public String getWebBoxPositionRelativeTest() {
+        log.info("Enter getWebBoxPositionRelativeTest()");
 
-        return "box/webBoxPositionRelativeTest.html";
+        return "html_css/box/webBoxPositionRelativeTest.html";
     }
-    
 }
-
