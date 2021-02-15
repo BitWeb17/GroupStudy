@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class ReviewTest {
     public static Logger log =
             LoggerFactory.getLogger(ReviewTest.class);
+
     @GetMapping("/review")
     public String getReview(){
         log.info("Enter getDivideTeam");
