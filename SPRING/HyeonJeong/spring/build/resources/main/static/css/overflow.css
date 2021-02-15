@@ -1,0 +1,4 @@
+.content:hover {
+    /* 넘치는 부분을 보여줌 */
+    overflow: visible;
+}

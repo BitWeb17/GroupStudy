@@ -1,0 +1,8 @@
+com/example/demo/game/DiceGame.java
+ com.example.demo.game.DiceGame
+com/example/demo/createteam/Randomteam.java
+ com.example.demo.createteam.Randomteam
+com/example/demo/DemoApplication.java
+ com.example.demo.DemoApplication
+com/example/demo/controller/Html5Css3PageController.java
+ com.example.demo.controller.Html5Css3PageController
