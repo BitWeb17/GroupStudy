@@ -570,4 +570,118 @@ public class Html5Css3PageController {
 
         return "html_css/css3basic/boxPractice.html";
     }
+    @GetMapping("/webMenuDropDownTest")
+    public String getwebMenuDropDownTest() {
+        log.info("Enter webMenuDropDownTest()");
+
+        return "html_css/Menubar/webMenuDropDownTest.html";
+    }
+    @GetMapping("/webColumnRuleTest")
+    public String getwebColumnRuleTest() {
+        log.info("Enter webColumnRuleTest()");
+
+        return "html_css/column-rule/webColumnRuleTest.html";
+    }
+    @GetMapping("/webCustomTableBorderTest")
+    public String getwebCustomTableBorderTest() {
+        log.info("Enter webCustomTableBorderTest()");
+
+        return "html_css/border/webCustomTableBorderTest.html";
+    }
+    @GetMapping("/webCustomTableBorderTest2")
+    public String getwebCustomTableBorderTest2() {
+        log.info("Enter webCustomTableBorderTest2()");
+
+        return "html_css/border/webCustomTableBorderTest2.html";
+    }
+    @GetMapping("/webCustomTableBorderTest3")
+    public String getwebCustomTableBorderTest3() {
+        log.info("Enter webCustomTableBorderTest3()");
+
+        return "html_css/border/webCustomTableBorderTest3.html";
+    }
+    @GetMapping("/webCustomTableBorderTest4")
+    public String getwebCustomTableBorderTest4() {
+        log.info("Enter webCustomTableBorderTest4()");
+
+        return "html_css/border/webCustomTableBorderTest4.html";
+    }
+    @GetMapping("/webCustomTableBorderTest5")
+    public String getwebCustomTableBorderTest5() {
+        log.info("Enter webCustomTableBorderTest5()");
+
+        return "html_css/border/webCustomTableBorderTest5.html";
+    }
+    @GetMapping("/webCustomTableBorderTest6")
+    public String getwebCustomTableBorderTest6() {
+        log.info("Enter webCustomTableBorderTest6()");
+
+        return "html_css/border/webCustomTableBorderTest6.html";
+    }
+    @GetMapping("/webCustomTableBorderTest7")
+    public String getwebCustomTableBorderTest7() {
+        log.info("Enter webCustomTableBorderTest7()");
+
+        return "html_css/border/webCustomTableBorderTest7.html";
+    }
+    @GetMapping("/webPlayMP3Test")
+    public String getwebPlayMP3Test() {
+        log.info("Enter webPlayMP3Test()");
+
+        return "html_css/multimedia/webPlayMP3Test.html";
+    }
+    @GetMapping("/webPlayMP4Test")
+    public String getwebPlayMP4Test() {
+        log.info("Enter webPlayMP4Test()");
+
+        return "html_css/multimedia/webPlayMP4Test.html";
+    }
+    @GetMapping("/webSelectTest")
+    public String getwebSelectTest() {
+        log.info("Enter webSelectTest()");
+
+        return "html_css/selector/webSelectTest.html";
+    }
+    @GetMapping("/webSelectTest2")
+    public String getwebSelectTest2() {
+        log.info("Enter webSelectTest2()");
+
+        return "html_css/selector/webSelectTest2.html";
+    }
+    @GetMapping("/webSelectTest3")
+    public String getwebSelectTest3() {
+        log.info("Enter webSelectTest3()");
+
+        return "html_css/selector/webSelectTest3.html";
+    }
+    @GetMapping("/webSelectTest4")
+    public String getwebSelectTest4() {
+        log.info("Enter webSelectTest4()");
+
+        return "html_css/selector/webSelectTest4.html";
+    }
+    @GetMapping("/webSelectTest5")
+    public String getwebSelectTest5() {
+        log.info("Enter webSelectTest5()");
+
+        return "html_css/selector/webSelectTest5.html";
+    }
+    @GetMapping("/webSelectTest6")
+    public String getwebSelectTest6() {
+        log.info("Enter webSelectTest6()");
+
+        return "html_css/selector/webSelectTest6.html";
+    }
+    @GetMapping("/webSelectTest7")
+    public String getwebSelectTest7() {
+        log.info("Enter webSelectTest7()");
+
+        return "html_css/selector/webSelectTest7.html";
+    }
+    @GetMapping("/webSelectTest8")
+    public String getwebSelectTest8() {
+        log.info("Enter webSelectTest8()");
+
+        return "html_css/selector/webSelectTest8.html";
+    }
 }
