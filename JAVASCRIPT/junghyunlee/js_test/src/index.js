@@ -133,7 +133,7 @@ import TestPromise from "./promise-parallel/TestPromise";
 
 ReactDOM.render(
   <React.StrictMode>
-      <PromiseTest/>
+      <PromiseTest/>ㅏ바
   </React.StrictMode>,
   document.getElementById('root')
 );
