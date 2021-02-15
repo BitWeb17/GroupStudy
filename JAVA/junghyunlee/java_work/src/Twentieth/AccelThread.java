@@ -1,6 +1,6 @@
 package Twentieth;
 
-import Twentieth.FinalPerformanceTest;
+//import Twentieth.FinalPerformanceTest;
 
 public class AccelThread extends OperationAccelerator implements Runnable {
     private int localStart;
@@ -40,7 +40,7 @@ public class AccelThread extends OperationAccelerator implements Runnable {
         System.out.printf("threadId = %d, localEnd = %d\n", threadId, localEnd);
 
         for(int i = localStart; i <= localEnd; i++) {
-            localSum += (i * (FinalPerformanceTest.COEFFICIENT * i)) * Math.sin(i * Math.PI / FinalPerformanceTest.DEG2RAD);
+            //localSum += (i * (FinalPerformanceTest.COEFFICIENT * i)) * Math.sin(i * Math.PI / FinalPerformanceTest.DEG2RAD);
         }
 
         System.out.printf("threadId = %d, localSum = %f\n", threadId, localSum);
