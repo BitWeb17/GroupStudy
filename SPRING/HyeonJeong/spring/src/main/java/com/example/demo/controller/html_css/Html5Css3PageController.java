@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.controller.html_css;
 
 import com.example.demo.createteam.Randomteam;
 import com.example.demo.game.DiceGame;
