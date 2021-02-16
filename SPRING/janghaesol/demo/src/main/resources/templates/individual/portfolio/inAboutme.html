@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTP-8">
     <title>legossol_resumeAboutme</title>
@@ -12,10 +12,10 @@
     <nav onblur="window.focus()" style="z-index: 3;">
         <div class="wrapper">
             <ul>
-                <li><a href="#" class="a":hover>About Me</a></li>
-                <li><a href="#"class="a":hover>Project</a></li>
-                <li><a href="#"class="a":hover>Career</a></li>
-                <li><a href="#"class="a":hover>Main Menu</a></li>
+                <li><a th:href="@{/param/board/get?inAboutme}" class="a":hover>About Me</a></li>
+                <li><a th:href="@{/param/board/get?inProject}"class="a":hover>Project</a></li>
+                <li><a th:href="@{/param/board/get?inCareer}"class="a":hover>Career</a></li>
+                <li><a th:href="@{/param/board/get?myFirstPage}"class="a":hover>Main Menu</a></li>
             </ul>
         </div>
     </nav>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,11 +17,11 @@
         </div>
 
         <ul div class="menuvar-menu">
-            <li><a href="http://localhost:8080/inAboutme">About Me</a></li>
-            <li><a href="http://localhost:8080/inProject">Project</a></li>
-            <li><a href="http://localhost:8080/inCareer">Career</a></li>
-            <li><a href="http://localhost:8080/inProblemSolving">Problem Solving</a></li>
-            <li><a href="http://localhost:8080/myFirstPage">Main Menu</a></li>
+            <li><a th:href="@{/param/board/get?inAboutme}">About Me</a></li>
+            <li><a th:href="@{/param/board/get?inProject}">Project</a></li>
+            <li><a th:href="@{/param/board/get?inCareer}">Career</a></li>
+            <li><a th:href="@{/param/board/get?inProblemSolving}">Problem Solving</a></li>
+            <li><a th:href="@{/param/board/get?myFirstPage}">Main Menu</a></li>
         </ul>
         <div class="menubar-link">
             <a href="https://github.com/legossol"><img src="img/githubiconwhite.png"width="27px" height="27px"></a>

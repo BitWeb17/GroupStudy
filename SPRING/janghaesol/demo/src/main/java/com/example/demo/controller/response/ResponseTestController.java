@@ -30,7 +30,7 @@ public class ResponseTestController {
     }
 
     @ResponseBody
-    @GetMapping("/responseTestMemberList")
+    @GetMapping("/responseTestMemberList1111")
     public List<TestMember> getTestMemberList() {
         log.info("getTestMemberList()");
 
