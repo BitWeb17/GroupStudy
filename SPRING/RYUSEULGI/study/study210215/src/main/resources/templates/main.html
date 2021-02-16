@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,8 +21,10 @@
         <aside class="section">
             <button>클릭버튼</button>
             <ul>
-                <li><a href="#">검색</a></li>
-                <li><a href="#">로그인</a></li>
+                <li><a href="/members/login">로그인</a></li>
+                <li><a href="/members/new">회원가입</a></li>
+                <li><a href="/members/out">회원탈퇴</a></li>
+                <li><a href="/members/myPage">마이페이지</a></li>
             </ul>
         </aside>
 
@@ -88,7 +90,9 @@
                             </ul>
                         </div>
     
-                        <button type="submit" class="search-btn" disabled>검색</button>
+                        <button type="submit" class="search-btn" disabled>
+                            <a href="/list">검색</a>
+                        </button>
                     </form>
                 </div>
             </section>

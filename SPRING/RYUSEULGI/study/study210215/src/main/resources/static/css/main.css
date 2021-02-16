@@ -93,8 +93,8 @@ form .dropdown-menu.active {
 }
 
 .section__search .search-box {
-    width: 280px;
-    height: 150px;
+    width: 180px;
+    height: 50px;
     border: 1px solid var(--black-color);
     box-shadow: 0 4px 9px 0 rgba(63, 65, 80, 0.1);
     border-radius: 0.7rem;
@@ -103,8 +103,8 @@ form .dropdown-menu.active {
 }
 
 .section__search .search-box img {
-    width: 10rem;
-    height: 10rem;
+    width: 3rem;
+    height: 3rem;
     border: 1px solid var(--black-color);
     border-radius: 10rem;
     text-align: left;
