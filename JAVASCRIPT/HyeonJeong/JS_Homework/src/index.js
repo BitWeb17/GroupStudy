@@ -2,11 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import RandomMember from './hw_21_01_29/RandomMember';
+import Series from './hw_21_02_01/Series';
+import DuplicateArray from './hw_21_02_01/DuplicateArray';
 
 ReactDOM.render(
   <React.StrictMode>
-    <RandomMember/>
+    {/* <RandomMember/> */}
+    <Series/>
+    <DuplicateArray/>
   </React.StrictMode>,
   document.getElementById('root')
 );
