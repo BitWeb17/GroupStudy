@@ -1,6 +1,5 @@
-package com.example.demo.controller;
+package com.example.demo.controller.html_css;
 
-import com.example.demo.TeamDivide.TeamDivide;
 import com.example.demo.game.DiceGame;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
