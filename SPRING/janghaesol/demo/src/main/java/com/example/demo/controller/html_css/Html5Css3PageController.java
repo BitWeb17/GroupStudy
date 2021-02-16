@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.controller.html_css;
 
 import com.example.demo.game.DiceGame;
 import org.slf4j.Logger;
@@ -684,4 +684,5 @@ public class Html5Css3PageController {
 
         return "html_css/selector/webSelectTest8.html";
     }
+   
 }
