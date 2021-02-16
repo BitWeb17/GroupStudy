@@ -703,4 +703,11 @@ public class Html5Css3PageController {
 
         return "html_css/portfolio/mainPortfoiloTest.html";
     }
+
+    @GetMapping("/mainPortfol")
+    public String getMainPortfol() {
+        log.info("Enter getMainPortfol()");
+
+        return "html_css/portfolio/mainPortfol.html";
+    }
 }
