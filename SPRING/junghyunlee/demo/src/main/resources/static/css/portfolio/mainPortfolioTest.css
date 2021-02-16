@@ -2,7 +2,7 @@
 
     margin-left: 100px;
     overflow: hidden;
-    background-color: #ef4ac9;
+    background-color: #ffc1ed;
     height: 1000px;
     width: 500px;
 }
@@ -10,7 +10,7 @@
 .navbar a {
 
     font-size: 16px;
-    color: #f86e6e;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -50,7 +50,7 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: #ef4d4d;
+    color: black;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -62,7 +62,7 @@
     font-size: 16px;
     border: none;
     outline: none;
-    color: #ef4d4d;
+    color: black;
     padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
@@ -71,17 +71,17 @@
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-    background-color: #ee4f4f;
+    background-color: black;
 }
 
 .navbar a:hover, .dropdown2:hover .dropbtn2 {
-    background-color: #ee4f4f;
+    background-color: black;
 }
 
 .dropdown-contents {
     display: none;
     position: absolute;
-    background-color: #ff0000;
+    background-color: black;
     min-width: 160px;
     /* rgba에서 a는 알파값으로 투명도를 의미함 */
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -122,11 +122,11 @@
 }
 
 .dropdown-contents2 a:hover {
-    background-color: #f58f8f;
+    background-color: black;
 }
 
 .dropdown-contents a:hover {
-    background-color: #f58f8f;
+    background-color: black;
 }
 
 .dropdown:hover .dropdown-contents {
