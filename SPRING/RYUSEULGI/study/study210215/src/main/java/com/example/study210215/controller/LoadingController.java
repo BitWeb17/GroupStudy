@@ -6,12 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HtmlController {
-    final Logger log = LoggerFactory.getLogger(HtmlController.class);
+public class LoadingController {
+    final Logger log = LoggerFactory.getLogger(LoadingController.class);
 
     @GetMapping("/index")
     public String getStart() {
-        log.info("작동");
+        log.info("로딩화면...");
         return "/index.html";
     }
 
