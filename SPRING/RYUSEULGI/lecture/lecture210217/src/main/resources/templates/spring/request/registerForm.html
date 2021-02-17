@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>register Form</h1>
+
+    <!-- 앞 key & 뒤 value -->
+    <a th:href="@{register?userId=srder&passwd=1234}">
+        register?userId=srder&passwd=1234
+    </a>
+
+    <form th:action="@{/request/register}" method="POST">
+        아이디 : <input type="text" name="userId" value="fjkfsd">
+        비밀번호 : <input type="text" name="passwd" value="1234">
+        <input type="submit" value="등록">
+    </form>
+
+    <a th:href="@{registerByEntity?userId=srder&passwd=1234}">
+        registerByEntity?userId=srder&passwd=1234
+    </a>
+
+    <form th:action="@{/request/registerWithEntity}" method="POST">
+        아이디 : <input type="text" name="userId" value="fjkfsd">
+        비밀번호 : <input type="text" name="passwd" value="1234">
+        <input type="submit" value="등록">
+    </form>
+</body>
+</html>
