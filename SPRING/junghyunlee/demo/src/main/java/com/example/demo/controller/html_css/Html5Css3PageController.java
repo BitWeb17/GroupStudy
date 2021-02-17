@@ -1,4 +1,4 @@
-package com.example.demo.controller;
+package com.example.demo.controller.html_css;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -562,5 +562,152 @@ public class Html5Css3PageController {
         log.info("Enter getWebBoxPositionRelativeTest()");
 
         return "html_css/box/webBoxPositionRelativeTest.html";
+    }
+
+    @GetMapping("/webMenuDropDownTest")
+    public String getWebMenuDropDownTest() {
+        log.info("Enter getWebMenuDropDownTest()");
+
+        return "html_css/menubar/webMenuDropDownTest.html";
+    }
+
+    @GetMapping("/webColumnRuleTest")
+    public String getWebColumnRuleTest() {
+        log.info("Enter getWebColumnRuleTest()");
+
+        return "html_css/column-rule/webColumnRuleTest.html";
+    }
+
+    @GetMapping("/webCusomTableBorederTest")
+    public String getWebCusomTableBorederTest() {
+        log.info("Enter getWebCusomTableBorederTest()");
+
+        return "html_css/border/webCusomTableBorederTest.html";
+    }
+
+    @GetMapping("/webCusomTableBorederTest2")
+    public String getWebCusomTableBorederTest2() {
+        log.info("Enter getWebCusomTableBorederTest2()");
+
+        return "html_css/border/webCusomTableBorederTest2.html";
+    }
+
+    @GetMapping("/webCusomTableBorederTest3")
+    public String getWebCusomTableBorederTest3() {
+        log.info("Enter getWebCusomTableBorederTest3()");
+
+        return "html_css/border/webCusomTableBorederTest3.html";
+    }
+
+    @GetMapping("/webCusomTableBorederTest4")
+    public String getWebCusomTableBorederTest4() {
+        log.info("Enter getWebCusomTableBorederTest4()");
+
+        return "html_css/border/webCusomTableBorederTest4.html";
+    }
+
+    @GetMapping("/webCusomTableBorederTest5")
+    public String getWebCusomTableBorederTest5() {
+        log.info("Enter getWebCusomTableBorederTest5()");
+
+        return "html_css/border/webCusomTableBorederTest5.html";
+    }
+
+    @GetMapping("/webCusomTableBorederTest6")
+    public String getWebCusomTableBorederTest6() {
+        log.info("Enter getWebCusomTableBorederTest6()");
+
+        return "html_css/border/webCusomTableBorederTest6.html";
+    }
+
+    @GetMapping("/webCusomTableBorederTest7")
+    public String getWebCusomTableBorederTest7() {
+        log.info("Enter getWebCusomTableBorederTest7()");
+
+        return "html_css/border/webCusomTableBorederTest7.html";
+    }
+
+    @GetMapping("/webPlayMP3Test")
+    public String getWebPlayMP3Test() {
+        log.info("Enter getWebPlayMP3Test()");
+
+        return "html_css/multimedia/webPlayMP3Test.html";
+    }
+
+    @GetMapping("/webPlayVideoTest")
+    public String getwebPlayVideoTest() {
+        log.info("Enter getwebPlayVideoTest()");
+
+        return "html_css/multimedia/webPlayVideoTest.html";
+    }
+
+    @GetMapping("/webSelectTest")
+    public String getwebSelectTest() {
+        log.info("Enter getwebSelectTest()");
+
+        return "html_css/selector/webSelectTest.html";
+    }
+
+    @GetMapping("/webSelectTest2")
+    public String getwebSelectTest2() {
+        log.info("Enter getwebSelectTest2()");
+
+        return "html_css/selector/webSelectTest2.html";
+    }
+
+    @GetMapping("/webSelectTest3")
+    public String getwebSelectTest3() {
+        log.info("Enter getwebSelectTest3()");
+
+        return "html_css/selector/webSelectTest3.html";
+    }
+
+    @GetMapping("/webSelectTest4")
+    public String getwebSelectTest4() {
+        log.info("Enter getwebSelectTest4()");
+
+        return "html_css/selector/webSelectTest4.html";
+    }
+
+    @GetMapping("/webSelectTest5")
+    public String getwebSelectTest5() {
+        log.info("Enter getwebSelectTest5()");
+
+        return "html_css/selector/webSelectTest5.html";
+    }
+
+    @GetMapping("/webSelectTest6")
+    public String getwebSelectTest6() {
+        log.info("Enter getwebSelectTest6()");
+
+        return "html_css/selector/webSelectTest6.html";
+    }
+
+    @GetMapping("/webSelectTest7")
+    public String getwebSelectTest7() {
+        log.info("Enter getwebSelectTest7()");
+
+        return "html_css/selector/webSelectTest7.html";
+    }
+
+    @GetMapping("/webSelectTest8")
+    public String getwebSelectTest8() {
+        log.info("Enter getwebSelectTest8()");
+
+        return "html_css/selector/webSelectTest8.html";
+    }
+
+    @GetMapping("/mainPortfoiloTest")
+    public String getmainPortfoiloTest() {
+        log.info("Enter getmainPortfoiloTest()");
+
+        return "html_css/portfolio/mainPortfoiloTest.html";
+    }
+
+    @GetMapping("/mainPortfol")
+    public String getMainPortfol() {
+        log.info("Enter getMainPortfol()");
+
+        return "html_css/portfolio/mainPortfol.html";
     }
 }
