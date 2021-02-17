@@ -8,15 +8,15 @@
     <h2>Read</h2>
 
     <!-- /param/board/get?modify-->
-    <form method="get" th:action="@{/indiedog/community/get}">
+    <form method="get" th:action="@{personalproject/home/community/get}">
         <button type="submit" name="modify">Modify</button>
     </form>
      <!-- /param/board/get?remove-->
-    <form method="get" th:action="@{/indiedog/community/get}">
+    <form method="get" th:action="@{personalproject/home/community/get}">
         <button type="submit" name="remove">Remove</button>
     </form>
 
-    <a th:href="@{/param/board/get?list}">
+    <a th:href="@{/personalproject/home/community/get?list}">
         List
     </a>
 </body>

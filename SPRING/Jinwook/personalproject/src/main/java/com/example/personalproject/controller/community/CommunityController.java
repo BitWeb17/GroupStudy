@@ -1,4 +1,4 @@
-package com.example.personalproject.parameter;
+package com.example.personalproject.controller.community;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,17 +8,17 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/indiedog/community")
-public class ParameterTestController {
+@RequestMapping("personalproject/home/community")
+public class CommunityController {
     private static final Logger log =
-            LoggerFactory.getLogger(ParameterTestController.class);
+            LoggerFactory.getLogger(CommunityController.class);
 
     @RequestMapping(value = "/get",
             method = RequestMethod.GET, params = "register")
     public String getRegisterForm() {
         log.info("/get?register");
 
-        return "spring/parameter/register.html";
+        return "spring/community/register.html";
     }
 
     @RequestMapping(value = "/post",
@@ -26,7 +26,7 @@ public class ParameterTestController {
     public String doRegister() {
         log.info("/post(register)");
 
-        return "spring/parameter/list.html";
+        return "spring/community/list.html";
     }
 
     @RequestMapping(value = "/get",
@@ -34,7 +34,7 @@ public class ParameterTestController {
     public String getModifyForm() {
         log.info("/get?modify");
 
-        return "spring/parameter/modify.html";
+        return "spring/community/modify.html";
     }
 
     @RequestMapping(value = "/post",
@@ -42,7 +42,7 @@ public class ParameterTestController {
     public String doModify() {
         log.info("/post(modify)");
 
-        return "spring/parameter/list.html";
+        return "spring/community/list.html";
     }
 
     @RequestMapping(value = "/get",
@@ -50,7 +50,7 @@ public class ParameterTestController {
     public String getRemoveForm() {
         log.info("/get?remove");
 
-        return "spring/parameter/remove.html";
+        return "spring/community/remove.html";
     }
 
     @RequestMapping(value = "/post",
@@ -58,7 +58,7 @@ public class ParameterTestController {
     public String doRemove() {
         log.info("/post(remove)");
 
-        return "spring/parameter/list.html";
+        return "spring/community/list.html";
     }
 
     @RequestMapping(value = "/get",
@@ -66,7 +66,7 @@ public class ParameterTestController {
     public String getListForm() {
         log.info("/get?list");
 
-        return "spring/parameter/list.html";
+        return "spring/community/list.html";
     }
 
     @RequestMapping(value = "/get",
@@ -74,6 +74,6 @@ public class ParameterTestController {
     public String getReadForm() {
         log.info("/get?read");
 
-        return "spring/parameter/read.html";
+        return "spring/community/read.html";
     }
 }
