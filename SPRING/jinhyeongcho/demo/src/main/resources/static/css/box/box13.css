@@ -1,7 +1,8 @@
-div{
+div {
     float: left;
     margin-right: 20px;
 }
+
 .box1 {
     /* 내용물 영역 기준*/
     box-sizing: content-box;

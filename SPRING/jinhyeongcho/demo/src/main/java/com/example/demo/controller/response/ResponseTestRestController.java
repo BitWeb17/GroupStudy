@@ -19,7 +19,7 @@ public class ResponseTestRestController {
             LoggerFactory.getLogger(ResponseTestRestController.class);
 
     @GetMapping("/responseRestTestMember")
-    public TestMember getTestMember(){
+    public TestMember getTestMember() {
         log.info("getTestMember()");
 
         TestMember tm = new TestMember();
@@ -27,15 +27,15 @@ public class ResponseTestRestController {
     }
 
     @GetMapping("/responseTestMemberMap")
-    public Map<String,TestMember> getTestMemberMap(){
+    public Map<String, TestMember> getTestMemberMap() {
         log.info("getTestMemberMap()");
 
-        Map<String,TestMember> map =
-                new HashMap<String,TestMember>();
+        Map<String, TestMember> map =
+                new HashMap<String, TestMember>();
         TestMember tm1 = new TestMember();
-        map.put("key1",tm1);
+        map.put("key1", tm1);
         TestMember tm2 = new TestMember();
-        map.put("key2",tm2);
+        map.put("key2", tm2);
 
         return map;
     }

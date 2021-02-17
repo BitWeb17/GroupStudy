@@ -4,12 +4,14 @@
     height: 100px;
     background: #ff6a00;
 }
-.box2{
+
+.box2 {
     /* 가변 너비 - 창 너비의 50%*/
     width: 50%;
     height: 100px;
     background: #0094ff;
 }
+
 div {
     /* div 간의 여백*/
     margin: 10px;

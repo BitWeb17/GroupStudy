@@ -5,10 +5,11 @@
     margin-right: 10px;
     padding: 20px;
 }
+
 .box2 {
     position: relative;
     left: -50px;
-    top: 30px ;
+    top: 30px;
     width: 300px;
     background: #1199ff;
     float: left;

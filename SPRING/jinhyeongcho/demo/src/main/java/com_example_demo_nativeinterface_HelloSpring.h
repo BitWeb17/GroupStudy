@@ -13,7 +13,7 @@ extern "C" {
  * Signature: ()Ljava/lang/String;
  */
 JNIEXPORT jstring JNICALL Java_com_example_demo_nativeinterface_HelloSpring_print
-  (JNIEnv *env, jobject obj);
+  (JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }

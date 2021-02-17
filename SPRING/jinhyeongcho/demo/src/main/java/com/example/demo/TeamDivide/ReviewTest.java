@@ -1,4 +1,5 @@
 package com.example.demo.TeamDivide;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -10,7 +11,7 @@ public class ReviewTest {
             LoggerFactory.getLogger(ReviewTest.class);
 
     @GetMapping("/review")
-    public String getReview(){
+    public String getReview() {
         log.info("Enter getDivideTeam");
         return "html_css/review.html";
     }

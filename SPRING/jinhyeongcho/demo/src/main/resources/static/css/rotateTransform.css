@@ -9,6 +9,7 @@
     text-align: center;
     line-height: 60px;
 }
+
 .box:hover {
     /* webkt: 크롬, 사파리 */
     -webkit-transform: rotate(15deg);
