@@ -15,33 +15,21 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class NeoalgoController {
     private static final Logger log =
             LoggerFactory.getLogger(NeoalgoController.class);
-    @GetMapping("/neoalgohome")
-    public String neoalgohome(){
-        log.info("getneoalgoHome()");
+    @GetMapping("/Home")
+    public String Home(){
+        log.info("getHome()");
 
-        return "individual/neoalgo/neoalgo-main";
-    }        
+        return "individual/neoalgo/neoalgo-home";
+    }     
     @RequestMapping(value = "/neoalgo",
-            method = RequestMethod.GET, params = "register")
-    public String getRegisterForm(Model model) {
-        log.info("/main?register");
+       method = RequestMethod.GET, params = "register")
+    public String getneoalgo-register(Model model) {
+        log.info("/Home?register");
 
         model.addAttribute("neoalgouser", new Neoalgouser());
 
-        return "spring/neoalgo/registerForm";
+        return "individual/neoalgo/neoalgo-register";
     }
-    /*
-    @GetMapping("/neoalgoForm01")
-    public String neoalgoForm01() {
-    log.info("neoalgoForm01()");
-    
-    return "spring/neoalgo/neoalgo-main";
-    }
-    @GetMapping("/neoalgo-main02")
-    public String registerForm002(Model model) { 
-    log.info("registerForm002()");
-    model.addAttribute("neoalgouser", new Neoalgouser());
-    
-    return "spring/neoalgo/neoalgo-main";
-    }*/
+
 }
+  
