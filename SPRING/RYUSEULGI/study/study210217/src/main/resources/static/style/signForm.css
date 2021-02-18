@@ -52,17 +52,3 @@
 .signup-form .checkboxList input:checked + label {
     font-weight: 700;
 }
-
-.signup-form button {
-    margin-top: 5rem;
-    background-color: var(--point-color);
-    width: 100%;
-    padding: 1rem 0;
-    border-radius: 0.7rem;
-    font-weight: 700;
-    color: var(--white-color);
-}
-
-.signup-form button:hover {
-    opacity: 50%;
-}

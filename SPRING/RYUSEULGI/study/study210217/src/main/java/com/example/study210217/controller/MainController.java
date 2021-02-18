@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping(value = "/")
-public class NavbarController {
-    private static final Logger log = LoggerFactory.getLogger(NavbarController.class);
+public class MainController {
+    private static final Logger log = LoggerFactory.getLogger(MainController.class);
 
     @GetMapping("main")
     public String getMain() {
         log.info("getMain()");
 
-        return "nav/navbar";
+        return "main";
     }
 
     @RequestMapping(value = "main", method = RequestMethod.GET, params = "signup")
@@ -40,5 +40,22 @@ public class NavbarController {
 
         model.addAttribute("email", member.getUserEmail());
         return "nav/welcome";
+    }
+
+    @RequestMapping(value = "main", method = RequestMethod.GET, params = "myPage")
+    public String getmyPage(Model model) {
+        log.info("getMyPage()");
+
+        model.addAttribute("member", new Member());
+        return "nav/myPage";
+    }
+
+    @RequestMapping(value = "main", method = RequestMethod.GET, params = "community")
+    public String getCommunity(Model model) {
+        log.info("getCommunity()");
+
+        model.addAttribute("member", new Member());
+
+        return "nav/community/list";
     }
 }

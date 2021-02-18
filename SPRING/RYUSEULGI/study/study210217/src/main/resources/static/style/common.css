@@ -10,6 +10,9 @@
     /* FONT-SIZE */
     --title-size: 80px;
     --medium-size: 16px;
+    --small-size: 13px;
+    /* BOX-SHADOW */
+    --nomal-shadow: 0 4px 9px 0 rgba(63, 65, 80, 0.1);
 }
 
 html {
@@ -28,7 +31,9 @@ body {
     font-size: var(--medium-size);
 }
 
-h1 {
+h1,
+tr,
+td {
     margin: 0;
     padding: 0;
 }
@@ -52,8 +57,10 @@ a {
     border: 1px solid var(--grey-color);
     border-radius: 0.7rem;
     padding: 4rem;
+    position: relative;
 }
 
+/* BTN */
 button {
     line-height: 1.5;
     letter-spacing: -0.02em;
@@ -62,6 +69,20 @@ button {
     border: none;
     cursor: pointer;
     outline-style: none;
+}
+
+.basicBtn {
+    margin-top: 5rem;
+    background-color: var(--point-color);
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0.7rem;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.basicBtn:hover {
+    opacity: 50%;
 }
 
 footer {
