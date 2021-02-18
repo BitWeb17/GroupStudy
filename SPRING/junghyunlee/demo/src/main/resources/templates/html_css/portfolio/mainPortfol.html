@@ -1,21 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/portfolio/mainPortfol.css">
+    <link rel="stylesheet" href="/css/portfolio/mainPortfol.css">
 </head>
 <body>
     <div id="header" role="banner">
         <fieldset>
             <legend class="visually-hidden">내가 원하는 이상형 검색</legend>
             <div class="search_box">
-                <input type="text" maxlength="225" tabindex="1" />
-                <button type="submit" tabindex="2">
+                <div id="box1">
+                <!-- maxlength : <input> 태그의 maxlength 속성은
+                <input> 요소에 입력할 수 있는 최대 문자수를 명시합니다 -->
+                <input type="text" maxlength="225" tabindex="1" placeholder="검색어 입력" />
+                <button type="submit" tabindex="2" >
                     검색
                 </button>
                 <a style="float: right" href="/">로그아웃</a>
                 <a style="float: right" href="/">로그인</a>
+                <a style="float: right"
+                   th:href="@{/exercise/home?register}">회원가입</a>
+                </div>
             </div>
         </fieldset>
 
@@ -35,19 +41,35 @@
                 </div>
             </div>
 
-            <div class="dropdown2">
-                <button class="dropbtn2">
+            <div class="dropdown">
+                <button class="dropbtn">
                     특별한 데이트!
                 </button>
-                <div class="dropdown2-contents2">
+                <div class="dropdown-contents">
                     <a href="#">흩날리는 벚꽃을 같이?!</a>
                     <a href="#">야구는 치맥이지!</a>
                     <a href="#">처녀귀신 love 호박귀신</a>
                 </div>
             </div>
         </div>
-
     </div>
+
+
+
+    <main>
+        <div class="main-container">
+            <div class="main_hot">
+            <div class="temp-box">주위에 접속중인 매력적 친구<img src="img/hot2.png" class="main_hot"/>
+                </a></div>
+            </div>
+            <div class="temp-box">상대가 나에게 호감을 표현한 친구</div>
+            <div class="temp-box">내가 상대에가 호감을 표현한 친구</div>
+            <div class="temp-box">AI추천으로 호감을 표현하면 높은 성공확률 보이는 친구</div>
+        </div>
+    </main>
+
+
+
 
 
     <div id="main" role="main">메인</div>
