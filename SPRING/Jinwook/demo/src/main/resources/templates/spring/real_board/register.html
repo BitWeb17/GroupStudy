@@ -10,7 +10,7 @@
 
 <script>
     $(document).ready(function() {
-        var formObj = $("#totalcommnunity")
+        var formObj = $("#board")
 
         $("#btnRegister").on("click", function() {
             formObj.attr("action", "register")
@@ -19,7 +19,7 @@
         })
 
         $("#btnList").on("click", function() {
-            self.location = "totallist"
+            self.location = "list"
         })
     })
 </script>
@@ -27,7 +27,7 @@
 <body>
     <h2>Board Register</h2>
 
-    <form id="totalcummunity" action="success.html"
+    <form id="board" action="success.html"
           th:action="@{register}"
           th:object="${board}" method="post">
         <table>

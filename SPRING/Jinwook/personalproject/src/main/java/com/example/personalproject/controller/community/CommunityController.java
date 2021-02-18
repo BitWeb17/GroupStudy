@@ -1,79 +1,64 @@
 package com.example.personalproject.controller.community;
 
+import com.example.personalproject.entity.TotalCommunity;
+import com.example.personalproject.service.TotalCommunityService;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("personalproject/home/community")
+@RequestMapping("personalproject/home/maincommunity")
 public class CommunityController {
     private static final Logger log =
             LoggerFactory.getLogger(CommunityController.class);
 
-    @RequestMapping(value = "/get",
-            method = RequestMethod.GET, params = "register")
-    public String getRegisterForm() {
-        log.info("/get?register");
+    @Autowired
+    private TotalCommunityService service;
 
-        return "spring/community/register.html";
+    @GetMapping("/totallist")
+    public String getTotalList(Model model) throws Exception {
+        log.info("getTotalList");
+
+        model.addAttribute("totallist", service.totallist());
+
+        return "spring/community/totallist.html";
     }
-
-    @RequestMapping(value = "/post",
-            method = RequestMethod.POST, params = "register")
-    public String doRegister() {
-        log.info("/post(register)");
-
-        return "spring/community/list.html";
+        // HTML 처리시 board 정보를 가지고 처리하게됨(주의)
+        @GetMapping("/register")
+        public String getRegister(TotalCommunity totalcommnuity) {
+            log.info("getRegister()");
+    
+            return "spring/community/register.html";
+        }
+    
+        @PostMapping("/register")
+        public String doRegister(TotalCommunity totalcommnuity, Model model)
+                throws Exception {
+    
+            log.info("doRegister()");
+    
+            service.register(totalcommnuity);
+    
+            model.addAttribute("msg",
+                    "등록이 완료되었습니다.");
+    
+            return "spring/community/success.html";
+        }
+    
+        @GetMapping("/read")
+        public String read(int boardNo, Model model)
+                throws Exception {
+            log.info("read()");
+    
+            model.addAttribute(service.read(boardNo));
+    
+            return "spring/community/read.html";
+        }
     }
-
-    @RequestMapping(value = "/get",
-            method = RequestMethod.GET, params = "modify")
-    public String getModifyForm() {
-        log.info("/get?modify");
-
-        return "spring/community/modify.html";
-    }
-
-    @RequestMapping(value = "/post",
-            method = RequestMethod.POST, params = "modify")
-    public String doModify() {
-        log.info("/post(modify)");
-
-        return "spring/community/list.html";
-    }
-
-    @RequestMapping(value = "/get",
-            method = RequestMethod.GET, params = "remove")
-    public String getRemoveForm() {
-        log.info("/get?remove");
-
-        return "spring/community/remove.html";
-    }
-
-    @RequestMapping(value = "/post",
-            method = RequestMethod.POST, params = "remove")
-    public String doRemove() {
-        log.info("/post(remove)");
-
-        return "spring/community/list.html";
-    }
-
-    @RequestMapping(value = "/get",
-            method = RequestMethod.GET, params = "list")
-    public String getListForm() {
-        log.info("/get?list");
-
-        return "spring/community/list.html";
-    }
-
-    @RequestMapping(value = "/get",
-            method = RequestMethod.GET, params = "read")
-    public String getReadForm() {
-        log.info("/get?read");
-
-        return "spring/community/read.html";
-    }
-}
