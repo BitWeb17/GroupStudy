@@ -69,12 +69,11 @@ a{
 .signin{
     display: flex;
     color:aliceblue;
-    border-color: white;
     align-items: center;
     justify-content: left;
     text-align: center;
-    padding: 6px;
-    border: 2px;
+    padding: 6px 10px;
+    border: 1px solid white;
     margin-right: 5px;
     border-radius: 8px;
 }
@@ -119,4 +118,95 @@ a{
     color: white;
     z-index: 2;
     text-align: center;
+}
+.bgcontainer .signup{
+    color: aliceblue;
+    padding: 5px 15px 5px 15px;
+    
+    border: 1px;
+    border-radius: 8px;
+    background-color: rgb(212, 138, 0);
+
+    opacity: 90%;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%, -50%);                                                                   
+    font-size:1.3rem;
+    z-index: 3;
+    text-align: center;
+}
+
+.regheadbox{
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 2rem;
+    width: 40rem;
+    height: 4rem;
+    padding: 2px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 15%;
+    justify-content: center;
+}
+.wrap{
+    height: 100%;
+    width: 100%;
+}
+.wrap table{
+    justify-content: center;
+}
+.wrapcenter{
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+}
+.regbox table{
+    margin-left: 20px;
+}
+
+.searchdivi{
+    float: left;
+    overflow: hidden;
+}
+
+.searchdivi .dropbtn {
+    font-size: 13px;
+    border: none;
+    outline: none;
+    color: black;
+    border: 1px solid black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(148, 148, 148);
+}
+
+.searchdivi-contents {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.searchdivi-contents a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.searchdivi-contents a:hover {
+    background-color: #ddddff;
+}
+.searchdivi:hover .searchdivi-contents {
+    display: block;
 }

@@ -1,35 +1,38 @@
 package com.example.demo.controller.neoalgo;
 
-import com.example.demo.neoalgoEntity.Neoalgouser;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+ import org.slf4j.Logger;
+ import org.slf4j.LoggerFactory;
+ import org.springframework.stereotype.Controller;
+ import org.springframework.web.bind.annotation.GetMapping;
+ import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller
-@RequestMapping(value = "/neoalgo")
-public class NeoalgoController {
-    private static final Logger log =
-            LoggerFactory.getLogger(NeoalgoController.class);
-    @GetMapping("/Home")
-    public String Home(){
-        log.info("getHome()");
+ @Controller
+ @RequestMapping(value = "/neoalgo")
+ public class NeoalgoController {
+     private static final Logger log =
+             LoggerFactory.getLogger(NeoalgoController.class);
+     @GetMapping("/neoalgohome")
+     public String neoalgohome(){
+         log.info("getneoalgoHome()");
 
-        return "individual/neoalgo/neoalgo-home";
-    }     
-    @RequestMapping(value = "/neoalgo",
-       method = RequestMethod.GET, params = "register")
-    public String getneoalgo-register(Model model) {
-        log.info("/Home?register");
-
-        model.addAttribute("neoalgouser", new Neoalgouser());
-
-        return "individual/neoalgo/neoalgo-register";
+         return "individual/neoalgo/neoalgo-home.html";
+     
     }
-
 }
-  
+
+
+     /*
+     @GetMapping("/neoalgoForm01")
+     public String neoalgoForm01() {
+     log.info("neoalgoForm01()");
+     
+     return "spring/neoalgo/neoalgo-main";
+     }
+     @GetMapping("/neoalgo-main02")
+     public String registerForm002(Model model) { 
+     log.info("registerForm002()");
+     model.addAttribute("neoalgouser", new Neoalgouser());
+     
+     return "spring/neoalgo/neoalgo-main";
+     }*/

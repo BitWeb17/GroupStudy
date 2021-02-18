@@ -11,7 +11,7 @@ import java.util.List;
 public class BoardServiceImpl implements BoardService {
 
     @Autowired
-    private BoardRepository boardRepo;
+	public BoardRepository boardRepo;
 
     @Override
     public List<Board> list() throws Exception {
@@ -19,9 +19,9 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
-    public void register(Board board) throws Exception {
-        boardRepo.create(board);
-    }
+	public void register(Board board) throws Exception {
+		board.register(this);
+	}
 
     @Override
     public Board read(Integer boardNo) throws Exception {

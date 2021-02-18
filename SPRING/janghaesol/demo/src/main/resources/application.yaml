@@ -4,6 +4,6 @@ server:
 spring:
   datasource:
     url: jdbc:mysql://localhost/board_test?serverTimezone=UTC&useSSL=false
-    username: legossol
+    username: root
     password: 5959@Ssol
     driverClassName: com.mysql.cj.jdbc.Driver
