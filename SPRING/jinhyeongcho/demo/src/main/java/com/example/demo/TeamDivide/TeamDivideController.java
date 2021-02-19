@@ -11,9 +11,9 @@ public class TeamDivideController {
             LoggerFactory.getLogger(TeamDivideController.class);
 
     @GetMapping("/divideteam")
-    public String getDivideTeam(){
+    public String getDivideTeam() {
 
-        TeamDivide dt =new TeamDivide();
+        TeamDivide dt = new TeamDivide();
         dt.printTeam(dt.getAteamArrayList());
         dt.printTeam(dt.getBteamArrayList());
         log.info("Enter getDivideTeam");

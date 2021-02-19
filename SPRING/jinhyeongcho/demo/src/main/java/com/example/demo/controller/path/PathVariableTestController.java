@@ -12,21 +12,21 @@ public class PathVariableTestController {
             LoggerFactory.getLogger(PathVariableTestController.class);
 
     @GetMapping("/board/register")
-    public String getBoardRegisrer(){
+    public String getBoardRegisrer() {
         log.info("getBoardRegister(): 회원가입");
 
         return "spring/board/register.html";
     }
 
     @GetMapping("/board/modify")
-    public String getBoardModify(){
+    public String getBoardModify() {
         log.info("getBoardModify(): 정보 수정");
 
         return "spring/board/modify.html";
     }
 
     @GetMapping("/board/list")
-    public String getBoardList(){
+    public String getBoardList() {
         log.info("getBoardList(): 정보 목록");
 
         return "spring/board/list.html";
@@ -34,9 +34,9 @@ public class PathVariableTestController {
 
     @GetMapping("/board/read/{boardNo}")
     public String getBoardReadBoardNo(
-            @PathVariable("boardNo") int boardNo){
-        log.info("getBoardReadBoardNo(): "+
-                "게시물 번호별 읽기 =" +boardNo);
+            @PathVariable("boardNo") int boardNo) {
+        log.info("getBoardReadBoardNo(): " +
+                "게시물 번호별 읽기 =" + boardNo);
 
         return "spring/board/read.html";
     }

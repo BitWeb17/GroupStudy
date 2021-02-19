@@ -12,7 +12,7 @@ public class NativeController {
             LoggerFactory.getLogger(NativeController.class);
 
     @GetMapping("/nativeTest")
-    public String nativeCallTestHello(){
+    public String nativeCallTestHello() {
         log.info("nativeCallTestHello()");
 
         HelloSpring hs = new HelloSpring();

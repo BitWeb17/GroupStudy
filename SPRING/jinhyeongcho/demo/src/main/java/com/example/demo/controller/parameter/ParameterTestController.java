@@ -19,45 +19,49 @@ public class ParameterTestController {
      현재 get이므로 get?register와 같이 외부 요청이 들어오는지 체크
      아래쪽의 get?remove,get?modify도 마찬가지다. */
     @RequestMapping(value = "/get", method = RequestMethod.GET, params = "register")
-    public String getRegisterForm(){
+    public String getRegisterForm() {
         log.info("/get?register");
         return "spring/parameter/register.html";
     }
+
     @RequestMapping(value = "/post", method = RequestMethod.POST, params = "register")
-    public String deRegister(){
+    public String deRegister() {
         log.info("/post?register");
         return "spring/parameter/list.html";
     }
 
     @RequestMapping(value = "/get", method = RequestMethod.GET, params = "modify")
-    public String getModifyForm(){
+    public String getModifyForm() {
         log.info("/get?modify");
         return "spring/parameter/modify.html";
     }
+
     @RequestMapping(value = "/post", method = RequestMethod.POST, params = "modify")
-    public String deModify(){
+    public String deModify() {
         log.info("/post?modify");
         return "spring/parameter/list.html";
     }
+
     @RequestMapping(value = "/get", method = RequestMethod.GET, params = "list")
-    public String getListForm(){
+    public String getListForm() {
         log.info("/get?list");
         return "spring/parameter/list.html";
     }
 
     @RequestMapping(value = "/get", method = RequestMethod.GET, params = "read")
-    public String getReadForm(){
+    public String getReadForm() {
         log.info("/get?read");
         return "spring/parameter/read.html";
     }
 
     @RequestMapping(value = "/get", method = RequestMethod.GET, params = "remove")
-    public String getRemoveForm(){
+    public String getRemoveForm() {
         log.info("/get?remove");
         return "spring/parameter/remove.html";
     }
+
     @RequestMapping(value = "/post", method = RequestMethod.POST, params = "remove")
-    public String deRemove(){
+    public String deRemove() {
         log.info("/post?remove");
         return "spring/parameter/list.html";
     }
