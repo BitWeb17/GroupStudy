@@ -9,10 +9,28 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class MemberController {
     final Logger log = LoggerFactory.getLogger(MemberController.class);
 
+    @GetMapping("/members/login")
+    public String getLogin() {
+        log.info("enter getLogin()");
+        return "/members/login.html";
+    }
+
     @GetMapping("/members/new")
     public String getCreateForm() {
         log.info("enter getCreateForm()");
         return "/members/createMemberForm.html";
+    }
+
+    @GetMapping("/members/out")
+    public String getMemberOut() {
+        log.info("enter getCreateForm()");
+        return "/members/memberOut.html";
+    }
+
+    @GetMapping("/members/myPage")
+    public String getMyPage() {
+        log.info("enter getMyPage()");
+        return "/members/myPage.html";
     }
 
 }
