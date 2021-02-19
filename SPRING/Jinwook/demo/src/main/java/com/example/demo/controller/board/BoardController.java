@@ -12,6 +12,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestBody;
+
+
 
 @Controller
 @RequestMapping(value = "/real_board")
@@ -61,5 +65,38 @@ public class BoardController {
         model.addAttribute(service.read(boardNo));
 
         return "spring/real_board/read";
+    }
+    @PostMapping("/remove")
+    public String doRemove(int boardNo, Model model)
+            throws Exception {
+
+        log.info("doRemove()");
+
+        service.remove(boardNo);
+
+        model.addAttribute("msg",
+                "성공적으로 지워졌습니다.");
+
+        return "spring/real_board/success";
+    }
+
+    @GetMapping(value="/modify")
+    public String getModify(int boardNo, Model model) throws Exception {
+        log.info("getModify()");
+        model.addAttribute(service.read(boardNo));
+        return "spring/real_board/modify";
+    }
+
+    @PostMapping(value="/modify")
+    public String doModify(Board board, Model model) throws Exception{
+    //TODO: process POST request
+        log.info("doModify");
+
+        service.modify(board);
+
+        model.addAttribute("msg",
+        "성공적으로 수정되었습니다.");
+
+        return "spring/real_board/success";
     }
 }

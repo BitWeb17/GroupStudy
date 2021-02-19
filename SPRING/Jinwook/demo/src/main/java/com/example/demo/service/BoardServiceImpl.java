@@ -30,11 +30,13 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public void remove(Integer boardNo) throws Exception {
+        boardRepo.remove(boardNo);
 
     }
 
     @Override
+    /* 리무브에서 ㅈㅣ워진 최신화 된 보드 넣기 */
     public void modify(Board board) throws Exception {
-
+        boardRepo.modify(board);
     }
 }
