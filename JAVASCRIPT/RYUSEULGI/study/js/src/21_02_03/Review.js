@@ -7,22 +7,22 @@ const Review = () => {
     const FEE = 10000000;
     const PARTICIPANTSTAKE = 0.67;
     const PRICE = NUMOFPERSON * FEE * PARTICIPANTSTAKE;
-
+    
     const NumberWithCommas = (x) => {
         return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-
+    
     const AllocRandNum = (arr) => {
         for(let i = 0; i < arr.length; i++){
             arr[i] = Math.floor(Math.random() * 10000) + 1;
         }
         console.log(arr);
     }
-
+    
     const CreateRandTeam = (arr, num) => {
         const ERROR = -1;
         const range = arr.length / num;  // 250
-
+    
         let randNum;
         
         // 팀을 1000명을 4명씩으로 팀을 나누기 때문에 그 범위 만큼 돌려주기
@@ -40,50 +40,52 @@ const Review = () => {
         }
         console.log('팀번호' + arr);
     }
-
+    
     const CheckWinner = (arr, winArr) => {
         const CRITERIA = 1013;
-
+    
         for(let i = 0; i < arr.length; i++) {
-            console.log(!(arr[i] % CRITERIA));
+            // console.log(!(arr[i] % CRITERIA));
             if(!(arr[i] % CRITERIA)) {
                 winArr[i] = 1;  // true
+                // console.log('check' + winArr);
             } else {
                 winArr[i] = 0;
             }
         }
         console.log('당첨여부' + winArr);
     }
-
+    
     // 배열을 팀별로 나누기
     Array.prototype.arrDiv = function (num) {
         let arr = this;
         let len = arr.length;
         let cnt = Math.ceil(len / num);
-
+    
         let newArr = []
-
+        
+        // 4개팀씩 구분하기 위함
         for(var i = 0; i < cnt; i++) {
             newArr.push(arr.splice(0, num));
         }
-
+        // console.log(newArr);
         return newArr;
     }
-
+    
     const CalcDiv = (winArr, price) => {
         const ALL = 16;
         const THREEFOUR = 8;
         const TWOFOUR = 4;
         const ZERO = 0;
-
+    
         const TEAMMEMNUM = 4;
-
+    
         const divWinArr = winArr.arrDiv(TEAMMEMNUM);
         const arrLen = divWinArr.length;
-
+    
         let allArr = new Array(arrLen);
         let subArr = new Array(arrLen);
-
+    
         for(let i = ZERO; i < arrLen; i++){
             // 모든 팀원이 당첨된 경우 배열이 0보다 크면 value리턴
             allArr[i] = divWinArr[i].every((value) => {
@@ -94,7 +96,7 @@ const Review = () => {
                 return total + value;
             });
         }
-
+    
         let divPrice = allArr.reduce((total, value) => {
             if(value == true){
                 return total + ALL;
@@ -102,11 +104,11 @@ const Review = () => {
                 return total;
             }
         }); 
-
+    
         divPrice += subArr.reduce((total, value) => {
             return total + value;
         });
-
+    
         const finalPrice = Math.round(price / divPrice);
         
         console.log(`1배수 배당금 ${NumberWithCommas(finalPrice)} 1인당 배당금 ${NumberWithCommas(finalPrice / TEAMMEMNUM)}`);
@@ -114,17 +116,18 @@ const Review = () => {
         console.log(`8배수 배당금 ${NumberWithCommas(THREEFOUR * finalPrice)} 1인당 배당금 ${NumberWithCommas(THREEFOUR * finalPrice / TEAMMEMNUM)}`);
         console.log(`16배수 배당금 ${NumberWithCommas(ALL * finalPrice)} 1인당 배당금 ${NumberWithCommas(ALL * finalPrice / TEAMMEMNUM)}`);
     }
-
+    
     let arr = new Array(NUMOFPERSON);
     let teamArr = new Array(NUMOFPERSON);
     let winArr = new Array(NUMOFPERSON);
-
+    
     console.log('상금 ' + NumberWithCommas(PRICE)  + '원');
     AllocRandNum(arr);
     CheckWinner(arr, winArr);
     CreateRandTeam(teamArr, teamNum);
     CalcDiv(winArr, PRICE);
     console.log('종료');
+    
 
     return (
         <div>
