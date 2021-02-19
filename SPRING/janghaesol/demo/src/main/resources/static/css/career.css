@@ -14,7 +14,6 @@ a{
     background-color: rgb(45, 58, 82);
     padding: 8px 12px;
 }
-.menuvar
 .menuvar-menu li:hover{
     background-color: rgb(88, 110, 122);
     border-radius: 4px;
@@ -53,3 +52,8 @@ a{
     height: 100%;
 }
 
+table{
+    font-size:20px ; 
+    justify-content: right ;
+    border: 2px;
+}
