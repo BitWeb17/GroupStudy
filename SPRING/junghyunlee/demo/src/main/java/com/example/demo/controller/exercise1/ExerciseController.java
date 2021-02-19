@@ -48,4 +48,14 @@ public class ExerciseController {
 
         return "html_css/excerSuccess.html";
     }
+
+    @RequestMapping(value = "/home",
+            method = RequestMethod.GET, params = "mainPortfol")
+    public String getMainPortfolForm(Model model) {
+        log.info("/home?mainPortfol");
+
+        model.addAttribute("testMember", new TestMember());
+
+        return "html_css/portfolio/mainPortfol";
+    }
 }
