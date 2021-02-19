@@ -33,4 +33,13 @@ public class SignUpController {
         return "spring/signup/signUp";
     }
 
+    @PostMapping("/signUp")
+    public String getSignUp(TestMember testMember, Model model){
+        log.info("신규 호갱님이 왔다!");
+        log.info("userId = " + testMember.getUserName());
+        log.info("passwd = " + testMember.getPassword());
+
+        return "spring/signup/result";
+    }
+
 }

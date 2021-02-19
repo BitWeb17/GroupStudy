@@ -25,17 +25,19 @@ public class BoardServiceImpl implements BoardService {
 
     @Override
     public void remove(Integer boardNo) throws Exception {
-
+        boardRepo.remove(boardNo);
     }
 
     @Override
     public void modify(Board board) throws Exception {
-
+        boardRepo.modify(board);
     }
 
     @Override
     public void register(Board board) throws Exception {
         boardRepo.create(board);
     }
+
+
 }
 
