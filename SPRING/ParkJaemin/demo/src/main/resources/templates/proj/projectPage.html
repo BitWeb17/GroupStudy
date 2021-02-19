@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/privateproject/projectpage.css">
+    <link rel="stylesheet" href="../proj/projectpage.css">
 </head>
 <body>
 
 
 <div class="navbar">
-    <a href="#home">홈</a>
+    <a href="#">홈</a>
 
     <a href="#">프로젝트 등록</a>
     <a href="#">프로젝트 현황</a>
@@ -18,12 +18,14 @@
     <a href="#">FAQ</a>
     <a href="#">통계</a>
 
-    <a style="position:relative; left: 1000px" href="#login">로그인</a>
-    <a style="position:relative; left: 1000px" href="#logout">로그아웃</a>
+    <a style="position:relative; left: 900px"
+       th:href="@{/proj/home?register}">직원등록</a>
+    <a style="position:relative; left: 900px" th:href="@{/proj/home?login}">로그인</a>
+    <a style="position:relative; left: 900px" href="#logout">로그아웃</a>
 
 </div>
 
-<div>
+<div></br>
     <table>
         <caption>프로젝트 현황</caption>
         <thead>
@@ -98,11 +100,17 @@
     </div1>
 
     <div2>
-        <label><input type="checkbox" value="프로젝트명">프로젝트명</label>
-        <label><input type="checkbox" value="분야">분야</label>
-        <label><input type="checkbox" value="작성자">작성자</label>
-        <input type="text" placeholder="검색어 입력">
-        <button>검색</button>
+
+        <select id="searchopt">
+            <option value="select1">순번</option>
+            <option value="select1">프로젝트명+내용</option>
+            <option value="select1">작성자</option>
+            <option value="select1">분야</option>
+        </select>
+
+        <input type="text"
+               size="20" placeholder="검색어 입력">
+        <button img src="">검색</button>
     </div2>
 
     <div3>
