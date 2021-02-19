@@ -7,14 +7,17 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-/* requestmapping에서 params를 가지고 외부에서 들어오는 요청에 대해 식별한다.
- 현재 get이므로 get?register와 같이 외부 요청이 들어오는지 체크 아래쪽의 get?remove, get?modify도 마찬가지다*/
+
 @Controller
 @RequestMapping("/param/board")
 public class ParameterTestController {
     private static final Logger log =
             LoggerFactory.getLogger(ParameterTestController.class);
 
+    /* RequestMapping에서 params를 가지고
+       외부에서 들어오는 요청에 대해 식별한다.
+       현재 get이므로 get?register와 같이 외부 요청이 들어오는지 체크
+       아래쪽의 get?remove, get?modify 도 마찬가지다. */
     @RequestMapping(value = "/get",
             method = RequestMethod.GET, params = "register")
     public String getRegisterForm() {

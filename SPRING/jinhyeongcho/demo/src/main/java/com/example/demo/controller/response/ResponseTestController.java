@@ -21,7 +21,7 @@ public class ResponseTestController {
     /* ResponseBody는 json 타입으로 응답을 하겠다는 소리 */
     @ResponseBody
     @GetMapping("/responseTestMember")
-    public TestMember getTestMember(){
+    public TestMember getTestMember() {
         log.info("getTestMember()");
 
         TestMember tm = new TestMember();
@@ -30,7 +30,7 @@ public class ResponseTestController {
 
     @ResponseBody
     @GetMapping("/responseTestMemberList")
-    public List<TestMember> getTestMemberList(){
+    public List<TestMember> getTestMemberList() {
         log.info("getTestMemberList()");
 
         List<TestMember> list = new ArrayList<TestMember>();
@@ -44,7 +44,7 @@ public class ResponseTestController {
 
     /* 꺽쇠 내부에 적는 코드는 모두 클래스 타입으로 맞춰주는것이 좋다. */
     @GetMapping("/responseVoidData")
-    public ResponseEntity<Void> getVoidData(){
+    public ResponseEntity<Void> getVoidData() {
         log.info("getVoidData()");
 
 
@@ -52,26 +52,26 @@ public class ResponseTestController {
     }
 
     @GetMapping("/responseOneData")
-    public ResponseEntity<String> getOneData(){
+    public ResponseEntity<String> getOneData() {
         log.info("getOneData()");
 
 
         return new ResponseEntity<String>(
-                "success",HttpStatus.OK);
+                "success", HttpStatus.OK);
     }
 
     @GetMapping("/responseEntityTestMember")
-    public ResponseEntity<TestMember> getTestMemberResponseEntity(){
+    public ResponseEntity<TestMember> getTestMemberResponseEntity() {
         log.info("getTestMemberResponseEntity()");
 
-        TestMember tm =new TestMember();
+        TestMember tm = new TestMember();
 
-        return new ResponseEntity<TestMember>(tm,HttpStatus.OK);
+        return new ResponseEntity<TestMember>(tm, HttpStatus.OK);
     }
 
     @GetMapping("/responseTestMemberList2")
     public ResponseEntity<List<TestMember>>
-    getTestMemberListResponseEntity(){
+    getTestMemberListResponseEntity() {
         log.info("getTestMemberListResponseEntity()");
 
         List<TestMember> list = new ArrayList<TestMember>();
@@ -80,6 +80,6 @@ public class ResponseTestController {
         TestMember tm2 = new TestMember();
         list.add(tm2);
 
-        return new ResponseEntity<List<TestMember>>(list,HttpStatus.OK);
+        return new ResponseEntity<List<TestMember>>(list, HttpStatus.OK);
     }
 }

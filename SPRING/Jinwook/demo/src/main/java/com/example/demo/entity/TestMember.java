@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 
+import java.util.List;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -10,4 +12,6 @@ import lombok.Setter;
 public class TestMember {
     private String userName = "bitweb";
     private String password = "456123";
+    private String introduction;
+    private List<String> hobbyList;
 }

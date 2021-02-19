@@ -1,19 +1,16 @@
 package com.example.demo.controller.response;
 
-import com.example.demo.controller.path.PathVariableTestController;
 import com.example.demo.entity.TestMember;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
 public class ResponseTestController {
     private static final Logger log =
             LoggerFactory.getLogger(ResponseTestController.class);
@@ -30,7 +27,7 @@ public class ResponseTestController {
     }
 
     @ResponseBody
-    @GetMapping("/responseTestMemberList1111")
+    @GetMapping("/responseTestMemberList")
     public List<TestMember> getTestMemberList() {
         log.info("getTestMemberList()");
 

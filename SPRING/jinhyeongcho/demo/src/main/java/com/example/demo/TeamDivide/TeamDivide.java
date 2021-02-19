@@ -44,19 +44,20 @@ public class TeamDivide {
                 BteamArrayList, BteamArr, BnumOfPerson
         );
     }
+
     public void allocArrayList(ArrayList<String> al, String[] arr, int loopNum) {
 
         boolean isDup = false;
 
-        for(int i = 0; i < loopNum; i++) {
+        for (int i = 0; i < loopNum; i++) {
             // 우리는 A 배열, B 배열이 나눠진 케이스를 받으므로
             // 하나의 배열에서 모든 값을 처리하지 않는다.
             // 그러므로 start를 별도로 만들 필요가 없었다.
             // int randNum = (int)(Math.random() * loopNum) + start;
             do {
-                int randNum = (int)(Math.random() * loopNum);//--0~8
+                int randNum = (int) (Math.random() * loopNum);//--0~8
 
-                if(al.contains(arr[randNum])) {
+                if (al.contains(arr[randNum])) {
                     isDup = true;
                     continue;
                 } else {
@@ -64,9 +65,10 @@ public class TeamDivide {
                 }
 
                 al.add(arr[randNum]);
-            } while(isDup);
+            } while (isDup);
         }
     }
+
     public void printTeam(ArrayList<String> al) {
         String name;
         Iterator e = al.iterator();
@@ -79,17 +81,17 @@ public class TeamDivide {
                 (remain > 0) ? true : false;
 
         int randValue = 0;
-        while(e.hasNext()) {
+        while (e.hasNext()) {
             name = (String) e.next();
             System.out.printf("%s ", name);
-            if(needException) {
-                randValue = (int)(Math.random() * 2);  //---0,1
+            if (needException) {
+                randValue = (int) (Math.random() * 2);  //---0,1
                 needException = false;
             }
-            if((cnt % (quot + randValue)) == 0) {
+            if ((cnt % (quot + randValue)) == 0) {
                 System.out.println("");
 
-                if(cnt == 4) {
+                if (cnt == 4) {
                     randValue = 1;
                 } else {
                     randValue = 0;
