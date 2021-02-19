@@ -14,7 +14,7 @@
         var formObj = $("#board");
 
         $("#btnRegister").on("click", function () {
-            formObj.attr("action", "qna")
+            formObj.attr("action", "register")
             formObj.attr("method", "post")
             formObj.submit()
         })
@@ -26,7 +26,7 @@
 </script>
 
 <body>
-<h2>Board Register</h2>
+<h2>문의 사항을 아래와 같이 남겨 주세요</h2>
 
 <form id="board" action="success.html"
       th:action="@{register}"
@@ -55,12 +55,11 @@
             </td>
         </tr>
     </table>
-
+    <div>
+        <button type="submit" id="btnRegister">제출</button>
+        <button type="submit" id="btnList">목록보기</button>
+    </div>
 
 </form>
-<div>
-    <button type="submit" id="btnRegister">작성완료!</button>
-    <button type="button" id="btnList">목록보기!</button>
-</div>
 </body>
 </html>

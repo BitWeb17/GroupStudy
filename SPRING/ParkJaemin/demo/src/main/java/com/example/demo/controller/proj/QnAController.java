@@ -1,4 +1,5 @@
-package com.example.demo.controller.board;
+package com.example.demo.controller.proj;
+
 
 import com.example.demo.entity.Board;
 import com.example.demo.service.BoardService;
@@ -12,37 +13,44 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(value = "/real_board")
-public class BoardController {
+@RequestMapping(value = "/proj")
+public class QnAController {
     private static final Logger log =
-            LoggerFactory.getLogger(BoardController.class);
+            LoggerFactory.getLogger(QnAController.class);
 
     @Autowired
     private BoardService service;
 
-    @GetMapping("/list")
-    public String getList(Model model) throws Exception {
-        log.info("getList()");
+    @GetMapping("/home")
+    public String getHome() {
+        log.info("getHome()");
 
-        model.addAttribute("list", service.list());
-
-        return "spring/real_board/list";
+        return "proj/projectPage.html";
     }
 
-    // HTML 처리시 board 정보를 가지고 처리하게됨(주의)
+    @GetMapping(value = "/qna")
+    public String getQnaForm(Board board) {
+
+        log.info("getQna()");
+
+
+        return "proj/qna/qna.html";
+    }
+
     @GetMapping("/register")
     public String getRegister(Board board) {
 
-        log.info("getRegister()");
+        log.info("getQ&A()");
 
         return "spring/real_board/register";
     }
 
-    @PostMapping("/register")
+
+    @PostMapping("/qna")
     public String doRegister(Board board, Model model)
             throws Exception {
 
-        log.info("doRegister()");
+        log.info("doQna()");
 
         service.register(board);
 
@@ -52,20 +60,22 @@ public class BoardController {
         return "spring/real_board/success";
     }
 
+    // Q&A 본문 읽는 기능
     @GetMapping("/read")
     public String read(int boardNo, Model model)
             throws Exception {
-        log.info("read()");
+        log.info("Q&A read()");
 
         model.addAttribute(service.read(boardNo));
 
         return "spring/real_board/read";
     }
 
+    // Q&A 삭제 기능
     @PostMapping("/remove")
     public String doRemove(int boardNo, Model model)
             throws Exception {
-        log.info("doRemove()");
+        log.info("do Q&A Remove()");
 
         service.remove(boardNo);
 
@@ -73,6 +83,7 @@ public class BoardController {
 
 
         return "spring/real_board/success";
+
     }
 
     @GetMapping("/modify")
@@ -98,5 +109,6 @@ public class BoardController {
 
         return "spring/real_board/success";
     }
+
 
 }

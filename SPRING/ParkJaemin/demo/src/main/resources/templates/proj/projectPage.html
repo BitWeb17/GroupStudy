@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
 <head>
+
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="../proj/projectpage.css">
@@ -8,22 +9,21 @@
 <body>
 
 
-<div class="navbar">
-    <a href="#">홈</a>
+<nav id="topMenu">
+    <a href="/">홈</a>
 
     <a href="#">프로젝트 등록</a>
     <a href="#">프로젝트 현황</a>
     <a href="#">프리랜서 현황</a>
-    <a href="#">Q&A</a>
+    <a href="/proj/list">Q&A</a>
     <a href="#">FAQ</a>
     <a href="#">통계</a>
 
-    <a style="position:relative; left: 900px"
-       th:href="@{/proj/home?register}">직원등록</a>
-    <a style="position:relative; left: 900px" th:href="@{/proj/home?login}">로그인</a>
-    <a style="position:relative; left: 900px" href="#logout">로그아웃</a>
+    <a th:href="@{/proj/home?register}">직원등록</a>
+    <a th:href="@{/proj/home?login}">로그인</a>
+    <a href="#logout">로그아웃</a>
 
-</div>
+</nav>
 
 <div></br>
     <table>
@@ -114,7 +114,7 @@
     </div2>
 
     <div3>
-        <a href="#" title="맨위로"><img src="img/top.png" width="60"></a>
+        <a href="#" title="맨위로"><img src="../img/top.png" width="60"></a>
     </div3>
 
     <footer>
@@ -126,18 +126,6 @@
     </footer>
 
 </div>
-<!--Start of Tawk.to Script-->
-<script style="float: top; " type="text/javascript">
-    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-    (function () {
-        var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/602a74199c4f165d47c36d01/1euitb1ll';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-</script>
-<!--End of Tawk.to Script-->
+
 </body>
 </html>
