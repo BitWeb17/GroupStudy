@@ -81,17 +81,7 @@ body{
     text-align: right;
     justify-content: flex-end;
 }
-.gnb-right1{
-    text-align: right;
-    display: flex;
-    margin-right: 5px;
-}
-.gnb-right2{
-    text-align: right;
-    display: flex;
-    margin-right: 5px;
-}
-.gnb-right3{
+.gnb-right{
     text-align: right;
     display: flex;
     margin-right: 5px;
