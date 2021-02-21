@@ -5,7 +5,9 @@ import java.util.List;
 import com.example.personalproject.entity.TotalCommunity;
 
 public interface TotalCommunityService {
-    public List<TotalCommunity> totallist() throws Exception;
+    
+    public List<TotalCommunity> list() throws Exception;
+
 
     public void register(TotalCommunity totalcommunity) throws Exception;
 

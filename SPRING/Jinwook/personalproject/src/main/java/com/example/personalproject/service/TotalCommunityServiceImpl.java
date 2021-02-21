@@ -3,7 +3,7 @@ package com.example.personalproject.service;
 import java.util.List;
 
 import com.example.personalproject.entity.TotalCommunity;
-import com.example.personalproject.repository.TotalcommunityRepo;
+import com.example.personalproject.repository.TotalcommunityRepository;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,36 +11,36 @@ import org.springframework.stereotype.Service;
 public class TotalCommunityServiceImpl implements TotalCommunityService {
 
     @Autowired
-    private TotalcommunityRepo TotalcommunityRepo;
+    private TotalcommunityRepository totalcommunityRepo;
 
     @Override
-    public List<TotalCommunity> totallist() throws Exception {
+    public List<TotalCommunity> list() throws Exception {
         // TODO Auto-generated method stub
-        return TotalcommunityRepo.totallist();
+        return totalcommunityRepo.list();
     }
 
     @Override
-    public void register(TotalCommunity totallist) throws Exception {
+    public void register(TotalCommunity totalcommunity) throws Exception {
         // TODO Auto-generated method stub
-        TotalcommunityRepo.create(totallist);
+        totalcommunityRepo.create(totalcommunity);
     }
 
     @Override
     public TotalCommunity read(Integer boardNo) throws Exception {
         // TODO Auto-generated method stub
-        return TotalcommunityRepo.read(boardNo);
+        return totalcommunityRepo.read(boardNo);
     }
 
     @Override
     public void remove(Integer boardNo) throws Exception {
-        // TODO Auto-generated method stub
+        totalcommunityRepo.remove(boardNo);
 
     }
 
     @Override
-    public void modify(TotalCommunity totallist) throws Exception {
+    public void modify(TotalCommunity totalcommunity) throws Exception {
         // TODO Auto-generated method stub
-
+        totalcommunityRepo.modify(totalcommunity);
     }
     
 }

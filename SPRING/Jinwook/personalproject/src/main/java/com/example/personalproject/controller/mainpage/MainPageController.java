@@ -9,11 +9,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping(value="/personalproject")
 public class MainPageController {
     private static final Logger log =
         LoggerFactory.getLogger(MainPageController.class);
-        @GetMapping("/home")
+        @GetMapping("/")
         public String getHome(){
             log.info("getHome()");
 
