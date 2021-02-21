@@ -11,6 +11,7 @@ public class HomeController {
     
     @GetMapping("/discover")
     public String getdiscover(){
+        
 
         return "neoalgo/neoalgo-discover";
     }
