@@ -32,7 +32,7 @@ function ClassExtends2() {
 
     let extObj = new ExtendsObj()
 
-    extObj.setName("Extends2 Test")
+    extObj.setName("Extends2 TestPromise")
     extObj.display()
 
     console.log("extObj.toString() = " + extObj.toString())

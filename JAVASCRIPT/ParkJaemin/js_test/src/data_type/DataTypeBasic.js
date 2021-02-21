@@ -31,7 +31,7 @@ function DataTypeBasic(){
 
     <div className ="DataTypeBasic">
         <p>
-    {length}, {lastname}, {x.toString()}.
+    {length}, {lastname}, {x.toString()}.능
     </p>
     </div>
     )

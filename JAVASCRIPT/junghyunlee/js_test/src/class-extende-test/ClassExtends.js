@@ -26,7 +26,7 @@ function ClassExtends() {
 
     let extObj = new ExtendsObj()
 
-    extObj.setName("Extends Test")
+    extObj.setName("Extends TestPromise")
     extObj.display()
 
     return (
