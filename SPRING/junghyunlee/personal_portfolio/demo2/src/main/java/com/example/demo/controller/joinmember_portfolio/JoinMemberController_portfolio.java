@@ -1,4 +1,4 @@
-package com.example.demo.controller.exercise1;
+package com.example.demo.controller.joinmember_portfolio;
 
 import com.example.demo.entity.TestMember;
 import org.slf4j.Logger;
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping(value = "/exercise")
-public class ExerciseController {
+@RequestMapping(value = "/joinmembership")
+public class JoinMemberController_portfolio {
     private static final Logger log =
-            LoggerFactory.getLogger(ExerciseController.class);
+            LoggerFactory.getLogger(JoinMemberController_portfolio.class);
 
     @GetMapping("/home")
     public String getHome() {
@@ -46,7 +46,7 @@ public class ExerciseController {
         log.info("userEmail = " + userEmail);
         log.info("userAdress = " + userAdress);
 
-        return "html_css/excerSuccess.html";
+        return "html_css/success/excerSuccess.html";
     }
 
     @RequestMapping(value = "/home",
