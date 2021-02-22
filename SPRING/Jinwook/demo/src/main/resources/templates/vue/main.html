@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title: Success</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="/css/vue/trans.css" rel="stylesheet">
+</head>
+<body>
+    <!--  아이디 앱을 통해 밑 스크립트 el 'app'으로 연동 됨 -->
+    <div id="app">
+        <h1>{{vue_message}}</h1>
+        <ol>
+            <!-- v-for 는 vue for로 vue의 for문을 쓸때 사용한다-->
+            <li v-for="list in lists">{{ list }}</li>
+        </ol>
+        <!-- v-on은 클릭시 handleClick 내용의 팝업창 생성-->
+        <button v-on:click="handleClick">Click</button></br>
+        <!-- v-model 밑 initMsg 내용을 변경하면 {{}}안의 메세지도 변경을 해줌-->
+        <input v-model="initMsg"> : {{initMsg}}</br>
+        <!-- 밑 더 v-if를 짧게 사용할 수 있음-->
+        <button v-on:click="show = !show">Change</button></br>
+        <!-- if문 사용해서 보여주기  여기서는 클릭시 쇼타임이 없어지고 없는 상태에서 다시 눌르면 쇼타임이 나옴-->
+        <transition>
+        <p v-if="show">Show Time</p>
+        </transition>
+    </div>
+    <script>
+        var app =new Vue({
+            el: '#app',
+            data: {
+                show: true,
+                initMsg: "Install Test Message",
+                vue_message: "Hello Vue.js on Apple Silicon",
+                lists: ['apple', 'banana', 'grape', 'watermelon']
+            },
+            methods:{
+                handleClick: function(event){
+                    this.show = !this.show
+                    //event.target 대신 '버튼을 눌렀습니다' 도 가능
+                    alert(event.target)
+                }
+            }
+        })
+    </script>
+</body>
+</html>
