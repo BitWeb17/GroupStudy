@@ -10,6 +10,8 @@ import org.springframework.stereotype.Repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Repository
@@ -39,7 +41,7 @@ public class BoardRepository {
                     board.setTitle(rs.getString("title"));
                     board.setContent(rs.getString("content"));
                     board.setWriter(rs.getString("writer"));
-                    board.setRegDate(rs.getDate("reg_date"));
+                    board.setRegDate(rs.getTimestamp("reg_date"));
 
                     return board;
                 }
@@ -84,5 +86,19 @@ public class BoardRepository {
         );
 
         return results.isEmpty() ? null : results.get(0);
+    }
+
+    public void remove(Integer boardNo) throws Exception{
+        String query = "delete from board where board_no = ?";
+
+        jdbcTemplate.update(query, boardNo);
+    }
+
+
+	public void modify(Board board) throws Exception{
+        String query = "update board set title = ?, content = ?" + "where board_no = ?";
+
+        jdbcTemplate.update(query, board.getTitle(), board.getContent(), board.getBoardNo()
+        );
     }
 }

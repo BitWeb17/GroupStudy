@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/main/resources/static/css/neoalgo.css">
+    <title>Document</title>
+    <script type="text/javascript"
+    src="https://code.jquery.com/jquery-3.5.1.min.js">
+</script>
+</head>
+<body>
+    <nav class="uppervar">
+        <!--로고, 홈 연결-->
+    <div class="logobox">
+        <img class="neoalgo-logo" src="/src/main/resources/static/img/neoalgoLogo.png">
+        <a href=""></a><p class="neoalgocompany">Neoalgo</p></a>
+    </div>
+
+        <!--상단 바 메뉴-->
+        <ul div class="neoalgo-menu">
+            <a th:href="@{/community_board/home?register}">최신 인디 음악</a></li>
+            <a th:href="@{/community_board/home?register}">인디 음악 순위</a></li>
+            <a th:href="@{/community_board/home?register}">신인 소개</a></li>
+            <a th:href="@{/community_board/home?community}">커뮤니티</a></li>
+        </ul>
+        <div class="registerbox">
+            <a th:href="@{/community_board/home?register}"><p class="signin">Sign in</p></a>
+            <a th:href="@{/community_board/home?register}"><p class="joinus">Create account</p></a>
+        </div>
+    </nav>
+
+    <script>
+        $(document).ready(function() {
+            var formObj = $("#communityboard")
+    
+            $("#btnregister").on("click", function() {
+                formObj.attr("action", "register")
+                formObj.attr("method", "post")
+                formObj.submit()
+            })
+    
+            $("#btnList").on("click", function() {
+                self.location = "list"
+            })
+        })
+    </script>
+    
+     <!--registerbox-->
+     <div class="regwrap">
+        <div class="regbox">
+            <form id="communityboard" action="CommunitySuccess.html"
+                th:action="@{CommunityRegister}"
+                th:object="${communityboard}" method="post">
+                <table>
+                   
+                    <tr>
+                        <td>Title</td>
+                        <td>
+                            <input type="text" name="title"
+                                >
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Writer</td>
+                        <td>
+                            <input type="text" name="writer"
+                                >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Content</td>
+                        <td>
+                            <textarea name="content"
+                                    ></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <div>
+                <button type="submit" id="btnRegister">작성완료!</button>
+                <button type="submit" id="btnList">목록보기</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
