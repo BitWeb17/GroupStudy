@@ -15,14 +15,14 @@
     </div>
         <!--메뉴-->
         <ul div class="neoalgo-menu">
-            <li><a href="">최신 인디 음악</a></li>
-            <li><a href="">인디 음악 순위</a></li>
-            <li><a href="">신인 소개</a></li>
-            <li><a href="">신인 등록</a></li>
+            <a th:href="@{/community_board/home?register}">최신 인디 음악</a></li>
+            <a th:href="@{/community_board/home?register}">인디 음악 순위</a></li>
+            <a th:href="@{/community_board/home?register}">신인 소개</a></li>
+            <a th:href="@{/community_board/home?community}">커뮤니티</a></li>
         </ul>
         <div class="registerbox">
-            <a href=""><p class="signin">Sign in</p></a>
-            <a th:href="@{/exercise/home?register}"><p class="joinus">Create account</p></a>
+            <a th:href="@{/community_board/home?register}"><p class="signin">Sign in</p></a>
+            <a th:href="@{/community_board/home?register}"><p class="joinus">Create account</p></a>
         </div>
             
         

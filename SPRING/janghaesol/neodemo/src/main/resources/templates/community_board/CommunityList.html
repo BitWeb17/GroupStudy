@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/main/resources/static/css/neoalgo.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="uppervar">
+        <!--로고, 홈 연결-->
+    <div class="logobox">
+        <img class="neoalgo-logo" src="/src/main/resources/static/img/neoalgoLogo.png">
+        <a href=""></a><p class="neoalgocompany">Neoalgo</p></a>
+    </div>
+
+        <!--상단 바 메뉴-->
+        <ul div class="neoalgo-menu">
+            <a th:href="@{/community_board/home?register}">최신 인디 음악</a></li>
+            <a th:href="@{/community_board/home?register}">인디 음악 순위</a></li>
+            <a th:href="@{/community_board/home?register}">신인 소개</a></li>
+            <a th:href="@{/community_board/home?community}">커뮤니티</a></li>
+        </ul>
+        <div class="registerbox">
+            <a th:href="@{/community_board/home?register}"><p class="signin">Sign in</p></a>
+            <a th:href="@{/community_board/home?register}"><p class="joinus">Create account</p></a>
+        </div>
+    </nav>
+
+    <!--서칭 다운 블럭-->
+    <div class="wrap">
+        <div class="searchdivi">
+            <button class="dropbtn">
+                제목+내용
+            </button>
+            <div class="searchdivi-contents">
+                <a href="#">제목</a>
+                <a href="#">내용</a>
+                <a href="#">덧글 내용</a>
+                <a href="#">글 작성자</a>
+            </div>
+        </div>
+    </div>
+        <!--새글 생성-->
+    <a href="CommunityRegister.html" th:href="@{register}">New</a>
+
+        <!--게시판-->
+    <div class="wrap">
+        <div class="makecenter">
+            <table border="1">
+                <tr>
+                    <th align="center" width="80">번호</th>
+                    <th align="center" width="320">제목</th>
+                    <th align="center" width="100">글쓴이</th>
+                    <th align="center" width="180">등록일자</th>
+                </tr>                   
+                 <tr th:if="${#lists.isEmpty(CommunityList)}">
+                   <td colspan="4">
+                        List is Empty.
+                    </td>
+                </tr>
+                <tr th:each="communityboard : ${CommunityList}">
+                        <td align="center" th:text="${communityboard.boardNo}">
+                            ${communityboard.boardNo}
+                        </td>
+                        <td align="left">
+                            <a href="CommunityRead.html"
+                            th:href="@{|CommunityRead?boardNo=${communityboard.boardNo}|}"
+                            th:text="${communityboard.title}">${communityboard.title}</a>
+                        </td>
+                        <td align="right" th:text="${communityboard.writer}">
+                            ${communityboard.writer}
+                        </td>
+                        <td align="center"
+                            th:text="${#dates.format(communityboard.regDate, 'yyyy-MM-dd HH:mm:ss')}">
+                            ${communityboard.regDate}
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    
+    </body>
+</html>

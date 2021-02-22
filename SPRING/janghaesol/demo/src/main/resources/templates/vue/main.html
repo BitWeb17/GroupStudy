@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link href="css/trans.css" rel="stylesheet">
+    <title>Vue Test</title>
+</head>
+<body>
+    <div id="app">
+        <h1>{{vue_message}}</h1>
+        <ol>
+            <li v-for="list in lists">{{ list }}</li>
+        </ol>
+        <button v-on:click="handleClick">Click</button>
+        <input v-model="initMsg"> : {{ initMsg }}
+        <button v-on:click="show = !show">Change</button>
+        <transition>
+        <p v-if="show">Show Time!</p>
+        </transition>
+    </div>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                show: true,
+                initMsg: 'Initial Test Message',
+                vue_message: 'Hello Vue.js on Linux Ubuntu',
+                lists:['apple','banana','grape','watermelon']
+            },
+            methods:{
+                handleClick: function(event){
+                    this.show = !this.show
+                    alert(event.target)
+                }
+            }
+        })
+    </script>
+</body>
+</html>
