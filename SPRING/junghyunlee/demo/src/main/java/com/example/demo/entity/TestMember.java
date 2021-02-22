@@ -10,12 +10,8 @@ import java.util.List;
 @Getter
 @Setter
 public class TestMember {
-    private String userName  = "";
-    private String password = "";
-    private String userNumber = "";
-    private String userEmail = "";
-    private String userAdress = "";
-
+    private String userName = "bitweb";
+    private String password = "456123";
     private String introduction;
     private List<String> hobbyList;
 }
