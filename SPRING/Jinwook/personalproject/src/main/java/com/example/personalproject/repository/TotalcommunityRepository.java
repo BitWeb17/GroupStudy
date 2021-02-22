@@ -26,7 +26,7 @@ public class TotalcommunityRepository {
 
         List<TotalCommunity> results = jdbcTemplate.query(
             "select board_no, catalogue, title, content, writer, " +
-                    "reg_date from totalcommunity where board_no > 0 " +
+                    "reg_date from totalCommunity where board_no > 0 " +
                     "order by board_no desc, reg_date desc",
 
             new RowMapper<TotalCommunity>() {
@@ -34,14 +34,14 @@ public class TotalcommunityRepository {
                 public TotalCommunity mapRow(ResultSet rs, int rowNum)
                         throws SQLException {
 
-                        TotalCommunity totalcommunity = new TotalCommunity();
-                        totalcommunity.setBoardNo(rs.getInt("board_no"));
-                        totalcommunity.setCatalogue(rs.getString("catalogue"));
-                        totalcommunity.setTitle(rs.getString("title"));
-                        totalcommunity.setContent(rs.getString("content"));
-                        totalcommunity.setWriter(rs.getString("writer"));
-                        totalcommunity.setRegData(rs.getDate("regDate"));
-                    return totalcommunity;
+                        TotalCommunity totalCommunity = new TotalCommunity();
+                        totalCommunity.setBoardNo(rs.getInt("board_no"));
+                        totalCommunity.setCatalogue(rs.getString("catalogue"));
+                        totalCommunity.setTitle(rs.getString("title"));
+                        totalCommunity.setContent(rs.getString("content"));
+                        totalCommunity.setWriter(rs.getString("writer"));
+                        totalCommunity.setRegData(rs.getDate("regDate"));
+                    return totalCommunity;
                 }
             }
         );
@@ -49,36 +49,36 @@ public class TotalcommunityRepository {
         return results;
     }
 
-    public void create(TotalCommunity totalcommunity) throws Exception {
+    public void create(TotalCommunity totalCommunity) throws Exception {
         log.info("create()");
 
-        String query = "insert into totalcommunity(catalogue, title, content, writer) " +
+        String query = "insert into totalCommunity(catalogue, title, content, writer) " +
         "value(?, ?, ?, ?)";
 
-        jdbcTemplate.update(query, totalcommunity.getCatalogue(), totalcommunity.getTitle(),
-        totalcommunity.getContent(), totalcommunity.getWriter());
+        jdbcTemplate.update(query, totalCommunity.getCatalogue(), totalCommunity.getTitle(),
+        totalCommunity.getContent(), totalCommunity.getWriter());
     }
 
     public TotalCommunity read(Integer boardNo) throws Exception {
         List<TotalCommunity> results = jdbcTemplate.query(
             "select board_no, catalogue, title, content, writer, reg_date " +
-                    "from totalcommunity where board_no = ?",
+                    "from totalCommunity where board_no = ?",
 
             new RowMapper<TotalCommunity>() {
                 @Override
                 public TotalCommunity mapRow(ResultSet rs, int rowNum)
                         throws SQLException {
 
-                    TotalCommunity totalcommunity = new TotalCommunity();
+                    TotalCommunity totalCommunity = new TotalCommunity();
 
-                    totalcommunity.setBoardNo(rs.getInt("board_no"));
-                    totalcommunity.setCatalogue(rs.getString("catalogue"));
-                    totalcommunity.setTitle(rs.getString("title"));
-                    totalcommunity.setContent(rs.getString("content"));
-                    totalcommunity.setWriter(rs.getString("writer"));
-                    totalcommunity.setRegData(rs.getDate("regDate"));
+                    totalCommunity.setBoardNo(rs.getInt("board_no"));
+                    totalCommunity.setCatalogue(rs.getString("catalogue"));
+                    totalCommunity.setTitle(rs.getString("title"));
+                    totalCommunity.setContent(rs.getString("content"));
+                    totalCommunity.setWriter(rs.getString("writer"));
+                    totalCommunity.setRegData(rs.getDate("regDate"));
 
-                    return totalcommunity;
+                    return totalCommunity;
                 }
             }, boardNo
         );
@@ -86,13 +86,13 @@ public class TotalcommunityRepository {
         return results.isEmpty() ? null : results.get(0);
     }
     public void remove(Integer boardNo) throws Exception{
-        String query = "delete from totalcommunity where board_no =?";
+        String query = "delete from totalCommunity where board_no =?";
 
         jdbcTemplate.update(query, boardNo);
     }
-    public void modify(TotalCommunity totalcommunity) throws Exception{
-        String query = "update totalcommunity set catalogue = ?, title = ?, content = ? " +
+    public void modify(TotalCommunity totalCommunity) throws Exception{
+        String query = "update totalCommunity set catalogue = ?, title = ?, content = ? " +
                 "where board_no = ?";
-        jdbcTemplate.update(query, totalcommunity.getCatalogue(), totalcommunity.getTitle(), totalcommunity.getContent(), totalcommunity.getBoardNo());
+        jdbcTemplate.update(query, totalCommunity.getCatalogue(), totalCommunity.getTitle(), totalCommunity.getContent(), totalCommunity.getBoardNo());
     }
 }

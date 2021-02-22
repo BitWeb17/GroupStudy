@@ -28,24 +28,24 @@ public class TotalCommunityController {
 
         model.addAttribute("list", service.list());
 
-        return "spring/totalcommunity/list";
+        return "spring/totalCommunity/list";
     }
 
     // HTML 처리시 board 정보를 가지고 처리하게됨(주의)
     @GetMapping("/register")
-    public String getRegister(TotalCommunity totalcommunity) {
+    public String getRegister(TotalCommunity totalCommunity) {
         log.info("getRegister()");
 
         return "spring/totalcommunity/register";
     }
 
     @PostMapping("/register")
-    public String doRegister(TotalCommunity totalcommunity, Model model)
+    public String doRegister(TotalCommunity totalCommunity, Model model)
             throws Exception {
 
         log.info("doRegister()");
 
-        service.register(totalcommunity);
+        service.register(totalCommunity);
 
         model.addAttribute("msg",
                 "등록이 완료되었습니다.");
@@ -85,10 +85,10 @@ public class TotalCommunityController {
     }
 
     @PostMapping("/modify")
-    public String doModify(TotalCommunity totalcommunity, Model model) throws Exception {
+    public String doModify(TotalCommunity totalCommunity, Model model) throws Exception {
         log.info("doModify()");
 
-        service.modify(totalcommunity);
+        service.modify(totalCommunity);
 
         model.addAttribute("msg",
                 "성공적으로 변경되었습니다!");

@@ -26,24 +26,24 @@
                 List is Empty.
             </td>
         </tr>
-        <tr th:each="totalcommunity : ${list}">
-            <td align="center" th:text="${totalcommunity.boardNo}">
+        <tr th:each="totalCommunity: ${list}">
+            <td align="center" th:text="${totalCommunity.boardNo}">
                 ${totalcommunity.boardNo}
             </td>
-            <td align="center" th:text="${totalcommunity.catalogue}">
-                ${totalcommunity.catalogue}
+            <td align="center" th:text="${totalCommunity.catalogue}">
+                ${totalCommunity.catalogue}
             </td>
             <td align="left">
                 <a href="read.html"
-                   th:href="@{|read?boardNo=${totalcommunity.boardNo}|}"
-                   th:text="${totalcommunity.title}">${totalcommunity.title}</a>
+                   th:href="@{|read?boardNo=${totalCommunity.boardNo}|}"
+                   th:text="${totalCommunity.title}">${totalCommunity.title}</a>
             </td>
-            <td align="right" th:text="${totalcommunity.writer}">
-                ${totalcommunity.writer}
+            <td align="right" th:text="${totalCommunity.writer}">
+                ${totalCommunity.writer}
             </td>
             <td align="center"
-                th:text="${#dates.format(totalcommunity.regDate, 'yyyy-MM-dd HH:mm:ss')}">
-                ${totalcommunity.regDate}
+                th:text="${#dates.format(totalCommunity.regDate, 'yyyy-MM-dd HH:mm:ss')}">
+                ${totalCommunity.regDate}
             </td>
         </tr>
     </table>
