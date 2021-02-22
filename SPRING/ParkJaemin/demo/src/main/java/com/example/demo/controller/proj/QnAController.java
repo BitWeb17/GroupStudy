@@ -31,7 +31,7 @@ public class QnAController {
     @GetMapping(value = "/qna")
     public String getQnaForm(Board board) {
 
-        log.info("getQna()");
+        log.info("getQnA()");
 
 
         return "proj/qna/qna.html";
