@@ -28,17 +28,17 @@ public class CommunityServiceImpl implements CommunityService {
 
     @Override
     public void remove(Integer listNo) throws Exception {
-        // communityRepo.remove(listNo);
+        communityRepo.remove(listNo);
     }
 
     @Override
     public void modify(Community community) throws Exception {
-        // communityRepo.comment(listNo);
+        communityRepo.modify(community);
     }
 
     @Override
-    public void comment(Integer listNo) throws Exception {
-        // communityRepo.comment(listNo);
+    public Community comment(Integer listNo) throws Exception {
+        return communityRepo.comment(listNo);
     }
 
 }
