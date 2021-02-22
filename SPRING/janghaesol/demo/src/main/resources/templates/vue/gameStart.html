@@ -27,11 +27,29 @@
         <p>DEF: {{ characterDef }}</p>
         <p>돈: {{ money }}</p>
 
+        <h3>가방</h3>
+        <label>
+            <input type="checkbox" v-model="bagView" v-on:click="openBag()">가방 열기
+        </label>
+        <table border="1">
+            <tr v-if="bagView">
+                <th align="center" width="20">번호</th>
+                <th align="center" width="80">이름</th>
+                <th align="center" width="80">가격</th>
+                <th align="center" width="320">효과</th>
+            </tr>
+            <tr v-if="bagView" v-for="(list, idx) in myInventory" v-bind:key="list.itemName">
+                <th align="center" width="20">{{ idx + 1 }}</th>
+                <th align="center" width="80">{{ list.itemName }}</th>
+                <th align="center" width="80">{{ list.price }}</th>
+                <th align="center" width="320">{{ list.effect.desc }}</th>
+            </tr>
+        </table>
+        
         <button v-on:click="addMonster">몬스터 추가</button></br>
         <button v-on:click="addManyMonster">100마리씩 몬스터 추가</button>
         <button v-on:click="amaterasu">아마테라스</button>
         
-       
         <ul>
             <li v-for="(monster, index) in monsters"
                 v-bind:key="monster.id"
@@ -115,7 +133,9 @@
                 { itemName: 'Sword', price: 3000000, effect:
                         { desc: "weapon", atk: 100 } },
                 { itemName: 'Iron Sword', price: 20000000, effect:
-                        { desc: "weapon", atk: 200 } }
+                        { desc: "weapon", atk: 200 } },
+                { itemName: 'Bronze Armor', price: 500, effect:
+                        { desc: "equipment", def: 10 } }       
             ],
             characterName: '',
             characterLv: 1,
@@ -131,6 +151,7 @@
             shopList: [],
             shopListValue: [],
             shopView: false,
+            bagView:false,
             myInventory: []
         },
         methods: {
@@ -183,6 +204,12 @@
                     }
                 }
             },
+
+            openBag: function(){
+                for(var i = 0; i <= bagView.length;i++){
+                    this.myInventory[i]
+                }
+            },
             shuffleShopList: function() {
                 if(!this.shopView) {
                     this.shopListValue = []
@@ -193,8 +220,6 @@
                     this.shopList[i] = this.itemBooks[randIdx]
                 }
             },
-
-
             calcBuy: function(){
                 var tmpSum =0
 
@@ -216,17 +241,21 @@
                 }
                 if(this.money - tmpSum >= 0){
                     this.money -= tmpSum
-
+                    
                     for(var i =0; i < this.shopListValue.length; i++){
                         this.myInventory.push({
                             itemName: this.shopList[this.shopListValue[i]].itemName,
-                            effect: this.shopList[this.shopListValue[i]].effect
+                            effect: this.shopList[this.shopListValue[i]].effect                      
                         })
+                        if(itemName === 'Bronze Armor'){
+                        this.characterDef += 10
+                    }
                     }
                 }else{
                     alert('Give me Money')
                 }
             }
+
         },
         beforeCreate: function () {
             console.log("Before Create: " + this.monsters)
