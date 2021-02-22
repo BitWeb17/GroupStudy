@@ -30,7 +30,21 @@
         <button v-on:click="addMonster">몬스터 추가</button></br>
         <button v-on:click="addManyMonster">100마리씩 몬스터 추가</button>
         <button v-on:click="amaterasu">아마테라스</button>
-      
+        
+       
+        <ul>
+            <li v-for="(monster, index) in monsters"
+                v-bind:key="monster.id"
+                v-bind:class="{ strong: monster.hp > 300 }">
+                ID.{{ monster.id }} {{ monster.monsterName }}
+                HP.{{ monster.hp }} STATUS.{{ monster.status }}
+                <button v-on:click="doRemove(index)">몬스터 삭제</button>
+                <span v-if="monster.hp > 300">강함</span>
+                <span v-if="monster.hp <= monster.morbidity">빈사상태</span>
+                <button v-on:click="doAttack(index)">공격</button>
+            </li>
+        </ul>
+
         <h3>상점</h3>
         <label>
             <input type="checkbox" v-model="shopView"
@@ -179,6 +193,7 @@
                     this.shopList[i] = this.itemBooks[randIdx]
                 }
             },
+
 
             calcBuy: function(){
                 var tmpSum =0
