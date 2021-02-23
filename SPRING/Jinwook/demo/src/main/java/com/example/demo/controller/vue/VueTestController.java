@@ -25,4 +25,9 @@ public class VueTestController {
         log.info("getvueGameStart");
         return "vue/vueGameStart";
     }
+    @GetMapping("/vueMultCheckbox")
+    public String getvueMultCheckbox(){
+        log.info("getvueMultCheckbox");
+        return "vue/multiCheckBox";
+    }
 }
