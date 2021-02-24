@@ -1,30 +1,23 @@
 <template>
-<!-- 제출된 이벤트가 페이지를 다시 로드 하지 않는다-->
-  <form @submit.prevent="onsubmit">
-    <h3>게시판 글쓰기</h3>
+  <form @submit.prevent="onSubmit">
+    <h3>게시글 등록하기</h3>
     <table>
       <tr>
-        <td>Title</td>
-        <td>
-          <input type="text" v-model="title"/>
-        </td>
+        <td>제목</td>
+        <td><input type="text" v-model="title"></td>
       </tr>
       <tr>
-        <td>Writer</td>
-        <td>
-          <input type="text" v-model="writer"/>
-        </td>
+        <td>작성자</td>
+        <td><input type="text" v-model="writer"></td>
       </tr>
       <tr>
-        <td>Content</td>
-        <td>
-          <textarea v-model="content"></textarea>
-        </td>
+        <td>본문</td>
+        <td><textarea v-model="content" rows="5"></textarea></td>
       </tr>
     </table>
 
     <div>
-      <button type="submit">등록하기</button>
+      <button type="submit">등록</button>
       <router-link :to="{ name: 'BoardListPage' }">
         취소
       </router-link>
@@ -34,7 +27,7 @@
 
 <script>
 export default {
-  name: "BoardRegisterForm",
+  name: 'BoardRegisterForm',
   data () {
     return {
       title: '',
@@ -43,14 +36,10 @@ export default {
     }
   },
   methods: {
-    onsubmit () {
+    onSubmit () {
       const { title, writer, content } = this
       this.$emit('submit', { title, writer, content })
     }
   }
 }
 </script>
-
-<style scoped>
-
-</style>

@@ -1,4 +1,5 @@
 export default {
-    boards: [],
-    board: null
+  // Vue Board
+  boards: [],
+  board: null
 }
