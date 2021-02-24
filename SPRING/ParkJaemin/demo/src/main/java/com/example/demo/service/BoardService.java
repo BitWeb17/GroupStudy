@@ -5,7 +5,6 @@ import com.example.demo.entity.Board;
 import java.util.List;
 
 public interface BoardService {
-
     public List<Board> list() throws Exception;
 
     public void register(Board board) throws Exception;
@@ -15,5 +14,4 @@ public interface BoardService {
     public void remove(Integer boardNo) throws Exception;
 
     public void modify(Board board) throws Exception;
-
 }

@@ -10,60 +10,63 @@ import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import java.net.URI;
 import java.util.List;
 
 @Log
 @RestController
 @RequestMapping("/boards")
+//8080에서 들어오는 모든 요청을 허용해준다.
 @CrossOrigin(origins = "http://localhost:8080", allowedHeaders = "*")
 public class VueBoardController {
+    //static final Logger log = LoggerFactory.getLogger(VueBoardController.class);
 
     @Autowired
     private VueBoardService service;
 
-    @RequestMapping(value = "/{boardNo}", method = RequestMethod.GET)
+    // url 동적으로 받는거
+    @GetMapping("/{boardNo}")
     public ResponseEntity<VueBoard> read(
             @PathVariable("boardNo") Long boardNo) throws Exception {
-
-        log.info("VueBoard read()");
+        log.info("read()");
 
         VueBoard board = service.read(boardNo);
+        System.out.println("VueBoardController: " + board);
 
         return new ResponseEntity<VueBoard>(board, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "", method = RequestMethod.GET)
+    @GetMapping("")
     public ResponseEntity<List<VueBoard>> list() throws Exception {
-        log.info("VueBoard list()");
+        log.info("list()");
 
-        return new ResponseEntity<List<VueBoard>>(
-                service.list(), HttpStatus.OK);
+        return new ResponseEntity<>(service.list(), HttpStatus.OK);
     }
 
-    @RequestMapping(value = "", method = RequestMethod.POST)
-    public ResponseEntity<String> register(
+    @PostMapping("")
+    public ResponseEntity<VueBoard> register(
             @Validated @RequestBody VueBoard board,
             UriComponentsBuilder uriBuilder) throws Exception {
-
-        log.info("VueBoard register");
+        log.info("POST register()");
 
         service.register(board);
 
-        log.info("Register board.getBoardNo() = " + board.getBoardNo());
+        log.info("register board.getBoardNo() = " + board.getBoardNo());
 
+        /*
         URI resourceURI = uriBuilder.path("boards/{boardNo}")
                 .buildAndExpand(board.getBoardNo())
                 .encode()
                 .toUri();
 
         return ResponseEntity.created(resourceURI).build();
+         */
+
+        return new ResponseEntity<>(board, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/{boardNo}", method = RequestMethod.DELETE)
+    @DeleteMapping("/{boardNo}")
     public ResponseEntity<Void> remove(
             @PathVariable("boardNo") Long boardNo) throws Exception {
-
         log.info("remove");
 
         service.remove(boardNo);
@@ -71,16 +74,16 @@ public class VueBoardController {
         return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
     }
 
-    @RequestMapping(value = "/{boardNo}", method = RequestMethod.PUT)
-    public ResponseEntity<Void> modify(
+    @PutMapping("/{boardNo}")
+    public ResponseEntity<VueBoard> modify(
             @PathVariable("boardNo") Long boardNo,
             @Validated @RequestBody VueBoard board) throws Exception {
-
-        log.info("modify");
+        log.info("Put - modify()");
+        System.out.println(board);
 
         board.setBoardNo(boardNo);
         service.modify(board);
 
-        return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
+        return new ResponseEntity<>(board, HttpStatus.OK);
     }
 }

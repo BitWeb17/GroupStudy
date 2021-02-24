@@ -27,25 +27,25 @@ public class BoardRepository {
         log.info("list()");
 
         List<Board> results = jdbcTemplate.query(
-                "select board_no, title, content, writer, " +
-                        "reg_date from board where board_no > 0 " +
-                        "order by board_no desc, reg_date desc",
+            "select board_no, title, content, writer, " +
+                    "reg_date from board where board_no > 0 " +
+                    "order by board_no desc, reg_date desc",
 
-                new RowMapper<Board>() {
-                    @Override
-                    public Board mapRow(ResultSet rs, int rowNum)
-                            throws SQLException {
+            new RowMapper<Board>() {
+                @Override
+                public Board mapRow(ResultSet rs, int rowNum)
+                        throws SQLException {
 
-                        Board board = new Board();
-                        board.setBoardNo(rs.getInt("board_no"));
-                        board.setTitle(rs.getString("title"));
-                        board.setContent(rs.getString("content"));
-                        board.setWriter(rs.getString("writer"));
-                        board.setRegDate(rs.getTimestamp("reg_date"));
+                    Board board = new Board();
+                    board.setBoardNo(rs.getInt("board_no"));
+                    board.setTitle(rs.getString("title"));
+                    board.setContent(rs.getString("content"));
+                    board.setWriter(rs.getString("writer"));
+                    board.setRegDate(rs.getTimestamp("reg_date"));
 
-                        return board;
-                    }
+                    return board;
                 }
+            }
         );
 
         return results;
@@ -65,24 +65,24 @@ public class BoardRepository {
 
     public Board read(Integer boardNo) throws Exception {
         List<Board> results = jdbcTemplate.query(
-                "select board_no, title, content, writer, reg_date " +
-                        "from board where board_no = ?",
+            "select board_no, title, content, writer, reg_date " +
+                    "from board where board_no = ?",
 
-                new RowMapper<Board>() {
-                    @Override
-                    public Board mapRow(ResultSet rs, int rowNum)
-                            throws SQLException {
+            new RowMapper<Board>() {
+                @Override
+                public Board mapRow(ResultSet rs, int rowNum)
+                        throws SQLException {
 
-                        Board board = new Board();
-                        board.setBoardNo(rs.getInt("board_no"));
-                        board.setTitle(rs.getString("title"));
-                        board.setContent(rs.getString("content"));
-                        board.setWriter(rs.getString("writer"));
-                        board.setRegDate(rs.getDate("reg_date"));
+                    Board board = new Board();
+                    board.setBoardNo(rs.getInt("board_no"));
+                    board.setTitle(rs.getString("title"));
+                    board.setContent(rs.getString("content"));
+                    board.setWriter(rs.getString("writer"));
+                    board.setRegDate(rs.getDate("reg_date"));
 
-                        return board;
-                    }
-                }, boardNo
+                    return board;
+                }
+            }, boardNo
         );
 
         return results.isEmpty() ? null : results.get(0);

@@ -25,7 +25,7 @@ public class ThymeLeafTestController {
     public String registerForm001() {
         log.info("registerForm001()");
 
-        return "spring/thyme/registerForm";
+        return "spring/thymeleaf/registerForm";
     }
 
     @GetMapping("/registerForm002")
@@ -33,8 +33,8 @@ public class ThymeLeafTestController {
         log.info("registerForm002()");
 
         /* 모델은 데이터를 제어하는 객체라고 설명했었음
-           스프링에서 활용할 수 있는 데이터 속성 이름으로 testMember를 만들었음
-           또한 이 testMember 속성은 new TestMember()에 의해 생성된 객체를 가짐 */
+           스프링에서 활용할 수 있는 데이터 속성 이름으로 TestMember를 만들었음
+           또한 이 TestMember 속성은 new TestMember()에 의해 생성된 객체를 가짐 */
         model.addAttribute("testMember", new TestMember());
 
         return "spring/thyme/registerForm";
@@ -49,15 +49,15 @@ public class ThymeLeafTestController {
 
         List<String> hobbyList = testMember.getHobbyList();
 
-        if(hobbyList !=null){
+        if(hobbyList != null) {
             log.info("hobbyList != null = " + hobbyList.size());
 
-            for(int i = 0; i<hobbyList.size(); i++){
-                log.info("hobbyList(" + i + ")=" + hobbyList.get(i));
+            for(int i = 0; i < hobbyList.size(); i++) {
+                log.info("hobbyList(" + i + ") = " + hobbyList.get(i));
             }
-        }else {
-            log.info("hobbyList==null"); // else에 대한 정보를 콘솔에 출력하고 싶으면 롬복에 호출 요청
-       }
+        } else {
+            log.info("hobbyList == null");
+        }
 
         model.addAttribute("hobbyList", hobbyList);
 
@@ -68,9 +68,6 @@ public class ThymeLeafTestController {
     public String registerForm003(Model model) {
         log.info("registerForm003()");
 
-        /* 모델은 데이터를 제어하는 객체라고 설명했었음
-           스프링에서 활용할 수 있는 데이터 속성 이름으로 testMember를 만들었음
-           또한 이 testMember 속성은 new TestMember()에 의해 생성된 객체를 가짐 */
         model.addAttribute("testMember", new TestMember());
 
         return "spring/thyme/introductionForm";
@@ -88,7 +85,6 @@ public class ThymeLeafTestController {
         hobbyMap.put("05", "D.I.Y");
 
         model.addAttribute("hobbyMap", hobbyMap);
-
         model.addAttribute("testMember", new TestMember());
 
         return "spring/thyme/hobbyForm";

@@ -2,6 +2,9 @@ package com.example.demo.service.vue;
 
 import com.example.demo.entity.vue.VueBoard;
 import com.example.demo.repository.vue.VueBoardRepository;
+import com.example.demo.entity.vue.VueBoard;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,31 +12,36 @@ import java.util.List;
 
 @Service
 public class VueBoardServiceImpl implements VueBoardService {
+    static final Logger log = LoggerFactory.getLogger(VueBoardServiceImpl.class);
+
     @Autowired
-    private VueBoardRepository vBoardRepo;
+    private VueBoardRepository repository;
 
     @Override
     public void register(VueBoard board) throws Exception {
-        vBoardRepo.create(board);
+        repository.create(board);
     }
+
 
     @Override
     public VueBoard read(Long boardNo) throws Exception {
-        return vBoardRepo.read(boardNo);
+        log.info("VueBoardService read(boardNo): " + boardNo);
+        return repository.read(boardNo);
     }
 
     @Override
     public void modify(VueBoard board) throws Exception {
-        vBoardRepo.update(board);
+        log.info("VueBoardService modify(board): " + board);
+        repository.update(board);
     }
 
     @Override
     public void remove(Long boardNo) throws Exception {
-        vBoardRepo.delete(boardNo);
+        repository.delete(boardNo);
     }
 
     @Override
     public List<VueBoard> list() throws Exception {
-        return vBoardRepo.list();
+        return repository.list();
     }
 }

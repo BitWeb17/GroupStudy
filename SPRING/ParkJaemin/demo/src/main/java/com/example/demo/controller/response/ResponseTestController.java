@@ -5,14 +5,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
 public class ResponseTestController {
     private static final Logger log =
             LoggerFactory.getLogger(ResponseTestController.class);
@@ -52,6 +50,13 @@ public class ResponseTestController {
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
+    @GetMapping("/responseOneData")
+    public ResponseEntity<String> getOneData() {
+        log.info("getOneData()");
+
+        return new ResponseEntity<String>(
+                "Success", HttpStatus.OK);
+    }
 
     @GetMapping("/responseEntityTestMember")
     public ResponseEntity<TestMember> getTestMemberResponseEntity() {
@@ -62,9 +67,9 @@ public class ResponseTestController {
         return new ResponseEntity<TestMember>(tm, HttpStatus.OK);
     }
 
-
-    @GetMapping("/responseEntityTestMemberList")
-    public ResponseEntity<List<TestMember>> getTestMemberListResponseEntity() {
+    @GetMapping("/responseTestMemberList")
+    public ResponseEntity<List<TestMember>>
+    getTestMemberListResponseEntity() {
         log.info("getTestMemberListResponseEntity()");
 
         List<TestMember> list = new ArrayList<TestMember>();
@@ -75,8 +80,7 @@ public class ResponseTestController {
         TestMember tm2 = new TestMember();
         list.add(tm2);
 
-        return new ResponseEntity<List<TestMember>>(list, HttpStatus.OK);
+        return new ResponseEntity<List<TestMember>>(
+                list, HttpStatus.OK);
     }
-
-
 }
