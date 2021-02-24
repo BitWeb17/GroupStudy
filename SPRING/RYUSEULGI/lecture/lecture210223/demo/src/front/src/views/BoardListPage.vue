@@ -2,28 +2,28 @@
     <div id="board">
         <h2>Board List</h2>
         <router-link :to="{ name: 'BoardRegisterPage' }">
-            새로운 글쓰기
+        글쓰기
         </router-link>
         <board-list :boards="boards"/>
     </div>
 </template>
 
 <script>
-import boardList from "@/components/BoardList";
-import { mapState, mapActions } from 'vuex';
-
+import BoardList from '@/components/BoardList'
+import { mapState, mapActions } from 'vuex'
 export default {
-    name : 'BoardListPage',
+    name: 'BoardListPage',
     components: {
-        boardList
+        BoardList
     },
-    computed : {
+    computed: {
         ...mapState(['boards'])
     },
-    mounted(){
-        this.fetchBoardList();
+    mounted () {
+        // list로 board를 가져올지 낱개로 가져올지 판단
+        this.fetchBoardList()
     },
-    methods : {
+    methods: {
         ...mapActions(['fetchBoardList'])
     }
 }

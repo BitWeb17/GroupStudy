@@ -13,7 +13,7 @@ public class DBConfig {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("com.mysql.cj.jdbc.Driver");
         dataSource.setUrl("jdbc:mysql://localhost/vue_board?serverTimezone=UTC&useSSL=false");
-        dataSource.setUsername("bitweb");
+        dataSource.setUsername("seulgi");
         dataSource.setPassword("dkdlxl123");
 
         return dataSource;
