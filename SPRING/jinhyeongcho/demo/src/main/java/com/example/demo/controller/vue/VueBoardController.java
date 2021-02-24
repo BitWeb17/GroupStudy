@@ -22,46 +22,53 @@ public class VueBoardController {
     @Autowired
     private VueBoardService service;
 
-    @RequestMapping(value = "/{boardNo}",method = RequestMethod.GET)
-    public ResponseEntity<VueBoard> read (
+    @RequestMapping(value = "/{boardNo}", method = RequestMethod.GET)
+    public ResponseEntity<VueBoard> read(
             @PathVariable("boardNo") Long boardNo) throws Exception {
 
         log.info("VueBoard read()");
 
-        VueBoard board =service.read(boardNo);
+        VueBoard board = service.read(boardNo);
 
-        return new ResponseEntity<VueBoard>(board,HttpStatus.OK);
+        return new ResponseEntity<VueBoard>(board, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "",method = RequestMethod.GET)
-    public ResponseEntity<List<VueBoard>> list() throws Exception{
+    @RequestMapping(value = "", method = RequestMethod.GET)
+    public ResponseEntity<List<VueBoard>> list() throws Exception {
         log.info("VueBoard list()");
 
-        return new ResponseEntity<List<VueBoard>>(
+        return new ResponseEntity<>(
+        //return new ResponseEntity<List<VueBoard>>(
                 service.list(), HttpStatus.OK);
-
     }
 
-    @RequestMapping(value = "",method = RequestMethod.POST)
-    public ResponseEntity<String> register(
+    @RequestMapping(value = "", method = RequestMethod.POST)
+    public ResponseEntity<VueBoard> register(
             @Validated @RequestBody VueBoard board,
-            UriComponentsBuilder uriBuilder) throws Exception{
+            UriComponentsBuilder uriBuilder) throws Exception {
+
         log.info("VueBoard register");
 
         service.register(board);
 
         log.info("Register board.getBoardNo() = " + board.getBoardNo());
 
+        /*
         URI resourceURI = uriBuilder.path("boards/{boardNo}")
                 .buildAndExpand(board.getBoardNo())
                 .encode()
                 .toUri();
-        return  ResponseEntity.created(resourceURI).build();
+
+        return ResponseEntity.created(resourceURI).build();
+         */
+
+        return new ResponseEntity<>(board, HttpStatus.OK);
     }
 
-    @RequestMapping(value = "/{boardNo",method = RequestMethod.DELETE)
+    @RequestMapping(value = "/{boardNo}", method = RequestMethod.DELETE)
     public ResponseEntity<Void> remove(
-            @PathVariable("boardNo") Long boardNo) throws Exception{
+            @PathVariable("boardNo") Long boardNo) throws Exception {
+
         log.info("remove");
 
         service.remove(boardNo);
@@ -70,13 +77,15 @@ public class VueBoardController {
     }
 
     @RequestMapping(value = "/{boardNo}", method = RequestMethod.PUT)
-    public ResponseEntity<Void> modify(
+    public ResponseEntity<VueBoard> modify(
             @PathVariable("boardNo") Long boardNo,
             @Validated @RequestBody VueBoard board) throws Exception {
+
         log.info("modify");
+
         board.setBoardNo(boardNo);
         service.modify(board);
-        return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
-    }
 
+        return new ResponseEntity<>(board, HttpStatus.OK);
+    }
 }

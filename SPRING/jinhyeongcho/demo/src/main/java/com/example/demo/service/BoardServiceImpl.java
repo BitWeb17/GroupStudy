@@ -19,6 +19,11 @@ public class BoardServiceImpl implements BoardService {
     }
 
     @Override
+    public void register(Board board) throws Exception {
+        boardRepo.create(board);
+    }
+
+    @Override
     public Board read(Integer boardNo) throws Exception {
         return boardRepo.read(boardNo);
     }
@@ -32,12 +37,4 @@ public class BoardServiceImpl implements BoardService {
     public void modify(Board board) throws Exception {
         boardRepo.modify(board);
     }
-
-    @Override
-    public void register(Board board) throws Exception {
-        boardRepo.create(board);
-    }
-
-
 }
-

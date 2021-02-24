@@ -2,20 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Table Creation Test3</title>
+    <title>Table Creation Test</title>
     <style>
         table, th, td {
-            /* 테두리 두께, 테두리 유형, 색상(ff = 255*/
             border: 1px solid #00fd22;
         }
-
         th, td {
-            width: 80px;
+            width: 120px;
             padding: 10px;
         }
-
         thead, tfoot {
-            background: #efe368;
+            background: coral;
         }
     </style>
 </head>
@@ -23,15 +20,15 @@
 <table>
     <caption>Score Board</caption>
     <thead>
-    <tr>
-        <th>Distinction</th>
-        <th>Number of Group</th>
-        <th>Number of Team</th>
-        <th>Number of Member</th>
-        <th>Number of Coach</th>
-    </tr>
+        <tr>
+            <th>Distinction</th>
+            <th>Number of Group</th>
+            <th>Number of Team</th>
+            <th>Number of Member</th>
+            <th>Number of Coach</th>
+        </tr>
     </thead>
-    <tboby>
+    <tbody>
         <tr>
             <th>SSS</th>
             <th>20</th>
@@ -51,15 +48,17 @@
             <td>33</td>
             <td>76</td>
             <td>545</td>
-            <td>1</td>
+            <td>100</td>
         </tr>
-    </tboby>
+    </tbody>
     <tfoot>
-    <th>Sum</th>
-    <td>65</td>
-    <td>272</td>
-    <td>1945</td>
-    <td>304</td>
+        <tr>
+            <th>Sum</th>
+            <td>65</td>
+            <td>272</td>
+            <td>1945</td>
+            <td>304</td>
+        </tr>
     </tfoot>
 </table>
 </body>

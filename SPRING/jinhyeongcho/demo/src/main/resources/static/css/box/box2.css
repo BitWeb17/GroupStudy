@@ -3,11 +3,9 @@ div {
     border: 1px solid #cccccc;
     border-radius: 5px;
 }
-
 #inline img {
     margin: 10px;
 }
-
 #block img {
     display: block;
     margin: 10px;

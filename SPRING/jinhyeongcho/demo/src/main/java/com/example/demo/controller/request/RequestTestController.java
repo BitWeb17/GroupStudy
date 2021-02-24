@@ -1,6 +1,5 @@
 package com.example.demo.controller.request;
 
-
 import com.example.demo.entity.TestMember;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,15 +18,16 @@ public class RequestTestController {
     public String registerForm() {
         log.info("registerForm()");
 
-        return "spring/request/registerForm.html";
+        return "spring/request/registerForm";
     }
 
     @GetMapping("/register")
     public String doRegisterByParameter(
             String userId, String passwd) {
+
         log.info("doRegisterByParameter()");
-        log.info("userId" + userId);
-        log.info("passwd" + passwd);
+        log.info("uesrId = " + userId);
+        log.info("passwd = " + passwd);
 
         return "html_css/success.html";
     }
@@ -35,16 +35,17 @@ public class RequestTestController {
     @PostMapping("/register")
     public String doRegisterWithVoidParameter(
             String userId, String passwd) {
-        log.info("doRegisterByParameter()");
-        log.info("userId" + userId);
-        log.info("passwd" + passwd);
+
+        log.info("doRegisterWithVoidParameter()");
+        log.info("uesrId = " + userId);
+        log.info("passwd = " + passwd);
 
         return "html_css/success.html";
     }
 
     @GetMapping("/registerByEntity")
     public String doRegisterByEntity(TestMember tm) {
-        log.info("doRegisterByParameter()");
+        log.info("registerByEntity()");
         log.info("userId = " + tm.getUserName());
         log.info("passwd = " + tm.getPassword());
 
@@ -52,8 +53,8 @@ public class RequestTestController {
     }
 
     @PostMapping("/registerWithEntity")
-    public String doRegisterWithEntity(TestMember tm) {
-        log.info("doRegisterWithEntity()");
+    public String doregisterWithEntity(TestMember tm) {
+        log.info("registerByEntity()");
         log.info("userId = " + tm.getUserName());
         log.info("passwd = " + tm.getPassword());
 

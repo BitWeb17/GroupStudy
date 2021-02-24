@@ -1,6 +1,6 @@
 .navbar {
     overflow: hidden;
-    background-color: #553333;
+    background-color: #997bc2;
     margin-bottom: 20px;
 }
 
@@ -55,7 +55,6 @@
 .dropdown-contents a:hover {
     background-color: #ddddff;
 }
-
 .dropdown:hover .dropdown-contents {
     display: block;
 }

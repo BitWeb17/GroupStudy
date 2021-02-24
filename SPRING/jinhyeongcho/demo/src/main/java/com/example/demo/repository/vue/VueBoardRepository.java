@@ -32,25 +32,25 @@ public class VueBoardRepository {
         log.info("VueBoardRepo list()");
 
         List<VueBoard> results = jdbcTemplate.query(
-                "select board_no, title, content, " +
-                        "writer, reg_date from board " +
-                        "where board_no > 0 order by " +
-                        "board_no desc, reg_date desc",
-                new RowMapper<VueBoard>() {
-                    @Override
-                    public VueBoard mapRow(ResultSet rs, int rowNum)
-                            throws SQLException {
+            "select board_no, title, content, " +
+                    "writer, reg_date from board " +
+                    "where board_no > 0 order by " +
+                    "board_no desc, reg_date desc",
+            new RowMapper<VueBoard>() {
+                @Override
+                public VueBoard mapRow(ResultSet rs, int rowNum)
+                        throws SQLException {
 
-                        VueBoard board = new VueBoard();
-                        board.setBoardNo(rs.getInt("board_no"));
-                        board.setTitle(rs.getString("title"));
-                        board.setContent(rs.getString("content"));
-                        board.setWriter(rs.getString("writer"));
-                        board.setRegDate(rs.getDate("reg_date"));
+                    VueBoard board = new VueBoard();
+                    board.setBoardNo(rs.getInt("board_no"));
+                    board.setTitle(rs.getString("title"));
+                    board.setContent(rs.getString("content"));
+                    board.setWriter(rs.getString("writer"));
+                    board.setRegDate(rs.getDate("reg_date"));
 
-                        return board;
-                    }
-                });
+                    return board;
+                }
+            });
 
         return results;
     }
@@ -83,7 +83,7 @@ public class VueBoardRepository {
 
     public void delete(Long boardNo) throws Exception {
         String query = "delete from board where board_no = ?";
-        jdbcTemplate.update(query,boardNo);
+        jdbcTemplate.update(query, boardNo);
     }
 
     public void update(VueBoard board) throws Exception {

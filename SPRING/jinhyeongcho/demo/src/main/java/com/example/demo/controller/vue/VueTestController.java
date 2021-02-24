@@ -11,27 +11,28 @@ public class VueTestController {
             LoggerFactory.getLogger(VueTestController.class);
 
     @GetMapping("/vuemain")
-    public  String getVueMain(){
+    public String getVueMain() {
         log.info("getVueMain()");
 
         return "vue/main";
     }
 
     @GetMapping("/vuegame")
-    public  String getVueGame(){
+    public String getVueGame() {
         log.info("getVueGame()");
 
         return "vue/game";
     }
+
     @GetMapping("/vueGameStart")
-    public  String getVueGameStart(){
+    public String getVueGameStart() {
         log.info("getVueGameStart()");
 
-        return "gameStart";
+        return "vue/gameStart";
     }
 
     @GetMapping("/vueMultiCheckBox")
-    public  String getVueMultiCheckBox(){
+    public String getVueMultiCheckBox() {
         log.info("getVueMultiCheckBox()");
 
         return "vue/multiCheckBox";

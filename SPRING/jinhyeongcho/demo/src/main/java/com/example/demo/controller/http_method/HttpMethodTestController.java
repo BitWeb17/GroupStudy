@@ -6,7 +6,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 /* Get의 경우엔 URL 뒤쪽에 ?가 나타난다.
-   Post는 위와 같은 ?가 나타나지 않음. */
+   Post는 위와 같은 ?가 나타나지 않음 */
 @Controller
 @RequestMapping("httpMethod/board")
 public class HttpMethodTestController {

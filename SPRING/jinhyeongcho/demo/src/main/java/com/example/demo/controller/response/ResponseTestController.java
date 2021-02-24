@@ -1,19 +1,16 @@
 package com.example.demo.controller.response;
 
-
 import com.example.demo.entity.TestMember;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
 public class ResponseTestController {
     private static final Logger log =
             LoggerFactory.getLogger(ResponseTestController.class);
@@ -25,6 +22,7 @@ public class ResponseTestController {
         log.info("getTestMember()");
 
         TestMember tm = new TestMember();
+
         return tm;
     }
 
@@ -34,19 +32,20 @@ public class ResponseTestController {
         log.info("getTestMemberList()");
 
         List<TestMember> list = new ArrayList<TestMember>();
+
         TestMember tm1 = new TestMember();
         list.add(tm1);
+
         TestMember tm2 = new TestMember();
         list.add(tm2);
 
         return list;
     }
 
-    /* 꺽쇠 내부에 적는 코드는 모두 클래스 타입으로 맞춰주는것이 좋다. */
+    /* 꺽쇠 내부에 적는 코드는 모두 클래스 타입으로 맞춰주는 것이 좋다. */
     @GetMapping("/responseVoidData")
     public ResponseEntity<Void> getVoidData() {
         log.info("getVoidData()");
-
 
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
@@ -55,9 +54,8 @@ public class ResponseTestController {
     public ResponseEntity<String> getOneData() {
         log.info("getOneData()");
 
-
         return new ResponseEntity<String>(
-                "success", HttpStatus.OK);
+                "Success", HttpStatus.OK);
     }
 
     @GetMapping("/responseEntityTestMember")
@@ -69,17 +67,20 @@ public class ResponseTestController {
         return new ResponseEntity<TestMember>(tm, HttpStatus.OK);
     }
 
-    @GetMapping("/responseTestMemberList2")
+    @GetMapping("/responseTestMemberList")
     public ResponseEntity<List<TestMember>>
     getTestMemberListResponseEntity() {
         log.info("getTestMemberListResponseEntity()");
 
         List<TestMember> list = new ArrayList<TestMember>();
+
         TestMember tm1 = new TestMember();
         list.add(tm1);
+
         TestMember tm2 = new TestMember();
         list.add(tm2);
 
-        return new ResponseEntity<List<TestMember>>(list, HttpStatus.OK);
+        return new ResponseEntity<List<TestMember>>(
+                list, HttpStatus.OK);
     }
 }

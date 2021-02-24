@@ -21,32 +21,33 @@ public class BoardController {
     private BoardService service;
 
     @GetMapping("/list")
-    public String list(Model model)throws Exception{
+    public String getList(Model model) throws Exception {
         log.info("getList()");
 
-        model.addAttribute("list",service.list());
+        model.addAttribute("list", service.list());
 
         return "spring/real_board/list";
     }
 
-    // HTML 처리시 Board 정보를 가지고 처리하게됨(주의)
+    // HTML 처리시 board 정보를 가지고 처리하게됨(주의)
     @GetMapping("/register")
-    public String getRegister(Board board){
+    public String getRegister(Board board) {
         log.info("getRegister()");
 
         return "spring/real_board/register";
     }
 
-
     @PostMapping("/register")
     public String doRegister(Board board, Model model)
-            throws Exception{
+            throws Exception {
+
         log.info("doRegister()");
 
         service.register(board);
 
         model.addAttribute("msg",
                 "등록이 완료되었습니다.");
+
         return "spring/real_board/success";
     }
 
@@ -61,33 +62,34 @@ public class BoardController {
     }
 
     @PostMapping("/remove")
-    public String doRemove(int boardNo, Model model) throws Exception{
+    public String doRemove(int boardNo, Model model) throws Exception {
         log.info("doRemove()");
 
         service.remove(boardNo);
 
         model.addAttribute("msg",
-                "성공적으로 지워졌습니다.");
+                "성공적으로 지워졌습니다!");
 
-        return
-                "spring/real_board/success";
+        return "spring/real_board/success";
     }
 
     @GetMapping("/modify")
-    public String getModify(int boardNo, Model model) throws Exception{
+    public String getModify(int boardNo, Model model) throws Exception {
         log.info("getModify()");
 
         model.addAttribute(service.read(boardNo));
+
         return "spring/real_board/modify";
     }
 
     @PostMapping("/modify")
-    public String doModify(Board board,Model model) throws Exception{
+    public String doModify(Board board, Model model) throws Exception {
         log.info("doModify()");
 
         service.modify(board);
 
-        model.addAttribute("msg","성공적으로 변경되었습니다!");
+        model.addAttribute("msg",
+                "성공적으로 변경되었습니다!");
 
         return "spring/real_board/success";
     }

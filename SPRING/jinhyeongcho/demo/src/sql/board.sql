@@ -4,5 +4,5 @@ create table board(
     reg_date datetime,
     title varchar(255),
     writer varchar(255),
-    primary  key(board_no)
+    primary key(board_no)
 ) engine=InnoDB;
