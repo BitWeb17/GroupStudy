@@ -1,9 +1,7 @@
-table{
+table {
     border-collapse: collapse;
-    width: 500px;
-    text-align: center;
+    width: 300px;
 }
-
-td{
+td {
     padding: 10px;
 }

@@ -8,7 +8,6 @@
 <h2>Hobby Form</h2>
 <form th:action="@{/thymeleaf/register}"
       th:object="${testMember}" method="post">
-
     <table>
         <tr>
             <td>아 이 디</td>
@@ -32,19 +31,19 @@
         <tr>
             <td>취미</td>
             <td>
-               <th:block th:each="element: ${hobbyMap}">
-                   <input type="checkbox" th:field="*{hobbyList}"
-                          th:value="${element.key}"/>
-                   <label th:for="${#ids.prev('hobbyList')}"
-                          th:text="${element.value}">
-                       Programming
-                   </label>
-               </th:block>
+                <th:block th:each="element : ${hobbyMap}">
+                    <input type="checkbox" th:field="*{hobbyList}"
+                           th:value="${element.key}"/>
+                    <label th:for="${#ids.prev('hobbyList')}"
+                           th:text="${element.value}">
+                        Programming
+                    </label>
+                </th:block>
             </td>
         </tr>
     </table>
-    <button type="submit">등록</button>
-</form>
 
+    <button type="submit">등록!</button>
+</form>
 </body>
 </html>
