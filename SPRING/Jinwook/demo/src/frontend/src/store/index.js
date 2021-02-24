@@ -1,16 +1,17 @@
-
 import Vue from 'vue'
 import Vuex from 'vuex'
+// import axios from 'axios'
 
-import states from "@/store/states";
-import actions from "@/store/actions";
-import mutations from "@/store/mutations";
+import state from './states'
+import actions from './actions'
+import mutations from './mutations'
+import getters from './getters'
 
 Vue.use(Vuex)
 
 export default new Vuex.Store({
-  states,
-  mutations,
+  state,
   actions,
-  //getters
+  mutations,
+  getters
 })

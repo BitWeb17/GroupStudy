@@ -1,98 +1,35 @@
 package com.example.personalproject.controller.totalcommunity;
 
+import java.util.List;
+
 import com.example.personalproject.entity.TotalCommunity;
 import com.example.personalproject.service.TotalCommunityService;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import lombok.extern.java.Log;
 
+@Log
 @Controller
-@RequestMapping(value = "/maincommunity")
+@RequestMapping(value = "/mainCommunities")
+@CrossOrigin(origins = "http//localhost:8080", allowedHeaders = "*")
 public class TotalCommunityController {
-    private static final Logger log =
-            LoggerFactory.getLogger(TotalCommunityController.class);
-
     @Autowired
     private TotalCommunityService service;
+    @GetMapping("")
+    public ResponseEntity<List<TotalCommunity>> list() throws Exception{
+        log.info("list()");
 
-    @GetMapping("/list")
-    public String getList(Model model) throws Exception {
-        log.info("getList()");
-
-        model.addAttribute("list", service.list());
-
-        return "spring/totalCommunity/list";
-    }
-
-    // HTML 처리시 board 정보를 가지고 처리하게됨(주의)
-    @GetMapping("/register")
-    public String getRegister(TotalCommunity totalCommunity) {
-        log.info("getRegister()");
-
-        return "spring/totalcommunity/register";
-    }
-
-    @PostMapping("/register")
-    public String doRegister(TotalCommunity totalCommunity, Model model)
-            throws Exception {
-
-        log.info("doRegister()");
-
-        service.register(totalCommunity);
-
-        model.addAttribute("msg",
-                "등록이 완료되었습니다.");
-
-        return "spring/totalcommunity/success";
-    }
-
-    @GetMapping("/read")
-    public String read(int boardNo, Model model)
-            throws Exception {
-        log.info("read()");
-
-        model.addAttribute(service.read(boardNo));
-
-        return "spring/totalcommunity/read";
-    }
-
-    @PostMapping("/remove")
-    public String doRemove(int boardNo, Model model) throws Exception {
-        log.info("doRemove()");
-
-        service.remove(boardNo);
-
-        model.addAttribute("msg",
-                "성공적으로 지워졌습니다!");
-
-        return "spring/totalcommunity/success";
-    }
-
-    @GetMapping("/modify")
-    public String getModify(int boardNo, Model model) throws Exception {
-        log.info("getModify()");
-
-        model.addAttribute(service.read(boardNo));
-
-        return "spring/totalcommunity/modify";
-    }
-
-    @PostMapping("/modify")
-    public String doModify(TotalCommunity totalCommunity, Model model) throws Exception {
-        log.info("doModify()");
-
-        service.modify(totalCommunity);
-
-        model.addAttribute("msg",
-                "성공적으로 변경되었습니다!");
-
-        return "spring/totalcommunity/success";
+        return new ResponseEntity<>(service.list(),HttpStatus.OK);
     }
 }

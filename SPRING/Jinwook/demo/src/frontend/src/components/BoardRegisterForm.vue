@@ -1,29 +1,23 @@
 <template>
-  <form @submit.prevent="onsubmit">
-    <h3>게시판 글쓰기</h3>
+  <form @submit.prevent="onSubmit">
+    <h3>게시글 등록하기</h3>
     <table>
       <tr>
-        <td>Title</td>
-        <td>
-          <input type="text" v-model="title"/>
-        </td>
+        <td>제목</td>
+        <td><input type="text" v-model="title"></td>
       </tr>
       <tr>
-        <td>Writer</td>
-        <td>
-          <input type="text" v-model="writer"/>
-        </td>
+        <td>작성자</td>
+        <td><input type="text" v-model="writer"></td>
       </tr>
       <tr>
-        <td>Content</td>
-        <td>
-          <textarea v-model="content"></textarea>
-        </td>
+        <td>본문</td>
+        <td><textarea v-model="content" rows="5"></textarea></td>
       </tr>
     </table>
 
     <div>
-      <button type="submit">등록하기</button>
+      <button type="submit">등록</button>
       <router-link :to="{ name: 'BoardListPage' }">
         취소
       </router-link>
@@ -42,10 +36,34 @@ export default {
     }
   },
   methods: {
-    onsubmit () {
+    onSubmit () {
       const { title, writer, content } = this
       this.$emit('submit', { title, writer, content })
     }
+  },
+  beforeCreate: function () {
+    console.log("BoardRegisterForm Before Create: ")
+  },
+  created: function () {
+    console.log("BoardRegisterForm Created: ")
+  },
+  beforeMount: function () {
+    console.log("BoardRegisterForm Before Mount: ")
+  },
+  mounted: function () {
+    console.log("BoardRegisterForm Mounted: ")
+  },
+  beforeUpdate: function() {
+    console.log("BoardRegisterForm Before Update: ")
+  },
+  updated: function () {
+    console.log("BoardRegisterForm Updated: ")
+  },
+  beforeDestroy: function () {
+    console.log("BoardRegisterForm Before Destroy: ")
+  },
+  destroyed: function () {
+    console.log("BoardRegisterForm Destroyed: ")
   }
 }
 </script>

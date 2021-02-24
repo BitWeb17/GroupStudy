@@ -4,6 +4,9 @@ import Home from '../views/Home.vue'
 import About from '../views/About'
 import BoardListPage from "@/views/BoardListPage";
 import BoardRegisterPage from "@/views/BoardRegisterPage";
+import BoardReadPage from "@/views/BoardReadPage";
+import BoardModifyPage from "@/views/BoardModifyPage";
+
 
 Vue.use(VueRouter)
 
@@ -30,6 +33,26 @@ const routes = [
     name: 'BoardRegisterPage',
     components: {
       default: BoardRegisterPage
+    }
+  },
+  {
+    path: '/board/:boardNo',
+    name: 'BoardReadPage',
+    components: {
+      default: BoardReadPage
+    },
+    props:{
+      default: true
+    }
+  },
+  {
+    path: '/board/:boardNo/edit',
+    name: 'BoardModifyPage',
+    components: {
+      default: BoardModifyPage
+    },
+    props:{
+      default: true
     }
   }
 ]
