@@ -5,7 +5,7 @@
     <title>RegisterForm</title>
 </head>
 <body>
-<h2>Spring Form with Thymeleaf</h2>
+<h2>회원가입</h2>
 <form action="result.html" th:action="@{/menu/signUp}"
       th:object="${testMember}" method="post">
     <table>
@@ -13,7 +13,7 @@
             <td>아 이 디</td>
             <td>
                 <input type="text" name="text" th:field="*{userName}"/>
-
+                <button type="submit">중복확인</button>
             </td>
         </tr>
         <tr>
@@ -25,6 +25,9 @@
         </tr>
     </table>
     <button type="submit">등록!</button>
+    <!--summit이 아닌 button으로 바꿈 summit을 하면 폼 양식으로 날리는것으로 폼양식 동작구현
+        각각 control을 위해선 스크립트 사용필요!-->
+    <a href="menubar"><button type="button">홈으로</button></a>
 </form>
 </body>
 </html>

@@ -1,5 +1,6 @@
 package com.example.demo.controller.nativeinterface;
 
+import com.example.demo.controller.response.ResponseTestController;
 import com.example.demo.nativeinterface.HelloSpring;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,6 +12,8 @@ public class NativeController {
     private static final Logger log =
             LoggerFactory.getLogger(NativeController.class);
 
+    Object test;
+
     @GetMapping("/nativeTest")
     public String nativeCallTestHello() {
         log.info("nativeCallTestHello()");
@@ -20,5 +23,4 @@ public class NativeController {
 
         return "html_css/success.html";
     }
-
 }

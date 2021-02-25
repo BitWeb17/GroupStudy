@@ -5,14 +5,13 @@ section {
     border: 1px solid #cccccc;
     border-radius: 10px;
 }
-
 .multi {
-    /* 열의 개수*/
+    /* 열의 개수 */
     -webkit-column-count: 4;
     -moz-column-count: 4;
     column-count: 4;
 
-    /* 전체 열에 적용되는 규*/
+    /* 전체 열에 적용되는 규칙 */
     -webkit-column-rule: 2px dotted #7777ff;
     -moz-column-rule: 2px dotted #7777ff;
     column-rule: 2px dotted #7777ff;
@@ -22,7 +21,7 @@ section {
 
 .multi h3 {
     /* 페이지 표시할 때 출력물이 뒤엉키는 경우
-    다음 페이지 혹은 다음 단으로 끌고 내려가서 같이 표시하게 해줌
-    결국 정렬을 시켜주게 됨 */
+       다음 페이지 혹은 단으로 끌고 내려가서 같이 표시하게 해줌
+       결국 정렬을 시켜주게 됨 */
     break-before: column;
 }

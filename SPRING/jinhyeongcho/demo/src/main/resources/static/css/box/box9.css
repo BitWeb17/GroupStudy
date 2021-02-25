@@ -6,7 +6,6 @@ div {
     border: 2px solid;
     border-radius: 170px/130px;
 }
-
 .bgEllipse {
     background: url(../../img/cat.jpg) no-repeat;
     background-size: cover;
