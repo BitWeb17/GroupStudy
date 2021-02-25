@@ -35,9 +35,9 @@ public class PathVariableTestController {
     @GetMapping("/board/read/{boardNo}")
     public String getBoardReadBoardNo(
             @PathVariable("boardNo") int boardNo) {
-        log.info("getBoardReadBoardNo():" + "게시물 번호별 읽기 = " + boardNo);
+        log.info("getBoardReadBoardNo(): " +
+                "게시물 번호별 읽기 = " + boardNo);
 
         return "spring/board/read.html";
     }
-
 }
