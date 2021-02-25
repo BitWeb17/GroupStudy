@@ -3,10 +3,15 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About'
 
+import Test from "@/views/Test";
+
 import BoardListPage from '../views/BoardListPage.vue'
 import BoardRegisterPage from '../views/BoardRegisterPage.vue'
 import BoardModifyPage from '../views/BoardModifyPage.vue'
 import BoardReadPage from '../views/BoardReadPage.vue'
+import vuetifyBoardListPage from "@/views/vuetifyPage/vuetifyBoardListPage";
+import vuetifyBoardListPaginationPage from "@/views/vuetifyPage/vuetifyBoardListPaginationPage";
+
 
 Vue.use(VueRouter)
 
@@ -20,6 +25,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/test',
+    name: 'Test',
+    component: Test
   },
   {
     path: '/board',
@@ -55,6 +65,20 @@ const routes = [
       default: true
     }
   },
+  {
+    path: '/vuetifyBoard',
+    name: 'vuetifyBoardListPage',
+    components: {
+      default: vuetifyBoardListPage
+    },
+  },
+  {
+    path: '/vuetifyPagination',
+    name: 'vuetifyBoardListPaginationPage',
+    components: {
+      default: vuetifyBoardListPaginationPage
+    }
+  }
 ]
 
 const router = new VueRouter({
