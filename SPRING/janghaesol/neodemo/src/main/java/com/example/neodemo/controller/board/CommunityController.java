@@ -32,7 +32,7 @@ public class CommunityController {
     }
 
     @GetMapping("/register")
-    public String getCommunityRegister(CommunityBoard board){
+    public String getCommunityRegister(CommunityBoard communityBoard){
         log.info("getcommunityRegister()");
 
         return "community_board/CommunityRegister.html";
