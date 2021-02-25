@@ -23,5 +23,13 @@ import {
           console.log('fetchBoard - res: ' + res.data)
           commit(FETCH_BOARD, res.data)
         })
+    },
+    generateRandomNumber({ commit }){
+      axios.get(`http://localhost:7777/random`)
+      .then((res) =>{
+        console.log('res= ' + parseInt(res.data.randNumber))
+        commit('successGenerateRandomNumber',
+        parseInt(res.data.randNumber))
+      })
     }
   }
