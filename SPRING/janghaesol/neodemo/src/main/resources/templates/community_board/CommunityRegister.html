@@ -31,9 +31,9 @@
 
     <script>
         $(document).ready(function() {
-            var formObj = $("#communityboard")
+            var formObj = $("#communityBoard")
     
-            $("#btnregister").on("click", function() {
+            $("#btnRegister").on("click", function() {
                 formObj.attr("action", "register")
                 formObj.attr("method", "post")
                 formObj.submit()
@@ -48,16 +48,16 @@
      <!--registerbox-->
      <div class="regwrap">
         <div class="regbox">
-            <form id="communityboard" action="CommunitySuccess.html"
+            <form id="communityBoard" action="CommunitySuccess.html"
                 th:action="@{CommunityRegister}"
-                th:object="${communityboard}" method="post">
+                th:object="${communityBoard}" method="post">
                 <table>
                    
                     <tr>
                         <td>Title</td>
                         <td>
                             <input type="text" name="title"
-                                >
+                            th:field="*{title}"/>
                         </td>
                     </tr>
                     
@@ -65,14 +65,14 @@
                         <td>Writer</td>
                         <td>
                             <input type="text" name="writer"
-                                >
+                            th:field="*{writer}"/>
                         </td>
                     </tr>
                     <tr>
                         <td>Content</td>
                         <td>
                             <textarea name="content"
-                                    ></textarea>
+                            th:field="*{content}"></textarea>
                         </td>
                     </tr>
                 </table>

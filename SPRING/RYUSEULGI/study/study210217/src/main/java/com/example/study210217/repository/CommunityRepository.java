@@ -1,21 +1,26 @@
 package com.example.study210217.repository;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
 import com.example.study210217.entity.Community;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.PreparedStatementCreator;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.jdbc.support.GeneratedKeyHolder;
+import org.springframework.jdbc.support.KeyHolder;
 import org.springframework.stereotype.Repository;
 
+import lombok.extern.java.Log;
+
+@Log
 @Repository
 public class CommunityRepository {
-    private static final Logger log = LoggerFactory.getLogger(CommunityRepository.class);
 
     @Autowired
     // DB와 연동하기 위함
@@ -26,21 +31,19 @@ public class CommunityRepository {
 
         // 리스트와 같이 많은 결과가ㅄ들을 처리 할 수 있는 메소드(여러개의 로우 가ㅄ을 저장)
         List<Community> results = jdbcTemplate.query(
-                // SQL에 만들어준 table과 일치하게 하기
-                // select 데이터 조회
-                "select board_no, title, content, writer, " + "reg_date from board where board_no > 0 "
-                // order by 정렬순서
-                        + "order by board_no desc, reg_date desc",
+                "select list_no, contents, writer, reg_date, reg_date from community where list_no > 0 "
+                        + "order by list_no desc, reg_date desc",
 
                 // 필요한 정보를 전달받기 위함
                 new RowMapper<Community>() {
                     @Override
                     public Community mapRow(ResultSet rs, int rowNum) throws SQLException {
                         Community community = new Community();
-                        community.setListNo(rs.getInt("board_no"));
+
+                        community.setListNo(rs.getInt("list_no"));
                         community.setWriter(rs.getString("writer"));
-                        community.setDate(rs.getDate("reg_date"));
-                        community.setContents(rs.getString("content"));
+                        community.setRegDate(rs.getDate("reg_date"));
+                        community.setContents(rs.getString("contents"));
 
                         return community;
                     }
@@ -51,30 +54,41 @@ public class CommunityRepository {
     public void write(Community community) throws Exception {
         log.info("write()");
 
-        String query = "insert into board(title, content, writer) " + "values(?, ?, ?)";
-        jdbcTemplate.update(query, community.getDate(), community.getWriter(), community.getContents());
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        String query = "insert into community(writer, contents) values(?, ?)";
+
+        jdbcTemplate.update(new PreparedStatementCreator() {
+            @Override
+            public PreparedStatement createPreparedStatement(Connection con) throws SQLException {
+                PreparedStatement ps = con.prepareStatement(query, new String[] { "listNo" });
+
+                ps.setString(1, community.getWriter());
+                ps.setString(2, community.getContents());
+
+                return ps;
+            }
+        }, keyHolder);
+        community.setListNo(keyHolder.getKey().intValue());
     }
 
     public Community comment(Integer listNo) throws Exception {
+        log.info("comment()");
+
         List<Community> results = jdbcTemplate.query(
-            "select list_no, contents, writer, reg_date " +
-                    "from community where list_no = ?",
+                "select list_no, contents, writer, reg_date from community where list_no = ?",
+                new RowMapper<Community>() {
+                    @Override
+                    public Community mapRow(ResultSet rs, int rowNum) throws SQLException {
+                        Community community = new Community();
 
-            new RowMapper<Community>() {
-                @Override
-                public Community mapRow(ResultSet rs, int rowNum)
-                        throws SQLException {
+                        community.setListNo(rs.getInt("list_no"));
+                        community.setContents(rs.getString("contents"));
+                        community.setWriter(rs.getString("writer"));
+                        community.setRegDate(rs.getDate("reg_date"));
 
-                    Community community = new Community();
-                    community.setListNo(rs.getInt("list_no"));
-                    community.setContents(rs.getString("contents"));
-                    community.setWriter(rs.getString("writer"));
-                    community.setRegDate(rs.getDate("reg_date"));
-
-                    return community;
-                }
-            }, listNo
-        );
+                        return community;
+                    }
+                }, listNo);
         return results.isEmpty() ? null : results.get(0);
     }
 
@@ -84,10 +98,8 @@ public class CommunityRepository {
     }
 
     public void modify(Community community) throws Exception {
-        String query = "update community set contents = ? " +
-                "where list_no = ?";
-
-        jdbcTemplate.update( query, community.getContents(), community.getListNo());
+        String query = "update community set contents = ? " + "where list_no = ?";
+        jdbcTemplate.update(query, community.getContents(), community.getListNo());
     }
 
 }

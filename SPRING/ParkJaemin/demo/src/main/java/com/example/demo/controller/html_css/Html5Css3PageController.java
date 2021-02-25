@@ -396,14 +396,6 @@ public class Html5Css3PageController {
         return "html_css/css3basic/webFontTest.html";
     }
 
-    @GetMapping("/resume")
-    public String getResume() {
-        log.info("Enter getResume()");
-
-        return "html_css/resume.html";
-    }
-
-
     @GetMapping("/webOverflowTest")
     public String getWebOverflowTest() {
         log.info("Enter getWebOverflowTest()");
@@ -426,29 +418,29 @@ public class Html5Css3PageController {
     }
 
     @GetMapping("/webBoxTest")
-    public String getWebBoxTestTest() {
-        log.info("Enter getWebBoxTestTest()");
+    public String getWebBoxTest() {
+        log.info("Enter getWebBoxTest()");
 
         return "html_css/box/webBoxTest.html";
     }
 
     @GetMapping("/webBlockInlineTest")
     public String getWebBlockInlineTest() {
-        log.info("Enter webBlockInlineTest()");
+        log.info("Enter getWebBlockInlineTest()");
 
         return "html_css/box/webBlockInlineTest.html";
     }
 
     @GetMapping("/webNavUlLiBoxTest")
     public String getWebNavUlLiBoxTest() {
-        log.info("Enter WebNavUlLiBoxTest()");
+        log.info("Enter getWebNavUlLiBoxTest()");
 
         return "html_css/box/webNavUlLiBoxTest.html";
     }
 
     @GetMapping("/webNavUlLiBoxTest2")
     public String getWebNavUlLiBoxTest2() {
-        log.info("Enter WebNavUlLiBoxTest2()");
+        log.info("Enter getWebNavUlLiBoxTest2()");
 
         return "html_css/box/webNavUlLiBoxTest2.html";
     }
@@ -465,6 +457,13 @@ public class Html5Css3PageController {
         log.info("Enter getWebBoxBorderStyleTest()");
 
         return "html_css/box/webBoxBorderStyleTest.html";
+    }
+
+    @GetMapping("/webBoxBorderStyleTest2")
+    public String getWebBoxBorderStyleTest2() {
+        log.info("Enter getWebBoxBorderStyleTest2()");
+
+        return "html_css/box/webBoxBorderStyleTest2.html";
     }
 
     @GetMapping("/webBoxRoundTest")
@@ -494,7 +493,6 @@ public class Html5Css3PageController {
 
         return "html_css/box/webBoxMarginTest.html";
     }
-
 
     @GetMapping("/webBoxPaddingTest")
     public String getWebBoxPaddingTest() {
@@ -538,7 +536,6 @@ public class Html5Css3PageController {
         return "html_css/box/webBoxPositionRelativeTest.html";
     }
 
-
     @GetMapping("/webMenuDropDownTest")
     public String getWebMenuDropDownTest() {
         log.info("Enter getWebMenuDropDownTest()");
@@ -546,10 +543,9 @@ public class Html5Css3PageController {
         return "html_css/menubar/webMenuDropDownTest.html";
     }
 
-
     @GetMapping("/webColumnRuleTest")
     public String getWebColumnRuleTest() {
-        log.info("Enter getWebMenuDropDownTest()");
+        log.info("Enter getWebColumnRuleTest()");
 
         return "html_css/column-rule/webColumnRuleTest.html";
     }
@@ -568,14 +564,12 @@ public class Html5Css3PageController {
         return "html_css/border/webCustomTableBorderTest2.html";
     }
 
-
     @GetMapping("/webCustomTableBorderTest3")
     public String getWebCustomTableBorderTest3() {
         log.info("Enter getWebCustomTableBorderTest3()");
 
         return "html_css/border/webCustomTableBorderTest3.html";
     }
-
 
     @GetMapping("/webCustomTableBorderTest4")
     public String getWebCustomTableBorderTest4() {
@@ -620,29 +614,29 @@ public class Html5Css3PageController {
     }
 
     @GetMapping("/webSelectTest")
-    public String getWebSelectTestTest() {
-        log.info("Enter getWebSelectTestTest()");
+    public String getWebSelectTest() {
+        log.info("Enter getWebSelectTest()");
 
         return "html_css/selector/webSelectTest.html";
     }
 
     @GetMapping("/webSelectTest2")
-    public String getWebSelectTestTest2() {
-        log.info("Enter getWebSelectTestTest2()");
+    public String getWebSelectTest2() {
+        log.info("Enter getWebSelectTest2()");
 
         return "html_css/selector/webSelectTest2.html";
     }
 
     @GetMapping("/webSelectTest3")
-    public String getWebSelectTestTest3() {
-        log.info("Enter getWebSelectTestTest3()");
+    public String getWebSelectTest3() {
+        log.info("Enter getWebSelectTest3()");
 
         return "html_css/selector/webSelectTest3.html";
     }
 
     @GetMapping("/webSelectTest4")
-    public String getWebSelectTestTest4() {
-        log.info("Enter getWebSelectTestTest4()");
+    public String getWebSelectTest4() {
+        log.info("Enter getWebSelectTest4()");
 
         return "html_css/selector/webSelectTest4.html";
     }
@@ -668,18 +662,10 @@ public class Html5Css3PageController {
         return "html_css/selector/webSelectTest7.html";
     }
 
-
     @GetMapping("/webSelectTest8")
     public String getWebSelectTest8() {
         log.info("Enter getWebSelectTest8()");
 
         return "html_css/selector/webSelectTest8.html";
-    }
-
-    @GetMapping("/projectPage")
-    public String getWebProjectPage() {
-        log.info("Enter getWebProjectPage()");
-
-        return "html_css/privateproject/projectPage.html";
     }
 }
