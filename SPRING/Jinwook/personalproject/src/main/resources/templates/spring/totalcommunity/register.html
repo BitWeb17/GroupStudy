@@ -10,7 +10,7 @@
 
 <script>
     $(document).ready(function() {
-        var formObj = $("#totalcommunity")
+        var formObj = $("#totalCommunity")
 
         $("#btnTotalRegister").on("click", function() {
             formObj.attr("action", "/totalcommunity/register")
@@ -27,9 +27,9 @@
 <body>
     <h2>totalcommunity Resister</h2>
 
-    <form id="board" action="success.html"
+    <form id="totalCommunity" action="success.html"
           th:action="@{/totalcommunity/register}"
-          th:object="${totalcommunity}" method="post">
+          th:object="${totalCommunity}" method="post">
         <table>
             <tr>
                 <td>Catalogue</td>

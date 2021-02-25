@@ -4,16 +4,18 @@ import java.sql.Date;
 
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 
 @Getter
 @Setter
+@ToString
 
 public class TotalCommunity {
     
-    private int boardNo;
+    private Long boardNo;
     private String catalogue;
     private String title;
     private String content;
     private String writer;
-    private Date regData;
+    private Date regDate;
 }

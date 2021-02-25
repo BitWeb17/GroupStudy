@@ -10,7 +10,7 @@
 
 <script>
     $(document).ready(function() {
-        var formObj = $("#totalcommunity")
+        var formObj = $("#totalCommunity")
 
         $("#btnModify").on("click", function() {
             var boardNo = $("#boardNo")
@@ -33,7 +33,7 @@
 <body>
     <h2>내용 보기</h2>
 
-    <form id="totalcommunity" th:object="${totalcommunity}" method="post">
+    <form id="totalcommunity" th:object="${totalCommunity}" method="post">
         <input type="hidden" name="boardNo" th:field="*{boardNo}"/>
 
         <table>

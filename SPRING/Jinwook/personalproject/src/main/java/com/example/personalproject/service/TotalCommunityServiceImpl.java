@@ -20,27 +20,28 @@ public class TotalCommunityServiceImpl implements TotalCommunityService {
     }
 
     @Override
-    public void register(TotalCommunity totalcommunity) throws Exception {
+    public void register(TotalCommunity totalCommunity) throws Exception {
         // TODO Auto-generated method stub
-        totalcommunityRepo.create(totalcommunity);
+        totalcommunityRepo.create(totalCommunity);
     }
 
-    @Override
-    public TotalCommunity read(Integer boardNo) throws Exception {
-        // TODO Auto-generated method stub
-        return totalcommunityRepo.read(boardNo);
-    }
+    // @Override
+    // public TotalCommunity read(Long boardNo) throws Exception {
+    //     // TODO Auto-generated method stub
+    //     return totalcommunityRepo.read(boardNo);
+    // }
 
-    @Override
-    public void remove(Integer boardNo) throws Exception {
-        totalcommunityRepo.remove(boardNo);
+    // @Override
+    // public void remove(Long boardNo) throws Exception {
+    //     totalcommunityRepo.remove(boardNo);
 
-    }
+    // }
 
-    @Override
-    public void modify(TotalCommunity totalcommunity) throws Exception {
-        // TODO Auto-generated method stub
-        totalcommunityRepo.modify(totalcommunity);
-    }
+    // @Override
+    // public void modify(TotalCommunity totalCommunity) throws Exception {
+    //     // TODO Auto-generated method stub
+    //     totalcommunityRepo.modify(totalCommunity);
+    // }
     
 }
+
