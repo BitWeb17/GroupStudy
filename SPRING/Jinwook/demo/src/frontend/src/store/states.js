@@ -1,3 +1,4 @@
+
 export default {
   // Vue Board
   boards: [],
@@ -6,5 +7,10 @@ export default {
   // For Test
   count: 0,
   weight: 3,
-  random: 0
+  random: 0,
+
+  // For Crawling
+  lists: [],
+  news: [],
+  homeNews: []
 }

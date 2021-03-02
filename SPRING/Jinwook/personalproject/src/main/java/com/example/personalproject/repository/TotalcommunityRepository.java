@@ -13,10 +13,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 @Repository
-public class TotalcommunityRepository {
+public class TotalCommunityRepository {
 
     private static final Logger log =
-            LoggerFactory.getLogger(TotalcommunityRepository.class);
+            LoggerFactory.getLogger(TotalCommunityRepository.class);
 
     @Autowired
     private JdbcTemplate jdbcTemplate;
@@ -40,7 +40,7 @@ public class TotalcommunityRepository {
                         totalCommunity.setTitle(rs.getString("title"));
                         totalCommunity.setContent(rs.getString("content"));
                         totalCommunity.setWriter(rs.getString("writer"));
-                        totalCommunity.setRegData(rs.getDate("regDate"));
+                        totalCommunity.setRegDate(rs.getDate("regDate"));
                     return totalCommunity;
                 }
             }
@@ -76,7 +76,7 @@ public class TotalcommunityRepository {
                     totalCommunity.setTitle(rs.getString("title"));
                     totalCommunity.setContent(rs.getString("content"));
                     totalCommunity.setWriter(rs.getString("writer"));
-                    totalCommunity.setRegData(rs.getDate("regDate"));
+                    totalCommunity.setRegDate(rs.getDate("regDate"));
 
                     return totalCommunity;
                 }
@@ -85,14 +85,14 @@ public class TotalcommunityRepository {
 
         return results.isEmpty() ? null : results.get(0);
     }
-    public void remove(Integer boardNo) throws Exception{
-        String query = "delete from totalCommunity where board_no =?";
+//     public void remove(Integer boardNo) throws Exception{
+//         String query = "delete from totalCommunity where board_no =?";
 
-        jdbcTemplate.update(query, boardNo);
-    }
-    public void modify(TotalCommunity totalCommunity) throws Exception{
-        String query = "update totalCommunity set catalogue = ?, title = ?, content = ? " +
-                "where board_no = ?";
-        jdbcTemplate.update(query, totalCommunity.getCatalogue(), totalCommunity.getTitle(), totalCommunity.getContent(), totalCommunity.getBoardNo());
-    }
+//         jdbcTemplate.update(query, boardNo);
+//     }
+//     public void modify(TotalCommunity totalCommunity) throws Exception{
+//         String query = "update totalCommunity set catalogue = ?, title = ?, content = ? " +
+//                 "where board_no = ?";
+//         jdbcTemplate.update(query, totalCommunity.getCatalogue(), totalCommunity.getTitle(), totalCommunity.getContent(), totalCommunity.getBoardNo());
+//     }
 }

@@ -1,35 +1,51 @@
+
 import {
-    FETCH_BOARD_LIST,
-    FETCH_BOARD
-  } from './mutation-types'
-  
-  import axios from 'axios'
-  
-  //비동기처리 아무거나 진행이됨
-  export default {
-      //커밋하는게 여러게 있을 수 있으므로 {} 로 묶는다
-    fetchBoardList ({ commit }) {
-      return axios.get('http://localhost:7777/boards')
-        .then(res => {
-            //컨트롤러 list의 모든 데이터가 res.data에 있음
-            // 커밋하면  뮤테이션으로 이동
-          commit(FETCH_BOARD_LIST, res.data)
+  FETCH_BOARD_LIST,
+  FETCH_BOARD,
+  FIND_ONE,
+  CRAWL_START
+} from './mutation-types'
+
+import axios from 'axios'
+import router from "@/router";
+
+export default {
+  async crawlFind ({ commit }, category) {
+    axios.get('http://localhost:7777/' + `${category}`)
+        .then(({ data }) => {
+            commit(CRAWL_START, data)
+            if (window.location.pathname !== '/crawlCategory') {
+                router.push('/crawlCategory')
+            }
         })
-    },
-    fetchBoard ({ commit }, boardNo) {
-      console.log('fetchBoard ' + commit + ', boardNo = ' + boardNo)
-      return axios.get(`http://localhost:7777/boards/${boardNo}`)
-        .then(res => {
-          console.log('fetchBoard - res: ' + res.data)
-          commit(FETCH_BOARD, res.data)
-        })
-    },
-    generateRandomNumber({ commit }){
-      axios.get(`http://localhost:7777/random`)
-      .then((res) =>{
-        console.log('res= ' + parseInt(res.data.randNumber))
-        commit('successGenerateRandomNumber',
-        parseInt(res.data.randNumber))
+  },
+  async crawlFindOne ({ commit }, newsNo) {
+    axios.get('http://localhost:7777/news/' + `${newsNo}`)
+      .then(({ data }) => {
+        commit(FIND_ONE, data)
+        router.push('/crawlCategory/news')
       })
-    }
+  },
+  fetchBoardList ({ commit }) {
+    return axios.get('http://localhost:7777/boards')
+      .then(res => {
+        commit(FETCH_BOARD_LIST, res.data)
+      })
+  },
+  fetchBoard ({ commit }, boardNo) {
+    console.log('fetchBoard ' + commit + ', boardNo = ' + boardNo)
+    return axios.get(`http://localhost:7777/boards/${boardNo}`)
+      .then(res => {
+        console.log('fetchBoard - res: ' + res.data)
+        commit(FETCH_BOARD, res.data)
+      })
+  },
+  generateRandomNumber ({ commit }) {
+      axios.get('http://localhost:7777/random')
+          .then((res) => {
+              console.log('res = ' + parseInt(res.data.randNumber))
+              commit('successGenerateRandomNumber',
+                  parseInt(res.data.randNumber))
+          })
   }
+}

@@ -11,9 +11,9 @@ public interface TotalCommunityService {
 
     public void register(TotalCommunity totalCommunity) throws Exception;
 
-    public TotalCommunity read(Long boardNo) throws Exception;
+    public TotalCommunity read(Integer boardNo) throws Exception;
 
-    public void remove(Long boardNo) throws Exception;
+    public void remove(Integer boardNo) throws Exception;
 
     public void modify(TotalCommunity totalCommunity) throws Exception;
 

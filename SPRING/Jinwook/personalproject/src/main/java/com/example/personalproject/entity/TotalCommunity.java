@@ -12,7 +12,7 @@ import lombok.ToString;
 
 public class TotalCommunity {
     
-    private Long boardNo;
+    private int boardNo;
     private String catalogue;
     private String title;
     private String content;

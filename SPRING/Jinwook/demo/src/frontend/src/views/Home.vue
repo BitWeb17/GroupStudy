@@ -3,13 +3,13 @@
     <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
     <div id="header">
       <router-link :to="{ name: 'Home' }"
-                   class="nav-link"
-                   active-class="active">
+                  class="nav-link"
+                  active-class="active">
         홈
       </router-link>
       <router-link :to="{ name: 'About' }"
-                   class="nav-link"
-                   active-class="active">
+                  class="nav-link"
+                  active-class="active">
         소개
       </router-link>
       <router-link :to="{ name: 'Test' }"
@@ -31,6 +31,11 @@
                   class="nav-link"
                   active-class="active">
         페이지네이션
+      </router-link>
+      <router-link :to="{ name: 'CrawlCategoryPage' }"
+                  class="nav-link"
+                  active-class="active">
+        크롤링
       </router-link>
       <h2>This is an Home Page</h2>
     </div>
