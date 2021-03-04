@@ -2,14 +2,21 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About'
-import BoardListPage from "@/views/BoardListPage";
-import BoardRegisterPage from "@/views/BoardRegisterPage";
-import BoardReadPage from "@/views/BoardReadPage";
-import BoardModifyPage from "@/views/BoardModifyPage";
 
+import Test from "@/views/Test";
+
+import BoardListPage from '../views/BoardListPage.vue'
+import BoardRegisterPage from '../views/BoardRegisterPage.vue'
+import BoardModifyPage from '../views/BoardModifyPage.vue'
+import BoardReadPage from '../views/BoardReadPage.vue'
+
+import VuetifyBoardListPage from "@/views/vuetifyPage/VuetifyBoardListPage";
+import VuetifyBoardListPaginationPage from "@/views/vuetifyPage/VuetifyBoardListPaginationPage";
+
+import CrawlCategoryPage from "@/views/crawl/CrawlCategoryPage";
 
 Vue.use(VueRouter)
-
+ 
 const routes = [
   {
     path: '/',
@@ -20,6 +27,11 @@ const routes = [
     path: '/about',
     name: 'About',
     component: About
+  },
+  {
+    path: '/test',
+    name: 'Test',
+    component: Test
   },
   {
     path: '/board',
@@ -41,7 +53,7 @@ const routes = [
     components: {
       default: BoardReadPage
     },
-    props:{
+    props: {
       default: true
     }
   },
@@ -51,8 +63,29 @@ const routes = [
     components: {
       default: BoardModifyPage
     },
-    props:{
+    props: {
       default: true
+    }
+  },
+  {
+    path: '/vuetifyBoard',
+    name: 'VuetifyBoardListPage',
+    components: {
+      default: VuetifyBoardListPage
+    }
+  },
+  {
+    path: '/vuetifyPagination',
+    name: 'VuetifyBoardListPaginationPage',
+    components: {
+      default: VuetifyBoardListPaginationPage
+    }
+  },
+  {
+    path: '/crawlCategory',
+    name: 'CrawlCategoryPage',
+    components: {
+      default: CrawlCategoryPage
     }
   }
 ]

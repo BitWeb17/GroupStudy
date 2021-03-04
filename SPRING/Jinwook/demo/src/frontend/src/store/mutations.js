@@ -1,16 +1,33 @@
-
 import {
-    FETCH_BOARD_LIST,
-    FETCH_BOARD
-  } from './mutation-types'
-  //여기 데이터 처리시 서로간 방해를 받지 않음
-  //멀테 쓰레드 크리티컬섹션 처리해주는 속성을 가지고 있음
-  export default {
-    [FETCH_BOARD_LIST] (state, boards) {
-        //FETCH_BOARD_LIST, res.data 값
-      state.boards = boards
-    },
-    [FETCH_BOARD] (state, board) {
-      state.board = board
-    }
+  FETCH_BOARD_LIST,
+  FETCH_BOARD,
+  CRAWL_START,
+  FIND_ONE
+} from './mutation-types'
+
+export default {
+  // for Board
+  [FETCH_BOARD_LIST] (state, boards) {
+    state.boards = boards
+  },
+  [FETCH_BOARD] (state, board) {
+    state.board = board
+  },
+  // for Test
+  increment (state) {
+    state.count++
+  },
+  decrement (state) {
+    state.count--
+  },
+  successGenerateRandomNumber (state, payload) {
+    state.random = payload
+  },
+  // for Crawling
+  [CRAWL_START] (state, payload) {
+    state.lists = payload
+  },
+  [FIND_ONE] (state, payload) {
+    state.news = payload
   }
+}
